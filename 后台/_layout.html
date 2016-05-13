@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>整体框架</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<!-- 内容区域开始 -->
+		<%template src="_content.html"%>
+		<!-- 内容区域结束 -->
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+</body>
+</html>

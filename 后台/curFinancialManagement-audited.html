@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>借款管理-活期理财管理-已审核活期提取</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav_loanManagement.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<div id="box">
+			<!-- 内容区域开始 -->
+			<div class="bread f14 bold blue_deep">活期理财</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">已完成活期理财</a>
+				<div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div>
+			</div>
+			<div class="mlr10">
+				<table class="table_list" id="table_list" cellspacing="0" cellpadding="0">
+					<thead>
+						<td width="3%" class="bor_no_left">ID</td>
+						<td width="15%">买入金额</td>
+						<td>买入日期</td>
+						<td width="15%">起始利率</td>
+						<td width="15%">订单号</td>
+						<td width="15%">已获收益</td>
+						<td width="10%" class="bor_no_right">操作</td>
+					</thead>
+					<tr>
+						<td>6</td>
+						<td>10000.00元</td>
+						<td>2016-04-07 17:35:50</td>
+						<td>10.00%</td>
+						<td>jd258999554</td>
+						<td>25.21</td>
+						<td>----</td>
+					</tr>
+				</table>
+			</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">已完成活期理财</a>
+				<div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div>
+			</div>
+			<!-- 内容区域结束 -->
+		</div>
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+</body>
+</html>

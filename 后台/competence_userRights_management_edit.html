@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>权限-用户权限管理-add前台功能用户权限管理-编辑</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<!-- 内容区域开始 -->
+		<div id="box" class="mlr10 pos_rel">
+			<div class="bread f14 bold blue_deep">用户级权限配置</div>
+			<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+				<tr>
+				  <td>用户组名称：</td>
+				  <td><input type="text" class="text" value="admin"></input></td>
+				</tr>
+			</table>
+			<!-- 全局设置 -->
+			<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+				<tr>
+				  <td><span class="green_light bold">全局设置</span></td>
+				  <td>请选择相关权限<input type="checkbox" class="check-Box selectAll mr3 ml3"></input>全选</td>
+				</tr>
+				<tr>
+				  <td>网站设置：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3" checked="checked"></input>列表</label><label><input type="checkbox" class="check-Box mr3"></input>增加</label><label><input type="checkbox" class="check-Box mr3"></input>删除</label><label><input type="checkbox" class="check-Box mr3"></input>修改</label></td>
+				</tr>
+				<tr>
+				  <td>友情链接：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3" checked="checked"></input>列表</label><label><input type="checkbox" class="check-Box mr3"></input>增加</label><label><input type="checkbox" class="check-Box mr3"></input>删除</label><label><input type="checkbox" class="check-Box mr3"></input>修改</label><label><input type="checkbox" class="check-Box mr3"></input>搜索</label></td>
+				</tr>
+				<tr>
+				  <td>所有缓存：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3"></input>清除</label></td>
+				</tr>
+				<tr>
+				  <td>后台操作日志：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3" checked="checked"></input>列表</label><label><input type="checkbox" class="check-Box mr3"></input>删除</label><label><input type="checkbox" class="check-Box mr3"></input>删除一月前操作日志</label></td>
+				</tr>
+				<tr>
+				  <td>广告管理：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3" checked="checked"></input>列表</label><label><input type="checkbox" class="check-Box mr3"></input>增加</label><label><input type="checkbox" class="check-Box mr3"></input>删除</label><label><input type="checkbox" class="check-Box mr3"></input>修改</label></td>
+				</tr>
+				<tr>
+				  <td>登陆接口管理：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3" checked="checked"></input>查看</label><label><input type="checkbox" class="check-Box mr3"></input>修改</label></td>
+				</tr>
+				<tr>
+				  <td>自动执行参数：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3" checked="checked"></input>查看</label><label><input type="checkbox" class="check-Box mr3"></input>修改</label><label><input type="checkbox" class="check-Box mr3"></input>开启程序</label><label><input type="checkbox" class="check-Box mr3"></input>关闭程序</label><label><input type="checkbox" class="check-Box mr3"></input>开启服务</label><label><input type="checkbox" class="check-Box mr3"></input>卸载服务</label><label><input type="checkbox" class="check-Box mr3"></input>当前运行状态</label></td>
+				</tr>
+			</table>
+			<!-- 借款管理 -->
+			<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+				<tr>
+				  <td><span class="green_light bold">借款管理</span></td>
+				  <td>请选择相关权限<input type="checkbox" class="check-Box selectAll mr3 ml3"></input>全选</td>
+				</tr>
+				<tr>
+				  <td>添加个人借款：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3"></input>添加</label></td>
+				</tr>
+				<tr>
+				  <td>初审待审核借款：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3" checked="checked"></input>列表</label><label><input type="checkbox" class="check-Box mr3"></input>审核</label></td>
+				</tr>
+				<tr>
+				  <td>复审待审核借款：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3" checked="checked"></input>列表</label><label><input type="checkbox" class="check-Box mr3"></input>审核</label></td>
+				</tr>
+				<tr>
+				  <td>招标中的借款：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3" checked="checked"></input>列表</label><label><input type="checkbox" class="check-Box mr3"></input>审核</label><label><input type="checkbox" class="check-Box mr3"></input>人工处理</label></td>
+				</tr>
+				<tr>
+				  <td>还款中的借款：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3" checked="checked"></input>列表</label><label><input type="checkbox" class="check-Box mr3" checked="checked"></input>一周内到期</label><label><input type="checkbox" class="check-Box mr3"></input>投资记录</label></td>
+				</tr>
+				<tr>
+				  <td>已完成的借款：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3" checked="checked"></input>列表</label></td>
+				</tr>
+				<tr>
+				  <td>已流标借款：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3" checked="checked"></input>列表</label></td>
+				</tr>
+				<tr>
+				  <td>初审未通过的借款：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3" checked="checked"></input>列表</label></td>
+				</tr>
+				<tr>
+				  <td>复审未通过的借款：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3" checked="checked"></input>列表</label></td>
+				</tr>
+				<tr>
+				  <td>异常未满的借款：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3" checked="checked"></input>列表</label><label><input type="checkbox" class="check-Box mr3"></input>人工处理</label></td>
+				</tr>
+				<tr>
+				  <td>债权转让：</td>
+				  <td><label><input type="checkbox" class="check-Box mr3" checked="checked"></input>查看</label><label><input type="checkbox" class="check-Box mr3"></input>审核</label></td>
+				</tr>
+			</table>
+			<div class="txt-center box_btn mb50 mt10"><a class="btn_a">修改</a></div>
+		</div>
+		<!-- 内容区域结束 -->
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+<script type="text/javascript">
+	allSelect('.table_edit', '.selectAll');//全选
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>扩展管理-在线通知管理-通知信息模板管理_邮件模板</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<!-- 内容区域开始 -->
+		<div id="box" class="pos_rel">
+			<div class="bread f14 bold blue_deep">通知信息模板管理---(#UserName#表示接受信息用户的用户名，是一个动态参数，包含#号整体，表示用户名)</div>
+			<!-- 选项卡 -->
+			<div class="tab mlr10">
+				<ul class="tab_hd clearfix">
+					<li class="cur">邮件模板</li>
+					<li>短信模板</li>
+					<li>站内信模板</li>
+				</ul>
+				<!-- 邮件模板 -->
+				<div class="tab_bd mt10" style="display: block;">
+					<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+						<tr>
+						    <td>用户注册成功：</td>
+						    <td><textarea class="textarea">尊敬的“#UserName#”您好！<br>  感谢您光临财融天下网络借贷平台，我们将为您提供优质的服务！<br>  恭喜您注册成功，请点下面的链接即可完成激活#LINK#<br><div style="text-align: right;">财融天下 敬启</div></textarea><label class="red ml10">#LINK#表示激活链接，只在此邮件下有用</label></td>
+						</tr>
+						<tr>
+						    <td>安全中心更改安全问题：</td>
+						    <td><textarea class="textarea">你好，更改安全中心的邮件验证码是“#LINK#”</textarea><label class="red ml10">#LINK#表示验证码</label></td>
+						</tr>
+						<tr>
+						    <td>安全中心新手机安全码：</td>
+						    <td><textarea class="textarea">你好，你申请更换新手机的安全码为“#LINK#”</textarea><label class="red ml10">#LINK#表示验证码</label></td>
+						</tr>
+						<tr>
+						    <td>借款申请审核通过：</td>
+						    <td><textarea class="textarea">借款申请审核通过</textarea></td>
+						</tr>
+						<tr>
+						    <td>密码找回提示：</td>
+						    <td><textarea class="textarea">你好，您申请了密码找回，请点击验证链接#LINK#进行密码找回的下一步操作</textarea><label class="red ml10">#LINK#表示密码找回链接，只在此邮件下有用</label></td>
+						</tr>
+					</table>
+				</div>
+				<!-- 短信模板 -->
+				<div class="tab_bd mt10">
+				短信模板
+				</div>
+				<!-- 站内信模板 -->
+				<div class="tab_bd mt10">
+					站内信模板
+				</div>
+			</div>
+			<div class="mb50 mt10 pl_p15"><input type="submit" class="butn_blue" value="确定"></input></div>
+		</div>
+		<!-- 内容区域结束 -->
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+<script type="text/javascript">
+	fnTab('.tab');  //选项卡
+</script>
+</body>
+</html>

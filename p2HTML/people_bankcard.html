@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>个人中心-银行卡</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+    <meta http-equiv="x-ua-compatible" content="ie=10" />
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="css/icon_font/iconfont.css" rel="stylesheet" />
+    <link href="css/icon_font/fonts/fonts.css" rel="stylesheet" />
+   <!--[if IE]><script type="text/javascript" src="js/html5.js"></script> <![endif]-->
+   <script src="js/jquery-1.8.1.min.js"></script>
+   <script src="js/p2p.js"></script>
+   <script src="js/select.js"></script>
+   <script>
+    browerType();
+	</script>
+
+</head>
+<body>
+<div id="pop_up_box"> </div>
+<div class="body">
+    <div class="move_people">
+       <div class="move_hash_header">
+          <a href="people_zoe.html"><div class="move_back icon-arrow-left"></div></a>
+          <div class="move_cont">我的银行卡</div>
+          <div class="move_head_nav">
+              <span class="menu fs14">编辑</span>
+          </div>
+          <script>
+		  $(function(){
+			 /*people_bankcard效果*/
+			$(".bank_nav ul li i").hide();
+			$(".move_head_nav span").click(function()
+			{
+			   var str=$(".move_head_nav span").html();
+			   if(str=="编辑")
+			   {
+				 $(".move_head_nav span").html("完成");
+				 $(".bank_botton").hide();
+				 $(".bank_link").show();
+				 $(".bank_nav ul li i").show();
+			   }else{
+				 $(".move_head_nav span").html("编辑");
+				 $(".bank_botton").show();
+				 $(".bank_link").hide();
+				 $(".bank_nav ul li i").hide();  
+			   }
+			});   
+		  });
+		  </script>
+          <div class="cl"></div>
+        </div>
+        <div class="move_p_bankcard">
+            <div class="bank_nav p10">
+               <ul>
+                  <li><i class="icon icomoon c12">&#xe205</i> 中国工商银行 尾号5863</li>
+               </ul>
+               <div class="cl"></div>
+            </div>
+            <a href="people_addbankcard.html"><div class="bank_botton">绑定银行卡</div></a>
+            <div class="bank_link" style="display:none">提现细则?</div>
+            <!--bank_link-->
+              <div class="bank-box"> 
+                 <div class="bank_box1">
+                    <div class="bank_clo"><i class="icon icomoon fs14">&#xe205</i></div>
+                    <h1>提现细则</h1>
+                    <p>1、身份证、交易密码、提现银行卡均设置成功后才能进行提现操作。<br />2、提现费用:5万元以下-1元，5-10万（含10万）-2</p>
+                    
+                 </div>
+              </div>
+            <!--bank_link end-->
+        </div> 
+    </div>
+   </div> 
+    <div class="cl"></div>
+    <!---footer--->
+    <div class="footer">
+        <a href="#">关于我们</a><a href="#">安全保障</a><a href="#">帮助中心</a><a href="#">我要借款</a><a href="#">联系我们</a>
+    </div>
+    <div class="move_footer">
+        <a href="#">首页</a><a href="#">帮助中心</a><a href="#">关于我们</a><a href="#">联系我们</a>
+    </div>
+    <p class="footer_copyRight">©2015 量硕宏程投资管理有限公司 京ICP备14056037号 京公网安备1101050205440</p>
+    <div class="footer_safe"><img src="images/certification--logo-2.png"> <img src="images/certification--logo-3.png"> <img src="images/certification--logo-1.png"></div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全局-欢迎页</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<div id="box">
+			<!-- 内容区域开始 -->
+			<div class="bread f14 bold blue_deep">欢迎页</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">欢迎登陆</a><span class="fr">当前时间：<span class="time"></span></span></div>
+			<ul class="clearfix p10 layout_ab">
+				<li>
+					<div class="box_blue">
+						<h4>个人信息</h4>
+						<div class="content p10">
+							<p>您好，admin</p>
+							<p>所属角色：超级管理员权限</p>
+							<p>上次登陆时间：2015-10-12 09：37：33</p>
+							<p>上次登陆IP:1.202.25.210</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="box_blue">
+						<h4>系统信息</h4>
+						<div class="content p10">
+							<ul class="clearfix">
+								<li>融天下程序版本：融天下超级版</li>
+								<li>操作系统：Linux</li>
+								<li>服务器软件：nginx/1.7.6</li>
+								<li>MySQL版本：5.5.20-log</li>
+								<li>服务器协议：HTTP/1.1</li>
+								<li>服务器名称：free.taoweikeji.com</li>
+								<li>PHP运行方式：FPM-FCGI</li>
+								<li>PHP版本：5.4.33</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="box_blue">
+						<h4>待审核工作</h4>
+						<div class="content p10">
+							<ul>
+								<li>等待初审的标[<span class="red">1</span>]个</li>
+								<li>等待复审的标[<span>0</span>]个</li>
+							</ul>
+							<p>等待VIP认证的[<span>0</span>]个</p>
+							<p>等待实名认证的[<span>0</span>]个</p>
+							<p>额度申请等待审核的[<span>0</span>]个</p>
+							<p>上传资料等待审核的[<span class="red">0</span>]个</p>
+							<p>等待审核体现[<span>0</span>]个</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="box_blue">
+						<h4>开发团队</h4>
+						<div class="content p10">
+							<p>版权所有：北京淘伟科技有限公司</p>
+							<p>总策划：王洪涛</p>
+							<p>执行策划：张晓涛、董强、王林超、张吉庆、张少辉、豆厘杰</p>
+							<p>开发与支持团队：张晓涛、董强、王林超、张吉庆、张少辉、豆厘杰、邓玉华</p>
+							<p>UI设计：张少辉、豆厘杰、周景鸿、伊伟、袁晓燕、卢康</p>
+							<p>软件测试：王洋洋、彦敏、肖琳琳、罗高武、李春雨、袁红雷</p>
+							<p>官方网站：<a href="http://www.rongtianxia.com/" target="_blank" class="red bold">http://www.rongtianxia.com/</a></p>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!-- 内容区域结束 -->
+		</div>
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+<script>
+$(function(){
+	//设置相邻div高度相同
+	setNeighborHeight('.box_blue',2);
+
+});
+</script>
+</body>
+</html>

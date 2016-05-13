@@ -1,0 +1,155 @@
+﻿
+/*
+    name：yangxiusong
+    datetime：2015/9/6
+    copyRight：p2p1.0
+    version： 量硕宏程投资管理（北京）有限公司）
+*/
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/**public**/
+body {background:#fff;font-family:'Microsoft YaHei'; -webkit-text-size-adjust: none;/**fontSize yizhi**/}
+a,input {font-family:'Microsoft YaHei'}
+* {margin:0;padding:0;}
+li {list-style:none;float:left}
+.fl{float:left;}
+.fr {float:right}
+.cl{clear:both; overflow:hidden;}
+a {text-decoration:none;cursor:pointer;color:#666;}
+img{border:none;}
+i,em{font-style:normal;}
+button,html input[type="button"],input[type="reset"],input[type="submit"] {-webkit-appearance: button;cursor: pointer; }
+input[type="checkbox"],input[type="radio"] {box-sizing: border-box;padding: 0;}
+.img1 img{max-width:100%;}
+.tc{text-align:center;}
+.bgc{background:#f3f3f3;}
+.div10{height:10px;}
+.div5{height:5px;}
+.div60 {height:60px;clear:both;}
+.w100 {width:100%;}
+.mb10{margin-bottom:10px;}
+.mb15{margin-bottom:15px;}
+.mt15{margin-top:15px;}
+.mr10{margin-right:10px;}
+.mr20{margin-right:20px;}
+.ml10{margin-left:10px;}
+.p10{padding:10px;}
+.p20{padding:20px;}
+.br3{border-radius:3px;}
+.bc1 {background-color:#2483CB;color:#fff;}
+.bc2 {background-color:#00ADEF;color:#fff;}
+.bc3 {background-color:#FA6239!important;}
+.bc4 {background-color:#F3F3F3}
+.bc5 {background-color:#FFF}
+.bc6 {background:#E7F4FC!important;}
+.c5 {color:#ababab}
+.c6 {color:#666;}
+.c3 {color:#333;}
+.c9 {color:#999;}
+.c1 {color:#FD6138;}
+.c2 {color:#FA6239!important;}
+.c4 {color:#8BBE23}
+.c7 {color:#FAA93E}
+.c8 {color:#06B5FF}
+.c10 {color:#2483CB!important;}
+.c11{color:#61c405!important;}
+.c12{color:#fe3f3e!important;}
+.c13 {color:#FFD107}
+.fs12 {font-size:12px;}
+.fs14 {font-size:14px;}
+.fs16 {font-size:16px!important;}
+.fs18 {font-size:18px}
+.fs24 {font-size:24px!important;}
+.fs30 {font-size:30px!important;}
+.bb1 {border:1px solid #eee}
+.bb2{border:1px solid #cecece}
+.line{border-top:1px solid #eee; height:1px; background:#FFF;}
+.line1{border-bottom:2px solid #e1eaf3; height:10px;}
+.bs {box-shadow:3px 0px 0px 3px #559dd7}
+.p20{padding:20px;}
+hr{border-bottom:1px solid #CCC;}
+/**public*end*/
+
+
+/***********header***********/
+.header {border-bottom:1px solid #eee;}
+.header,.header_right ul li a{color:#A0A0A0}
+.header {height:30px;line-height:30px;background:#f6f6f6;}
+.header_left span {margin-right:20px;}
+.header_left span i{color:#C1C1C2;}
+.header_right ul li {margin-left:41px;}
+
+.header_nav {height:90px;line-height:60px;}
+.header_nav_left{width:40%;}
+.header_nav_left img{padding-top:21px; max-width:100%; float:left; margin-right:10px;}
+.header_nav_right ul li{width:120px;text-align:right;height:40px;line-height:40px;padding-top:26px;}
+.header_nav_right ul li p a:hover{color:#00aeef}
+.header_nav_right ul li dl {width:120px;position:relative;display:none;margin-left:25%;background:#fff}
+.header_nav_right ul li dl dt span{position:relative;top:-5px;margin-left:45%;display: block;width: 9px;height: 5px;background: transparent url(../img/nav-angle-up.png) no-repeat scroll center center;}
+.header_nav_right ul li dl dd {width:120px;height:30px;line-height:30px;text-align:center;}
+.header_nav_right ul li dl dd:hover {background:#ECF7FE}
+.header_nav_right ul li dl dd a {font-size: 14px;}
+.header_nav_right ul li dl dd a:hover,.header_nav_right ul li dl dd a:active{ color:#00aeef;}
+.header_nav_right p {margin-top:20px;font-size:12px}
+._header {box-shadow:-1px -1px 5px #999;height:90px;}
+._header_r {font-size:20px;margin-top:10px; margin-left:30px;font-family:'Microsoft YaHei';}
+/***********header*end**********/
+
+
+/************footer**************/
+.footer {clear:both;width:100%;margin:auto;text-align:center;background-color:#f3f3f3; border-top:1px solid #eeeeee;border-bottom:1px solid #eeeeee;height:66px;line-height:66px; text-align:center; }
+.footer a {font-size:14px;color:#999; margin:0px 3% 0px 3%;}
+.footer a:hover{font-size:14px;color:#00aeef;}
+.footer_copyRight {line-height:24px;color:#999;font-size:12px;text-align:center;width:100%;margin:auto;clear:both; background:#FFF;}
+.footer_safe{text-align:center; background:#FFF;}
+.footer_safe img{margin:0px 20px 50px 20px;}
+@media screen and (min-width: 1100px){/*当屏幕大于或等于1100px时,设置页面宽度为1100px*/  
+.w1100{width:1100px; margin:0 auto;}
+.header_nav_right ul li{width:130px;text-align:right;height:40px;line-height:40px;padding-top:26px;}
+.header_nav_right ul li dl {width:130px;position:relative;display:none;margin-left:20%;background:#fff; z-index:9999;}
+.header_nav_right ul li dl dt span{position:relative;top:-5px;margin-left:45%;display: block;width: 9px;height: 5px;background: transparent url(../img/nav-angle-up.png) no-repeat scroll center center;z-index:9999;}
+.header_nav_right ul li dl dd {width:130px;height:30px;line-height:30px;text-align:center;}
+.header_nav_right ul li dl dd a:hover,.header_nav_right ul li dl dd a:active{ color:#00aeef;}
+}
+@media screen and (min-width:960px) and (max-width:1099px) {/*当屏幕大于960小于1099时,设置页面宽度为99%*/  
+.w1100{width:100%; margin:0 auto;}
+.header_left{margin-left:5px;}
+.header_left span {margin-right:10px;}
+.header_right{margin-right:5px;}
+.header_right ul li {margin-left:20px;}
+.header_nav_right ul li{width:120px;text-align:right;height:40px;line-height:40px;padding-top:26px;}
+.header_nav_right ul li dl {width:120px;position:relative;display:none;margin-left:18%;background:#fff; z-index:9999;}
+.header_nav_right ul li dl dt span{position:relative;top:-5px;margin-left:43%;display: block;width: 9px;height: 5px;background: transparent url(../img/nav-angle-up.png) no-repeat scroll center center;z-index:9999;}
+.header_nav_right ul li dl dd {width:120px;height:30px;line-height:30px;text-align:center;}
+.header_nav_left{margin-left:5px;}
+.header_nav_right{ margin-right:5px;}
+}
+@media screen and (max-width:958px) {/*当屏幕小于或等于958px时,设置页面宽度为99%,用于平板电脑*/  
+.w1100{width:100%; margin:0 auto;}
+.header_left{margin-left:5px;}
+.header_left span {margin-right:10px;}
+.header_right{margin-right:5px;}
+.header_right ul li {margin-left:20px;}
+.header_nav_right ul li{width:110px;text-align:right;height:40px;line-height:40px;padding-top:26px;}
+.header_nav_right ul li dl {width:110px;position:relative;display:none;margin-left:18%;background:#fff; z-index:9999;}
+.header_nav_right ul li dl dt span{position:relative;top:-5px;margin-left:43%;display: block;width: 9px;height: 5px;background: transparent url(../img/nav-angle-up.png) no-repeat scroll center center; z-index:9999;}
+.header_nav_right ul li dl dd {width:110px;height:30px;line-height:30px;text-align:center;}
+.header_nav_left{margin-left:5px;}
+.header_nav_right{ margin-right:5px;}
+}
+@media screen and (max-width:800px) {/*当屏幕小于或等于800px时,设置页面宽度为99%,用于平板电脑mini*/  
+.w1100{width:100%; margin:0 auto;}
+.header_left{margin-left:5px;}
+.header_left span {margin-right:10px;}
+.header_right{margin-right:5px;}
+.header_right ul li {margin-left:20px;}
+.header_nav_right ul li{width:100px;text-align:right;height:40px;line-height:40px;padding-top:26px;}
+.header_nav_right ul li dl {width:100px;position:relative;display:none;margin-left:10%;background:#fff; z-index:9999;}
+.header_nav_right ul li dl dt span{position:relative;top:-5px;margin-left:45%;display: block;width: 9px;height: 5px;background: transparent url(../img/nav-angle-up.png) no-repeat scroll center center; z-index:9999;}
+.header_nav_right ul li dl dd {width:100px;height:30px;line-height:30px;text-align:center;}
+.header_nav_left{margin-left:5px;}
+.header_nav_right{ margin-right:5px;}
+}

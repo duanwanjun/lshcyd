@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>会员管理-会员资料列表-查看</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav_member.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<div id="box">
+			<!-- 内容区域开始 -->
+			<div class="bread f14 bold blue_deep">查看会员资料</div>
+			<!-- 选项卡 -->
+			<div class="tab mlr10">
+				<ul class="tab_hd clearfix">
+					<li class="cur">个人资料</li>
+					<li>联系方式</li>
+					<li>单位资料</li>
+					<li>财务状况</li>
+					<li>房产信息</li>
+					<li>联保情况</li>
+				</ul>
+				<!-- 个人资料 -->
+				<div class="tab_bd mt10" style="display: block;">
+					<table border="0" cellspacing="0" cellpadding="0" class="bord_topBot table_collapse table_edit table_fBold">
+				  		<tr>
+						    <td>真实姓名：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>身份证号：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>年龄：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>手机号码：</td>
+						    <td>18733658421</td>
+						</tr>
+						<tr>
+						    <td>性别：</td>
+						    <td><label><input type="radio" name="radio_sex" class="radio"></input>男</label><label><input type="radio" name="radio_sex" class="radio"></input>女</label></td>
+						</tr>
+						<tr>
+						    <td>婚姻状况：</td>
+						    <td><label><input type="radio" name="radio_marriage" class="radio"></input>未婚</label><label><input type="radio" name="radio_marriage" class="radio"></input>已婚</label></td>
+						</tr>
+						<tr>
+						    <td>最高学历：</td>
+						    <td><label><input type="radio" name="radio_educate" class="radio"></input>高中以下</label><label><input type="radio" name="radio_educate" checked="checked" class="radio"></input>大专或本科</label><label><input type="radio" name="radio_educate" class="radio"></input>硕士或硕士以上</label></td>
+						</tr>
+						<tr>
+						    <td>月收入：</td>
+						    <td><label><input type="radio" name="radio_income" class="radio"></input>5000以下</label><label><input type="radio" name="radio_income" checked="checked" class="radio"></input>5000-10000</label><label><input type="radio" name="radio_income" class="radio"></input>10000-50000</label><label><input type="radio" name="radio_income" class="radio"></input>50000以上</label></td>
+						</tr>
+						<!-- <tr class="none">
+						    <td>&nbsp;</td>
+						    <td><button type="submit">确定</button></td>
+						</tr> -->
+					</table>
+				</div>
+				<!-- 联系方式 -->
+				<div class="tab_bd mt10">
+					<table border="0" cellspacing="0" cellpadding="0" class="bord_topBot table_collapse table_edit table_fBold">
+				  		<tr>
+						    <td>现居住地址：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>住宅电话：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>第一联系人：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>关系：</td>
+						    <td><label><input type="radio" name="radio_relationship" class="radio"></input>家庭成员</label><label><input type="radio" name="radio_relationship" class="radio"></input>朋友</label><label><input type="radio" name="radio_relationship" class="radio"></input>商业伙伴</label></td>
+						</tr>
+						<tr>
+						    <td>手机号码：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>其他：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>第二联系人：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>关系：</td>
+						    <td><label><input type="radio" name="radio_relationship2" class="radio"></input>家庭成员</label><label><input type="radio" name="radio_relationship2" class="radio"></input>朋友</label><label><input type="radio" name="radio_relationship2" class="radio"></input>商业伙伴</label></td>
+						</tr>
+						<tr>
+						    <td>手机号码：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>其他：</td>
+						    <td>未填写</td>
+						</tr>
+						<!-- <tr class="none">
+						    <td>&nbsp;</td>
+						    <td><button type="submit">确定</button></td>
+						</tr> -->
+					</table>
+				</div>
+				<!-- 单位资料 -->
+				<div class="tab_bd mt10">
+					<table border="0" cellspacing="0" cellpadding="0" class="bord_topBot table_collapse table_edit table_fBold">
+				  		<tr>
+						    <td>单位名称：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>电话：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>地址：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>工作年限：</td>
+						    <td><label><input type="radio" name="radio_work" class="radio"></input>一年以下</label><label><input type="radio" name="radio_work" checked="checked" class="radio"></input>1-3年</label><label><input type="radio" name="radio_work" class="radio"></input>3-5年</label><label><input type="radio" name="radio_work" class="radio"></input>5-10年</label><label><input type="radio" name="radio_work" class="radio"></input>10年以上</label></td>
+						</tr>
+						<tr>
+						    <td>证明人：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>证明人手机：</td>
+						    <td>未填写</td>
+						</tr>
+						<!-- <tr class="none">
+						    <td>&nbsp;</td>
+						    <td><button type="submit">确定</button></td>
+						</tr> -->
+					</table>
+				</div>
+				<!-- 财务状况 -->
+				<div class="tab_bd mt10">
+					<table border="0" cellspacing="0" cellpadding="0" class="bord_topBot table_collapse table_edit table_fBold">
+				  		<tr>
+						    <td>月均收入：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>收入构成描述：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>月均支出：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>支出构成描述：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>住房条件：</td>
+						    <td><label><input type="radio" name="radio_fang" class="radio"></input>有商品房</label><label><input type="radio" name="radio_fang" checked="checked" class="radio"></input>有其他(非商品房)</label><label><input type="radio" name="radio_fang" class="radio"></input>无房</label></td>
+						</tr>
+						<tr>
+						    <td>房产价值：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>是否购车：</td>
+						    <td><label><input type="radio" name="radio_car" class="radio"></input>是</label><label><input type="radio" name="radio_car" checked="checked" class="radio"></input>否</label></td>
+						</tr>
+						<tr>
+						    <td>车辆价值：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>参股企业名称：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>参股企业出资额：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>其他资产描述：</td>
+						    <td>未填写</td>
+						</tr>
+						<!-- <tr class="none">
+						    <td>&nbsp;</td>
+						    <td><button type="submit">确定</button></td>
+						</tr> -->
+					</table>
+				</div>
+				<!-- 房产信息 -->
+				<div class="tab_bd mt10">
+					<table border="0" cellspacing="0" cellpadding="0" class="bord_topBot table_collapse table_edit table_fBold">
+				  		<tr>
+						    <td>房产地址：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>建筑面积：</td>
+						    <td>未填写(单位：平米)</td>
+						</tr>
+						<tr>
+						    <td>建筑年份：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>供款状况：</td>
+						    <td><label><input type="radio" name="radio_contributions" class="radio"></input>按揭中</label><label><input type="radio" name="radio_contributions" checked="checked" class="radio"></input>已供完房款</label></td>
+						</tr>
+						<tr>
+						    <td>所有权人1：</td>
+						    <td>未填写|产权份额%</td>
+						</tr>
+						<tr>
+						    <td>所有权人2：</td>
+						    <td>未填写|产权份额%</td>
+						</tr>
+					</table>
+					<h3 class="mt10 mb10 pl20">若房产尚在按揭中，请填写</h3>
+					<table border="0" cellspacing="0" cellpadding="0" class="bord_topBot table_collapse table_edit table_fBold">
+						<tr>
+						    <td>贷款年限：</td>
+						    <td>年</td>
+						</tr>
+						<tr>
+						    <td>每月供款：</td>
+						    <td>元</td>
+						</tr>
+						<tr>
+						    <td>尚欠贷款余额：</td>
+						    <td>元</td>
+						</tr>
+						<tr>
+						    <td>按揭银行：</td>
+						    <td>未填写</td>
+						</tr>
+						<!-- <tr class="none">
+						    <td>&nbsp;</td>
+						    <td><button type="submit">确定</button></td>
+						</tr> -->
+					</table>
+				</div>
+				<!-- 联保情况 -->
+				<div class="tab_bd mt10">
+					<table border="0" cellspacing="0" cellpadding="0" class="bord_topBot table_collapse table_edit table_fBold">
+				  		<tr>
+						    <td>第一联保人：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>关系：</td>
+						    <td><label><input type="radio" name="radio_relationship3" class="radio"></input>家庭成员</label><label><input type="radio" name="radio_relationship3" class="radio"></input>朋友</label><label><input type="radio" name="radio_relationship3" class="radio"></input>商业伙伴</label></td>
+						</tr>
+						<tr>
+						    <td>手机号码：</td>
+						    <td>未填写</td>
+						</tr>
+				  		<tr>
+						    <td>第二联保人：</td>
+						    <td>未填写</td>
+						</tr>
+						<tr>
+						    <td>关系：</td>
+						    <td><label><input type="radio" name="radio_relationship4" class="radio"></input>家庭成员</label><label><input type="radio" name="radio_relationship4" class="radio"></input>朋友</label><label><input type="radio" name="radio_relationship4" class="radio"></input>商业伙伴</label></td>
+						</tr>
+						<tr>
+						    <td>手机号码：</td>
+						    <td>未填写</td>
+						</tr>
+						<!-- <tr class="none">
+						    <td>&nbsp;</td>
+						    <td><button type="submit">确定</button></td>
+						</tr> -->
+					</table>
+				</div>
+			</div>
+			<!-- 内容区域结束 -->
+		</div>
+	</div>	
+    <!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+<script type="text/javascript">
+	fnZebraStrips('.table_edit' ,'tr');//斑马线
+	fnTab('.tab');  //选项卡
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>扩展管理-参数管理-实名认证设置</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<!-- 内容区域开始 -->
+		<div id="box" class="pos_rel">
+			<div class="bread f14 bold blue_deep">实名认证接口管理</div>
+			<!-- 选项卡 -->
+			<div class="tab mlr10">
+				<ul class="tab_hd clearfix">
+					<li class="cur">实名认证接口参数</li>
+				</ul>
+				<!-- 实名认证接口参数 -->
+				<div class="tab_bd mt10 tab_provider" style="display: block;">
+					<ul class="ul_list">
+						<li class="border_bot"><span class="name">目前正在使用的认证提供商：</span><span class="red bold">实名认证服务已关闭</span></li>
+						<li class="border_bot"><span class="name">请选择认证提供商：</span><span class="tab_provider_hd"><label class="mr10"><input type="radio" name="radio_select" class="radio" checked="checked"></input>关闭实名认证服务平台</label><label class="mr10"><input type="radio" name="radio_select" class="radio"></input>中诚信源</label><label class="mr10"><input type="radio" name="radio_select" class="radio"></input>上海满正</label></span></li>
+					</ul>
+					<ul class="ul_list tab_provider_bd dis_n" style="display: block;">
+						<li class="border_bot"><span class="name">当前实名认证服务状态：</span>关闭</li>
+						<li class="border_bot"><span class="name">友情提示：</span>当您停止实名认证服务时，会员提交的身份信息</li>
+					</ul>
+					<ul class="ul_list tab_provider_bd dis_n">
+						<li class="border_bot"><span class="name">用户名：</span><input type="text" class="text_350" value="000"></input></li>
+						<li class="border_bot"><span class="name">密码：</span><input type="password" class="text_350" value="000"></input></li>
+						<li class="border_bot"><span class="name">服务代码：</span><input type="text" class="text_350" value="000"></input></li>
+					</ul>
+					<ul class="ul_list tab_provider_bd dis_n">
+						<li class="border_bot"><span class="name">用户编号：</span><input type="text" class="text_350" value="000"></input></li>
+						<li class="border_bot"><span class="name">MD5密钥：</span><input type="text" class="text_350" value="000"></input></li>
+						<li class="border_bot"><span class="name">DES密钥：</span><input type="text" class="text_350" value="000"></input></li>
+					</ul>
+				</div>
+			</div>
+			<div class="pl_p15 mt10 mb10"><input type="submit" class="butn_blue" value="确定"></input><span class="gray">(所有方式修改提交一次即可)</span></div>
+		</div>
+		<!-- 内容区域结束 -->
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+
+<script type="text/javascript">
+	fnTab('.tab');  //选项卡
+	fnTab('.tab_provider');  //选项卡
+</script>
+</body>
+</html>

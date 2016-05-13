@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>借款管理-个人借款-add</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<!-- 富文本编辑器 -->
+	<link href="css/umeditor.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" charset="utf-8" src="js/umeditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/umeditor.min.js"></script>
+    <script type="text/javascript" src="js/zh-cn.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav_loanManagement.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<div id="box" class="mlr10 pos_rel">
+			<!-- 内容区域开始 -->
+			<div class="toolBar bold f14 mt10">发布借款标</div>
+			<h3 class="txt-center title_30 mt10">借款信息</h3>
+			<div class="double_line mb10"></div>
+			<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_add pos_rel_td">
+				<tr>
+				  <td class="txt-right" width="15%">借款用户：</td>
+				  <td width="35%">
+					  <select class="sel_120">
+					  	<option>--请选择--</option>
+					  	<option>wanglincha</option>
+					  	<option>zhangsan</option>
+					  </select>
+				  </td>
+				  <td class="txt-right" width="15%">选择借款类型：</td>
+				  <td width="35%">
+					  <select class="sel_120">
+					  	<option>--请选择--</option>
+					  	<option>信用标</option>
+					  	<option>担保标</option>
+					  	<option>秒还标</option>
+					  	<option>净值标</option>
+					  	<option>抵押标</option>
+					  </select>
+				  </td>
+				</tr>
+				<tr>
+				  <td class="txt-right">信贷总金额：</td>
+				  <td><input type="text" class="text_150"></input></td>
+				  <td class="txt-right">年利率：</td>
+				  <td><input type="text" class="text_150"></input><label class="ml10">%(<span class="red">利率范围：0.05%-36%</span>)</label></td>
+				</tr>
+				<tr>
+				  <td class="txt-right">借款用途：</td>
+				  <td>
+					  <select class="sel_120">
+					  	<option>--请选择--</option>
+					  	<option>短期周转</option>
+					  	<option>生意周转</option>
+					  	<option>股票投资</option>
+					  	<option>购物消费</option>
+					  	<option>不提现借款</option>
+					  	<option>创业借款</option>
+					  	<option>其他借款</option>
+					  </select>
+					  <label class="remark">说明借款成功后的具体用途<em></em></label>
+				  </td>
+				  <td class="txt-right">借款期限：</td>
+				  <td>
+					  <select class="sel_120">
+					  	<option>--请选择--</option>
+					  	<option>1个月</option>
+					  	<option>2个月</option>
+					  	<option>3个月</option>
+					  	<option>4个月</option>
+					  	<option>5个月</option>
+					  	<option>6个月</option>
+					  	<option>7个月</option>
+					  	<option>8个月</option>
+					  	<option>9个月</option>
+					  	<option>10个月</option>
+					  	<option>11个月</option>
+					  	<option>12个月</option>
+					  </select>
+					  <label class="remark">借款成功后，打算以几（天）个月的时间来还清贷款<em></em></label>
+				  </td>
+				</tr>
+				<tr>
+				  <td class="txt-right">最低投标金额：</td>
+				  <td>
+					  <select class="sel_120">
+					  	<option>--请选择--</option>
+					  	<option>50元</option>
+					  	<option>100元</option>
+					  	<option>200元</option>
+					  	<option>300元</option>
+					  	<option>500元</option>
+					  	<option>1000元</option>
+					  	<option>2000元</option>
+					  	<option>3000元</option>
+					  	<option>4000元</option>
+					  	<option>5000元</option>
+					  </select>
+					  <label class="remark">允许投资者对一个借款标的投标总金额的限制<em></em></label>
+				  </td>
+				  <td class="txt-right">最多投标总额：</td>
+				  <td>
+					  <select class="sel_120">
+					  	<option>没有限制</option>
+					  	<option>1500元</option>
+					  	<option>2000元</option>
+					  	<option>3000元</option>
+					  	<option>4000元</option>
+					  	<option>5000元</option>
+					  	<option>6000元</option>
+					  	<option>10000元</option>
+					  </select>
+					  <label class="remark">允许投资者对一个借款标的投标总额的限制<em></em></label>
+				  </td>
+				</tr>
+				<tr>
+				  <td class="txt-right">有效时间：</td>
+				  <td>
+					  <select class="sel_120">
+					  	<option>--请选择--</option>
+					  	<option>1天</option>
+					  	<option>2天</option>
+					  </select>
+				  </td>
+				  <td class="txt-right">还款方式：</td>
+				  <td>
+					  <select class="sel_120">
+					  	<option>--请选择--</option>
+					  	<option>按天到期还款</option>
+					  	<option>按月分期还款</option>
+					  	<option>按季分期还款</option>
+					  	<option>每月提前付息</option>
+					  	<option>一次性还款</option>
+					  </select>
+					  <label class="remark remark_c">1.按天到期还款是按天算利息，到期的那一天同时还本息。2.按月分期还款是指贷款者借款成功后，每月还本息。3.按季分期还款是指贷款者借款成功后，每月还息，季度还本。4.到期还本按月付息是指贷款者借款成功后，每月还息，最后一月还同时还本金。<em></em></label>
+				  </td>
+				</tr>
+				<tr>
+				  <td class="txt-right">是否有投标奖励：</td>
+				  <td colspan="3"><input type="checkbox" class="check-Box"></input></td>
+				</tr>
+				<tr>
+				  <td class="txt-right">是否有投标待收限制：</td>
+				  <td colspan="3"><input type="checkbox" class="check-Box"></input></td>
+				</tr>
+			</table>
+			<h3 class="txt-center title_30 mt10">借款的详细说明</h3>
+			<div class="double_line mb10"></div>
+			<table border="0" cellspacing="0" cellpadding="0" class="table_add">
+				<tr>
+					<td width="15%" class="txt-right">标题：</td>
+					<td><input type="text" class="text_350"></input><label class="ml10"><span class="mr10">是否定向标</span><input type="checkbox" class="check-Box"></input></label></td>
+				</tr>
+				<tr>
+					<td class="txt-right vertical_middle">借款说明：</td>
+					<td>
+						<!--style给定宽度可以影响编辑器的最终宽度-->
+						<script type="text/plain" id="myEditor" style="width:80%;height:300px;"></script>
+					</td>
+				</tr>
+			</table>
+			<div class="txt-center box_btn mb50 mt10"><a class="btn_a">添加</a></div>
+			<!-- 内容区域结束 -->
+		</div>
+	</div>	
+    <!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+<script type="text/javascript">
+	$('.remark_c').each(function(){
+		var h=-parseInt($(this).outerHeight()/2-$(this).parent().outerHeight()/2);
+		$(this).css('top', h);
+	});
+
+	$('.remark').parent('td').each(function(){
+		$(this).mouseover(function(){
+			$(this).find('.remark').show();
+		});
+		$(this).mouseout(function(){
+			$(this).find('.remark').hide();
+		});
+	});
+
+	//实例化编辑器
+    UM.getEditor('myEditor');
+</script>
+</body>
+</html>

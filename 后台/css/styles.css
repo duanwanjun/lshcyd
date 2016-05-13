@@ -1,0 +1,91 @@
+@import "common.css";
+
+/* 盒子-蓝色-欢迎页 */
+.box_blue{ border: 1px solid #c7d8ea; margin: 0 10px 20px 10px;}
+.box_blue h4{ border-bottom: 1px solid #c7d8ea; color: #1e325c; height: 26px; line-height: 26px; padding-left: 10px; font-size: 14px;}
+.box_blue .content{}
+
+/* 列表表格 */
+.table_list ,.table_edit ,.table_add ,.table_details{ width: 100%;}
+.table_list td{ padding: 0 2px; /* height: 30px; */ line-height: 30px; border-bottom: 1px solid #e3e6eb; }
+.table_list td a{ color: #3b5999; margin-right: 5px; }
+.table_list td a:hover{ text-decoration: underline; }
+.table_list td a:visited{ color: #fcc26a; }
+.table_list thead td:first-child ,.table_list tr td:first-child ,.table_list th:first-child{ text-align: center; }
+.table_list thead td ,.table_list th{ background: #f2f4f6; color: #7d7d7d; border-width: 1px; border-style: solid; border-color: #fff #c4cace #c1c8d2 #fbffe4; height: 22px; line-height: 22px;}
+.table_list .checkbox{ width: 36px; border-left: none;}
+.table_list .linkImg{width: 160px; }
+.table_list .linkImg img{ width:50px; height: 40px; }
+.table_list th{ font-weight: normal; text-align: left; padding: 0 2px;}
+.table_list2 td{ padding: 5px 2px; }
+
+.bord_bot td ,.border_bot{ border-bottom: 1px dashed #e2e2e2; }
+.bord_bot .none td{ border-bottom: none; }
+.bord_topBot td{ border-top: 1px solid #e2e2e2; border-bottom: 1px solid #e2e2e2;}
+
+/* 表格-编辑 */
+.table_edit tr td:first-child{ text-align: right; width: 170px;}
+.table_edit td{ padding: 8px 6px; line-height: 24px; vertical-align: top;}
+.table_edit label{ margin-right:10px;}
+.table_edit .text{ width: 350px; padding: 0 2px; line-height: 22px; height: 22px;}
+.table_edit .textarea{width: 350px; height: 120px; padding: 2px;}
+.table_edit .select{ width: 356px; height: 24px;}
+.table_edit button{ background: #567ab4; border:none; color: #fff; padding: 10px 40px; cursor: pointer;}
+.table_edit .logo_img img{ width: 66px; height: 50px; }
+
+/* 表格-信息发布 */
+.table_add{}
+.table_add td{ padding: 8px 6px; line-height: 24px; vertical-align: top;}
+.table_add .remark{ display: none; position: absolute; left: 140px; top: 4px; max-width: 320px; background: #fff9c9; border:1px solid #c7bf93; border-radius: 3px; padding: 5px 8px; line-height: 20px; z-index: 2;}
+.table_add .remark em{ display: block; width: 10px; height: 12px; overflow: hidden; font-size: 0px; background: url(../images/icon_arrow_remark.jpg) no-repeat left top; position: absolute; top: 50%; left: -8px; margin-top: -6px; }
+.pos_rel_td td{position: relative;}
+
+/* 选项卡 */
+.tab{}
+.tab_hd{ border-bottom:2px solid #cbc9ca; padding-left: 100px; }
+.tab_hd li{ float: left; padding:0 20px; color: #f2f2f2; background: #cbc9ca; border-width: 2px 2px 0 2px; border-color: #cbc9ca; border-style: solid; height: 34px; line-height: 34px; margin-right:2px; margin-bottom: -2px; cursor: pointer;}
+.tab_hd li.cur{ background: #fff; color: #000;}
+.tab_bd{ display: none; }
+
+/* 表格-详细信息 */
+.table_detail{ width: 100%; border: 1px solid #666666; }
+.table_detail tr td:first-child{ background-color: #f1f5f1; text-align: right;}
+.table_detail td{ border-bottom: 1px solid #999999; line-height: 40px;}
+.table_details td{ line-height: 24px; padding: 4px 6px; vertical-align: top;}
+
+/* 信息详情对话框 */
+.dialog-detial{ width: 500px; position: absolute; display: none; background-color: #fff; border: 1px solid #929292; border-radius: 5px;
+  -webkit-box-shadow:0 0 20px rgba(0, 0, 0, .5);
+  -moz-box-shadow:0 0 20px rgba(0, 0, 0, .5);
+  box-shadow:0 0 20px rgba(0, 0, 0, .5);
+}
+
+/* 每行第一个单元格字体加粗 */
+.table_fBold tr td:first-child{ font-weight: bold; }
+
+.img_size img{ height: 150px; }
+.img_size2 img{ height: 100px; }
+.img_100 img{ width: 100px; height: 100px; }
+.img_small img{ width: 100px; height: 76px; }
+
+.icon_authenticate{ display:inline-block; width: 40px; height: 40px; margin: 0 5px 5px 0; font-size: 0px; overflow: hidden; text-indent: -9999px; background: #eff8fd url(../images/icon_authenticate.png) no-repeat;}
+.re_IDCard{ background-position: 0 0; }
+.re_phone{ background-position: 0 -39px; }
+.re_email{ background-position: 0 -78px; }
+.re_vip{ background-position: 0 -117px; }
+.re_lock{ background-position: 0 -156px; }
+
+.circle_green{ background: url(../images/bg_green_circle.png) no-repeat left top; display: inline-block; width: 36px; height: 36px; line-height: 36px; color: #fff; font-size: 20px; overflow: hidden; text-align: center; }
+
+/* 提示信息框 */
+.box_callout{ background: #fefacf; border: 1px solid #008000; padding: 2px 0px 2px 60px; color: #005b9f; line-height: 26px;}
+
+/* 统计 */
+.statistics_box{ width: 33.3%; }
+.statistics_box .title{ background: #f2f4f6; line-height: 26px; border-width: 1px; border-style: solid; border-color: #fff #c4cace #c1c8d2 #fbffe4; padding-left: 2px;}
+.statistics_ul{ border-right: 1px solid #e3e6eb; border-bottom: 1px solid #e3e6eb; line-height: 28px; padding: 10px;}
+.statistics_ul .name{ display: inline-block; width: 35%; text-align: right; }
+
+.ul_list{ line-height: 24px; }
+.ul_list li{padding:8px 0px; }
+.ul_list .name{ display: inline-block; width: 170px; text-align: right; padding: 0 12px 0 6px;  }

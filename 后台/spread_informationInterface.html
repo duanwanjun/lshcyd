@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>扩展管理-在线通知管理-通知信息接口管理</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<!-- 内容区域开始 -->
+		<div id="box" class="pos_rel">
+			<div class="bread f14 bold blue_deep">通知信息接口管理</div>
+			<!-- 选项卡 -->
+			<div class="tab mlr10">
+				<ul class="tab_hd clearfix">
+					<li class="cur">邮箱信息</li>
+					<li>手机参数</li>
+				</ul>
+				<!-- 邮箱信息 -->
+				<div class="tab_bd mt10" style="display: block;">
+					<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+						<tr>
+						    <td>SMTP服务器：</td>
+						    <td><input type="text" class="text" value="smtp.idccenter.net"></input><label class="red ml10">如：smtp.idccenter.net</label></td>
+						</tr>
+						<tr>
+						    <td>SMTP服务器端口：</td>
+						    <td><input type="text" class="text" value="25"></input><label class="red ml10">如：25</label></td>
+						</tr>
+						<tr>
+						    <td>SMTP用户名：</td>
+						    <td><input type="text" class="text" value="10"></input><label class="red ml10">如：154525@126.com</label></td>
+						</tr>
+						<tr>
+						    <td>SMTP服务器密码：</td>
+						    <td><input type="password" class="text" value="50000"></input></td>
+						</tr>
+					</table>
+				</div>
+				<!-- 手机参数 -->
+				<div class="tab_bd mt10">
+					<div class="box_callout mt10">
+						<p>1.本系统提供三个短信提供商接口（吉信通、漫道和亿美软通短信接口），客户可根据喜好自行选择任意短信接口！</p>
+						<p>2.吉信通官网访问地址：http://www.winic.org/ 漫道短信官网访问地址：http://www.zucp.net/ 亿美软通短信官网访问地址：http://www.emay.cn/</p>
+						<p>3.当您需要短信充值时，可直接去相应的短信提供商官网开通帐户并充值！</p>
+						<p>4.当您所选择的短信平台出现故障时，您可以选择“关闭短信平台服务”来暂时停止向会员发送短信的服务，以保证您系统其他操作的正常使用！</p>
+					</div>
+					<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+						<tr>
+						    <td>当前正在使用的短信提供商：</td>
+						    <td><label class="red bold">漫道短信提供商</label></td>
+						</tr>
+						<tr>
+						    <td>请选择短信提供商：</td>
+						    <td><label><input type="radio" name="radio_category" class="radio"></input>关闭短信平台服务</label><label><input type="radio" name="radio_category" class="radio" checked="checked"></input>漫道短信提供商</label><label><input type="radio" name="radio_category" class="radio"></input>洋洋短信提供商</label></td>
+						</tr>
+						<tr>
+						    <td>购买短信，请联系QQ：</td>
+						    <td>14785236</td>
+						</tr>
+						<tr>
+						    <td>当前剩余短信条数：</td>
+						    <td>102785条</td>
+						</tr>
+						<tr>
+						    <td>sn：</td>
+						    <td><input type="text" class="text" value="50000"></input></td>
+						</tr>
+						<tr>
+						    <td>没人限购数量：</td>
+						    <td><input type="text" class="text" value="1000"></input></td>
+						</tr>
+						<tr>
+						    <td>密码：</td>
+						    <td><input type="password" class="text" value="1545"></input></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="mb50 mt10 pl_p15"><input type="submit" class="butn_blue" value="确定"></input><span class="gray">(所有方式修改提交一次即可)</span></div>
+		</div>
+		<!-- 内容区域结束 -->
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+<script type="text/javascript">
+	fnTab('.tab');  //选项卡
+</script>
+</body>
+</html>

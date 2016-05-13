@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>资金统计-会员资金变动记录-资金记录</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<!-- 内容区域开始 -->
+		<div id="box" class="pos_rel mlr10">
+			<div class="toolBar clearfix mt10">
+				<span class="fl mr10">从&nbsp;&nbsp;<input class="Wdate" type="text" onClick="WdatePicker()"></input>&nbsp;&nbsp;到&nbsp;&nbsp;<input class="Wdate" type="text" onClick="WdatePicker()"></input></span><a href="#" class="btn">统计</a>
+			</div>
+			<div class="mb50 bord_left_gray">
+				<div class="clearfix">
+					<div class="statistics_box fl">
+						<div class="title">会员统计</div>
+						<ul class="statistics_ul">
+							<li><span class="name">会员总数：</span>21人</li>
+							<li><span class="name">VIP</span>4人</li>
+							<li><span class="name">通过身份认证：</span>6人</li>
+							<li><span class="name">通过手机认证：</span>21人</li>
+						</ul>
+					</div>
+					<div class="statistics_box fl">
+						<div class="title">资金进出统计</div>
+						<ul class="statistics_ul">
+							<li><span class="name">线上充值：</span>￥2,000.00</li>
+							<li><span class="name">ATM转账充值：</span>￥2,000.00</li>
+							<li><span class="name">支付宝充值：</span>￥2,000.00</li>
+							<li><span class="name">成功提现：</span>￥2,000.00</li>
+							<li><span class="name">总计：</span>￥2,000.00</li>
+						</ul>
+					</div>
+					<div class="statistics_box fl">
+						<div class="title">借款统计</div>
+						<ul class="statistics_ul">
+							<li><span class="name">成功借出本金总额：</span>￥2,000.00</li>
+							<li><span class="name">已还款总额</span>￥2,000.00</li>
+							<li><span class="name">未还款总额：</span>￥2,000.00</li>
+							<li><span class="name">冻结中的保证金总额：</span>￥2,000.00</li>
+						</ul>
+					</div>
+					<div class="statistics_box fl">
+						<div class="title">逾期统计</div>
+						<ul class="statistics_ul">
+							<li><span class="name">逾期已还款总额：</span>￥2,000.00</li>
+							<li><span class="name">逾期未还款总款</span>￥2,000.00</li>
+							<li><span class="name">催收费总额：</span>￥2,000.00</li>
+							<li><span class="name">逾期罚息总额：</span>￥2,000.00</li>
+						</ul>
+					</div>
+					<div class="statistics_box fl">
+						<div class="title">网站收益统计</div>
+						<ul class="statistics_ul">
+							<li><span class="name">借入者成交管理费总额：</span>￥2,000.00</li>
+							<li><span class="name">投资者成交管理费总额：</span>￥2,000.00</li>
+							<li><span class="name">提现手续费总额：</span>￥2,000.00</li>
+							<li><span class="name">VIP费用总额：</span>￥2,000.00</li>
+							<li><span class="name">实名认证费用总额：</span>￥2,000.00</li>
+							<li><span class="name">总计：</span>￥2,000.00</li>
+						</ul>
+					</div>
+					<div class="statistics_box fl">
+						<div class="title">投资者收益统计</div>
+						<ul class="statistics_ul">
+							<li><span class="name">成功借款利息总额：</span>￥2,000.00</li>
+							<li><span class="name">成功借款投标奖励总额：</span>￥2,000.00</li>
+							<li><span class="name">邀请注册奖金总额：</span>￥2,000.00</li>
+							<li><span class="name">注册奖金总额：</span>￥2,000.00</li>
+							<li><span class="name">线下充值总额：</span>￥2,000.00</li>
+							<li><span class="name">总计：</span>￥2,000.00</li>
+						</ul>
+					</div>
+					<div class="statistics_box fl">
+						<div class="title">股票配资统计</div>
+						<ul class="statistics_ul">
+							<li><span class="name">天天盈总配资金额：</span>￥2,000.00</li>
+							<li><span class="name">月月盈总配资金额：</span>￥2,000.00</li>
+							<li><span class="name">操盘手总配资金额：</span>￥2,000.00</li>
+							<li><span class="name">天天盈总管理费：</span>￥2,000.00</li>
+							<li><span class="name">天天盈已出管理费：</span>￥2,000.00</li>
+							<li><span class="name">月月盈总管理费：</span>￥2,000.00</li>
+							<li><span class="name">月月盈已出管理费：</span>￥2,000.00</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- 内容区域结束 -->
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+<script language="javascript" type="text/javascript" src="js/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript">
+	setNeighborHeight('.statistics_ul',3);
+</script>
+</body>
+</html>

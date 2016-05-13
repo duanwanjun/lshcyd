@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全局-广告管理-add</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<!-- 富文本编辑器 -->
+	<link href="css/umeditor.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" charset="utf-8" src="js/umeditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/umeditor.min.js"></script>
+    <script type="text/javascript" src="js/zh-cn.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav_index.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<div id="box" class="pos_rel">
+			<!-- 内容区域开始 -->
+			<div class="bread f14 bold blue_deep">添加广告</div>
+			<div class="mlr10">
+				<div class="double_line mt10 mb5"></div>
+				<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+				  <tr>
+				    <td>广告类型：</td>
+				    <td><label><input type="radio" name="radio_type" checked="checked" class="radio"></input>普通广告</label><label><input type="radio" name="radio_type" class="radio"></input>多图广告</label><label class="red">*</label></td>
+				  </tr>
+				  <tr>
+				    <td>广告位置：</td>
+				    <td><input type="text" class="text"></input><label class="red ml10">*</label></td>
+				  </tr>
+				  <tr>
+				    <td>是否去除P标签：</td>
+				    <td><label><input type="radio" name="radio_del" checked="checked" class="radio"></input>否</label><label><input type="radio" name="radio_del" class="radio"></input>是</label></td>
+				  </tr>
+				  <tr>
+				    <td>广告内容：</td>
+				    <td>
+				    	<!--style给定宽度可以影响编辑器的最终宽度-->
+						<script type="text/plain" id="myEditor" style="width:80%;height:240px;"></script>
+				    </td>
+				  </tr>
+				  <tr class="none">
+				    <td>&nbsp;</td>
+				    <td><button type="submit">确定</button></td>
+				  </tr>
+				</table>
+			</div>
+			<!-- 内容区域结束 -->
+		</div>
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+<script type="text/javascript">
+	//实例化编辑器
+    UM.getEditor('myEditor');
+</script>
+</body>
+</html>

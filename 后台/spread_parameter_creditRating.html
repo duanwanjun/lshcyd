@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>扩展管理-参数管理-信用级别管理</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<!-- 内容区域开始 -->
+		<div id="box" class="pos_rel">
+			<div class="bread f14 bold blue_deep">信用级别管理</div>
+			<!-- 选项卡 -->
+			<div class="tab mlr10">
+				<ul class="tab_hd clearfix">
+					<li class="cur">信用级别管理</li>
+				</ul>
+				<!-- 信用级别管理 -->
+				<div class="tab_bd mt10" style="display: block;">
+					<div class="toolBar clearfix"><a href="#" class="btn" onclick="fnAddLevel2($(this),'.table_list',4)">添加一个级别</a><span class="ml10">如需新增级别图标，请先将图片通过FTP上传到您服务器项目下的UF\leveico\目录下</span>
+						<div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div>
+					</div>
+					<table class="table_list table_list2" cellspacing="0" cellpadding="0">
+						<tr>
+							<th class="checkbox"><input type="checkbox" class="check-Box selectAll"></input></th>
+							<th width="10%">序号</th>
+							<th>级别名称</th>
+							<th>级别开始积分</th>
+							<th>级别结束积分</th>
+							<th>级别图标名称</th>
+							<th>图标显示</th>
+							<th width="10%" class="bor_no_right">操作</th>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="check-Box"></input></td>
+							<td>6</td>
+							<td><input type="text" class="text_100" value="HR"></input></td>
+							<td><input type="text" class="text_100" value="0"></input></td>
+							<td><input type="text" class="text_100" value="20"></input></td>
+							<td><input type="text" class="text_100 icon_name" value="Top6.png"></input></td>
+							<td class="icon_img"></td>
+							<td><a href="javascript:;" onclick="fnDel(this,'btn_sure','dialog_del')">删除</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="check-Box"></input></td>
+							<td>6</td>
+							<td><input type="text" class="text_100" value="E"></input></td>
+							<td><input type="text" class="text_100" value="21"></input></td>
+							<td><input type="text" class="text_100" value="70"></input></td>
+							<td><input type="text" class="text_100 icon_name" value="Top5.png"></input></td>
+							<td class="icon_img"></td>
+							<td><a href="javascript:;" onclick="fnDel(this,'btn_sure','dialog_del')">删除</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="check-Box"></input></td>
+							<td>6</td>
+							<td><input type="text" class="text_100" value="D"></input></td>
+							<td><input type="text" class="text_100" value="71"></input></td>
+							<td><input type="text" class="text_100" value="120"></input></td>
+							<td><input type="text" class="text_100 icon_name" value="Top4.png"></input></td>
+							<td class="icon_img"></td>
+							<td><a href="javascript:;" onclick="fnDel(this,'btn_sure','dialog_del')">删除</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="check-Box"></input></td>
+							<td>6</td>
+							<td><input type="text" class="text_100" value="C"></input></td>
+							<td><input type="text" class="text_100" value="121"></input></td>
+							<td><input type="text" class="text_100" value="150"></input></td>
+							<td><input type="text" class="text_100 icon_name" value="Top3.png"></input></td>
+							<td class="icon_img"></td>
+							<td><a href="javascript:;" onclick="fnDel(this,'btn_sure','dialog_del')">删除</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="check-Box"></input></td>
+							<td>6</td>
+							<td><input type="text" class="text_100" value="B"></input></td>
+							<td><input type="text" class="text_100" value="151"></input></td>
+							<td><input type="text" class="text_100" value="170"></input></td>
+							<td><input type="text" class="text_100 icon_name" value="Top2.png"></input></td>
+							<td class="icon_img"></td>
+							<td><a href="javascript:;" onclick="fnDel(this,'btn_sure','dialog_del')">删除</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" class="check-Box"></input></td>
+							<td>6</td>
+							<td><input type="text" class="text_100" value="A"></input></td>
+							<td><input type="text" class="text_100" value="171"></input></td>
+							<td><input type="text" class="text_100" value="999999999"></input></td>
+							<td><input type="text" class="text_100 icon_name" value="Top1.png"></input></td>
+							<td class="icon_img"></td>
+							<td><a href="javascript:;" onclick="fnDel(this,'btn_sure','dialog_del')">删除</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="box_btn mb50 mt10 pl_p15"><a class="btn_a">确定</a><span class="gray">(判断方式是[>=开始积分，<结束积分]所有方式修改提交一次即可)</span></div>
+		</div>
+		<!-- 内容区域结束 -->
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+<!-- 确认删除对话框 -->
+<div class="dialogBox" id="dialog_del">
+	<a href="javascript:;" class="close" onclick="fnClose('dialog_del')">点击关闭</a>
+	<h3>删除</h3>
+	<div class="p20">
+		<p>确认删除这条信息？</p>
+		<div class="txt-center box_btn mt20"><a href="javascript:;" class="btn_a" id="btn_sure">确认</a><a href="javascript:;" onclick="fnClose('dialog_del')" class="btn_a">取消</a></div>
+	</div>
+</div>
+<script type="text/javascript">
+	fnTab('.tab');  //选项卡
+	allSelect('.table_list', '.selectAll');//全选
+	fnSetIcon('.icon_img','.icon_name');
+</script>
+</body>
+</html>

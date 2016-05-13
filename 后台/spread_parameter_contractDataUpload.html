@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>扩展管理-参数管理-合同资料上传</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<!-- 内容区域开始 -->
+		<div id="box" class="pos_rel">
+			<div class="bread f14 bold blue_deep">合同居间方资料上传</div>
+			<!-- 选项卡 -->
+			<div class="tab mlr10">
+				<ul class="tab_hd clearfix">
+					<li class="cur">合同居间方资料上传</li>
+				</ul>
+				<!-- 基本设置 -->
+				<div class="tab_bd mt10" style="display: block;">
+					<div class="box_callout">
+						<p>1.允许上传格式：bmp,gif,png,jpg，建议尺寸100px*100px</p>
+						<p>2.该功能用于在借款合同内容中显示平台居间方的相关必要资料</p>
+					</div>
+					<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+						<tr>
+						    <td>居间方合同章上传：</td>
+						    <td><input type="file" class="file vertical_top"></input></td>
+						</tr>
+						<tr>
+						    <td>居间方合同章缩略图：</td>
+						    <td><!-- <div class="img_100"><img src="images/logo_02.png" alt="融天下"></div> --><span class="gray">无缩略图</span></td>
+						</tr>
+						<tr>
+						    <td>居间方公司名称：</td>
+						    <td><input type="text" class="text" value="14"></input></td>
+						</tr>
+						<tr>
+						    <td>居间方公司地址：</td>
+						    <td><input type="text" class="text" value="10"></input></td>
+						</tr>
+						<tr>
+						    <td>居间方联系电话：</td>
+						    <td><input type="text" class="text" value="50000"></input></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="txt-center mt10 mb10"><input type="submit" class="butn_blue" value="确定"></input><input type="submit" class="butn_blue" value="返回"></input></div>
+		</div>
+		<!-- 内容区域结束 -->
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+
+<script type="text/javascript">
+	fnTab('.tab');  //选项卡
+</script>
+</body>
+</html>

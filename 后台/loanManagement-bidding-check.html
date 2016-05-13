@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>借款管理-招标中的借款-审核借款</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<!-- 富文本编辑器 -->
+	<link href="css/umeditor.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" charset="utf-8" src="js/umeditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/umeditor.min.js"></script>
+    <script type="text/javascript" src="js/zh-cn.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav_loanManagement.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<div id="box" class="pos_rel">
+			<!-- 内容区域开始 -->
+			<div class="bread f14 bold blue_deep">审核借款</div>
+			<!-- 选项卡 -->
+			<div class="tab mlr10">
+				<ul class="tab_hd clearfix">
+					<li class="cur">基本信息</li>
+					<li>审核信息</li>
+					<li>借款方图片资料</li>
+				</ul>
+				<!-- 基本信息 -->
+				<div class="tab_bd mt10" style="display: block;">
+					<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+				  		<tr>
+						    <td>借款标题：</td>
+						    <td><input type="text" class="text" value="测试用例"></input><label class="red ml10">*</label></td>
+						</tr>
+						<tr>
+						    <td>还款方式：</td>
+						    <td>
+								<select class="sel_200">
+									<option>按天到期还款</option>
+									<option>按月到期还款</option>
+									<option>按季到期还款</option>
+								</select>
+						    	<label class="red ml10">*</label>
+						    </td>
+						</tr>
+						<tr>
+						    <td>借款金额：</td>
+						    <td><input type="text" class="text" value="5000.00"></input><label class="red ml10">*</label></td>
+						</tr>
+						<tr>
+						    <td>年化利率：</td>
+						    <td><input type="text" class="text" value="10.00"></input><label class="red ml10">*</label></td>
+						</tr>
+						<tr>
+						    <td>借款期限：</td>
+						    <td><input type="text" class="text" value="1"></input><label class="red ml10">*</label></td>
+						</tr>
+						<tr>
+						    <td>借款说明：</td>
+						    <td>
+						    	<!--style给定宽度可以影响编辑器的最终宽度-->
+								<script type="text/plain" id="myEditor" style="width:80%;height:240px;"></script>
+						    </td>
+						</tr>
+						<!-- <tr class="none">
+						    <td>&nbsp;</td>
+						    <td><button type="submit">确定</button></td>
+						</tr> -->
+					</table>
+				</div>
+				<!-- 审核信息 -->
+				<div class="tab_bd mt10">
+					<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+						<tr>
+						    <td>是否允许自动投标：</td>
+						    <td><label><input type="radio" name="radio_auto" class="radio"></input>否</label><label><input type="radio" name="radio_auto" checked="checked" class="radio"></input>是</label></td>
+						</tr>
+						<tr>
+						    <td>是否允许为预发标：</td>
+						    <td><label><input type="radio" name="radio_pre" checked="checked" class="radio"></input>否</label><label><input type="radio" name="radio_pre" class="radio"></input>是</label></td>
+						</tr>
+						<tr>
+						    <td>借款标分类：</td>
+						    <td>信用标</td>
+						</tr>
+				  		<tr>
+						    <td>借款管理费：</td>
+						    <td><input type="text" class="text" value="5.00"></input><label class="red ml10">默认为按后台设置计算出来的，如果私下有协议可以改</label></td>
+						</tr>
+						<tr>
+						    <td>募集时间(天)：</td>
+						    <td><input type="text" class="text" value="0"></input><label class="red ml10">在前台展示天数，如果担心在设定时间内不能募集完成，可修改延长</label></td>
+						</tr>
+						<tr>
+						    <td>最多投标总额：</td>
+						    <td><input type="text" class="text" value="0"></input><label class="red ml10">0表示无限制</label></td>
+						</tr>
+						<tr>
+						    <td>投标待收金额限制设置：</td>
+						    <td><input type="text" class="text" value="0.00"></input><label class="red ml10">0.00表示无限制</label></td>
+						</tr>
+						<tr>
+						    <td>当日最低投标总额限制设置：</td>
+						    <td><input type="text" class="text" value="0.00"></input><label class="red ml10">0.00表示无限制</label></td>
+						</tr>
+						<tr>
+						    <td>是否通过：</td>
+						    <td><label><input type="radio" name="radio_pass" checked="checked" class="radio"></input>初审通过，借款中</label><label><input type="radio" name="radio_pass" class="radio"></input>流标</label></td>
+						</tr>
+						<tr>
+						    <td>初审处理意见：</td>
+						    <td><textarea class="textarea">无意见</textarea><label class="red ml10">*</label></td>
+						</tr>
+						<!-- <tr class="none">
+						    <td>&nbsp;</td>
+						    <td><button type="submit">确定</button></td>
+						</tr> -->
+					</table>
+				</div>
+				<!-- 借款方图片资料 -->
+				<div class="tab_bd mt10">
+					<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+						<tr>
+						    <td>商品图片：</td>
+						    <td><a href="javascript:;" class="btn_files">选择本地图片(单图最大为2MB，支持多选)</a></td>
+						</tr>
+						<tr>
+						    <td>图片预览：</td>
+						    <td><img src="images/none/bd_logo1_31bdc765.png"></td>
+						</tr>
+						<!-- <tr class="none">
+						    <td>&nbsp;</td>
+						    <td><button type="submit">确定</button></td>
+						</tr> -->
+					</table>
+				</div>
+			</div>
+			<div class="box_btn mb50 mt10 pl_p15"><a class="btn_a">确定</a></div>
+			<!-- 内容区域结束 -->
+		</div>
+	</div>	
+    <!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+<script type="text/javascript">
+	fnTab('.tab');  //选项卡
+
+	//实例化编辑器
+    UM.getEditor('myEditor');
+</script>
+</body>
+</html>

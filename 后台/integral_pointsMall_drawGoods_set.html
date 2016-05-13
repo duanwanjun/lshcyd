@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>积分管理-积分商城管理-抽奖商品列表</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<!-- 内容区域开始 -->
+		<div id="box" class="pos_rel">
+			<div class="bread f14 bold blue_deep">添加/编辑商城抽奖物品信息</div>
+			<!-- 选项卡 -->
+			<div class="tab mlr10">
+				<ul class="tab_hd clearfix">
+					<li class="cur">基本设置</li>
+				</ul>
+				<!-- 基本设置 -->
+				<div class="tab_bd mt10" style="display: block;">
+					<div class="box_callout">
+						<p>1.抽奖物品分为两类，即金钱和投资积分</p>
+						<p>2.当会员抽中礼金后，系统会自动给该中奖会员资金帐户添加相应的奖金金额</p>
+						<p>3.当会员抽中积分后，系统会自动给该中奖会员增加相应的投资积分</p>
+					</div>
+					<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+				  		<tr>
+						    <td>所属类别：</td>
+						    <td><label><input type="radio" name="radio_category" class="radio"></input>礼金</label><label><input type="radio" name="radio_category" class="radio"></input>积分</label><label><input type="radio" name="radio_category" class="radio" checked="checked"></input>奖品</label></td>
+						</tr>
+						<tr>
+						    <td>奖品名称：</td>
+						    <td><input type="text" class="text" value="000"></input></td>
+						</tr>
+						<tr>
+						    <td>奖品图片：</td>
+						    <td><input type="file" class="file vertical_top" value="0"></input><label class="gray ml10 img_size"><img src="images/logo_02.png" alt="融天下"></label></td>
+						</tr>
+						<tr>
+						    <td>奖品数量：</td>
+						    <td><input type="text" class="text" value="50"></input></td>
+						</tr>
+						<tr>
+						    <td>剩余奖品数量：</td>
+						    <td><input type="text" class="text" value="14"></input></td>
+						</tr>
+						<tr>
+						    <td>中奖几率：</td>
+						    <td><input type="text" class="text" value="10"></input><label class="red ml10">*即中奖的概率，数值越小，中奖几率越小</label></td>
+						</tr>
+						<tr>
+						    <td>可兑换价值：</td>
+						    <td><input type="text" class="text" value="50000"></input><label class="red ml10">*填写奖励的积分值或金钱，必须是整数</label></td>
+						</tr>
+						<tr>
+						    <td>排序：</td>
+						    <td><input type="text" class="text" value="0"></input></td>
+						</tr>
+						<tr>
+						    <td>是否上线：</td>
+						    <td><label><input type="radio" name="radio_online" class="radio" checked="checked"></input>上线</label><label><input type="radio" name="radio_online" class="radio"></input>不上线</label></td>
+						</tr>
+						<tr class="none">
+						    <td>&nbsp;</td>
+						    <td><button type="submit">确定</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- 内容区域结束 -->
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+
+<script type="text/javascript">
+	fnTab('.tab');  //选项卡
+</script>
+</body>
+</html>

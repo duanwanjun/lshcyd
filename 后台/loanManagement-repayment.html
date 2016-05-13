@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>借款管理-还款中借款</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav_loanManagement.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<div id="box">
+			<!-- 内容区域开始 -->
+			<div class="bread f14 bold blue_deep">还款中借款</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">一周内到期标</a><a href="#" class="btn">搜索/筛选借款</a>
+				<div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div>
+			</div>
+			<div class="mlr10">
+				<table class="table_list" id="table_list" cellspacing="0" cellpadding="0">
+					<thead>
+						<td class="checkbox"><input type="checkbox" id="selectAll" class="check-Box"></input></td>
+						<td width="3%">ID</td>
+						<td width="8%">用户名</td>
+						<td width="9%">手机号</td>
+						<td width="7%">客服</td>
+						<td width="9%">标题</td>
+						<td width="8%">借款金额</td>
+						<td width="8%">已还金额</td>
+						<td width="8%">借款期限</td>
+						<td width="8%">借款手续费</td>
+						<td width="9%">还款方式</td>
+						<td width="11%">最近还款时间</td>
+						<td class="bor_no_right">操作</td>
+					</thead>
+					<tr>
+						<td><input type="checkbox" class="check-Box"></input></td>
+						<td>6</td>
+						<td><span class="blue_light">张三</span></td>
+						<td>17733658456</td>
+						<td>admin</td>
+						<td><span class="blue_light">测试用例</span></td>
+						<td>5000.00</td>
+						<td>0</td>
+						<td>12个月</td>
+						<td>1000.00</td>
+						<td>一次性还款</td>
+						<td>2016-04-07 11:37</td>
+						<td><a href="#">备注</a><a href="#">通知</a><a href="loanManagement-repayment-investors.html">投资人记录</a></td>
+					</tr>
+
+
+				</table>
+			</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">一周内到期标</a><a href="#" class="btn">搜索/筛选借款</a>
+				<div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div>
+			</div>
+			<!-- 内容区域结束 -->
+		</div>
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+<script type="text/javascript">
+	allSelect('#table_list', '#selectAll');
+</script>
+</body>
+</html>

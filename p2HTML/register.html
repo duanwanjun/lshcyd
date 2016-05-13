@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>    
+    <title>注册会员</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+    <meta http-equiv="x-ua-compatible" content="ie=10" />
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="css/icon_font/fonts/fonts.css" rel="stylesheet" />
+    <script src="js/jquery-1.8.1.min.js"></script>
+    <script src="js/jQuery.blockUI.js"></script>
+    <script src="js/jquery.SuperSlide.js"></script>
+    <script src="js/p2p.js"></script>
+    <script>
+    browerType();
+	</script>
+</head>
+<body>
+<div id="pop_up_box"> </div>
+<div class="body">
+        <div class="_header">
+        <!--header_nav-->
+          <div class="header_nav w1100">
+            <div class="header_nav_left fl"><img src="img/logo-duan.png" />
+            <p class="_header_r">注册会员</p></div>
+            <div class="header_nav_right fr">  
+               <p>还没有账号？<a href="register.html" class="c1">立即注册</a></p>
+               <p class="move_login"><a href="login.html">登录</a></p>
+            </div>
+          </div>
+        <!--/header_nav-->
+        </div>
+        
+    <div class="line"></div>
+    <!--center_div-->
+    
+    <div class="w100 move_register">
+        <!-- <div class="container_banner"> -->
+         <div id="container_banner">
+           <div class="bcontainer">
+            <div class="homebanner">
+              <div id="bannerSlider" class="bannerSlider">
+                <a href="#" target="_blank"><IMG alt="" src="img/banner01.jpg" /></a>
+                <a href="#" target="_blank"><IMG alt="" src="img/banner02.jpg" /></a>
+                <a href="#" target="_blank"><IMG alt="" src="img/banner01.jpg" /></a>
+                <a href="#" target="_blank"><IMG alt="" src="img/banner02.jpg" /></a>
+              </div>
+              <div class="hd">
+                <ul>
+                   <li></li><li></li><li></li><li></li>
+                </ul>
+              </div>
+            </div>
+           </div>
+         </div>
+		 <script>
+          jQuery(".bcontainer").slide( { mainCell:"#bannerSlider",effect:"fade",delayTime : 1000,interTime : 3000,autoPlay:true} );
+          </script>
+         <div class="cl"></div>
+		<!-- </div> -->
+    </div>
+    <!--/center_div-->
+    <div class="register_main">
+      <div class="register_all">
+        <ul>
+            <li>
+                <dl>
+                    <dt><b>*</b>用户名：</dt>
+                    <dd><input class="br3" type="text" value="用户名" onfocus="if (value =='用户名'){value=''}"onblur="if (value
+==''){value='用户名'}" /> <i class="icon icomoon c11">&#xe915;</i> <p>用户名重复</p></dd>
+                </dl>   
+            </li>
+              <li>
+                <dl>
+                    <dt><b>*</b>密码：</dt>
+                    <dd><input class="br3" type="text" value="输入密码" onfocus="if (value =='输入密码'){value=''}"onblur="if (value
+==''){value='输入密码'}" /> <i class="icon icomoon c12">&#xe916;</i><p>不符合规则或包含非法字符</p></dd>
+                </dl>   
+            </li>
+              <li>
+                <dl>
+                    <dt><b>*</b>确认密码：</dt>
+                    <dd><input  type="text" value="确认密码" onfocus="if (value =='确认密码'){value=''}"onblur="if (value
+==''){value='确认密码'}" /> <i class="icon icomoon c12">&#xe916;</i><p>两次输入密码不同</p></dd>
+                </dl>
+            </li>
+              <li>
+                <dl>
+                    <dt><b>*</b>验证码：</dt>
+                    <dd class="yzm_input"><input type="text" value="验证码" onfocus="if (value =='验证码'){value=''}"onblur="if (value
+==''){value='验证码'}"/><span class="yzm_img">XAyk</span> <span><a href="##">换一张</a></span><p>验证码输入不正确</p></dd>                    
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>&nbsp;</dt>
+                    <dd><label class="move_checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i><span>我已阅读并同意<a href="#">《量硕宏程网站服务协议》</a></span></label></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>&nbsp;</dt>
+                    <dd><input class="login_btn _login_btn" type="submit" value="立即注册" /></dd>
+                </dl>
+                 
+            </li>
+        </ul>
+      </div>
+       
+    </div>
+    <!--move login-->
+    <div class="move_register_main">
+         <div class="move_register_login">
+           <ul>
+             <li>建议输入常用手机号：</li>
+             <li><dd><input type="text" class="move_num" value="手机号码" onfocus="if (value =='手机号码'){value=''}" onblur="if (value==''){value='手机号码'}" Required aria-required="true" /></dd></li>
+             <li>建议输入所获验证码：</li>
+             <li><dd><input class="move_yzm" type="text" value="验证码" onfocus="if (value =='验证码'){value=''}" onblur="if (value==''){value='验证码'}" Required aria-required="true" /> <input class="move_botton" type="button" value="获取验证码" /></dd></li>
+             <li>
+                <dd><label class="move_checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i><span>我已阅读并同意<a href="#">《量硕宏程网站服务协议》</a></span></label></dd>
+            </li>
+            <li>
+               <dd><input class="login_btn _login_btn register_btn" type="submit" value="下一步" /></dd>
+            </li>
+            <li class="fs12">已有账号，直接登录</li>
+           </ul>
+        </div>
+    </div>
+      <!--move login end-->
+      <!--modifylogin_link-->
+        <div class="bank-box"> 
+           <div class="bank_box1 tc">
+              <div class="bank_clo"><i class="icon icomoon fs14">&#xe205</i></div>
+              <h1>提示</h1>
+              <p>验证码失败：验证码已经过期</p>
+              <p><input class="login_btn _login_btn register_clo" type="submit" value="确定" /></p>
+           </div>
+        </div>
+      <!--modifylogin end-->
+      </div>
+     <div class="cl"></div>       
+     <!---footer--->
+     <div class="footer">
+        <a href="#">关于我们</a><a href="#">安全保障</a><a href="#">帮助中心</a><a href="#">我要借款</a><a href="#">联系我们</a>
+    </div>
+    <div class="move_footer">
+        <a href="#">首页</a><a href="#">帮助中心</a><a href="#">关于我们</a><a href="#">联系我们</a>
+    </div>
+    <p class="footer_copyRight">©2015 量硕宏程投资管理有限公司 京ICP备14056037号 京公网安备1101050205440</p>
+    <div class="footer_safe"><img src="images/certification--logo-2.png"> <img src="images/certification--logo-3.png"> <img src="images/certification--logo-1.png"></div>
+
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>充值管理-充值记录总列表</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<!-- 内容区域开始 -->
+		<div id="box" class="pos_rel">
+			<div class="bread f14 bold blue_deep">充值管理</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">搜索充值</a>
+				<div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div>
+			</div>
+			<div class="mlr10">
+				<table class="table_list" id="table_list" cellspacing="0" cellpadding="0">
+					<tr>
+						<th class="checkbox"><input type="checkbox" id="selectAll" class="check-Box"></input></th>
+						<th width="4%">ID</th>
+						<th width="10%">会员名</th>
+						<th width="9%">充值方式</th>
+						<th width="9%">充值金额</th>
+						<th width="12%">充值时间</th>
+						<th width="9%">充值状态</th>
+						<th>对账订单号</th>
+						<th width="7%">处理人</th>
+						<th width="7%" class="bor_no_right">操作</th>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="check-Box"></input></td>
+						<td>6</td>
+						<td>百度</td>
+						<td>乐富充值</td>
+						<td>10000.00</td>
+						<td>2016-04-12 16:33</td>
+						<td>充值未完成</td>
+						<td>无</td>
+						<td>admin</td>
+						<td><a href="javascript:;" onclick="BtPopload('dialog_operate')">操作</a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">搜索充值</a>
+				<div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div>
+			</div>
+		</div>
+		<!-- 内容区域结束 -->
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+
+<!-- 确认删除对话框 -->
+<div class="dialogBox" id="dialog_operate">
+	<a href="javascript:;" class="close" onclick="fnClose('dialog_operate')">点击关闭</a>
+	<h3>处理充值</h3>
+	<div class="p20">
+	    <h4 class="tit">充值处理</h4>
+		<div class="border_bot clearfix p10">
+			<div class="fl txt-right" style="width: 30%;"><span class="mr10">充值结果:</span></div>
+			<div class="fl" style="width: 70%;"><label class="mr10"><input type="radio" name="radio_recharge" checked="checked" class="radio"></input>充值成功</label><label class="mr10"><input type="radio" name="radio_recharge" class="radio"></input>充值失败</label></div>
+		</div>
+		<div class="txt-center box_btn mt20"><a href="javascript:;" onclick="fnClose('dialog_operate')" class="btn_a">确定</a></div>
+	</div>
+</div>
+<script type="text/javascript">
+	allSelect('#table_list', '#selectAll');
+</script>
+</body>
+</html>

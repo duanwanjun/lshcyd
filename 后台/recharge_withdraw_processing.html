@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>提现管理-审核通过处理中</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<!-- 内容区域开始 -->
+		<div id="box" class="pos_rel">
+			<div class="bread f14 bold blue_deep">提现处理中列表</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">搜索充值</a><button class="btn_but">搜索充值</button><input type="button" value="搜索充值" class="btn_but"></input><input type="submit" value="搜索充值" class="btn_but"></input>
+				<div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div>
+			</div>
+			<div class="mlr10">
+				<table class="table_list" id="table_list" cellspacing="0" cellpadding="0">
+					<tr>
+						<th class="checkbox"><input type="checkbox" id="selectAll" class="check-Box"></input></th>
+						<th width="4%">ID</th>
+						<th width="7%">会员名</th>
+						<th width="7%">真实姓名</th>
+						<th width="7%">提现金额</th>
+						<th width="7%">提现手续费</th>
+						<th width="7%">应到账金额</th>
+						<th width="12%">提现时间</th>
+						<th width="7%">提现状态</th>
+						<th width="7%">处理人</th>
+						<th width="12%">处理时间</th>
+						<th>处理说明</th>
+						<th width="7%" class="bor_no_right">操作</th>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="check-Box"></input></td>
+						<td>6</td>
+						<td><span class="blue_light">会员名</span></td>
+						<td>乐富充值</td>
+						<td>10000.00元</td>
+						<td>10000.00元</td>
+						<td>10000.00元</td>
+						<td>2016-04-12 16:33</td>
+						<td>已提现</td>
+						<td>admin</td>
+						<td>2016-04-12 16:33</td>
+						<td>fhhjk</td>
+						<td><a href="javascript:;" onclick="BtPopload('dialog_operate')">编辑</a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">搜索充值</a>
+				<div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div>
+			</div>
+		</div>
+		<!-- 内容区域结束 -->
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+
+<!-- 编辑对话框 -->
+<div class="dialogBox" id="dialog_operate" style="width: 780px;">
+	<a href="javascript:;" class="close" onclick="fnClose('dialog_operate')">点击关闭</a>
+	<h3>admin->的编辑信息</h3>
+	<div class="p20">
+	    <h4 class="tit">处理提现</h4>
+		<!-- 选项卡 -->
+		<div class="tab mlr10">
+			<ul class="tab_hd clearfix">
+				<li class="cur">提现信息</li>
+			</ul>
+			<!-- 基本设置 -->
+			<div class="tab_bd mt10" style="display: block;">
+				<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+			  		<tr>
+					    <td>体现会员：</td>
+					    <td>123355</td>
+					</tr>
+					<tr>
+					    <td>提现金额：</td>
+					    <td>100000.00</td>
+					</tr>
+					<tr>
+					    <td>提现时间：</td>
+					    <td>2016-04-13</td>
+					</tr>
+					<tr>
+					    <td>提现手续费：</td>
+					    <td><input type="text" class="text bg_blue_leep border_gray" value="50.00" readonly="true"></input><label class="red ml10">不可修改</label></td>
+					</tr>
+					<tr>
+					    <td>到账金额：</td>
+					    <td>10000.00</td>
+					</tr>
+					<tr>
+					    <td>真实姓名：</td>
+					    <td>huh</td>
+					</tr>
+					<tr>
+					    <td>银行名称：</td>
+					    <td>招商银行</td>
+					</tr>
+					<tr>
+					    <td>银行账号：</td>
+					    <td>1245678</td>
+					</tr>
+					<tr>
+					    <td>银行开户行：</td>
+					    <td>招商银行</td>
+					</tr>
+					<tr>
+					    <td><span class="red">处理结果</span></td>
+					    <td>&nbsp;</td>
+					</tr>
+					<tr>
+					    <td>提现状态：</td>
+					    <td><label><input type="radio" name="radio_status" class="radio" checked="checked"></input>已提现</label><label><input type="radio" name="radio_status" class="radio"></input>审核未通过</label></td>
+					</tr>
+					<tr>
+					    <td>处理说明：</td>
+					    <td><textarea class="textarea">15151568</textarea><label class="red ml10">*该处为会员收到的短信内容</label></td>
+					</tr>
+					<tr class="none">
+					    <td>&nbsp;</td>
+					    <td><button type="submit">确定</button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	allSelect('#table_list', '#selectAll');
+	fnTab('.tab');  //选项卡
+</script>
+</body>
+</html>

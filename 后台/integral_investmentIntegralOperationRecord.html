@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>积分管理-投资积分操作记录</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<!-- 内容区域开始 -->
+		<div id="box" class="pos_rel">
+			<div class="bread f14 bold blue_deep">会员交易明细<span class="fr">还款积分：<em class="red">3281</em>分&nbsp;投资积分：<em class="red">3281</em>分&nbsp;消费积分：<em class="red">-2300</em>分&nbsp;其他积分：<em class="red">-1450</em>分&nbsp;</span></div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">搜索/筛选会员</a>
+				<div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div>
+			</div>
+			<div class="mlr10">
+				<table class="table_list" id="table_list" cellspacing="0" cellpadding="0">
+					<tr>
+						<th class="checkbox"><input type="checkbox" id="selectAll" class="check-Box"></input></th>
+						<th width="4%">ID</th>
+						<th>用户名</th>
+						<th width="9%">交易类型</th>
+						<th width="9%">影响积分</th>
+						<th width="9%">可用积分</th>
+						<th width="9%">总积分</th>
+						<th width="12%">发生时间</th>
+						<th width="30%" class="bor_no_right">说明</th>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="check-Box"></input></td>
+						<td>6</td>
+						<td><span class="blue_light">百度</span></td>
+						<td>消费积分（3）</td>
+						<td>-40</td>
+						<td>15846</td>
+						<td>155251</td>
+						<td>2016-04-13 10:30</td>
+						<td>未领取</td>
+					</tr>
+				</table>
+			</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">搜索/筛选会员</a>
+				<div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div>
+			</div>
+		</div>
+		<!-- 内容区域结束 -->
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+
+<script type="text/javascript">
+	allSelect('#table_list', '#selectAll');
+</script>
+</body>
+</html>

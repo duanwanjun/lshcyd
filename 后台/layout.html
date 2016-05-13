@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>整体框架</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 -->
+<div id="layout_left" class="layout_left white">
+	<ul id="nav_slider">
+		<li><span class="selected">全局设置</span>
+			<ul class="nav_slider_son" style="display: block;">
+				<li><a href="index-welcome.html" class="cur">欢迎页</a></li>
+				<li><a href="index-siteSetting.html">网站设置</a></li>
+				<li><a href="index-links.html">友情链接</a></li>
+				<li><a href="index-adManager.html">广告管理</a></li>
+				<li><a href="#">登陆借口管理</a></li>
+				<li><a href="#">自动执行参数</a></li>
+				<li><a href="index-operateLog.html">后台操作日志</a></li>
+			</ul>
+		</li>
+		<li><span>缓存管理</span>
+			<ul class="nav_slider_son">
+				<li><a href="#">0000</a></li>
+				<li><a href="#">11111</a></li>
+				<li><a href="#">22222</a></li>
+				<li><a href="#">33333</a></li>
+				<li><a href="#">4444416</a></li>
+				<li><a href="#">5555526</a></li>
+				<li><a href="#">6666666</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class="layout_right">
+	<!-- 设置 -->
+	<a href="#" class="set"></a>
+	<!-- 主导航 -->
+	<ul id="nav" class="clearfix f18">
+		<li><a href="index-welcome.html">全局</a></li>
+		<li><a href="loanManagement-add.html">借款管理</a></li>
+		<li><a href="#">众筹管理</a></li>
+		<li><a href="member-manage-memberList.html">会员管理</a></li>
+		<li><a href="">积分管理</a></li>
+		<li><a href="">充值提现</a></li>
+		<li><a href="">文章管理</a></li>
+		<li><a href="">菜单管理</a></li>
+		<li><a href="">资金统计</a></li>
+		<li><a href="competence_userRights.html">权限</a></li>
+		<li><a href="">数据库</a></li>
+		<li><a href="">扩展管理</a></li>
+	</ul>
+	<div id="layout_content" class="layout_content">
+		<div id="box">
+			<!-- 内容区域开始 -->
+			<div class="bread f14 bold blue_deep">欢迎页</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">欢迎登陆</a><span class="fr">当前时间：<span class="time"></span></span></div>
+			<!-- 内容区域结束 -->
+		</div>
+	</div>
+	<!-- 页脚 -->
+	<div id="footer" class="txt-center white f14">当前用户：<span id="user_name">admin</span>  今天是：<span class="time"></span></div>
+</div>
+</body>
+</html>

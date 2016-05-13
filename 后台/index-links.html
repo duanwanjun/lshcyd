@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全局-友情链接</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav_index.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<div id="box">
+			<!-- 内容区域开始 -->
+			<div class="bread f14 bold blue_deep">友情链接管理</div>
+			<div id="links_add" class="mlr10 mb10 dis_n">
+				<div class="f14 bold blue_deep mb10">添加友情链接&nbsp;[&nbsp;<a href="javascript:;" class="blue" id="btn_hide" onclick="fnHide()">隐藏</a>&nbsp;]</div>
+				<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+				  <tr>
+				    <td>友情链接名称：</td>
+				    <td><input type="text" class="text" value="www.rongtianxia.com"></input><label class="gray ml10">前台显示的链接文字</label></td>
+				  </tr>
+				  <tr>
+				    <td>链接地址：</td>
+				    <td><input type="text" class="text" value="http://www.rongtianxia.com"></input><label class="gray ml10">文字的网址</label></td>
+				  </tr>
+				  <tr>
+				    <td>显示位置：</td>
+				    <td>
+					    <select class="select">
+					    	<option>首页</option>
+					    	<option>内页</option>
+					    	<option>其他</option>
+					    </select>
+				    <label class="gray ml10">友情链接在前台的哪个页面显示</label></td>
+				  </tr>
+				  <tr>
+				    <td>显示顺序：</td>
+				    <td><input type="text" class="text" value="0"></input><label class="gray ml10">数字越大顺序越靠前</label></td>
+				  </tr>
+				  <tr>
+				    <td>友情链接图片：</td>
+				    <td><input type="file" class="file vertical_top" value="0"></input><label class="gray ml10 logo_img"><img src="images/logo_02.png" alt="融天下"></label></td>
+				  </tr>
+				  <tr>
+				    <td>是否显示：</td>
+				    <td><label><input type="radio" name="radio_show" checked="checked" class="radio"></input>是</label><label><input type="radio" name="radio_show" class="radio"></input>否</label><label class="red">*</label></td>
+				  </tr>
+				  <tr class="none">
+				    <td>&nbsp;</td>
+				    <td><button type="submit">添加</button></td>
+				  </tr>
+				</table>
+			</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn" id="btn_add" onclick="fnShow()">添加友情链接</a><a href="#" class="btn">搜索友情链接</a><a href="#" class="btn" onclick="fnCheckedDel('table_list')">删除友情链接</a>
+				<div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div>
+			</div>
+			<div class="mlr10">
+				<table class="table_list" id="table_list" cellspacing="0" cellpadding="0">
+					<thead>
+						<td class="checkbox"><input type="checkbox" id="selectAll" class="check-Box"></input></td>
+						<td width="4%">ID</td>
+						<td width="10%">链接文字</td>
+						<td>链接地址</td>
+						<td class="linkImg">链接图片</td>
+						<td width="10%">显示位置</td>
+						<td width="10%">是否显示</td>
+						<td width="5%">排序</td>
+						<td width="10%" class="bor_no_right">操作</td>
+					</thead>
+					<tr>
+						<td><input type="checkbox" class="check-Box"></input></td>
+						<td>6</td>
+						<td>百度</td>
+						<td><a href="https://www.baidu.com/" target="_blank">https://www.baidu.com/</a></td>
+						<td class="linkImg"><a href="https://www.baidu.com/" target="_blank"><img src="images/none/bd_logo1_31bdc765.png"></a></td>
+						<td>首页</td>
+						<td>是</td>
+						<td>0</td>
+						<td><a href="javascript:;" onclick="fnShow()">编辑</a><a href="javascript:;" onclick="fnDel(this,'btn_sure','dialog_del')">删除</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="check-Box"></input></td>
+						<td>5</td>
+						<td>百度</td>
+						<td><a href="https://www.baidu.com/" target="_blank">https://www.baidu.com/</a></td>
+						<td class="linkImg"><a href="https://www.baidu.com/" target="_blank"><img src="images/none/bd_logo1_31bdc765.png"></a></td>
+						<td>首页</td>
+						<td>是</td>
+						<td>0</td>
+						<td><a href="javascript:;" onclick="fnShow()">编辑</a><a href="javascript:;" onclick="fnDel(this,'btn_sure','dialog_del')">删除</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="check-Box"></input></td>
+						<td>4</td>
+						<td>百度</td>
+						<td><a href="https://www.baidu.com/" target="_blank">https://www.baidu.com/</a></td>
+						<td class="linkImg"><a href="https://www.baidu.com/" target="_blank"><img src="images/none/bd_logo1_31bdc765.png"></a></td>
+						<td>首页</td>
+						<td>是</td>
+						<td>0</td>
+						<td><a href="javascript:;" onclick="fnShow()">编辑</a><a href="javascript:;" onclick="fnDel(this,'btn_sure','dialog_del')">删除</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="check-Box"></input></td>
+						<td>3</td>
+						<td>百度</td>
+						<td><a href="https://www.baidu.com/" target="_blank">https://www.baidu.com/</a></td>
+						<td class="linkImg"><a href="https://www.baidu.com/" target="_blank"><img src="images/none/bd_logo1_31bdc765.png"></a></td>
+						<td>首页</td>
+						<td>是</td>
+						<td>0</td>
+						<td><a href="javascript:;" onclick="fnShow()">编辑</a><a href="javascript:;" onclick="fnDel(this,'btn_sure','dialog_del')">删除</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="check-Box"></input></td>
+						<td>2</td>
+						<td>百度</td>
+						<td><a href="https://www.baidu.com/" target="_blank">https://www.baidu.com/</a></td>
+						<td class="linkImg"><a href="https://www.baidu.com/" target="_blank"><img src="images/none/bd_logo1_31bdc765.png"></a></td>
+						<td>首页</td>
+						<td>是</td>
+						<td>0</td>
+						<td><a href="javascript:;" onclick="fnShow()">编辑</a><a href="javascript:;" onclick="fnDel(this,'btn_sure','dialog_del')">删除</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="check-Box"></input></td>
+						<td>1</td>
+						<td>百度</td>
+						<td><a href="https://www.baidu.com/" target="_blank">https://www.baidu.com/</a></td>
+						<td class="linkImg"><a href="https://www.baidu.com/" target="_blank"><img src="images/none/bd_logo1_31bdc765.png"></a></td>
+						<td>首页</td>
+						<td>是</td>
+						<td>0</td>
+						<td><a href="javascript:;" onclick="fnShow()">编辑</a><a href="javascript:;" onclick="fnDel(this,'btn_sure','dialog_del')">删除</a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn" id="btn_add" onclick="fnShow()">添加友情链接</a><a href="#" class="btn">搜索友情链接</a><a href="#" class="btn" onclick="fnCheckedDel('table_list')">删除友情链接</a>
+				<div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div>
+			</div>
+			<!-- 内容区域结束 -->
+		</div>
+	</div>	
+    <!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+<!-- 确认删除对话框 -->
+<div class="dialogBox" id="dialog_del">
+	<a href="javascript:;" class="close" onclick="fnClose('dialog_del')">点击关闭</a>
+	<h3>删除</h3>
+	<div class="p20">
+		<p>确认删除这个广告位？</p>
+		<div class="txt-center box_btn mt20"><a href="javascript:;" class="btn_a" id="btn_sure">确认</a><a href="javascript:;" onclick="fnClose('dialog_del')" class="btn_a">取消</a></div>
+	</div>
+</div>
+<script type="text/javascript">
+	allSelect('#table_list', '#selectAll');
+
+
+function fnShow(){
+	$('#links_add').show();
+	$('#btn_add').text('添加完毕');
+}
+
+function fnHide(){
+	$('#links_add').hide();
+	$('#btn_add').text('添加友情链接');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>会员管理-认证及申请管理-会员实名认证申请</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav_member.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<div id="box">
+			<!-- 内容区域开始 -->
+			<div class="bread f14 bold blue_deep">会员实名认证管理</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">搜索会员身份证</a><a href="#" class="btn">已认证</a><a href="#" class="btn">待认证</a><a href="#" class="btn">将当前条件下数据导出为Excel</a><div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div></div>
+			<div class="mlr10">
+				<table class="table_list" id="table_list" cellspacing="0" cellpadding="0">
+					<thead>
+						<td class="checkbox"><input type="checkbox" id="selectAll" class="check-Box"></input></td>
+						<td width="3%">ID</td>
+						<td>会员名</td>
+						<td width="10%">真实姓名</td>
+						<td width="15%">身份证号</td>
+						<td width="15%">身份证图片</td>
+						<td width="15%">上传时间</td>
+						<td width="10%">审核状态</td>
+						<td width="10%" class="bor_no_right">操作</td>
+					</thead>
+					<tr>
+						<td><input type="checkbox" class="check-Box"></input></td>
+						<td>6</td>
+						<td>admin</td>
+						<td>宁戴</td>
+						<td>131888785956</td>
+						<td>[<a href="javascript:;" onclick="BtPopload('dialog_info')">正面查看</a>]&nbsp;[<a href="javascript:;" onclick="BtPopload('dialog_info')">反面查看</a>]</td>
+						<td>2016-04-07 17:26:30</td>
+						<td><span class="green">已认证</span></td>
+						<td>----</td>
+					</tr>
+				</table>
+			</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">搜索会员身份证</a><a href="#" class="btn">已认证</a><a href="#" class="btn">待认证</a><a href="#" class="btn">将当前条件下数据导出为Excel</a><div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div></div>
+			<!-- 内容区域结束 -->
+		</div>
+	</div>	
+    <!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+<!-- 会员详细信息 -->
+<div class="dialogBox" id="dialog_info">
+	<a href="javascript:;" class="close" onclick="fnClose('dialog_info')">点击关闭</a>
+	<h3>身份证正面</h3>
+	<div class="p20">
+		<div class="img_size"><img src="images/none/bd_logo1_31bdc765.png"></div>
+		<div class="txt-center box_btn mt20"><a href="javascript:;" onclick="fnClose('dialog_info')" class="btn_a">关闭</a></div>
+	</div>
+</div>
+<script type="text/javascript">
+	allSelect('#table_list', '#selectAll');//全选
+</script>
+</body>
+</html>

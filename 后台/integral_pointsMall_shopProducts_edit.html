@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>积分管理-积分商城管理-商城产品列表_编辑</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<!-- 富文本编辑器 -->
+	<link href="css/umeditor.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" charset="utf-8" src="js/umeditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/umeditor.min.js"></script>
+    <script type="text/javascript" src="js/zh-cn.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<!-- 内容区域开始 -->
+		<div id="box" class="pos_rel">
+			<div class="bread f14 bold blue_deep">添加/编辑商城产品信息</div>
+			<!-- 选项卡 -->
+			<div class="tab mlr10">
+				<ul class="tab_hd clearfix">
+					<li class="cur">基本设置</li>
+					<li>商品介绍</li>
+					<li>规格参数</li>
+				</ul>
+				<div class="box_callout mt10">
+					<p>1.商品展示图片上传，请在添加完商品基本信息后返回商城商品列表，通过上传商品图片进行上传！</p>
+					<p>2.如需修改商品展示图片，只需在商城商品列表重新上传商品图片即可！</p>
+				</div>
+				<!-- 基本设置 -->
+				<div class="tab_bd mt10" style="display: block;">
+					<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+						<tr>
+						    <td>描述：</td>
+						    <td><textarea class="textarea">bgggg</textarea></td>
+						</tr>
+						<tr>
+						    <td>风格：</td>
+						    <td><input type="file" class="file vertical_top"></input><label class="red ml10">如：黑色|白色</label></td>
+						</tr>
+						<tr>
+						    <td>商城首页原图：</td>
+						    <td><!-- <div class="img_size2"><img src="images/none/bd_logo1_31bdc765.png"></div> -->(<label class="mlr10 red">暂无图片</label>)</td>
+						</tr>
+						<tr>
+						    <td>详情页小图展示：</td>
+						    <td><!-- <div class="img_size2"><img src="images/none/bd_logo1_31bdc765.png"></div> -->(<label class="mlr10 red">暂无图片</label>)</td>
+						</tr>
+						<tr>
+						    <td>详情页中图展示：</td>
+						    <td><!-- <div class="img_size2"><img src="images/none/bd_logo1_31bdc765.png"></div> -->(<label class="mlr10 red">暂无图片</label>)</td>
+						</tr>
+						<tr>
+						    <td>详情页放大图展示：</td>
+						    <td><!-- <div class="img_size2"><img src="images/none/bd_logo1_31bdc765.png"></div> -->(<label class="mlr10 red">暂无图片</label>)</td>
+						</tr>
+						<tr>
+						    <td>所属类别：</td>
+						    <td><label><input type="radio" name="radio_category" class="radio" checked="checked"></input>实物</label><label><input type="radio" name="radio_category" class="radio"></input>虚拟</label></td>
+						</tr>
+						<tr>
+						    <td>市场价值：</td>
+						    <td><input type="text" class="text" value="14"></input></td>
+						</tr>
+						<tr>
+						    <td>兑换积分：</td>
+						    <td><input type="text" class="text" value="10"></input></td>
+						</tr>
+						<tr>
+						    <td>物品数量：</td>
+						    <td><input type="text" class="text" value="50000"></input></td>
+						</tr>
+						<tr>
+						    <td>没人限购数量：</td>
+						    <td><input type="text" class="text" value="1000"></input></td>
+						</tr>
+						<tr>
+						    <td>排序：</td>
+						    <td><input type="text" class="text" value="0"></input></td>
+						</tr>
+						<tr>
+						    <td>是否上线：</td>
+						    <td><label><input type="radio" name="radio_online" class="radio" checked="checked"></input>上线</label><label><input type="radio" name="radio_online" class="radio"></input>不上线</label></td>
+						</tr>
+						<!-- <tr class="none">
+						    <td>&nbsp;</td>
+						    <td><button type="submit">确定</button></td>
+						</tr> -->
+					</table>
+				</div>
+				<!-- 商品介绍 -->
+				<div class="tab_bd mt10">
+					<!--style给定宽度可以影响编辑器的最终宽度-->
+					<script type="text/plain" id="myEditor" style="height:240px;"></script>
+				</div>
+				<!-- 规格参数 -->
+				<div class="tab_bd mt10">
+					规格参数
+				</div>
+			</div>
+			<div class="box_btn mb50 mt10 pl_p15"><a class="btn_a">确定</a></div>
+		</div>
+		<!-- 内容区域结束 -->
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+<script type="text/javascript">
+	fnTab('.tab');  //选项卡
+	//实例化编辑器
+    UM.getEditor('myEditor');
+</script>
+<style>
+	.edui-container{ width:70% !important;}
+</style>
+</body>
+</html>

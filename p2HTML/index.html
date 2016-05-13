@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>首页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+<meta http-equiv="x-ua-compatible" content="ie=10" />
+<link href="css/base.css" rel="stylesheet" />
+<link href="css/site.css" rel="stylesheet" />
+<link href="css/icon_font/fonts/fonts.css" rel="stylesheet" />
+<link href="css/icon_font/iconfont.css" rel="stylesheet" />
+<!--[if IE]><script type="text/javascript" src="js/html5.js"></script> <![endif]-->
+<script src="js/jquery-1.8.1.min.js"></script>
+<script src="js/jQuery.blockUI.js"></script>
+<script src="js/jquery.SuperSlide.js"></script>
+<script src="js/p2p.js"></script>
+<script>
+browerType();
+</script>
+</head>
+<body>
+<div class="body"> 
+  <!--header-->
+  <div class="header w100">
+    <div class="header_div w1100 fs12">
+      <div class="header_left fl"> <span><i class="icon icomoon">&#xe943;</i>&nbsp;欢迎致电：<span class="c2">400-400-0000</span></span> <span><i class="icon icomoon">&#xe2c2;</i>&nbsp;服务时间：9:00 - 19:00</span> </div>
+      <div class="header_right fr">
+        <ul>
+          <li><a>新手指引</a></li>
+          <li><a>最新活动</a></li>
+          <li><i class="icon icomoon">&#xe926</i><a>下载客户端</a></li>
+          <li><a href="login.html">登录</a></li>
+          <li><a class="c2"  href="register.html">免费注册</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--/header--> 
+  
+  <!--header_nav-->
+  <div class="header_nav w1100">
+    <div class="header_nav_left fl"> <img src="img/logo.png" /></div>
+    <div class="header_nav_right fr">
+      <div class="move_login"><a href="register.html">注册</a> <a href="login.html">登录</a></div>
+      <ul>
+        <li>
+          <p><a class="c3 fs18" href="m_money_matters.html">我要理财</a></p>
+          <dl class="bb1">
+            <dt><span></span></dt>
+            <dd><a href="hash_of_tender.html">散标投标</a></dd>
+            <dd><a href="delegatio_nominis.html">债权转让</a></dd>
+            <dd><a href="m_money_plan.html">量众计划</a></dd>
+            <dd><a href="#">新手专区</a></dd>
+          </dl>
+        </li>
+        <li>
+          <p><a class="c3 fs18" href="loan_first.html">我要借款</a></p>
+        </li>
+        <li>
+          <p><a class="c3 fs18" href="charitable.html">公益募捐</a></p>
+        </li>
+        <li>
+          <p><a class="c3 fs18" href="about.html">关于我们</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--/header_nav--> 
+  
+  <!--center_div-->
+  
+  <div class="w100"> 
+    <!-- <div class="container_banner"> -->
+    <div id="container_banner">
+      <div class="bcontainer">
+        <div class="homebanner">
+          <div id="bannerSlider" class="bannerSlider"> <a href="#" target="_blank"><IMG alt="" src="img/banner01.jpg" /></a> <a href="#" target="_blank"><IMG alt="" src="img/banner02.jpg" /></a> <a href="#" target="_blank"><IMG alt="" src="img/banner01.jpg" /></a> <a href="#" target="_blank"><IMG alt="" src="img/banner02.jpg" /></a> </div>
+          <div class="hd">
+            <ul>
+              <li></li><li></li><li></li><li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+jQuery(".bcontainer").slide( { mainCell:"#bannerSlider",effect:"fade",delayTime : 1000,interTime : 3000,autoPlay:true} );
+</script>
+    <div class="cl"></div>
+    
+    <!-- </div> --> 
+    <!--banner_div-->
+    <div class="banner_div w1100"> 
+      
+      <!--login_div-->
+      <div class="login_div">
+        <div class="login_div_tab">
+          <ul>
+            <li class="li-change">立即登录</li>
+            <li>免费注册</li>
+          </ul>
+        </div>
+        <ul class="login_div_ul">
+          <li class="login_li">
+            <dl>
+              <dd>
+                <input class="br3" type="text" value="用户名/手机/邮箱" onfocus="if (value =='用户名/手机/邮箱'){value=''}" onblur="if (value==''){value='用户名/手机/邮箱'}" Required aria-required="true" />
+              </dd>
+              <dd>
+                <input class="br3" type="text" value="密码" onfocus="if (value =='密码'){value=''}"onblur="if (value==''){value='密码'}" Required aria-required="true"/>
+              </dd>
+              <dd class="c5 fs14 fl">
+                <label class="login_checkbox">
+                  <input type="checkbox" name="checkbox" checked="">
+                  <i> </i><span>记住用户名</span></label>
+              </dd>
+              <dd class="fs14 fr"><a href="#" class="c5">忘记密码</a></dd>
+              <dd>
+                <input class="login_btn" type="submit" value="登录" />
+              </dd>
+            </dl>
+            <p><span class="fl fs14 c5">使用第三方账号登录</span><span class="fl">&nbsp;<a href="#"><img src="img/qq.png" /></a></span></p>
+          </li>
+          <li class="register_li" style="display:none">
+            <dl>
+              <dd>
+                <input class="br3" type="text" value="用户名/手机/邮箱" onfocus="if (value =='用户名/手机/邮箱'){value=''}"onblur="if (value==''){value='用户名/手机/邮箱'}" Required aria-required="true" />
+              </dd>
+              <dd>
+                <input class="br3" type="text" value="输入密码" onfocus="if (value =='输入密码'){value=''}"onblur="if (value==''){value='输入密码'}" Required aria-required="true"/>
+              </dd>
+              <dd>
+                <input class="br3" type="text" value="再次输入密码" onfocus="if (value =='再次输入密码'){value=''}"onblur="if (value==''){value='再次输入密码'}" Required aria-required="true"/>
+              </dd>
+              <dd class="dd_yzm">
+                <input type="text" value="输入验证码" onfocus="if (value =='输入验证码'){value=''}"onblur="if (value==''){value='输入验证码'}" Required aria-required="true"/>
+                <input type="text" value="3A8N"/>
+              </dd>
+              <dd>
+                <input class="login_btn bc3" type="submit" value="同意用户协议并注册" />
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+      <div class="cl"></div>
+      <!--/login_div--> 
+    </div>
+    <!--/banner_div--> 
+  </div>
+  <!--/center_div--> 
+  <!--main-->
+  <div class="cl"></div>
+  <div class="move_main">
+    <div class="move_main_tit1">
+      <h1>新手专区</h1>
+      <span><a href="#">去投标</a></span>
+      <div class="cl"></div>
+      <div class="move_main_cont1">量硕宏程p2p理财安全回款率高达99.9%，平台信誉高，风险低，适合中长期理财量硕宏程p2p理财安全回款率高达99.9%，平台信誉高，风险低，适合中长期理财量硕宏程p2p理财安全回款率高达99.9%，平台信誉高，风险低，适合中长期理财量硕宏程p2p理财安全回款率高达99.9%，平台信誉高，风险低，适合中长期理财</div>
+      <div class="move_main_foot1">
+        <p>100%本息担保</p>
+        <em>1728321人已投</em></div>
+      <div class="cl"></div>
+    </div>
+  </div>
+  <div class="move_main">
+    <div class="move_main_tit1">
+      <h1>我要理财</h1>
+      <span><a href="#">去投标</a></span>
+      <div class="cl"></div>
+      <div class="move_main_cont1">量硕宏程p2p理财安全回款率高达99.9%，平台信誉高，风险低，适合中长期理财量硕宏程p2p理财安全回款率高达99.9%，平台信誉高，风险低，适合中长期理财量硕宏程p2p理财安全回款率高达99.9%，平台信誉高，风险低，适合中长期理财量硕宏程p2p理财安全回款率高达99.9%，平台信誉高，风险低，适合中长期理财</div>
+      <div class="move_main_foot1">
+        <p>100%本息担保</p>
+        <em>1728321人已投</em></div>
+      <div class="cl"></div>
+    </div>
+  </div>
+  <div class="move_main">
+    <div class="move_main_tit1">
+      <h1>转让区</h1>
+      <span><a href="#">去投标</a></span>
+      <div class="cl"></div>
+      <div class="move_main_cont1">量硕宏程p2p理财安全回款率高达99.9%，平台信誉高，风险低，适合中长期理财量硕宏程p2p理财安全回款率高达99.9%，平台信誉高，风险低，适合中长期理财量硕宏程p2p理财安全回款率高达99.9%，平台信誉高，风险低，适合中长期理财量硕宏程p2p理财安全回款率高达99.9%，平台信誉高，风险低，适合中长期理财</div>
+      <div class="move_main_foot1">
+        <p>100%本息担保</p>
+        <em>1728321人已投</em></div>
+      <div class="cl"></div>
+    </div>
+  </div>
+  <!--main-end--> 
+  <!--yaosu--->
+  <div class="yaosu w1100">
+    <ul>
+      <li>
+        <dl>
+          <dt class="mianfei"><i class="icon iconfont icon-size">&#xe60a;</i></dt>
+          <dd class="dds fs18 c3">免费</dd>
+          <dd class="fs12 c9">全称网上操作,<span class="fs18 c2">3</span>步完成投资</dd>
+          <dd class="fs12 c9">自动获取收益,平台不收任何费用</dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt class="kuaijie"><i class="icon iconfont icon-size2">&#xe609;</i></dt>
+          <dd class="dds fs18 c3">快捷</dd>
+          <dd class="fs12 c9">手机APP随时投资</dd>
+          <dd class="fs12 c9">随时提现,方便<span class="fs18 c4">快捷,</span>安全保障</dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt class="anquan"><i class="icon iconfont icon-size">&#xe605;</i></dt>
+          <dd class="dds fs18 c3">安全</dd>
+          <dd class="fs12 c9">第三方合作机构</dd>
+          <dd class="fs12 c9">资金托管,100%本息<span class="fs18 c7">全额保障</span></dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt class="gaoshouyi"><i class="icon iconfont icon-size">&#xe606;</i></dt>
+          <dd class="dds fs18 c3">高收益</dd>
+          <dd class="fs12 c9">100元起投,年化利率</dd>
+          <dd class="fs12 c9"><span class="fs18 c8">8-18%,</span>小钱也能享有高收益</dd>
+        </dl>
+      </li>
+    </ul>
+    <div class="cl"></div>
+  </div>
+  <!--/yaosu--->
+  <div class="bc_f6 mb10">
+    <div class="tjxm w1100">
+      <p class="c3">推荐项目</p>
+      <ul>
+        <li>
+          <dl>
+            <dt>车贷计划</dt>
+            <dd class="c3 fs14 dd_one">车贷40万&nbsp;&nbsp;&nbsp;<span class="c6">202325432</span></dd>
+            <dd class="dd_two">
+              <div class="c9"><span class="c1">9</span>%</div>
+              <div class="c9"><span class="c10">1.5</span>个月</div>
+            </dd>
+            <dd class="dd_three c9 fs14"><span>年华利率</span><span>项目期限</span></dd>
+            <dd class="c9 fs14">浙江·车辆周转（一次性本息全还）</dd>
+            <dd class="c9 fs14 dd_progress">
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+            </dd>
+            <dd>
+              <input class="tb_btn" type="button" value="立即投标" />
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>车贷计划</dt>
+            <dd class="c3 fs14 dd_one">车贷40万&nbsp;&nbsp;&nbsp;<span class="c6">202325432</span></dd>
+            <dd class="dd_two">
+              <div class="c9"><span class="c1">9</span>%</div>
+              <div class="c9"><span class="c10">1.5</span>个月</div>
+            </dd>
+            <dd class="dd_three c9 fs14"><span>年华利率</span><span>项目期限</span></dd>
+            <dd class="c9 fs14">浙江·车辆周转（一次性本息全还）</dd>
+            <dd class="c9 fs14 dd_progress">
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+            </dd>
+            <dd>
+              <input class="tb_btn" type="button" value="立即投标" />
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>车贷计划</dt>
+            <dd class="c3 fs14 dd_one">车贷40万&nbsp;&nbsp;&nbsp;<span class="c6">202325432</span></dd>
+            <dd class="dd_two">
+              <div class="c9"><span class="c1">9</span>%</div>
+              <div class="c9"><span class="c10">1.5</span>个月</div>
+            </dd>
+            <dd class="dd_three c9 fs14"><span>年华利率</span><span>项目期限</span></dd>
+            <dd class="c9 fs14">浙江·车辆周转（一次性本息全还）</dd>
+            <dd class="c9 fs14 dd_progress">
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+            </dd>
+            <dd>
+              <input class="tb_btn" type="button" value="立即投标" />
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>车贷计划</dt>
+            <dd class="c3 fs14 dd_one">车贷40万&nbsp;&nbsp;&nbsp;<span class="c6">202325432</span></dd>
+            <dd class="dd_two">
+              <div class="c9"><span class="c1">9</span>%</div>
+              <div class="c9"><span class="c10">1.5</span>个月</div>
+            </dd>
+            <dd class="dd_three c9 fs14"><span>年华利率</span><span>项目期限</span></dd>
+            <dd class="c9 fs14">浙江·车辆周转（一次性本息全还）</dd>
+            <dd class="c9 fs14 dd_progress">
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+            </dd>
+            <dd>
+              <input class="tb_btn" type="button" value="立即投标" />
+            </dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+    <div class="cl"></div>
+  </div>
+  <div class="baodao w1100">
+    <p class="c3">媒体报道</p>
+    <ul>
+      <li><a href="#"><img src="images/media--logo-1.png" /></a></li>
+      <li><a href="#"><img src="images/media--logo-2.png" /></a></li>
+      <li><a href="#"><img src="images/media--logo-3.png" /></a></li>
+      <li><a href="#"><img src="images/media--logo-4.png" /></a></li>
+      <li><a href="#"><img src="images/media--logo-5.png" /></a></li>
+      <li><a href="#"><img src="images/media--logo-6.png" /></a></li>
+      <li><a href="#"><img src="images/media--logo-7.png" /></a></li>
+      <li><a href="#"><img src="images/media--logo-8.png" /></a></li>
+      <li><a href="#"><img src="images/media--logo-9.png" /></a></li>
+      <li><a href="#"><img src="images/media--logo-10.png" /></a></li>
+    </ul>
+  </div>
+</div>
+<div class="cl"></div>
+<!---footer--->
+<div class="footer"> <a href="#">关于我们</a><a href="#">安全保障</a><a href="#">帮助中心</a><a href="#">我要借款</a><a href="#">联系我们</a> </div>
+<div class="move_footer"> <a href="#">首页</a><a href="#">帮助中心</a><a href="#">关于我们</a><a href="#">联系我们</a> </div>
+<p class="footer_copyRight">版权所有 量硕宏程 京ICP备15023968号-1 版本号：4.0.0<br>
+  Copyright © 2014-2015 net Corporation,All Rights Reserved.</p>
+<div class="footer_safe"><img src="images/certification--logo-2.png"> <img src="images/certification--logo-3.png"> <img src="images/certification--logo-1.png"></div>
+</body>
+</html>

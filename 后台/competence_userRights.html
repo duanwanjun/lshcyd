@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>权限-用户权限管理-管理员管理</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<!-- 内容区域开始 -->
+		<div id="box" class="pos_rel">
+			<div class="bread f14 bold blue_deep">管理员管理</div>
+			<div id="links_add" class="mlr10 mb10 dis_n">
+				<div class="f14 bold blue_deep mb10">添加管理员&nbsp;[&nbsp;<a href="javascript:;" class="blue" id="btn_hide" onclick="fnHide()">隐藏</a>&nbsp;]</div>
+				<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+				  <tr>
+				    <td>管理员用户名：</td>
+				    <td><input type="text" class="text" value="admin"></input><label class="gray ml10">管理员登陆时的用户名</label></td>
+				  </tr>
+				  <tr>
+				    <td>管理员密码：</td>
+				    <td><input type="text" class="text" value=""></input><label class="red ml10">如果不改密码，请留空</label></td>
+				  </tr>
+				  <tr>
+				    <td>真实姓名：</td>
+				    <td><input type="text" class="text" value="admin"></input><label class="gray ml10">管理员的真实姓名</label></td>
+				  </tr>
+				  <tr>
+				    <td>QQ：</td>
+				    <td><input type="text" class="text" value="admi"></input><label class="gray ml10">VIP专属客服QQ</label></td>
+				  </tr>
+				  <tr>
+				    <td>电话：</td>
+				    <td><input type="text" class="text" value=""></input><label class="gray ml10">VIP专属客服电话</label></td>
+				  </tr>
+				  <tr>
+				    <td>显所属用户组：</td>
+				    <td>
+					    <select class="select">
+					    	<option>超级管理员权限</option>
+					    	<option>普通管理员权限</option>
+					    	<option>其他</option>
+					    </select>
+				    <label class="gray ml10">不同的用户组对应不同的权限</label></td>
+				  </tr>
+				  <tr>
+				    <td>是否禁用：</td>
+				    <td><label><input type="radio" name="radio_disable" class="radio"></input>是</label><label><input type="radio" name="radio_disable" checked="checked" class="radio"></input>否</label><label class="gray">禁用后此管理员不能登陆</label></td>
+				  </tr>
+				  <tr>
+				    <td>是否为配资专员：</td>
+				    <td><label><input type="radio" name="radio_pzzy" class="radio"></input>配资专员</label><label><input type="radio" name="radio_pzzy" class="radio"></input>运营专员</label><label><input type="radio" name="radio_pzzy" checked="checked" class="radio"></input>否</label><label class="gray">配资专员可进行邀请用户，提取佣金</label></td>
+				  </tr>
+				  <tr>
+				    <td>是不是客服：</td>
+				    <td><label><input type="radio" name="radio_service" class="radio"></input>是</label><label><input type="radio" name="radio_service" checked="checked" class="radio"></input>否</label><label class="gray">客服会出现在会员选择VIP专属客服的列表，其他的不会</label></td>
+				  </tr>
+				  <tr>
+				    <td>密码口令：</td>
+				    <td><input type="text" class="text" value="fff"></input><label class="gray ml10">管理员密码口令设置后，在后台登陆时只有写对密码口令才能进入后台(可填写文字、字母或数字，如：客服1号)</label></td>
+				  </tr>
+				  <tr class="none">
+				    <td>&nbsp;</td>
+				    <td><button type="submit">修改</button></td>
+				  </tr>
+				</table>
+			</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn" id="btn_add" onclick="fnShow()">添加管理员</a><a href="#" class="btn" onclick="fnCheckedDel('table_list')">删除管理员管理</a>
+				<div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div>
+			</div>
+			<div class="mlr10">
+				<table class="table_list" id="table_list" cellspacing="0" cellpadding="0">
+					<tr>
+						<th class="checkbox"><input type="checkbox" id="selectAll" class="check-Box"></input></th>
+						<th  width="4%">ID</th>
+						<th  width="10%">用户名</th>
+						<th >真实姓名</th>
+						<th width="10%">所属用户组</th>
+						<th width="10%">是否禁用</th>
+						<th width="10%">qq</th>
+						<th width="10%">电话</th>
+						<th width="10%">是不是客服</th>
+						<th width="10%">密码口令</th>
+						<th width="10%" class="bor_no_right">操作</th>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="check-Box"></input></td>
+						<td>6</td>
+						<td>百度</td>
+						<td>fggggg</td>
+						<td>超级管理员权限</td>
+						<td><span class="green_light">正常</span></td>
+						<td>125789</td>
+						<td>1513369852</td>
+						<td><span class="green_light">否</span></td>
+						<td>ffhhj</td>
+						<td><a href="javascript:;" onclick="fnShow()">编辑</a><a href="javascript:;" onclick="fnDel(this,'btn_sure','dialog_del')">删除</a><a href="javascript:;">上传头像</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="check-Box"></input></td>
+						<td>6</td>
+						<td>百度</td>
+						<td>fggggg</td>
+						<td>超级管理员权限</td>
+						<td><span class="green_light">正常</span></td>
+						<td>125789</td>
+						<td>1513369852</td>
+						<td><span class="red">是</span></td>
+						<td>ffhhj</td>
+						<td><a href="javascript:;" onclick="fnShow()">编辑</a><a href="javascript:;" onclick="fnDel(this,'btn_sure','dialog_del')">删除</a><a href="javascript:;">上传头像</a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn" id="btn_add" onclick="fnShow()">添加管理员</a><a href="#" class="btn" onclick="fnCheckedDel('table_list')">删除管理员管理</a>
+				<div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div>
+			</div>
+		</div>
+		<!-- 内容区域结束 -->
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+
+<!-- 确认删除对话框 -->
+<div class="dialogBox" id="dialog_del">
+	<a href="javascript:;" class="close" onclick="fnClose('dialog_del')">点击关闭</a>
+	<h3>删除</h3>
+	<div class="p20">
+		<p>确认删除这个管理员？</p>
+		<div class="txt-center box_btn mt20"><a href="javascript:;" class="btn_a" id="btn_sure">确认</a><a href="javascript:;" onclick="fnClose('dialog_del')" class="btn_a">取消</a></div>
+	</div>
+</div>
+<script type="text/javascript">
+	allSelect('#table_list', '#selectAll');
+
+function fnShow(){
+	$('#links_add').show();
+	$('#btn_add').text('添加完毕');
+}
+
+function fnHide(){
+	$('#links_add').hide();
+	$('#btn_add').text('添加管理员');
+}
+</script>
+</body>
+</html>

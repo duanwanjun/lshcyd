@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>会员管理-认证及申请管理-vip申请管理</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav_member.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<div id="box">
+			<!-- 内容区域开始 -->
+			<div class="bread f14 bold blue_deep">VIP申请列表</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">搜索/筛选会员</a><a href="#" class="btn">已审核通过</a><a href="#" class="btn">未审核通过</a><a href="#" class="btn">待审核</a><div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div></div>
+			<div class="mlr10">
+				<table class="table_list" id="table_list" cellspacing="0" cellpadding="0">
+					<thead>
+						<td class="checkbox"><input type="checkbox" id="selectAll" class="check-Box"></input></td>
+						<td width="3%">ID</td>
+						<td>用户名</td>
+						<td width="10%">真实姓名</td>
+						<td width="10%">所选客服</td>
+						<td width="10%">申请说明</td>
+						<td width="15%">申请时间</td>
+						<td width="10%">状态</td>
+						<td width="10%" class="bor_no_right">操作</td>
+					</thead>
+					<tr>
+						<td><input type="checkbox" class="check-Box"></input></td>
+						<td>6</td>
+						<td><a href="javascript:;" onclick="BtPopload('dialog_memberDetails')">admin</a></td>
+						<td>宁戴</td>
+						<td>张三</td>
+						<td>芙蓉哥哥回家</td>
+						<td>2016-04-07 17:26:30</td>
+						<td><span class="green">审核通过</span></td>
+						<td>----</td>
+					</tr>
+				</table>
+			</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">搜索/筛选会员</a><a href="#" class="btn">已审核通过</a><a href="#" class="btn">未审核通过</a><a href="#" class="btn">待审核</a><div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div></div>
+			<!-- 内容区域结束 -->
+		</div>
+	</div>	
+    <!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+<!-- 会员详细信息 -->
+<div class="dialogBox" id="dialog_memberDetails" style="width: 850px;">
+	<a href="javascript:;" class="close" onclick="fnClose('dialog_memberDetails')">点击关闭</a>
+	<h3><span>admin</span>的详细信息</h3>
+	<div class="p20">
+		<h4 class="tit mb10">admin详细信息</h4>
+		<!-- 选项卡 -->
+		<div class="tab">
+			<ul class="tab_hd clearfix">
+				<li class="cur">会员资料</li>
+				<li>帐户资金</li>
+				<li>借款投资</li>
+			</ul>
+			<!-- 会员资料 -->
+			<div class="tab_bd mt10" style="display: block;">
+				<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_details">
+			  		<tr>
+					    <td width='15%' class="txt-right"><span class="blue_lighter bold">用户名：</span></td>
+					    <td width='35%'>admin<span class="ml10 circle_green">E</span></td>
+					    <td width='15%' class="txt-right"><span class="blue_lighter bold">认证情况：</span></td>
+					    <td width='35%'><span class="icon_authenticate re_IDCard"></span><span class="icon_authenticate re_phone"></span><span class="icon_authenticate re_email"></span><br><span class="icon_authenticate re_vip"></span><span class="icon_authenticate re_lock"></span></td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">是否冻结：</span></td>
+					    <td>未冻结</td>
+					    <td class="txt-right"><span class="blue_lighter bold">客户类型：</span></td>
+					    <td>普通借款者</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">所属客服：</span></td>
+					    <td>admin</td>
+					    <td class="txt-right"><span class="blue_lighter bold">真实姓名：</span></td>
+					    <td>张钉钉</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">性别：</span></td>
+					    <td></td>
+					    <td class="txt-right"><span class="blue_lighter bold">职业：</span></td>
+					    <td></td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">邮箱：</span></td>
+					    <td>123456@123.com</td>
+					    <td class="txt-right"><span class="blue_lighter bold">投资积分：</span></td>
+					    <td>112589</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">手机号码：</span></td>
+					    <td>18733658421</td>
+					    <td class="txt-right"><span class="blue_lighter bold">年龄：</span></td>
+					    <td>0</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">婚姻状况：</span></td>
+					    <td></td>
+					    <td class="txt-right"><span class="blue_lighter bold">学历：</span></td>
+					    <td></td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">身份证号：</span></td>
+					    <td>115789456123</td>
+					    <td class="txt-right"><span class="blue_lighter bold">月收入：</span></td>
+					    <td></td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">银行帐号：</span></td>
+					    <td>62225548784858</td>
+					    <td class="txt-right"><span class="blue_lighter bold">银行名称：</span></td>
+					    <td>光大银行</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">银行开户行：</span></td>
+					    <td colspan="3">62225548784858</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">籍贯：</span></td>
+					    <td colspan="3"></td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">居住地：</span></td>
+					    <td colspan="3"></td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">个人描述：</span></td>
+					    <td colspan="3"></td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">身份证：</span></td>
+					    <td colspan="3"><div class="img_size2"><img src="images/none/bd_logo1_31bdc765.png"></div></td>
+					</tr>
+				</table>
+			</div>
+			<!-- 帐户资金 -->
+			<div class="tab_bd mt10">
+				<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_details">
+					<tr>
+					    <td width='15%' class="txt-right"><span class="red bold">奖金情况</span></td>
+					    <td colspan="3">&nbsp;</td>
+					</tr>
+			  		<tr>
+					    <td width='15%' class="txt-right"><span class="blue_lighter bold">帐户总额：</span></td>
+					    <td width='35%'>￥0.00</td>
+					    <td width='15%' class="txt-right"><span class="blue_lighter bold">待收金额：</span></td>
+					    <td width='35%'>￥0.9</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">可用金额：</span></td>
+					    <td>￥0</td>
+					    <td class="txt-right"><span class="blue_lighter bold">冻结金额：</span></td>
+					    <td>￥0</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="red bold">充值提现</span></td>
+					    <td colspan="3">&nbsp;</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">充值成功次数：</span></td>
+					    <td>0次</td>
+					    <td class="txt-right"><span class="blue_lighter bold">充值成功金额：</span></td>
+					    <td>￥0</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">提现成功次数：</span></td>
+					    <td>0次</td>
+					    <td class="txt-right"><span class="blue_lighter bold">提现成功金额：</span></td>
+					    <td>￥0</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="red bold">额度情况</span></td>
+					    <td colspan="3">&nbsp;</td>
+					</tr>
+					<tr>
+					    <td width='15%' class="txt-right"><span class="blue_lighter bold">借款信用额度：</span></td>
+					    <td width='35%'>￥100,090</td>
+					    <td width='15%' class="txt-right"><span class="blue_lighter bold">可用信用额度：</span></td>
+					    <td width='35%'>￥0.9</td>
+					</tr>
+				</table>
+			</div>
+			<!-- 借款投资 -->
+			<div class="tab_bd mt10">
+				<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_details">
+					<tr>
+					    <td width='15%' class="txt-right"><span class="red bold">借款金额统计</span></td>
+					    <td colspan="3">&nbsp;</td>
+					</tr>
+			  		<tr>
+					    <td width='15%' class="txt-right"><span class="blue_lighter bold">借款总额：</span></td>
+					    <td width='35%'>￥0.00</td>
+					    <td width='15%' class="txt-right"><span class="blue_lighter bold">累计盈亏：</span></td>
+					    <td width='35%'>￥0.9</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">已还金额：</span></td>
+					    <td>￥0</td>
+					    <td class="txt-right"><span class="blue_lighter bold">待还金额：</span></td>
+					    <td>￥0</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="red bold">借还款次数统计</span></td>
+					    <td colspan="3">&nbsp;</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">借款成功次数：</span></td>
+					    <td>0次</td>
+					    <td class="txt-right"><span class="blue_lighter bold">正常还款次数：</span></td>
+					    <td>0次</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">提前还款次数：</span></td>
+					    <td>0次</td>
+					    <td class="txt-right"><span class="blue_lighter bold">逾期还款次数：</span></td>
+					    <td>0次</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">迟还次数：</span></td>
+					    <td>0次</td>
+					    <td class="txt-right"><span class="blue_lighter bold">网站代还次数：</span></td>
+					    <td>0次</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="red bold">投资统计</span></td>
+					    <td colspan="3">&nbsp;</td>
+					</tr>
+					<tr>
+					    <td width='15%' class="txt-right"><span class="blue_lighter bold">投资总额：</span></td>
+					    <td width='35%'>￥100,090</td>
+					    <td width='15%' class="txt-right"><span class="blue_lighter bold">投标奖励：</span></td>
+					    <td width='35%'>￥0.9</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">已收总额：</span></td>
+					    <td>￥0</td>
+					    <td class="txt-right"><span class="blue_lighter bold">待收总额：</span></td>
+					    <td>￥0</td>
+					</tr>
+					<tr>
+					    <td width='15%' class="txt-right"><span class="blue_lighter bold">推广奖励：</span></td>
+					    <td width='35%'>￥0.00</td>
+					    <td width='15%' class="txt-right"><span class="blue_lighter bold">线下充值奖励：</span></td>
+					    <td width='35%'>￥0.9</td>
+					</tr>
+					<tr>
+					    <td class="txt-right"><span class="blue_lighter bold">续投奖励：</span></td>
+					    <td>￥0</td>
+					    <td class="txt-right"><span class="blue_lighter bold"></span></td>
+					    <td></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="txt-center box_btn mt20"><a href="javascript:;" onclick="fnClose('dialog_memberDetails')" class="btn_a">关闭</a></div>
+	</div>
+</div>
+<script type="text/javascript">
+	allSelect('#table_list', '#selectAll');//全选
+	fnTab('.tab');  //选项卡
+</script>
+</body>
+</html>

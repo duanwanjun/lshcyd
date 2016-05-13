@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全局-网站设置</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<div id="box">
+			<!-- 内容区域开始 -->
+			<div class="bread f14 bold blue_deep">站点配置</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">添加新参数</a></div>
+			<div class="mlr10 mt10 mb50">
+				<table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+				  <tr>
+				    <td>网站名称：</td>
+				    <td><input type="text" class="text" value="财融天下股票配资"></input><label class="gray ml10">出现在每个页面的title后面(web_name)</label></td>
+				  </tr>
+				  <tr>
+				    <td>首页title：</td>
+				    <td><input type="text" class="text" value="财融天下股票配资平台--自由理财，高杠杆高收益，快速配资，放......"></input><label class="gray ml10">首页标题(index_title)</label></td>
+				  </tr>
+				  <tr>
+				    <td>网站关键词：</td>
+				    <td><textarea class="textarea">财融天下股票配资,股票配资,股票投资,投资理财</textarea><label class="gray ml10">在首页的keywords中显示(web_keywords)</label></td>
+				  </tr>
+				  <tr>
+				    <td>网站描述：</td>
+				    <td><textarea class="textarea">财融天下股票配资平台，低门槛高收益，资金最高可放大到10倍，安全快捷的配资流程，强大的技术运营团队、独立研发的平台系统、科学严格的权限管理及银行级数据灾备系统保障用户线上的账户信息以及交易记录信息的绝对安全，为用户资金及个人信息提供360度无死角的信息安全保障。</textarea><label class="gray ml10">在网站首页的描述中显示(web_descript)</label></td>
+				  </tr>
+				  <tr>
+				    <td>网站底部：</td>
+				    <td><textarea class="textarea">财融天下</textarea><label class="gray ml10">网站底部的版权和联系信息(bottom)</label></td>
+				  </tr>
+				  <tr>
+				    <td>借款者管理费：</td>
+				    <td><input type="text" class="text" value="0.1|1|0.2|4"></input><label class="gray ml10">以0.1|1|0.2|4德形式填入，表示按天时每天收取借款总额0.1%的管理费，按月时在借款期限小于等于4个月时收取借款总额1%的管理费，借款期限大于4个月时(收取借款总额1%的管理费+超过四个月的时间里每月收取借款总额0.2%的管理费)(free_borrow_manage)</label></td>
+				  </tr>
+				  <tr>
+				    <td>借款保证金：</td>
+				    <td><input type="text" class="text" value="0"></input><label class="gray ml10">借款者借款成功后冻结的保证金,填10表示借款总额的10%(money_deposit)</label></td>
+				  </tr>
+				  <tr>
+				    <td>投资者成交管理费：</td>
+				    <td><input type="text" class="text" value="0"></input><label class="gray ml10">10表示收取投资者所赚利息的10%(fee_invest_manage)</label></td>
+				  </tr>
+				  <tr>
+				    <td>催收费：</td>
+				    <td><input type="text" class="text" value="10|10"></input><label class="gray ml10">逾期以后的催收费,(30|2)表示逾期30天以后开始计算每天千分之2的催收费(fee_call)</label></td>
+				  </tr>
+				  <tr>
+				    <td>逾期罚息：</td>
+				    <td><input type="text" class="text" value="1|8.8"></input><label class="gray ml10">逾期后罚息的计算,(3|8)表示逾期3天开始算罚息,每天千分之8(fee_expired)</label></td>
+				  </tr>
+				  <tr>
+				    <td>提现手续费：</td>
+				    <td><input type="text" class="text" value="10-50|0-0|3-10"></input><label class="gray ml10">以10-50|0-0|3-10德形式填入，数字从左到右依次表示超出回款资金总额的每笔收取总额的千分之10作为手续费，最大手续费上限50元;提现在回款总金额内的每笔手续费千分之0，手续费上限0元；单日单笔提现上限3万，单日提现资金上限30万(fee_tqtx)</label></td>
+				  </tr>
+				  <tr>
+				    <td>邀请下线奖励：</td>
+				    <td><input type="text" class="text" value="1"></input><label class="gray ml10">填入整数，如2表示千分之二，即你所邀请的下线每投标成功一次，您可获得千分之二的奖励(award_invest)</label></td>
+				  </tr>
+				  <tr>
+				    <td>发标时的年化利率：</td>
+				    <td><input type="text" class="text" value="0.05|36"></input><label class="gray ml10">以10|24的形式填入，表示年化利率最小10%，最大24%(rate_lixi)</label></td>
+				  </tr>
+				  <tr>
+				    <td>借款期限(按天)：</td>
+				    <td><input type="text" class="text" value="1|30"></input><label class="gray ml10">以1|24的形式填入，以天为单位，表示按天借款时最少借款时间为1天，最多24天(borrow_duration_day)</label></td>
+				  </tr>
+				  <tr>
+				    <td>借款期限：</td>
+				    <td><input type="text" class="text" value="1|12"></input><label class="gray ml10">以1|24的形式填入，以月为单位，表示最小借款时间为1个月，最大24个月(borrow_duration)</label></td>
+				  </tr>
+				  <tr>
+				    <td>是否开启手动手机验证：</td>
+				    <td><input type="text" class="text" value="0"></input><label class="gray ml10">0代表不开启，则由系统自动向会员发送手机验证码；1代表开启，表示由管理员在后台手动审核会员的手机验证(is_manual)</label></td>
+				  </tr>
+				  <tr>
+				    <td>流转标自动还款时钟设置：</td>
+				    <td><input type="text" class="text" value="23:59:59"></input><label class="gray ml10">23:59:59表示该流转标将会在还款当天的23:59:59由系统自动执行还款操作，填写请遵循hh:mm:ss格式(auto_back_time)</label></td>
+				  </tr>
+				  <tr>
+				    <td>免费体验名额：</td>
+				    <td><input type="text" class="text" value="20"></input><label class="gray ml10">免费配资体验每日名额(free_num)</label></td>
+				  </tr>
+				  <tr>
+				    <td>是否允许管理员同步登陆：</td>
+				    <td><input type="text" class="text" value="1"></input><label class="gray ml10">0为否，1为是(admin_login)</label></td>
+				  </tr>
+				  <tr>
+				    <td>VIP费用：</td>
+				    <td><input type="text" class="text" value="0"></input><label class="gray ml10">VIP费用(每年)(fee_vip)</label></td>
+				  </tr>
+				  <tr>
+				    <td>线下充值奖励：</td>
+				    <td><input type="text" class="text" value="5000-20000|1|20001-50000|1.2|50001|1.5"></input><label class="gray ml10">填入5000-10000|1|10001-30000|1.5|30001|2表示线下充值金额在5000至10000以内的奖励千分之一，在10000至30000以内的奖励千分之1.5，大于30000时奖励千分之2(offline_reward)</label></td>
+				  </tr>
+				  <tr>
+				    <td>VIP默认额度：</td>
+				    <td><input type="text" class="text" value="0"></input><label class="gray ml10">(limit_vip)</label></td>
+				  </tr>
+				  <tr>
+				    <td>非正常还款积分规则：</td>
+				    <td><input type="text" class="text" value="-3|-10|100"></input><label class="gray ml10">填入-3|-10|100表示，迟还|逾期还款|比率公式：扣减信用积分=需还金额/比率*(迟还|逾期)，例如：借款1000元，迟还了10天，即1000/100*(-3)=-30分，表示扣减了30分信用积分(credit_borrow)</label></td>
+				  </tr>
+				  <tr>
+				    <td>给投资人的积分：</td>
+				    <td><input type="text" class="text" value="1"></input><label class="gray ml10">表示每1000元借出1天加1个投资积分，投标积分计算公式为：投资金额*天数/1000=投资积分，例如：投资天标1万，积分10000*1/1000=10分，一月标2万，积分20000*30/1000=600分。(invest_integral)</label></td>
+				  </tr>
+				  <tr>
+				    <td>到期还款时钟设置：</td>
+				    <td><input type="text" class="text" value="23:59:59"></input><label class="gray ml10">23:59:59表示借款人必须在还款到期当天的23:59:59之前进行还款，否则该标变为逾期。填写请遵循hh:mm:ss格式(back_time)</label></td>
+				  </tr>
+				  <tr>
+				    <td>银行卡修改开关：</td>
+				    <td><input type="text" class="text" value="0"></input><label class="gray ml10">1表示可以修改，0表示不可以修改(edit_bank)</label></td>
+				  </tr>
+				  <tr>
+				    <td>回款投标自动奖励：</td>
+				    <td><input type="text" class="text" value="1|1.5|2"></input><label class="gray ml10">以1|1.5|2的形式填入，表示回款续投一月标奖励1‰回款续投二月标奖励1.5‰回款续投三月标及以上奖励2‰，如果投标金额大于回款资金池金额，有效续投奖励以回款金额资金池为标准，否则以投标金额为准(today_reward)</label></td>
+				  </tr>
+				  <tr>
+				    <td>债权转让手续费：</td>
+				    <td><input type="text" class="text" value="1"></input><label class="gray ml10">转让价格的百分比，比如15(15%)，不能为负数。0表示不收取手续费(debt_fee)</label></td>
+				  </tr>
+				  <tr>
+				    <td>债权转让是否审核：</td>
+				    <td><input type="text" class="text" value="1"></input><label class="gray ml10">是否开启后台审核：1审核；0不审核(debt_audit)</label></td>
+				  </tr>
+				  <tr>
+				    <td>抽奖消耗积分：</td>
+				    <td><input type="text" class="text" value="30"></input><label class="gray ml10">每抽奖一次所要消耗的积分(lottery_cost)</label></td>
+				  </tr>
+				  <tr>
+				    <td>投非秒标奖励：</td>
+				    <td><input type="text" class="text" value="0"></input><label class="gray ml10">以元为单位，输入30就是30元人民币(nomb_reward)</label></td>
+				  </tr>
+				  <tr>
+				    <td>是否开启注册奖励：</td>
+				    <td><input type="text" class="text" value="1"></input><label class="gray ml10">0表示不开启，1表示开启。(is_reward)</label></td>
+				  </tr>
+				  <tr>
+				    <td>短信落款配置：</td>
+				    <td><input type="text" class="text" value="[财融天下]"></input><label class="gray ml10">短信落款配置项(system_signature)</label></td>
+				  </tr>
+				  <tr>
+				    <td>配资专员佣金比例：</td>
+				    <td><input type="text" class="text" value="5"></input><label class="gray ml10">表示配资专员拿到的佣金百分比(commision_radio)</label></td>
+				  </tr>
+				  <tr>
+				    <td>红包奖励投资限额：</td>
+				    <td><input type="text" class="text" value="50000|1000|50000|100000"></input><label class="gray ml10">如50000|1000|20000|30000，50000是用户单笔投资大于50000元的时候可领取1次投资红包，1000是会员邀请人投资大于1000元的时候可领取邀请红包，20000是用户单笔充值大于20000时可领取充值红包，30000是用户一次借款大于30000时可领取借款红包(packet_invest)</label></td>
+				  </tr>
+				  <tr>
+				    <td>平台成交服务费：</td>
+				    <td><input type="text" class="text" value="10"></input><label class="gray ml10">平台成交服务费10%(roof_serve)</label></td>
+				  </tr>
+				  <tr>
+				    <td>综合担保费：</td>
+				    <td><input type="text" class="text" value="10"></input><label class="gray ml10">综合担保费(wrrant_cost)</label></td>
+				  </tr>
+				  <tr class="none">
+				    <td>&nbsp;</td>
+				    <td><button type="submit">修改</button></td>
+				  </tr>
+				</table>
+			</div>
+
+			<!-- 内容区域结束 -->
+		</div>
+	</div>
+	<!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+</body>
+</html>

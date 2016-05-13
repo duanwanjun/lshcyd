@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>借款管理-债权转让管理-债权转让列表</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body class="font">
+<!-- 侧导航 start -->
+<%template src="_leftNav_loanManagement.html"%>
+<!-- 侧导航 end -->
+<div class="layout_right">
+	<!-- 页头 start -->
+	<%template src="_header.html"%>
+	<!-- 页头 end -->
+	<div id="layout_content" class="layout_content">
+		<div id="box">
+			<!-- 内容区域开始 -->
+			<div class="bread f14 bold blue_deep">债权转让</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">所有债权转让</a><a href="#" class="btn">转让成功的债权</a><a href="#" class="btn">正在转让的债权</a><a href="#" class="btn">撤销的债权</a>
+				<div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div>
+			</div>
+			<div class="mlr10">
+				<table class="table_list" id="table_list" cellspacing="0" cellpadding="0">
+					<thead>
+						<td class="checkbox"><input type="checkbox" id="selectAll" class="check-Box"></input></td>
+						<td width="3%">ID</td>
+						<td width="8%">转让人</td>
+						<td>投资标题</td>
+						<td width="8%">利率</td>
+						<td width="8%">待收期数</td>
+						<td width="8%">转让期数</td>
+						<td width="6%">总期数</td>
+						<td width="8%">待收本金</td>
+						<td width="8%">待收利息</td>
+						<td width="8%">转让价格</td>
+						<td width="10%">提交时间</td>
+						<td width="6%" class="bor_no_right">状态</td>
+					</thead>
+					<tr>
+						<td><input type="checkbox" class="check-Box"></input></td>
+						<td>6</td>
+						<td><span class="blue_light">admin</span></td>
+						<td><span class="blue_light">测试用例</span></td>
+						<td>10.00%</td>
+						<td>2期</td>
+						<td>2期</td>
+						<td>2期</td>
+						<td>￥10000.00</td>
+						<td>￥10.00</td>
+						<td>￥20000.00</td>
+						<td>2016-04-08 14:42:30</td>
+						<td>撤销</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="check-Box"></input></td>
+						<td>5</td>
+						<td><span class="blue_light">admin</span></td>
+						<td><span class="blue_light">测试用例</span></td>
+						<td>10.00%</td>
+						<td>2期</td>
+						<td>2期</td>
+						<td>2期</td>
+						<td>￥10000.00</td>
+						<td>￥10.00</td>
+						<td>￥20000.00</td>
+						<td>2016-04-08 14:42:30</td>
+						<td><a href="javascript:;" onclick="BtPopload('dialog_del')">审核</a></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="check-Box"></input></td>
+						<td>3</td>
+						<td><span class="blue_light">admin</span></td>
+						<td><span class="blue_light">测试用例</span></td>
+						<td>10.00%</td>
+						<td>2期</td>
+						<td>2期</td>
+						<td>2期</td>
+						<td>￥10000.00</td>
+						<td>￥10.00</td>
+						<td>￥20000.00</td>
+						<td>2016-04-08 14:42:30</td>
+						<td>转让成功</td>
+					</tr>
+				</table>
+			</div>
+			<div class="toolBar clearfix mlr10"><a href="#" class="btn">所有债权转让</a><a href="#" class="btn">转让成功的债权</a><a href="#" class="btn">正在转让的债权</a><a href="#" class="btn">撤销的债权</a>
+				<div class="pages fr"><a href="#">上一页</a><a href="#" class="cur">1</a><a href="#">2</a><a href="#">3</a><a href="#">下一页</a></div>
+			</div>
+			<!-- 内容区域结束 -->
+		</div>
+	</div>	
+    <!-- 页脚 start -->
+	<%template src="_footer.html"%>
+	<!-- 页脚 end -->
+</div>
+<!-- 审核对话框 -->
+<div class="dialogBox" id="dialog_del" style="width: 840px;">
+	<a href="javascript:;" class="close" onclick="fnClose('dialog_del')">点击关闭</a>
+	<h3>债权转让审核</h3>
+	<div class="p20">
+		<!-- 选项卡 -->
+		<div class="tab mlr10">
+		  <ul class="tab_hd clearfix">
+		    <li class="cur">债权转让</li>
+		  </ul>
+		  <!-- 债权转让 -->
+		  <div class="tab_bd mt10" style="display: block;">
+		    <table border="0" cellspacing="0" cellpadding="0" class="bord_bot table_edit">
+		      <tr>
+		        <td>审核：</td>
+		        <td><label><input type="radio" name="radio_recom" checked="checked" class="radio"></input>审核通过</label><label><input type="radio" name="radio_recom" class="radio"></input>审核不通过</label></td>
+		      </tr>
+		      <tr>
+		        <td>备注：</td>
+		        <td><textarea class="textarea"></textarea></td>
+		      </tr>
+		    </table>
+		    <a href="javascript:;" class="btn_subOrange mt10 mlr_auto">提交</a>
+		  </div>
+		</div>
+		<div class="txt-center box_btn mt20 bor_top_blue pt10"><a href="javascript:;" onclick="fnClose('dialog_del')" class="btn_a">关闭</a></div>
+	</div>
+</div>
+<script type="text/javascript">
+	allSelect('#table_list', '#selectAll');
+</script>
+</body>
+</html>

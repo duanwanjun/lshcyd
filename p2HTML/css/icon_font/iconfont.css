@@ -1,0 +1,31 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot'); /* IE9*/
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff') format('woff'), /* chrome、firefox */
+  url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:18px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconfont1 {color:#2383cd;font-size:16px;}
+.icon-size2 {line-height:120px;font-size:120px;color:#fff;}
+.icon-size {line-height:120px;font-size:100px;color:#fff;margin:10px;}
+.icon-size:hover {}
+.icon-iconfontxuanze:before { content: "\e60c"; }
+.icon-iconfontmianfei:before { content: "\e60a"; }
+.icon-iconfontshijian:before { content: "\e60b"; }
+.icon-iconfontdianhua:before { content: "\e608"; }
+.icon-iconfontkuaijie:before { content: "\e609"; }
+.icon-gaoshouyi:before { content: "\e606"; }
+.icon-iconfontanquan:before { content: "\e607"; }
+.icon-anquan:before { content: "\e605"; }
+.icon-iconfontweixuanze:before { content: "\e60d"; }
