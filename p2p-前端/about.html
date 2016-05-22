@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/main_style.css">
+	<link rel="stylesheet" href="css/site.css" type="text/css" >
+	<!--[if IE]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<!-- 仪表盘 -->
+	<script src="js/raphael-2.1.4.min.js"></script>
+	<script src="js/justgage.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			nav(); //主导航
+
+			fnTab('.register_log');  //选项卡
+            inputTips('.register_log .text');  //文本框获得失去焦点
+            setLevelProgress('.schedule_box' ,'i');  //设置水平进度条
+
+            dashBoard('.new-hand dd', '.activity');  //“新手专享”仪表盘
+            dashBoard('.recommend_pro li', '.recom');  //“推荐产品”仪表盘
+
+			displacement('.new-hand dl' , 'move');  //“新手专享”鼠标经过位移
+			displacement('.recommend_pro ul.list_td' ,'move');  //“推荐产品”鼠标经过位移
+
+		});
+	</script>
+</head>
+<body>
+<!-- 顶部 -->
+<div class="bg_f9 top">
+	<div class="w1200 clearfix">
+		<div class="fl"><span><i class="iconfont f14 mr5">&#xe600;</i>服务热线：400-000-0000</span><span class="ml20"><i class="iconfont f14 mr5">&#xe601;</i>服务时间：9:00-19:00</span>
+		<spna class="pl5">手机客户端</spna>
+		</div>
+		<div class="fast-way fr">
+		<!--<a href="#">新手指引</a>|<a href="#">最新活动</a>|<a href="#"><i class="iconfont f20 mr5 vertical_middle">&#xe602;</i><span class="vertical_middle">下载客户端</span></a>|<a href="#" class="orange">登录</a>|<a href="#">免费注册</a>-->
+			<div class="user_login fl" >
+				<em>您好，</em><a href="">139****5735</a><a href="">退出</a>	
+			</div>
+			<dl  class="user_center fl" >
+				<dt><a href="">账户中心</a></dt>
+				<dd class="f">
+					<ul>
+						<li><a href="">充值</a></li>
+						<li><a href="">提现</a></li>
+						<li><a href="">我要理财</a></li>
+						<li><a href="">我要借款</a></li>
+					</ul>
+				</dd>
+			</dl>
+			<div class="fl"><a href="">帮助中心</a></div>
+		</div>
+	</div>
+</div>
+<!-- 头部 -->
+<div class="head clearfix w1200">
+	<a class="fl logo dis_block" href="index.html">量硕宏程</a>
+	<!-- 导航 -->
+	<ul class="nav fr txt-center f18">
+		<li><a href="index.html" class="cur"><span class="f20 mr5">·</span>首页</a></li>
+		<li><a href="javascript:;">我要理财<i class="iconfont f12 ml5">&#xe603;</i></a>
+			<ul class="sub_nav">
+				<li><a href="#">理财一</a></li>
+				<li><a href="#">理财二</a></li>
+			</ul>
+		</li>
+		<li><a href="javascript:;">我要借款<i class="iconfont f12 ml5">&#xe603;</i></a>
+			<ul class="sub_nav">
+				<li><a href="#">借款一</a></li>
+				<li><a href="#">借款二</a></li>
+			</ul>
+		</li>
+		<li><a href="#">新手指引</a></li>
+		<li><a href="javascript:;">关于我们<i class="iconfont f12 ml5">&#xe603;</i></a>
+			<ul class="sub_nav">
+				<li><a href="#">公司简介</a></li>
+				<li><a href="#">公司使命</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class="border-bot-e6"></div>
+<div class="cl"></div>
+<!--banner-->
+<div class="banner_aboutus"> <img src="images/about-banner.jpg" /> </div>
+<!--/banner-->
+<div class="cl"></div>
+<!--about_main-->
+<div class="about_main w1200">
+  <div class="left_nav bc5">
+    <ul>
+      <li><a href="##" id="gsjj">公司简介</a></li>
+      <li><a href="##" id="yjbg">业绩报告</a></li>
+      <li><a href="##" id="hzhb">合作伙伴</a></li>
+      <li><a href="##" id="jrwm">加入我们</a></li>
+      <li><a href="##" id="dsj">大事件</a></li>
+      <li><a href="##" id="mtbd">媒体报道</a></li>
+      <li><a href="##" id="yqlj">友情链接</a></li>
+      <li><a href="##" id="lzgg">量硕公告</a></li>
+    </ul>
+  </div>
+  <div class="right_content bc5"> 
+    <!--gsjj-->
+    <div class="gsjj">
+      <h3>关于量硕宏程</h3>
+      <p>公司成立于2007年6月,公司全称为"量硕宏程投资理财（北京）有限公司"，总部位于北京，是中国第一家p2p(个人对个人)网络信用借贷平台</p>
+      <p> 量硕宏程是国内第一家由工商部门特批，获批“金融信息服务”的经营范围，得到政府认可的互联网金融平台。拍拍贷用先进的理念和创新的技术建立了一个安全、高效、透明的互联网金融平台，规范个人借贷行为，让借入者改善生产生活，让借出者增加投资渠道。量硕宏程相信，随着互联网的发展和中国个人信用体系的健全，先进的理念和创新的技术将给民间借贷带来历史性的变革，量硕宏程将是这场变革的领导者。 </p>
+      <p> 截至2014年量硕宏程平台注册用户超过600万，累计成功借款笔数超过260万笔，累计成功投资笔数超过1200万笔，平台从品牌影响、用户数、平台交易量等方面均在行业内占据领先位势。 </p>
+      <p> 2012年10月量硕宏程成为首家完成A轮融资的网贷平台，获得红杉资本（Sequoia Capital）千万美元级别投资。2014年4月量硕宏程在北京钓鱼台国宾馆宣布率先完成B轮融资，投资机构分别为光速安振中国创业融资（Lightspeed China Partners）,红杉资本（Sequoia Capital）及纽交所上市公司诺亚财富。2015年4月量硕宏程正是宣布完成C轮融资，再次成为国内P2P行业首个完成C轮融资的网贷平台，C轮投资投资方组成为：由联想控股旗下君联资本和海纳亚洲联合领投，VMS Legend Investment Fund ，红杉资本以及光速安振中国创业投资基金等机构跟投。 </p>
+      <h3>量硕宏程核心价值</h3>
+      <ul>
+        <li>客户第一</li>
+        <li>团队</li>
+        <li>诚信</li>
+        <li>激情</li>
+      </ul>
+      <h3>经营理念</h3>
+      <ul>
+        <li>诚信</li>
+        <li>合作</li>
+        <li>竞争</li>
+      </ul>
+    </div>
+    <!--/gsjj--> 
+    <!--/lzgg--> 
+  </div>
+</div>
+<!--/about_main--> 
+<div class="cb"></div>
+<!-- 合作伙伴 -->
+<div class="border-top-cc mt20 clearfix">
+<dl class="w1200 mt20 panners pt10 pb10">
+	<dt class="fl f20 txt-center">合作伙伴</dt>
+	<dd class="fl">
+		<a href="#"><img src='images/none/icon_1.jpg' title="招商银行" alt="招商银行" /></a>
+		<a href="#"><img src='images/none/icon_1.jpg' title="招商银行" alt="招商银行" /></a>
+		<a href="#"><img src='images/none/icon_1.jpg' title="招商银行" alt="招商银行" /></a>
+		<a href="#"><img src='images/none/icon_1.jpg' title="招商银行" alt="招商银行" /></a>
+		<a href="#"><img src='images/none/icon_1.jpg' title="招商银行" alt="招商银行" /></a>
+	</dd>
+</dl>
+</div>
+<!-- 页脚 -->
+<div class="bg-33 mt20 pt30">
+	<div class="w1200 clearfix pb30">
+		<div class="fast-way-bot fl f14">
+			<a href="#">关于我们</a><a href="#">帮助中心</a><a href="#">招贤纳士</a><a href="#">联系我们</a><a href="#">隐私策略</a><a href="#">免责条款</a><a href="#">政策法规</a><a href="#">网站地图</a>
+		</div>
+		<div class="line fl mt10"></div>
+		<div class="service-tel txt-center gray-lighter fl">
+			<div class="tel f36 line-height-1">
+				<p>400-000-0000</p>
+				<p>010-888-0000</p>
+			</div>
+			<p class="f20 mt5">客服电话（8:30-21:00）</p>
+			<div class="f30"><a href="#"><i class="iconfont">&#xe605;</i></a><a href="#"><i class="iconfont">&#xe606;</i></a><a href="#"><i class="iconfont">&#xe607;</i></a></div>
+		</div>
+		<div class="line fl mt10"></div>
+		<div class="codes fl txt-center">
+			<h3 class="gray-lighter f22 normal line-height-1 mb10">手机客户端</h3>
+			<ul class="clearfix white f14">
+				<li>
+					<img src="images/none/codes_app.jpg" alt="APP下载" />
+					<p>APP下载</p>
+				</li>
+				<li>
+					<img src="images/none/codes_weixin.jpg" alt="关注微信" />
+					<p>关注微信</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="line-gray-light"></div>
+	<div class="w1200 txt-center f16 gray-lighter links">
+		友情链接：<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>
+	</div>
+</div>
+<div class="bg-29">
+	<div class="w1200 txt-center honor">
+		<div class="pt20 pb20"><img src="images/none/link-1.png" alt="诚信网站" /><img src="images/none/link-2.png" alt="诚信网站" /><img src="images/none/link-3.png" alt="诚信网站" /></div>
+		<p class="gray-99 pb10">© 2015 量硕宏程投资管理有限公司 京ICP备14056037号 京公网安备11010502025440</p>
+	</div>
+</div>
+</body>
+</html>
