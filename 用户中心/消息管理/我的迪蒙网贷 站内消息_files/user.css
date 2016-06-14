@@ -1,0 +1,810 @@
+.select_style {
+	BORDER-TOP: #ddd 1px solid; HEIGHT: 30px; BORDER-RIGHT: #ddd 1px solid; VERTICAL-ALIGN: middle; MIN-WIDTH: 102px; BORDER-BOTTOM: #ddd 1px solid; PADDING-LEFT: 5px; BORDER-LEFT: #ddd 1px solid; LINE-HEIGHT: 30px; MARGIN-RIGHT: 10px
+}
+.text_style {
+	BORDER-TOP: #ddd 1px solid; HEIGHT: 18px; BORDER-RIGHT: #ddd 1px solid; WIDTH: 100px; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #ddd 1px solid; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 5px; BORDER-LEFT: #ddd 1px solid; LINE-HEIGHT: 18px; PADDING-RIGHT: 5px; MARGIN-RIGHT: 10px
+}
+.textarea_style {
+	BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid; VERTICAL-ALIGN: middle; BORDER-BOTTOM: #ddd 1px solid; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 5px; BORDER-LEFT: #ddd 1px solid; LINE-HEIGHT: 24px; PADDING-RIGHT: 5px; MARGIN-RIGHT: 10px; resize: none
+}
+.text_style_date {
+	WIDTH: 80px; BACKGROUND: url(../images/user_icon.png) no-repeat 0px -177px; PADDING-LEFT: 35px
+}
+.text_w100 {
+	WIDTH: 100px !important
+}
+.text_w190 {
+	WIDTH: 190px !important
+}
+.text_w200 {
+	WIDTH: 200px !important
+}
+.text_w300 {
+	WIDTH: 300px !important
+}
+.w200 {
+	WIDTH: 200px; FLOAT: left
+}
+.side_info {
+	HEIGHT: 110px; BACKGROUND: #fff; POSITION: relative; TEXT-ALIGN: center; border-radius: 5px 5px 0 0
+}
+.side_info .portrait {
+	POSITION: absolute; LEFT: 47px; TOP: -30px
+}
+.side_info .portrait IMG {
+	BORDER-TOP: #fff 3px solid; HEIGHT: 100px; BORDER-RIGHT: #fff 3px solid; WIDTH: 100px; BORDER-BOTTOM: #fff 3px solid; BORDER-LEFT: #fff 3px solid; border-radius: 50%
+}
+.side_info .title {
+	FONT-SIZE: 18px; OVERFLOW: hidden; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; COLOR: #fff; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 80px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px
+}
+.sidemenu .my_account A {
+	FONT-SIZE: 18px; MARGIN-BOTTOM: 5px; HEIGHT: 60px; BACKGROUND: #fff; COLOR: #333; DISPLAY: block; LINE-HEIGHT: 60px; border-radius: 0 0 5px 5px
+}
+.sidemenu .my_account .icon {
+	HEIGHT: 60px; WIDTH: 20px; BACKGROUND: url(../images/color_sidemenu_icon.png) no-repeat 0px 21px; MARGIN: 0px 10px 0px 40px; DISPLAY: inline-block
+}
+.sidemenu .menu {
+	BACKGROUND: #fff
+}
+.sidemenu .item {
+	FONT-SIZE: 16px; CURSOR: pointer; HEIGHT: 50px; COLOR: #333; DISPLAY: block; LINE-HEIGHT: 50px
+}
+.sidemenu I {
+	HEIGHT: 40px; WIDTH: 20px; VERTICAL-ALIGN: top; BACKGROUND: url(../images/color_sidemenu_icon.png) no-repeat; MARGIN: 0px 10px 0px 40px; DISPLAY: inline-block
+}
+.sidemenu .icon01 {
+	BACKGROUND-POSITION: 0px -26px
+}
+.sidemenu .icon02 {
+	BACKGROUND-POSITION: 0px -62px
+}
+.sidemenu .icon03 {
+	BACKGROUND-POSITION: 0px -102px
+}
+.sidemenu .icon04 {
+	BACKGROUND-POSITION: 0px -143px
+}
+.sidemenu .icon05 {
+	BACKGROUND-POSITION: 0px -182px
+}
+.sidemenu .icon06 {
+	BACKGROUND-POSITION: 0px -221px
+}
+.sidemenu .icon07 {
+	BACKGROUND-POSITION: 0px -262px
+}
+.sidemenu .icon08 {
+	BACKGROUND-POSITION: 0px -333px
+}
+.sidemenu .icon09 {
+	BACKGROUND-POSITION: 0px -366px
+}
+.sidemenu .child {
+	DISPLAY: none
+}
+.sidemenu .child LI A {
+	HEIGHT: 50px; POSITION: relative; PADDING-LEFT: 70px; DISPLAY: block; LINE-HEIGHT: 50px
+}
+.sidemenu .child LI A.cur {
+	BACKGROUND: url(../images/color_sidemenu_icon.png) no-repeat right -296px; COLOR: #fff
+}
+.main_bg {
+	PADDING-TOP: 40px
+}
+.user_wrap {
+	BACKGROUND: url(../images/user_wrap.png) repeat-y; POSITION: relative
+}
+.r_main {
+	WIDTH: 787px; FLOAT: right
+}
+.border_t15 {
+	BORDER-TOP: #f5f5f5 15px solid
+}
+.user_mod {
+	BACKGROUND: #fff; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px
+}
+.user_til {
+	MARGIN-BOTTOM: 15px; LINE-HEIGHT: 24px
+}
+.user_til .icon {
+	HEIGHT: 24px; WIDTH: 6px; VERTICAL-ALIGN: top; BACKGROUND: #e8c109; DISPLAY: inline-block; MARGIN-RIGHT: 20px; border-radius: 3px
+}
+.error_tip {
+	COLOR: red
+}
+.user_screening LI {
+	MARGIN-BOTTOM: 15px; HEIGHT: 30px; FLOAT: left
+}
+.user_table TD {
+	FONT-SIZE: 12px; BORDER-BOTTOM: #ddd 1px solid; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 10px; LINE-HEIGHT: 20px; PADDING-RIGHT: 10px
+}
+.user_table .til TD {
+	FONT-SIZE: 14px; BORDER-TOP: 0px; BORDER-RIGHT: 0px; BACKGROUND: #f5f5f5; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px
+}
+.user_table .til_120 {
+	OVERFLOW: hidden; MAX-WIDTH: 120px; VERTICAL-ALIGN: middle; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; DISPLAY: inline-block
+}
+.user_table .progress_bg {
+	HEIGHT: 6px; WIDTH: 80px; VERTICAL-ALIGN: middle; BACKGROUND: #f5f5f5; TEXT-ALIGN: left; DISPLAY: inline-block; MARGIN-RIGHT: 5px; border-radius: 3px
+}
+.user_table .progress {
+	HEIGHT: 6px; WIDTH: 100%; BACKGROUND: #ff6e03; DISPLAY: inline-block; border-radius: 3px
+}
+.user_table .progress_cent {
+	WIDTH: 40px; TEXT-ALIGN: left; DISPLAY: inline-block
+}
+.user_table TD .highlight {
+	MARGIN: 0px 3px; DISPLAY: inline-block
+}
+.user_table_long TD {
+	PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px
+}
+.user_table .f12 TD {
+	FONT-SIZE: 12px
+}
+.form_info .cell LI {
+	MARGIN-BOTTOM: 20px; ZOOM: 1
+}
+.form_info .cell LI:after {
+	HEIGHT: 0px; CONTENT: '\20'; CLEAR: both; DISPLAY: block
+}
+.form_info .cell .til {
+	WIDTH: 20%; FLOAT: left; TEXT-ALIGN: right; LINE-HEIGHT: 30px
+}
+.form_info .cell .info {
+	WIDTH: 80%; FLOAT: left; TEXT-ALIGN: left; LINE-HEIGHT: 30px
+}
+.form_info .cell .info .text {
+	BORDER-TOP: #ddd 1px solid; HEIGHT: 18px; BORDER-RIGHT: #ddd 1px solid; WIDTH: 290px; BORDER-BOTTOM: #ddd 1px solid; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 5px; BORDER-LEFT: #ddd 1px solid; LINE-HEIGHT: 18px; PADDING-RIGHT: 5px; MARGIN-RIGHT: 5px
+}
+.form_info .cell .info .select {
+	BORDER-TOP: #ddd 1px solid; HEIGHT: 30px; BORDER-RIGHT: #ddd 1px solid; WIDTH: 302px; BORDER-BOTTOM: #ddd 1px solid; PADDING-LEFT: 5px; BORDER-LEFT: #ddd 1px solid; LINE-HEIGHT: 30px; MARGIN-RIGHT: 5px
+}
+.pg-tip {
+	HEIGHT: 50px; BORDER-BOTTOM: #ddd 1px solid; PADDING-LEFT: 30px; LINE-HEIGHT: 50px
+}
+.pg-ico {
+	HEIGHT: 30px; WIDTH: 30px; VERTICAL-ALIGN: middle; BACKGROUND: url(../images/user_icon.png) no-repeat 0px -397px; DISPLAY: inline-block
+}
+.login_time {
+	RIGHT: 0px; POSITION: absolute; TOP: -28px
+}
+.account_info {
+	BACKGROUND: #fff
+}
+.account_info .top {
+	HEIGHT: 53px; BACKGROUND: url(../images/account_info_top.png) no-repeat; BORDER-BOTTOM: #ddd 1px solid; LINE-HEIGHT: 53px; border-radius: 5px 5px 0 0
+}
+.account_info .greetings {
+	FONT-SIZE: 16px; WIDTH: 350px; FLOAT: left; COLOR: #333; MARGIN: 0px 30px
+}
+.account_info .certification {
+	FLOAT: left
+}
+.account_info .certification LI {
+	POSITION: relative; FLOAT: left; Z-INDEX: 999
+}
+.account_info .certification LI I {
+	FONT-SIZE: 0px; HEIGHT: 25px; WIDTH: 26px; BACKGROUND: url(../images/certification.png) no-repeat; FONT-STYLE: normal; MARGIN: 14px 2px 0px; DISPLAY: block
+}
+.account_info .certification LI I.icon02 {
+	BACKGROUND-POSITION: -29px 0px
+}
+.account_info .certification LI I.icon03 {
+	BACKGROUND-POSITION: -60px 0px
+}
+.account_info .certification LI I.icon04 {
+	BACKGROUND-POSITION: -91px 0px
+}
+.account_info .certification LI I.icon05 {
+	BACKGROUND-POSITION: -121px 0px
+}
+.account_info .certification LI .cur {
+	BACKGROUND: url(../images/color_user_icon.png) no-repeat
+}
+.account_info .certification .hover_tips_con {
+	TOP: 39px
+}
+.account_info .progress_bg {
+	HEIGHT: 6px; WIDTH: 105px; VERTICAL-ALIGN: middle; BACKGROUND: #ddd; MARGIN: 0px 5px; DISPLAY: inline-block; border-radius: 3px
+}
+.account_info .progress {
+	HEIGHT: 6px; WIDTH: 100%; BACKGROUND: #ff6e03; DISPLAY: inline-block; border-radius: 3px
+}
+.account_info .chart {
+	HEIGHT: 400px
+}
+.account_info .info_l {
+	BORDER-RIGHT: #ddd 1px solid; WIDTH: 520px; FLOAT: left
+}
+.account_info .calculate {
+	MARGIN-BOTTOM: 30px; TEXT-ALIGN: center
+}
+.account_info .info_r {
+	WIDTH: 236px; FLOAT: right; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px
+}
+.account_info .money {
+	BORDER-BOTTOM: #ddd 1px solid; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 20px; LINE-HEIGHT: 40px; PADDING-RIGHT: 0px
+}
+.account_info .vouchers LI {
+	MARGIN-BOTTOM: 15px; LINE-HEIGHT: 33px
+}
+.account_info .vouchers {
+	BORDER-BOTTOM: #ddd 1px solid; PADDING-BOTTOM: 5px; PADDING-TOP: 20px; PADDING-LEFT: 20px; PADDING-RIGHT: 0px
+}
+.account_info .vouchers I {
+	HEIGHT: 33px; WIDTH: 33px; VERTICAL-ALIGN: middle; BACKGROUND: url(../images/user_icon.png) no-repeat 0px -22px; DISPLAY: inline-block; MARGIN-RIGHT: 15px
+}
+.account_info .vouchers .icon02 {
+	BACKGROUND-POSITION: 0px -59px
+}
+.account_info .vouchers .icon03 {
+	BACKGROUND-POSITION: 0px -96px
+}
+.charitable_account {
+	BACKGROUND: #fff; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 20px; LINE-HEIGHT: 38px; PADDING-RIGHT: 20px
+}
+.charitable_account .icon {
+	HEIGHT: 38px; WIDTH: 38px; BACKGROUND: url(../images/user_icon.png) no-repeat 0px -134px; FLOAT: left; DISPLAY: block; MARGIN-RIGHT: 10px
+}
+.certification_steps {
+	BACKGROUND: #fff; PADDING-BOTTOM: 50px; TEXT-ALIGN: center; PADDING-TOP: 50px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.certification_steps SPAN {
+	HEIGHT: 51px; WIDTH: 693px; BACKGROUND: url(../images/color_certification_steps.png) no-repeat; DISPLAY: inline-block
+}
+.certification_steps02 SPAN {
+	BACKGROUND: url(../images/color_certification_steps02.png) no-repeat
+}
+.certification_steps03 SPAN {
+	BACKGROUND: url(../images/color_certification_steps03.png) no-repeat
+}
+.certification_steps04 SPAN {
+	BACKGROUND: url(../images/color_certification_steps04.png) no-repeat
+}
+.certification_steps05 SPAN {
+	BACKGROUND: url(../images/color_certification_steps05.png) no-repeat
+}
+.certification_steps .step_02 {
+	BACKGROUND-POSITION: 0px -70px
+}
+.certification_steps .step_03 {
+	BACKGROUND-POSITION: 0px -140px
+}
+.certification_steps .step_04 {
+	BACKGROUND-POSITION: 0px -210px
+}
+.certification_form .cell .til {
+	WIDTH: 35%
+}
+.certification_form .cell .info {
+	WIDTH: 65%
+}
+.certification_form .cell .info .text {
+	WIDTH: 240px
+}
+.trading_total {
+	BACKGROUND: #fff; PADDING-BOTTOM: 35px; PADDING-TOP: 35px; PADDING-LEFT: 30px; LINE-HEIGHT: 30px; PADDING-RIGHT: 0px
+}
+.trading_total .line {
+	HEIGHT: 50px; WIDTH: 1px; BACKGROUND: #ddd; FLOAT: left; MARGIN-LEFT: 40px; MARGIN-RIGHT: 40px
+}
+.user_tab {
+	MARGIN-BOTTOM: 15px; BACKGROUND: #fff; BORDER-BOTTOM: #ddd 1px solid
+}
+.user_tab LI {
+	FONT-SIZE: 16px; CURSOR: pointer; FLOAT: left; PADDING-BOTTOM: 8px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px
+}
+.user_tab LI.hover {
+	MARGIN-BOTTOM: -1px; POSITION: relative
+}
+.user_tab LI.hover I {
+	FONT-SIZE: 0px; BORDER-TOP: 5px solid; HEIGHT: 0px; BORDER-RIGHT: 5px dashed; WIDTH: 0px; BORDER-BOTTOM: 5px dashed; POSITION: absolute; LEFT: 50%; BORDER-LEFT: 5px dashed; DISPLAY: block; LINE-HEIGHT: 0; BOTTOM: -11px
+}
+.topup_way {
+	MARGIN-TOP: 20px
+}
+.topup_way LI {
+	FLOAT: left; MARGIN: 0px 50px 20px 0px
+}
+.topup_way LI IMG {
+	BORDER-TOP: #ddd 1px solid; HEIGHT: 40px; BORDER-RIGHT: #ddd 1px solid; WIDTH: 150px; BORDER-BOTTOM: #ddd 1px solid; MARGIN-LEFT: 10px; BORDER-LEFT: #ddd 1px solid
+}
+.topup_way LI .offline {
+	FONT-SIZE: 16px; BORDER-TOP: #ddd 1px solid; HEIGHT: 40px; BORDER-RIGHT: #ddd 1px solid; WIDTH: 150px; BORDER-BOTTOM: #ddd 1px solid; TEXT-ALIGN: center; MARGIN-LEFT: 10px; BORDER-LEFT: #ddd 1px solid; DISPLAY: inline-block; LINE-HEIGHT: 40px
+}
+.user_mod_gray {
+	BACKGROUND: #f8f8f8
+}
+.topup_form .cell .til {
+	WIDTH: 40%
+}
+.topup_form .cell .info {
+	WIDTH: 60%
+}
+.topup_form .cell .info .text {
+	WIDTH: 220px
+}
+.problem_icon {
+	HEIGHT: 27px; WIDTH: 27px; VERTICAL-ALIGN: middle; BACKGROUND: url(../images/user_icon.png) 0px -210px; DISPLAY: inline-block; MARGIN-RIGHT: 10px
+}
+.topup_problem {
+	FONT-SIZE: 16px; COLOR: #80c4ea
+}
+.topup_problem_con LI {
+	MARGIN-BOTTOM: 25px
+}
+.topup_news_ico {
+	HEIGHT: 17px; WIDTH: 38px; VERTICAL-ALIGN: middle; BACKGROUND: url(../images/user_icon.png) 0px -373px; DISPLAY: inline-block; MARGIN-RIGHT: 5px
+}
+.gl_icon {
+	HEIGHT: 15px; WIDTH: 15px; VERTICAL-ALIGN: middle; BACKGROUND: url(../images/color_user_icon.png) -34px -31px; DISPLAY: inline-block; MARGIN-RIGHT: 5px
+}
+.tj_icon {
+	HEIGHT: 15px; WIDTH: 15px; VERTICAL-ALIGN: middle; BACKGROUND: url(../images/color_user_icon.png) -34px -31px; DISPLAY: inline-block; MARGIN-RIGHT: 5px
+}
+.gl_icon {
+	BACKGROUND-POSITION: -59px -31px
+}
+.bank_manage_list LI {
+	BORDER-TOP: #ddd 1px solid; HEIGHT: 140px; BORDER-RIGHT: #ddd 1px solid; WIDTH: 210px; BACKGROUND: #fff; BORDER-BOTTOM: #ddd 3px solid; POSITION: relative; FLOAT: left; BORDER-LEFT: #ddd 1px solid; MARGIN: 20px 20px 0px 0px; border-radius: 3px
+}
+.bank_manage_list LI .pic {
+	TEXT-ALIGN: center; MARGIN: 15px 0px 10px
+}
+.bank_manage_list LI .pic IMG {
+	HEIGHT: 40px; WIDTH: 150px
+}
+.bank_manage_list LI .number {
+	FONT-SIZE: 18px; HEIGHT: 30px; COLOR: #333; TEXT-ALIGN: center; LINE-HEIGHT: 30px
+}
+.bank_manage_list LI .delete {
+	HEIGHT: 30px; BACKGROUND: #f8f8f8; MARGIN-TOP: 15px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 10px; LINE-HEIGHT: 30px; PADDING-RIGHT: 10px
+}
+.bank_manage_list LI .ico {
+	HEIGHT: 20px; WIDTH: 20px; BACKGROUND: url(../images/user_icon.png) no-repeat 0px -278px; MARGIN-TOP: 5px; FLOAT: right; DISPLAY: block
+}
+.bank_manage_list .add {
+	BACKGROUND: #f8f8f8; TEXT-ALIGN: center
+}
+.bank_manage_list .add A {
+	HEIGHT: 140px; WIDTH: 210px; DISPLAY: block
+}
+.bank_manage_list .add_ico {
+	HEIGHT: 32px; WIDTH: 30px; BACKGROUND: url(../images/user_icon.png) no-repeat 0px -242px; MARGIN: 40px 0px 10px; DISPLAY: inline-block
+}
+.tx_tips TD {
+	BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid; BORDER-BOTTOM: #ddd 1px solid; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 5px; BORDER-LEFT: #ddd 1px solid; PADDING-RIGHT: 5px
+}
+.tx_tips .border {
+	WIDTH: 280px
+}
+.tx_tips {
+	MARGIN-LEFT: -152px
+}
+.amount_list LI {
+	WIDTH: 150px; FLOAT: left; PADDING-LEFT: 30px
+}
+.debt_total {
+	BACKGROUND: #fff; PADDING-BOTTOM: 20px; PADDING-TOP: 0px; PADDING-LEFT: 20px; LINE-HEIGHT: 30px; PADDING-RIGHT: 0px
+}
+.debt_total .line {
+	HEIGHT: 50px; WIDTH: 1px; BACKGROUND: #ddd; FLOAT: left; MARGIN: 65px 40px 0px
+}
+.debt_total .list {
+	WIDTH: 510px; FLOAT: left
+}
+.debt_total .list LI {
+	HEIGHT: 60px; WIDTH: 170px; MARGIN-TOP: 20px; FLOAT: left
+}
+.hzcx_total {
+	BACKGROUND: #fff; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 30px; LINE-HEIGHT: 30px; PADDING-RIGHT: 0px
+}
+.hzcx_total .line {
+	HEIGHT: 50px; WIDTH: 1px; BACKGROUND: #ddd; FLOAT: left; MARGIN: 5px 40px 0px
+}
+.hzcx_total .list {
+	WIDTH: 510px; FLOAT: left
+}
+.hzcx_total .list LI {
+	HEIGHT: 60px; WIDTH: 170px; FLOAT: left
+}
+.charity_total {
+	BACKGROUND: #fff; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 30px; LINE-HEIGHT: 30px; PADDING-RIGHT: 0px
+}
+.charity_total .line {
+	HEIGHT: 50px; WIDTH: 1px; BACKGROUND: #ddd; FLOAT: left; MARGIN: 5px 40px 0px
+}
+.charity_total .list {
+	WIDTH: 510px; FLOAT: left
+}
+.charity_total .list LI {
+	HEIGHT: 60px; WIDTH: 170px; FLOAT: left
+}
+.borrowing_list .item:after {
+	HEIGHT: 0px; CONTENT: '\20'; CLEAR: both; DISPLAY: block
+}
+.borrowing_list .info:after {
+	HEIGHT: 0px; CONTENT: '\20'; CLEAR: both; DISPLAY: block
+}
+.borrowing_list .item {
+	MARGIN-BOTTOM: 20px; BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid; BORDER-BOTTOM: #ddd 1px solid; ZOOM: 1; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 20px; BORDER-LEFT: #ddd 1px solid; PADDING-RIGHT: 20px
+}
+.borrowing_list .info {
+	MARGIN-TOP: 15px; ZOOM: 1
+}
+.borrowing_list .info LI {
+	WIDTH: 235px; FLOAT: left; LINE-HEIGHT: 30px
+}
+.tyj_total {
+	BACKGROUND: #fff; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 30px; LINE-HEIGHT: 30px; PADDING-RIGHT: 0px
+}
+.tyj_total .line {
+	HEIGHT: 50px; WIDTH: 1px; BACKGROUND: #ddd; FLOAT: left; MARGIN: 5px 40px 0px
+}
+.tyj_total .list {
+	WIDTH: 510px; FLOAT: left
+}
+.tyj_total .list LI {
+	HEIGHT: 60px; WIDTH: 170px; FLOAT: left
+}
+.tip_info {
+	MAX-WIDTH: 700px
+}
+.tip_info .tips {
+	MAX-WIDTH: 630px
+}
+.link_invite {
+	WIDTH: 450px; FLOAT: left; PADDING-LEFT: 30px
+}
+.link_invite TEXTAREA {
+	WORD-WRAP: break-word; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px
+}
+.invite-code {
+	WIDTH: 220px; FLOAT: left; TEXT-ALIGN: center; PADDING-LEFT: 20px; BORDER-LEFT: #ccc 1px dotted
+}
+.invite-code IMG {
+	HEIGHT: 150px; WIDTH: 150px
+}
+.tip_info {
+	MAX-WIDTH: 700px
+}
+.tip_info .tips {
+	MAX-WIDTH: 630px
+}
+.link_invite {
+	WIDTH: 420px; MARGIN: 0px auto
+}
+.link_invite TEXTAREA {
+	WORD-WRAP: break-word; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px
+}
+.message_ico {
+	HEIGHT: 14px; WIDTH: 23px; VERTICAL-ALIGN: middle; BACKGROUND: url(../images/user_icon.png) no-repeat 0px -304px; DISPLAY: inline-block
+}
+.message_con {
+	BORDER-TOP: #ddd 1px solid
+}
+.message_con .item {
+	BORDER-BOTTOM: #ddd 1px solid; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.message_con .con:after {
+	HEIGHT: 0px; CONTENT: '\20'; CLEAR: both; DISPLAY: block
+}
+.message_con .con {
+	FONT-SIZE: 12px; ZOOM: 1; LINE-HEIGHT: 30px
+}
+.message_con .con LI {
+	FLOAT: left
+}
+.message_con .con .unread {
+	HEIGHT: 14px; WIDTH: 14px; BACKGROUND: url(../images/user_icon.png) no-repeat 0px -321px; MARGIN: 9px 20px 0px 0px; DISPLAY: block
+}
+.message_con .con .read {
+	HEIGHT: 14px; WIDTH: 14px; BACKGROUND: url(../images/user_icon.png) no-repeat 0px -321px; MARGIN: 9px 20px 0px 0px; DISPLAY: block
+}
+.message_con .con .read {
+	BACKGROUND-POSITION: 0px -338px
+}
+.message_con .con .mod_l INPUT {
+	MARGIN-TOP: 9px; DISPLAY: block
+}
+.message_con .con .mod02 {
+	WIDTH: 110px
+}
+.message_con .con .mod03 {
+	OVERFLOW: hidden; WIDTH: 300px; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis
+}
+.message_con .con .mod_r {
+	FLOAT: right
+}
+.message_con .info {
+	BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid; BACKGROUND: #f8f8f8; MARGIN-TOP: 10px; BORDER-BOTTOM: #ddd 1px solid; POSITION: relative; PADDING-BOTTOM: 15px; PADDING-TOP: 15px; PADDING-LEFT: 20px; BORDER-LEFT: #ddd 1px solid; DISPLAY: none; LINE-HEIGHT: 24px; PADDING-RIGHT: 20px
+}
+.message_con .info .arrow {
+	HEIGHT: 8px; WIDTH: 13px; BACKGROUND: url(../images/user_icon.png) no-repeat 0px -355px; POSITION: absolute; LEFT: 75px; DISPLAY: block; TOP: -8px
+}
+.basic_info_top {
+	PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px
+}
+.basic_info_top .portrait IMG {
+	BORDER-TOP: #fff 3px solid; HEIGHT: 100px; BORDER-RIGHT: #fff 3px solid; WIDTH: 100px; BORDER-BOTTOM: #fff 3px solid; FLOAT: left; BORDER-LEFT: #fff 3px solid; border-radius: 50%
+}
+.basic_info_top .upload {
+	FLOAT: left; MARGIN: 28px 0px 0px 30px
+}
+#ui-upload-holder {
+	OVERFLOW: hidden; HEIGHT: 26px; WIDTH: 86px; POSITION: relative
+}
+.ui-upload-input {
+	CURSOR: pointer; HEIGHT: 100%; RIGHT: 0px; POSITION: absolute; FILTER: alpha(opacity:0); Z-INDEX: 999; TOP: 0px; opacity: 0
+}
+#ui-upload-holder .btn04 {
+	POSITION: absolute; LEFT: 0px; TOP: 0px
+}
+.basic_info .item {
+	BORDER-BOTTOM: #ddd 1px dotted
+}
+.basic_info .con:after {
+	HEIGHT: 0px; CONTENT: '\20'; CLEAR: both; DISPLAY: block
+}
+.basic_info .con {
+	HEIGHT: 50px; ZOOM: 1; LINE-HEIGHT: 50px
+}
+.basic_info .mod01 {
+	FONT-SIZE: 16px; WIDTH: 150px; FLOAT: left; COLOR: #333; MARGIN-LEFT: 20px
+}
+.basic_info .mod02 {
+	WIDTH: 350px; FLOAT: left
+}
+.basic_info .operation {
+	WIDTH: 190px; FLOAT: right; TEXT-ALIGN: right; PADDING-RIGHT: 20px
+}
+.basic_info .amend {
+	MARGIN: 30px 0px 40px
+}
+.basic_info .form_info .cell .til {
+	WIDTH: 35%
+}
+.basic_info .form_info .cell .info {
+	WIDTH: 65%
+}
+.basic_info .form_info .cell .info .text {
+	WIDTH: 280px
+}
+.basic_info .binding UL {
+	WIDTH: 300px; MARGIN: 0px auto
+}
+.basic_info .binding LI {
+	WIDTH: 150px; FLOAT: left; TEXT-ALIGN: center
+}
+.basic_info .binding .icon {
+	BORDER-TOP: #ddd 1px solid; HEIGHT: 86px; BORDER-RIGHT: #ddd 1px solid; WIDTH: 86px; BACKGROUND: url(../images/color_basic_info_ico.png) no-repeat; BORDER-BOTTOM: #ddd 1px solid; BORDER-LEFT: #ddd 1px solid; MARGIN: 20px 0px 15px; DISPLAY: inline-block; border-radius: 50%
+}
+.basic_info .binding .icon01 {
+	BACKGROUND-POSITION: 18px 15px
+}
+.basic_info .binding .icon02 {
+	BACKGROUND-POSITION: -100px 15px
+}
+.basic_info .binding .icon03 {
+	BACKGROUND-POSITION: -218px 15px
+}
+.basic_info .binding .icon04 {
+	BACKGROUND-POSITION: -364px 15px
+}
+.basic_info .steps_pic {
+	HEIGHT: 18px; WIDTH: 375px; BACKGROUND: url(../images/color_basic_info.png) no-repeat; MARGIN: 0px auto
+}
+.basic_info .step_02 {
+	BACKGROUND-POSITION: 0px -29px
+}
+.basic_info .step_03 {
+	BACKGROUND-POSITION: 0px -55px
+}
+.basic_info .steps_text {
+	WIDTH: 500px; MARGIN: 15px auto 30px
+}
+.basic_info .steps_text SPAN {
+	WIDTH: 140px; TEXT-ALIGN: center; DISPLAY: inline-block
+}
+.basic_info .problem {
+	WIDTH: 450px; MARGIN: 0px auto
+}
+.basic_info .problem LI {
+	MARGIN-BOTTOM: 10px; POSITION: relative
+}
+.basic_info .problem LI .red {
+	WIDTH: 150px; POSITION: absolute; LEFT: 425px; TOP: 3px
+}
+.lines_ico {
+	HEIGHT: 33px; WIDTH: 33px; VERTICAL-ALIGN: middle; BACKGROUND: url(../images/color_yellow_user_icon.png) no-repeat; DISPLAY: inline-block; MARGIN-RIGHT: 10px
+}
+.rz_info .record {
+	MARGIN-TOP: 20px; PADDING-BOTTOM: 30px; PADDING-TOP: 30px; PADDING-LEFT: 30px; PADDING-RIGHT: 0px
+}
+.rz_info .record .til {
+	FONT-SIZE: 16px; FLOAT: left; LINE-HEIGHT: 60px
+}
+.rz_info .record .line {
+	HEIGHT: 60px; WIDTH: 1px; BACKGROUND: #ddd; FLOAT: left; MARGIN: 0px 40px
+}
+.rz_info .record LI {
+	WIDTH: 180px; FLOAT: left; LINE-HEIGHT: 30px
+}
+.rz_info .user_table TD {
+	FONT-SIZE: 14px
+}
+.mall_indent DL {
+	BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid; MARGIN-TOP: 20px; BORDER-BOTTOM: medium none; BORDER-LEFT: #ddd 1px solid
+}
+.mall_indent DT {
+	HEIGHT: 45px; BACKGROUND: #f2f2f2; PADDING-LEFT: 15px; LINE-HEIGHT: 45px
+}
+.mall_indent DD {
+	BORDER-BOTTOM: #ddd 1px solid; POSITION: relative; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 160px; MIN-HEIGHT: 110px; PADDING-RIGHT: 20px
+}
+.mall_indent DD .pic {
+	POSITION: absolute; LEFT: 17px; TOP: 20px
+}
+.mall_indent DD IMG {
+	HEIGHT: 110px; WIDTH: 128px
+}
+.mall_indent DD H3 {
+	FONT-SIZE: 16px; OVERFLOW: hidden; MARGIN-BOTTOM: 7px; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; COLOR: #333
+}
+.mall_indent DD H3 A {
+	COLOR: #333
+}
+.mall_indent DD LI {
+	OVERFLOW: hidden; HEIGHT: 28px; FLOAT: left; LINE-HEIGHT: 28px
+}
+.mall_indent DD .list01 LI {
+	MARGIN-RIGHT: 45px
+}
+.mall_indent DD .list01 .last {
+	MARGIN: 0px
+}
+.mall_indent DD .list02 .l {
+	WIDTH: 320px
+}
+.exchange_ico {
+	HEIGHT: 24px; WIDTH: 24px; VERTICAL-ALIGN: middle; BACKGROUND: url(../images/color_user_icon.png) no-repeat -84px -27px; DISPLAY: inline-block; MARGIN-RIGHT: 3px
+}
+.side_info {
+	BACKGROUND: #ac5d00
+}
+.sidemenu .item:hover {
+	COLOR: #ac5d00
+}
+.sidemenu .my_account A:hover {
+	COLOR: #ac5d00
+}
+.sidemenu .cur {
+	COLOR: #ac5d00
+}
+.sidemenu .my_account .cur {
+	COLOR: #ac5d00
+}
+.user_tab LI.hover {
+	BORDER-BOTTOM: #ac5d00 1px solid; COLOR: #ac5d00
+}
+.user_tab LI.hover I {
+	BORDER-TOP-COLOR: #ac5d00; BORDER-LEFT-COLOR: transparent; BORDER-BOTTOM-COLOR: transparent; BORDER-RIGHT-COLOR: transparent
+}
+.mall_indent DD H3 A:hover {
+	COLOR: #ac5d00
+}
+.user_til .icon {
+	BACKGROUND: #e8c109
+}
+.sidemenu .child LI A.cur {
+	BACKGROUND-COLOR: #e8c109
+}
+.user_tab LI {
+	COLOR: #e8c109
+}
+.feedback_content .item {
+	MARGIN-BOTTOM: 20px; BORDER-BOTTOM: #ccc 1px dotted; PADDING-BOTTOM: 20px
+}
+.feedback_content .bd {
+	BACKGROUND: #f1f1f1; MARGIN-TOP: 20px; POSITION: relative; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 20px; LINE-HEIGHT: 24px; PADDING-RIGHT: 20px
+}
+.feedback_content .bd .arrow {
+	FONT-SIZE: 0px; BORDER-TOP: transparent 7px dashed; HEIGHT: 0px; BORDER-RIGHT: transparent 7px dashed; WIDTH: 0px; BORDER-BOTTOM: #f1f1f1 7px solid; POSITION: absolute; LEFT: 30px; BORDER-LEFT: transparent 7px dashed; DISPLAY: block; LINE-HEIGHT: 0; TOP: -14px
+}
+.main_mod {
+	WIDTH: 922px; BACKGROUND: #fff; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 40px; MIN-HEIGHT: 450px; MARGIN: 0px auto; PADDING-RIGHT: 40px
+}
+.ability_til {
+	BORDER-BOTTOM: #d3d3d3 2px solid; PADDING-BOTTOM: 20px; PADDING-TOP: 40px; PADDING-LEFT: 0px; MARGIN: 0px 40px; PADDING-RIGHT: 0px
+}
+.risk_com {
+	WIDTH: 960px; BACKGROUND: #fff; PADDING-BOTTOM: 20px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.appetite_til H2 {
+	FONT-SIZE: 30px
+}
+.appetite_til P {
+	LINE-HEIGHT: 30px
+}
+.pen_pic {
+	HEIGHT: 66px; WIDTH: 176px
+}
+.survey {
+	WIDTH: auto; MARGIN-TOP: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px
+}
+.survey .risk_til {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 33px; LINE-HEIGHT: 25px
+}
+.survey .risk_til .risk_t1 {
+	FLOAT: left; FONT-WEIGHT: 700
+}
+.risk_mod .risk_bg {
+	BACKGROUND: #f9f0ec
+}
+.survey .risk_til .emptyWarn {
+	FLOAT: right; COLOR: red; DISPLAY: none; MARGIN-RIGHT: 20px
+}
+.risk_mod .risk_bg .emptyWarn {
+	DISPLAY: inline
+}
+.survey UL LI {
+	BORDER-BOTTOM: #ccc 1px dashed; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.survey .choices {
+	PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 54px; PADDING-RIGHT: 0px
+}
+.survey .verticalList .form_radio {
+	WIDTH: 100%; PADDING-BOTTOM: 5px
+}
+.survey .choices .form_radio {
+	MARGIN-RIGHT: 40px
+}
+.form_radio {
+	FLOAT: left; MARGIN-RIGHT: 10px
+}
+.survey .survey_icon {
+	HEIGHT: 13px; WIDTH: 13px; VERTICAL-ALIGN: middle; BACKGROUND: url(../images/user_icon.png) no-repeat 0px -432px; DISPLAY: inline-block; MARGIN-RIGHT: 5px
+}
+.survey UL LI LABEL {
+	FONT-SIZE: 14px; POSITION: relative; COLOR: #666
+}
+.form_radio INPUT {
+	POSITION: absolute; LEFT: -20px; MARGIN: 0px 3px; DISPLAY: inline; TOP: 3px
+}
+.complete {
+	PADDING-TOP: 150px
+}
+.correct_ico {
+	HEIGHT: 50px; WIDTH: 50px; VERTICAL-ALIGN: middle; BACKGROUND: url(../images/user_popup.png) no-repeat 0px -100px; DISPLAY: inline-block
+}
+.complete_til {
+	FONT-SIZE: 24px; VERTICAL-ALIGN: middle; COLOR: #333; TEXT-ALIGN: left; PADDING-LEFT: 20px; DISPLAY: inline-block
+}
+.side_info {
+	BACKGROUND: #ac5d00
+}
+.sidemenu .item:hover {
+	COLOR: #ac5d00
+}
+.sidemenu .my_account A:hover {
+	COLOR: #ac5d00
+}
+.sidemenu .cur {
+	COLOR: #ac5d00
+}
+.sidemenu .my_account .cur {
+	COLOR: #ac5d00
+}
+.user_tab LI.hover {
+	BORDER-BOTTOM: #ac5d00 1px solid; COLOR: #ac5d00
+}
+.user_tab LI.hover I {
+	BORDER-TOP-COLOR: #ac5d00; BORDER-LEFT-COLOR: transparent; BORDER-BOTTOM-COLOR: transparent; BORDER-RIGHT-COLOR: transparent
+}
+.mall_indent DD H3 A:hover {
+	COLOR: #ac5d00
+}
+.appetite_til H2 {
+	COLOR: #ac5d00
+}

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/main_style.css">
+	<!--[if IE]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<!-- 仪表盘 -->
+	<script src="js/raphael-2.1.4.min.js"></script>
+	<script src="js/justgage.js"></script>
+	<!-- banner-->
+	<script src="js/banner.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			nav(); //主导航
+
+			//fnTab('.register_log', false);  //选项卡
+            inputTips('.register_log .text');  //文本框获得失去焦点
+            setLevelProgress('.schedule_box' ,'i');  //设置水平进度条
+
+            dashBoard('.new-hand dd', '.activity');  //“新手专享”仪表盘
+            dashBoard('.recommend_pro li', '.recom');  //“推荐产品”仪表盘
+
+			displacement('.new-hand dl' , 'move');  //“新手专享”鼠标经过位移
+			displacement('.recommend_pro ul.list_td' ,'move');  //“推荐产品”鼠标经过位移
+
+			//banner
+			$(".prev,.next").hover(function(){
+				$(this).stop(true,false).fadeTo("show",0.9);
+			},function(){
+				$(this).stop(true,false).fadeTo("show",0.4);
+			});
+			$(".banner-box").slide({
+				titCell:".hd ul",
+				mainCell:".bd ul",
+				effect:"fold",
+				interTime:3500,
+				delayTime:500,
+				autoPlay:true,
+				autoPage:true, 
+				trigger:"click" 
+			});
+			$(".banner-box .hd").css('marginLeft', -$(".banner-box .hd ul").width()/2);
+
+		});
+	</script>
+</head>
+<body>
+<!-- 顶部 -->
+<div class="top">
+	<div class="w1200 clearfix">
+		<div class="fl"><span><i class="iconfont f14 mr5">&#xe600;</i>服务热线：400-000-0000</span><span class="ml20"><i class="iconfont f14 mr5">&#xe601;</i>服务时间：9:00-19:00</span><span class="ml20"><i class="iconfont f20 mr5 vertical_middle">&#xe602;</i><i class="vertical_middle">手机客户端</i></span></div>
+		<div class="fast-way fr">
+		<!--<a href="#">新手指引</a>|<a href="#">最新活动</a>|<a href="#"><i class="iconfont f20 mr5 vertical_middle">&#xe602;</i><span class="vertical_middle">下载客户端</span></a>|<a href="#" class="orange">登录</a>|<a href="#">免费注册</a>-->
+			<div class="fl dis_none">
+				<div class="user_login fl" >
+					<em>您好，</em><a href="">139****5735</a><a href="">退出</a>
+				</div>
+				<ul  class="user_center fl" >
+					<li class="user_li"><a href="">账户中心</a>
+						<ul>
+							<li><a href="">充值</a></li>
+							<li><a href="">提现</a></li>
+							<li><a href="">我要理财</a></li>
+							<li><a href="">我要借款</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="msg fl"><a href=""><img src="images/Email.png" alt="消息中心" width="18">&nbsp;(5)</a></div>
+			</div>
+			<a href="">立即登录</a>
+			<a href="">免费注册</a>
+			<a href="">帮助中心</a>
+		</div>
+	</div>
+</div>
+<!-- 头部 -->
+<div class="bg-white">
+	<div class="head clearfix w1200">
+		<a class="fl logo dis_block" href="index.html">量硕宏程</a>
+		<!-- 导航 -->
+		<ul class="nav fr txt-center f18">
+			<li><a href="index.html" class="cur"><span class="f20 mr5">·</span>首页</a></li>
+			<li><a href="javascript:;">我要理财<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财一</a></li>
+						<li><a href="#">理财二</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="javascript:;">我要借款<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财afg</a></li>
+						<li><a href="#">理财sdr</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">新手指引</a></li>
+			<li><a href="javascript:;">关于我们<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财dr1</a></li>
+						<li><a href="#">理财1234576</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="border-bot-e6"></div>
+<div class="pos_rel banner">
+	<!-- banner start -->
+	<div class="banner-box">
+		<div class="bd">
+	        <ul>          	    
+	            <li style="background:#F3E5D8;">
+	                <div class="m-width"><img src="images/banner.jpg" /></div>
+	            </li>
+	            <li style="background:#B01415">
+	                <div class="m-width"><img src="images/banner-loan.jpg" /></div>
+	            </li>
+	            <li style="background:#F3E5D8;">
+	                <div class="m-width"><img src="images/banner.jpg" /></div>
+	            </li>
+	            <li style="background:#B01415">
+	                <div class="m-width"><img src="images/banner-loan.jpg" /></div>
+	            </li>
+	        </ul>
+	    </div>
+	    <div class="banner-btn">
+	        <a class="prev" href="javascript:void(0);"></a>
+	        <a class="next" href="javascript:void(0);"></a>
+	        <div class="hd"><ul></ul></div>
+	    </div>
+	</div>
+	<!-- banner end -->
+	<!-- <img src="images/banner.jpg" alt="" class="dis_block" style="width:100%;" /> -->
+
+	<!-- 注册与登录 -->
+	<div class="pos_abs register_log over_hidden bg-white p10 dis_none">
+		<ul class="register_log_hd txt-center f16 clearfix mb10">
+			<li class="cur">立即登录</li>
+			<li><a href="#">免费注册</a></li>
+		</ul>
+		<div class="register_log_bd" style="display:block;">
+			<form>
+				<input type="text" name="" class="text mb10" value="输入手机号" />
+				<input type="text" name="" class="text mb10" value="输入密码" />
+				<!--<div><input type="text" name="" class="text codes-input vertical_middle" value="输入验证码" /> <span class="codes ml10"><img src="images/none/codes.jpg"></span></div>-->
+				<input type="button" name="" class="btn_orange white mt20" value="登录" />
+			</form>
+		</div>
+		<!--<div class="register_log_bd">
+			<form>
+				<input type="text" name="" class="text mb10" value="用户名/手机/邮箱" />
+				<input type="text" name="" class="text mb10" value="输入密码" />
+				<input type="text" name="" class="text mb10" value="再次输入密码" />
+				<div><input type="text" name="" class="text codes-input vertical_middle" value="输入验证码" /> <span class="codes ml10"><img src="images/none/codes.jpg"></span></div>
+				<input type="button" name="" class="btn_orange white mt20" value="同意用户协议并注册" />
+			</form>
+		</div>-->
+	</div>
+	<!-- 已登录 -->
+	<div class="pos_abs already_log over_hidden p20 white f16">
+		<h4 class="normal f20 mb30 pb10 pt10">量众易贷欢迎您！</h4>
+		<p class="mb30">您当前的账户：185****9760</p>
+		<div>
+			<a href="#" class="button btn_orange white txt-center">管理我的账户</a><a href="#" class="orange ml20">安全退出</a>
+		</div>
+	</div>
+</div>
+<div class="w1200 clearfix mt20 f14">
+	<!-- 左侧 -->
+	<div class="leftBox w880 fl">
+		<!-- 服务项目 -->
+		<ul class="services border bg-white txt-center clearfix pt20 pb20 pl10 pr10">
+			<li>
+				<h3 class="f18 normal">我要投资</h3>
+				<div class="border-right-dotted mt10">
+					<i class="icon icon_investment mb10"></i>
+					<p>一元起投</p>
+				</div>
+				<p>投资项目类型丰富 流动性高</p>
+			</li>
+			<li>
+				<h3 class="f18 normal">我要借款</h3>
+				<div class="border-right-dotted mt10">
+					<i class="icon icon_loan mb10"></i>
+					<p>无抵押无担保 信用借款</p>
+				</div>
+				<p>最快当天放款 最高可申50万</p>
+			</li>
+			<li>
+				<h3 class="f18 normal">安全保障</h3>
+				<div class="mt10">
+				<i class="icon icon_safe mb10"></i>
+					<p>银行全程委托</p>
+				</div>
+				<p>账户资金有保障</p>
+			</li>
+		</ul>
+		<!-- 新手专享 -->
+		<div class="new-hand border mt20">
+			<div class="title f20">新手专享</div>
+			<div class="p10 txt-center">
+				<dl class="clearfix">
+					<dd class="first f16">新手标001期</dd>
+					<dd class="second">
+						<ul class="f20">
+							<li class="gray-90 f14"><span>金额(元)</span><span>预期年化收益率</span><span>项目期限</span></li>
+							<li><span>25万</span><span class="f22 orange">12%+3%贴息</span><span>3个月</span></li>
+						</ul>
+					</dd>
+					<dd class="third"><span class="activity">76</span><div class="dash-board"></div></dd>
+					<dd class="fourth"><a href="#" class="button btn_green white f18">立即投资</a></dd>
+				</dl>
+
+			</div>
+		</div>
+		<!-- 推荐产品 -->
+		<div class="recommend_pro border mt20">
+			<div class="title f20">推荐产品</div>
+			<div class="recommend_list txt-center pos_rel f16">
+				<a href="#" class="more f14">更多<i class="iconfont f10 mr10">&#xe604;</i></a>
+				<ul class="gray-90 f14 tHead none clearfix">
+					<li>项目名称</li>
+					<li>项目等级</li>
+					<li>当前利率</li>
+					<li>金额(元)</li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="list_td clearfix">
+					<li>企易贷001期</li>
+					<li>AAA</li>
+					<li class="f14 orange"><span class="f22">8.5</span>%</li>
+					<li>500万</li>
+					<li class="value"><span class="recom">58</span><div class="dash-board"></div></li>
+					<li class="invest"><a href="#" class="button btn_blue white f18">立即投资</a></li>
+				</ul>
+				<ul class="list_td clearfix">
+					<li>企易贷001期</li>
+					<li>AAA</li>
+					<li class="f14 orange"><span class="f22">8.5</span>%</li>
+					<li>500万</li>
+					<li class="value"><span class="recom">36</span><div class="dash-board"></div></li>
+					<li class="invest"><a href="#" class="button btn_blue white f18">立即投资</a></li>
+				</ul>
+				<ul class="list_td clearfix">
+					<li>企易贷001期</li>
+					<li>AAA</li>
+					<li class="f14 orange"><span class="f22">8.5</span>%</li>
+					<li>500万</li>
+					<li class="value"><span class="recom">79</span><div class="dash-board"></div></li>
+					<li class="invest"><a href="#" class="button btn_blue white f18">立即投资</a></li>
+				</ul>
+				<ul class="list_td clearfix">
+					<li>企易贷001期</li>
+					<li>AAA</li>
+					<li class="f14 orange"><span class="f22">8.5</span>%</li>
+					<li>500万</li>
+					<li class="value"><span class="recom">88</span><div class="dash-board"></div></li>
+					<li class="invest"><a href="#" class="button btn_blue white f18">立即投资</a></li>
+				</ul>
+				<ul class="list_td clearfix">
+					<li>企易贷001期</li>
+					<li>AAA</li>
+					<li class="f14 orange"><span class="f22">8.5</span>%</li>
+					<li>500万</li>
+					<li class="value"><span class="recom">46</span><div class="dash-board"></div></li>
+					<li class="invest"><a href="#" class="button btn_blue white f18">立即投资</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 转让项目 -->
+		<div class="transfer_proj border mt20">
+			<div class="title f20">转让项目</div>
+			<div class="transfer_title gray-90 txt-center pt15 pb15"><span>项目名称</span><span>项目等级</span><span>当前利率</span><span>金额(元)</span><span class="txt-right last"><a href="#" class="more">更多<i class="iconfont f10 mr10">&#xe604;</i></a></span></div>
+			<div class="transfer_list f16 border-top-e1 pt20 pb10">
+				<ul class="txt-center clearfix">
+					<li>企易贷001期</li>
+					<li>AAA</li>
+					<li class="f14 orange"><span class="f22">8.5</span>%</li>
+					<li>500万</li>
+					<li class="last txt-right"><a href="#" class="button btn_red white f18 txt-center">立即投资</a></li>
+				</ul>
+				<div class="schedule ml10 mr10">
+					<div class="schedule_box vertical_middle"><span>&nbsp;</span></div><i class="gray-90 ml5 vertical_middle">31.97%</i>
+				</div>
+			</div>
+			<div class="transfer_list f16 border-top-e1 pt20 pb10">
+				<ul class="txt-center clearfix">
+					<li>企易贷001期</li>
+					<li>AAA</li>
+					<li class="f14 orange"><span class="f22">8.5</span>%</li>
+					<li>500万</li>
+					<li class="last txt-right"><a href="#" class="button btn_gray white f18 txt-center">已结束</a></li>
+				</ul>
+				<div class="schedule ml10 mr10">
+					<div class="schedule_box vertical_middle"><span>&nbsp;</span></div><i class="gray-90 ml5 vertical_middle">100%</i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 右侧 -->
+	<div class="rightBox w310 fr">
+		<!-- 公告 -->
+		<div class="border p10">
+			<p>成功注册(人)：<span class="orange f22">104万2121</span></p>
+			<p>已为投资人创造收益(元)：<span class="orange f22">104万2121</span></p>
+			<div class="border-top-dotted mt10"></div>
+			<h3 class="title normal f18 pos_rel pt10">公告<a href="#" class="more f14">更多<i class="iconfont f10">&#xe604;</i></a></h3>
+			<ul class="lists announcement pb4">
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+			</ul>
+		</div>
+		<!-- 投资达人榜 -->
+		<div class="border invest-rank mt20">
+			<h3 class="normal f18 pl10 border-bot-e1">投资达人榜</h3>
+			<ul class="gray-90 txt-center mt-1">
+				<li class=""><span>排名</span><span>用户名</span><span>投资金额</span></li>
+				<li class="first"><span><i>1</i></span><span>y***1</span><span class="orange">￥50,490,647,24</span></li>
+				<li><span><i>2</i></span><span>y***1</span><span>￥50,490,647,24</span></li>
+				<li><span><i>3</i></span><span>y***1</span><span>￥50,490,647,24</span></li>
+			</ul>
+		</div>
+		<!-- 量众动态 -->
+		<div class="border company_news mt20">
+			<h3 class="normal f18 pl10 border-bot-e1 pos_rel">量众动态<a href="#" class="more f14 mr5">更多<i class="iconfont f10">&#xe604;</i></a></h3>
+			<ul class="lists news pb4 ml10 mr10 mt5 mb5">
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+			</ul>
+		</div>
+		<!-- 媒体报道 -->
+		<div class="border media_reports mt20">
+			<h3 class="normal f18 pl10 border-bot-e1 pos_rel">媒体报道<a href="#" class="more f14 mr5">更多<i class="iconfont f10">&#xe604;</i></a></h3>
+			<ul class="clearfix txt-center pt10 pb10">
+				<li><a href="#"><img src="images/none/media_1.jpg" alt="媒体报道" /></a></li>
+				<li><a href="#"><img src="images/none/media_2.jpg" alt="媒体报道" /></a></li>
+				<li><a href="#"><img src="images/none/media_3.jpg" alt="媒体报道" /></a></li>
+				<li><a href="#"><img src="images/none/media_4.jpg" alt="媒体报道" /></a></li>
+			</ul>
+		</div>
+		<!-- 常见问答 -->
+		<div class="border questions mt20">
+			<h3 class="normal f18 pl10 border-bot-e1 pos_rel">常见问答<a href="#" class="more f14 mr5">更多<i class="iconfont f10">&#xe604;</i></a></h3>
+			<ul class="lists news pb4 ml10 mr10 mt5 mb5">
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+				<li><a href="#">客服系统升级暂停服务通知</a><span class="time">2016-5-16</span></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- 合作伙伴 -->
+<div class="border-top-cc mt20"></div>
+<dl class="w1200 mt20 panners pt10 pb10 clearfix">
+	<dt class="fl f20 txt-center">合作伙伴</dt>
+	<dd class="fl">
+		<a href="#"><img src='images/none/icon_1.jpg' title="招商银行" alt="招商银行" /></a>
+		<a href="#"><img src='images/none/icon_1.jpg' title="招商银行" alt="招商银行" /></a>
+		<a href="#"><img src='images/none/icon_1.jpg' title="招商银行" alt="招商银行" /></a>
+		<a href="#"><img src='images/none/icon_1.jpg' title="招商银行" alt="招商银行" /></a>
+		<a href="#"><img src='images/none/icon_1.jpg' title="招商银行" alt="招商银行" /></a>
+	</dd>
+</dl>
+<!-- 页脚 -->
+<div class="bg-33 mt20 pt30">
+	<div class="w1200 clearfix pb30">
+		<div class="fast-way-bot fl f14">
+			<a href="#">关于我们</a><a href="#">帮助中心</a><a href="#">招贤纳士</a><a href="#">联系我们</a><a href="#">隐私策略</a><a href="#">免责条款</a><a href="#">政策法规</a><a href="#">网站地图</a>
+		</div>
+		<div class="line fl mt10"></div>
+		<div class="service-tel txt-center gray-lighter fl">
+			<div class="tel f36 line-height-1">
+				<p>400-000-0000</p>
+				<p>010-888-0000</p>
+			</div>
+			<p class="f20 mt5">客服电话（8:30-21:00）</p>
+			<div class="f30"><a href="#"><i class="iconfont">&#xe605;</i></a><a href="#"><i class="iconfont">&#xe606;</i></a><a href="#"><i class="iconfont">&#xe607;</i></a></div>
+		</div>
+		<div class="line fl mt10"></div>
+		<div class="codes fl txt-center">
+			<h3 class="gray-lighter f22 normal line-height-1 mb10">手机客户端</h3>
+			<ul class="clearfix white f14">
+				<li>
+					<img src="images/none/codes_app.jpg" alt="APP下载" />
+					<p>APP下载</p>
+				</li>
+				<li>
+					<img src="images/none/codes_weixin.jpg" alt="关注微信" />
+					<p>关注微信</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="line-gray-light"></div>
+	<div class="w1200 txt-center f16 gray-lighter links">
+		友情链接：<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>
+	</div>
+</div>
+<div class="bg-29">
+	<div class="w1200 txt-center honor">
+		<div class="pt20 pb20"><img src="images/none/link-1.png" alt="诚信网站" /><img src="images/none/link-2.png" alt="诚信网站" /><img src="images/none/link-3.png" alt="诚信网站" /></div>
+		<p class="gray-99 pb10">© 2015 量硕宏程投资管理有限公司 京ICP备14056037号 京公网安备11010502025440</p>
+	</div>
+</div>
+</body>
+</html>

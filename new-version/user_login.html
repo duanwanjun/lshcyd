@@ -1,0 +1,320 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta property="qc:admins" content="36215751376367246375"/>
+    <meta property="wb:webmaster" content="e38aeae607353b18"/>
+    <title>用户登录</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
+	<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+	<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+	<META HTTP-EQUIV="Expires" CONTENT="0">
+	<link rel="stylesheet" type="text/css" href="css/login.css" />
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/main_style.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			nav(); //主导航
+
+
+		});
+	</script>
+</head>
+<body>
+<!--header start-->
+<div class="top">
+	<div class="w1200 clearfix">
+		<div class="fl"><span><i class="iconfont f14 mr5">&#xe600;</i>服务热线：400-000-0000</span><span class="ml20"><i class="iconfont f14 mr5">&#xe601;</i>服务时间：9:00-19:00</span><span class="ml20"><i class="iconfont f20 mr5 vertical_middle">&#xe602;</i><i class="vertical_middle">手机客户端</i></span></div>
+		<div class="fast-way fr">
+		<!--<a href="#">新手指引</a>|<a href="#">最新活动</a>|<a href="#"><i class="iconfont f20 mr5 vertical_middle">&#xe602;</i><span class="vertical_middle">下载客户端</span></a>|<a href="#" class="orange">登录</a>|<a href="#">免费注册</a>-->
+			<div class="fl dis_none">
+				<div class="user_login fl" >
+					<em>您好，</em><a href="">139****5735</a><a href="">退出</a>	
+				</div>
+				<ul  class="user_center fl" >
+					<li class="user_li"><a href="">账户中心</a>
+						<ul>
+							<li><a href="">充值</a></li>
+							<li><a href="">提现</a></li>
+							<li><a href="">我要理财</a></li>
+							<li><a href="">我要借款</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="msg fl"><a href=""><img src="images/Email.png" alt="消息中心" width="18">&nbsp;(5)</a></div>
+			</div>
+			<a href="">立即登录</a>
+			<a href="">免费注册</a>
+			<a href="">帮助中心</a>
+		</div>
+	</div>
+</div>
+<!-- 头部 -->
+<div class="bg-white">
+	<div class="head clearfix w1200">
+		<a class="fl logo dis_block" href="index.html">量硕宏程</a>
+		<!-- 导航 -->
+		<ul class="nav fr txt-center f18">
+			<li><a href="index.html" class="cur"><span class="f20 mr5">·</span>首页</a></li>
+			<li><a href="javascript:;">我要理财<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财一</a></li>
+						<li><a href="#">理财二</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="javascript:;">我要借款<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财afg</a></li>
+						<li><a href="#">理财sdr</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">公益捐款</a></li>
+			<li><a href="javascript:;">关于我们<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财dr1</a></li>
+						<li><a href="#">理财1234576</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="border-bot-e6"></div>
+<!--header end-->
+<!--main start-->
+<div class="main_bg" style="padding:0px;">
+    <div class="login_bg">
+        <div class="w1002 login_bg_pic clearfix">
+            <div class="login_mod">
+                <div class="login_hd"><i class="icon"></i><span class="gray3 f18">用户登录</span></div>
+                <form action="login.htm" method="post" onsubmit="return onSubmit();">
+                    <div class="login_form mt50">
+                        <ul>
+                            <li class="item">
+                                <div class="til"><span class="red">*</span>手机号：</div>
+                                <div class="con">
+                                    <div class="input">
+                                        <i class="name_ico"></i>
+                                        <input id="telphone" type="text" class="text text1" maxlength="30" autofocus placeholder="输入手机号"
+                                               value=""
+                                               onblur="telCheck();"/>
+                                    </div>
+                                    <p class="prompt">&nbsp;</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="til"><span class="red">*</span>密码：</div>
+                                <div class="con">
+                                    <div class="input">
+                                        <i class="password_ico"></i>
+                                        <input id="txtpasswordId" type="password" class="text text3" maxlength="20"
+                                               onselectstart="return false;" ondragenter="return false;"
+                                               onpaste="return false;" onblur="passwordCheck();" placeholder="请输入密码" autocomplete="off"/>
+                                    </div>
+                                    <p class="prompt">&nbsp;</p>
+                                </div>
+                            </li>
+							<li class="item">
+                                <div class="til"><span class="red">*</span>验证码：</div>
+                                <div class="con">
+                                    <div class="input code_input fl">
+                                        <i class="code_ico"></i>
+                                        <input id="codeId" type="text" class="codeIn" onselectstart="return false;" ondragenter="return false;"
+                                               onpaste="return false;" onblur="verifyCheck();" placeholder="输入验证码" />
+                                    </div>
+                                    <div class="fl code_img">
+                                           <img src="images/codes.jpg" alt="验证码" width="100"/>看不清楚？<a href="">换一张</a>
+                                        </div>
+                                    <p class="prompt">&nbsp;</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="til">&nbsp;</div>
+                                <div class="con">
+                                    <input name="remember" type="checkbox" value="1"
+                                           class="mr5" checked="checked"/>记住用户名
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="til">&nbsp;</div>
+                                <div class="con">
+                                    <button type="submit" class="btn06 mt10" style="cursor: pointer;">登录</button>
+                                    <span class="ml30">第三方账号登录</span>
+									<span class="other_login">
+										<a href="https://graph.qq.com/oauth2.0/authorize?client_id=101173448&response_type=token&scope=all&redirect_uri=http://61.145.159.156:8421/index.html" class="qq"></a>
+										<div class="fl" style="margin-left: 5px; display:none;">
+											<wb:login-button type="3,2"
+												id="tpa_login_sina"
+												onlogin="login"
+												onlogout="logout">
+											</wb:login-button>
+										</div>
+										<a href="javascript:void(0)" class="wb" onclick="javascript:document.getElementById('tpa_login_sina').click();"></a>
+									</span>
+                                    <p class="mt20">没有账号
+										<a href="register.html"class="highlight">立即注册</a>　
+										<a href="password.html"class="highlight">找回密码？</a>
+									</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer start-->
+<div class="bg-33 mt20 pt30">
+	<div class="w1200 clearfix pb30">
+		<div class="fast-way-bot fl f14">
+			<a href="#">关于我们</a><a href="#">帮助中心</a><a href="#">招贤纳士</a><a href="#">联系我们</a><a href="#">隐私策略</a><a href="#">免责条款</a><a href="#">政策法规</a><a href="#">网站地图</a>
+		</div>
+		<div class="line fl mt10"></div>
+		<div class="service-tel txt-center gray-lighter fl">
+			<div class="tel f36 line-height-1">
+				<p>400-000-0000</p>
+				<p>010-888-0000</p>
+			</div>
+			<p class="f20 mt5">客服电话（8:30-21:00）</p>
+			<div class="f30"><a href="#"><i class="iconfont">&#xe605;</i></a><a href="#"><i class="iconfont">&#xe606;</i></a><a href="#"><i class="iconfont">&#xe607;</i></a></div>
+		</div>
+		<div class="line fl mt10"></div>
+		<div class="codes fl txt-center">
+			<h3 class="gray-lighter f22 normal line-height-1 mb10">手机客户端</h3>
+			<ul class="clearfix white f14">
+				<li>
+					<img src="images/none/codes_app.jpg" alt="APP下载" />
+					<p>APP下载</p>
+				</li>
+				<li>
+					<img src="images/none/codes_weixin.jpg" alt="关注微信" />
+					<p>关注微信</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="line-gray-light"></div>
+	<div class="w1200 txt-center f16 gray-lighter links">
+		友情链接：<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>
+	</div>
+</div>
+<div class="bg-29">
+	<div class="w1200 txt-center honor">
+		<div class="pt20 pb20"><img src="images/none/link-1.png" alt="诚信网站" /><img src="images/none/link-2.png" alt="诚信网站" /><img src="images/none/link-3.png" alt="诚信网站" /></div>
+		<p class="gray-99 pb10">© 2015 量硕宏程投资管理有限公司 京ICP备14056037号 京公网安备11010502025440</p>
+	</div>
+</div>
+<!--footer end-->
+<!--main end-->
+<script type="text/javascript">
+    var isNull = /^[\s]{0,}$/;
+    var verify = /^\d{6}$/;
+    var loginName = /^[a-z]([\w]*)$/i;
+    var testChinese = /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;
+
+    function telCheck() {
+        var val = $.trim($("#telphone").val());
+        var p = $("#telphone").parent().parent().find("p");
+        p.html("&nbsp;");
+        p.removeClass("red");
+        if (isNull.test(val)) {
+            p.html("用户名不能为空");
+            p.addClass("red");
+            return false;
+        }else if(!testChinese.test(val)){
+            p.html("手机号码格式错误");
+            p.addClass("red");
+            return false;
+        }
+        return true;
+    }
+    function passwordCheck() {
+        var val = $("#txtpasswordId").val();
+        var p = $("#txtpasswordId").parent().parent().find("p");
+        p.html("&nbsp;");
+        p.removeClass("red");
+        if (isNull.test(val)) {
+            p.html("密码不能为空");
+            p.addClass("red");
+            return false;
+        }
+        return true;
+    }
+    function verifyCheck() {
+        //是否需要验证码.
+        var flag = true;
+        if (flag != "undefined" && flag == false) {
+            return true;
+        }
+
+        var val = $("input[name='verifyCode']").val();
+        var p = $("#verifyError");
+        p.html("&nbsp;");
+        p.removeClass("red");
+        if (isNull.test(val)) {
+            p.html("验证码不能为空");
+            p.addClass("red");
+            return false;
+        } else if (!verify.test(val)) {
+            p.html("您输入的验证码有误");
+            p.addClass("red");
+            return false;
+        }
+        return true;
+    }
+    // function onSubmit() {
+    //     if (accountCheck() && passwordCheck() && verifyCheck()) {
+    //         var modulus = "00dbdc6c6598be857a42020db0513db1bfd5115d90dcc4f26a8731496f8b122634580baa86bff96d07fea448a588019f8df299d4b68be688fac2eb35933f83c216edc9ca2f0e66fddb0fff525dec0f2051f161375cc01715bc715a0e59f16919f88582c28e9adc6fb2e7dbd281282c3cced076eab3f5405400f0146c17fa93834d", exponent = "010001";
+    //         var key = RSAUtils.getKeyPair(exponent, '', modulus);
+    //         $("#userId").val(RSAUtils.encryptedString(key, $.trim($("#txtUserId").val())));
+    //         $("#passwordId").val(RSAUtils.encryptedString(key, $("#txtpasswordId").val()));
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // }
+    
+    $(function () {
+        //登录注册页面选择输入框样式修改
+        $("input,textarea").focus(function(){
+             $(this).removeClass("border_focus");
+        });
+        
+        $("input,textarea").focus(function(){
+            if($(this).attr("type") == "checkbox" || $(this).attr("type") == "submit")
+            {
+                $(this).addClass("border_focus");   
+            }
+            else
+            {
+                $(this).parent().addClass("border_focus");  
+            }
+             
+        });
+        $("input,textarea").blur(function(){
+            if($(this).attr("type") == "checkbox" || $(this).attr("type") == "submit")
+            {
+                $(this).removeClass("border_focus");    
+            }
+            else
+            {
+                $(this).parent().removeClass("border_focus");   
+            }
+        });
+        
+    });
+</script>
+</body>
+</html>

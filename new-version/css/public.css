@@ -1,0 +1,75 @@
+/*
+添加人：wy
+时间：2016-04-20
+版本：1.0
+版权：量硕宏程投资管理（北京）有限公司
+*/
+
+@import 'base.css';
+@import 'fonts/iconfont.css';
+
+/* 顶部 */
+.top{color: #a1acb4; height: 30px; line-height: 30px;background:#444; font-size:14px;}
+.top .fast-way{ color: #e6e6e6; font-size: 12px;}
+.top .fast-way a{ color: #fff; padding: 0 5px; }
+.top .fast-way .user_center{position: relative; }
+.top .fast-way .user_center li.user_li{background: #333; padding: 0 10px;}
+.top .fast-way .user_center li.user_li ul{position: absolute;z-index: 999;background: #fff; left: 0; border: 1px solid #ddd; display: none;}
+.top .fast-way .user_center li.user_li:hover ul{display: block;}
+.top .fast-way .user_center li.user_li li a{color: #444; padding: 0 14px; display: block; height: 25px; line-height: 25px;}
+.top .fast-way .user_center li.user_li li a:hover{background: #eee;}
+.top .fast-way .msg a{color:#ff6803;}
+
+
+
+/* 头部样式 */
+.head{ height: 48px; padding: 20px 0; }
+.head .logo{ width: 332px; height: 48px; background: url(../images/logo.png) no-repeat 0 0; text-indent: -999px; overflow: hidden;}
+
+/* 导航样式 */
+.nav{ padding-top:4px; position:relative; z-index:99;}
+.nav li{ float: left; width: 110px; line-height:36px; position:relative; padding:0 10px;}
+.nav li a{ display: block; }
+.nav li a.cur{ color: #ff6803; }
+.nav .sub_nav{ display: none;  position:absolute; left:0px; top:35px;}
+.nav .sub_nav ul{background:url(../images/bg_black.png) repeat;}
+.nav .sub_nav li{ line-height:30px; }
+.nav .sub_nav span{  display:block; height:10px; width:20px; margin:0 auto; background: url(../images/icon_arrow_up.png) no-repeat 0 0;}
+.nav .sub_nav a{color:#fff;}
+.nav .sub_nav li{ float:none; }
+
+/* 底部样式 */
+.service-tel , .codes{ width:398px; }
+.fast-way-bot{ width: 270px;  }
+.fast-way-bot{ background:url(../images/logo_gray.png) no-repeat top center; padding:66px 64px 0 64px; line-height:30px; }
+.fast-way-bot a{ color:#fff; display:inline-block; width: 33.3%; text-align:center;}
+.line{ border-left:1px solid #404549; height:142px; width:1px; overflow:hidden;}
+.codes ul{ width:240px; margin:0 auto; }
+.codes li{ float:left; width:100px; padding:0 10px;}
+.codes li img{ display:block; width:100px; }
+.service-tel a{ color:#7f848a; margin:0 10px;}
+.links { line-height:40px; }
+.links a{ padding:0 5px; color:#7f848a; }
+
+.honor img{ margin:0 18px; }
+
+/* 分页代码 */
+.pages{color:#999; height:26px; line-height:26px;}
+.pages .pageBtnWrap a ,.pages .pageBtnWrap span{display: inline-block; padding: 0 10px; margin-right: 10px; }
+.pages a{ border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; cursor: pointer; background: #e1e1e1;}
+.pages span.disabled{ color:#DFDFDF;}
+.pages span.curr ,.pages a:hover{ border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; background: #ff3f40; color: #fff; }
+.pages span.normalsize{}
+#kkpager_btn_go { width:60px; height:26px; font-size:16px; border:0px; overflow:hidden; cursor:pointer; background:none; color:#8f8f8f;}
+#kkpager_btn_go_input{width:60px; height:22px; color:#999; background: #f7f7f7; font-size:16px; text-align:center; border:1px solid #DFDFDF; outline:none;}
+.pages .spanDot{  margin-right:5px;}
+.pages .currPageNum{ color:#FD7F4D;}
+.pages .infoTextAndGoPageBtnWrap{ padding-top:5px;}
+.pages .no-bg{ background:none; color:#8f8f8f; }
+
+
+
+
+
+
+

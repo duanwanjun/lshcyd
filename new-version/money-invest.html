@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+	<title>理财管理-投资列表</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/main_style.css">
+	<!--[if IE]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			nav(); //主导航
+			fnTab('.tab_recharge');  //选项卡
+			subNav('.nav-ueser-first span' ,'.subnav-user' ,'.nav-ueser-first');//侧导航
+
+			$('.table .repay-plan a').bind('click',function(){
+				if($(this).parents('ul').next('.repayPlan').hasClass('dis_no')){
+					$(this).parents('ul').next('.repayPlan').removeClass('dis_no');
+					$(this).html('收起<span class="f10 ml5">▲</span>');
+					$(this).parents('ul').addClass('no_border');
+				}else{
+					$(this).parents('ul').next('.repayPlan').addClass('dis_no');
+					$(this).html('详细<span class="f10 ml5">▼</span>');
+					$(this).parents('ul').removeClass('no_border');
+				}
+
+			});
+
+			//"提交成功"提示框
+			BtPopHide('close' ,'dialog-transfer');
+			$('.back-section .operate a').bind('click',function(){
+				BtPopload('dialog-transfer');
+			});
+
+		});
+	</script>
+</head>
+<body class="bg-f5">
+<!-- 顶部 -->
+<div class="top">
+	<div class="w1200 clearfix">
+		<div class="fl"><span><i class="iconfont f14 mr5">&#xe600;</i>服务热线：400-000-0000</span><span class="ml20"><i class="iconfont f14 mr5">&#xe601;</i>服务时间：9:00-19:00</span><span class="ml20"><i class="iconfont f20 mr5 vertical_middle">&#xe602;</i><i class="vertical_middle">手机客户端</i></span></div>
+		<div class="fast-way fr">
+		<!--<a href="#">新手指引</a>|<a href="#">最新活动</a>|<a href="#"><i class="iconfont f20 mr5 vertical_middle">&#xe602;</i><span class="vertical_middle">下载客户端</span></a>|<a href="#" class="orange">登录</a>|<a href="#">免费注册</a>-->
+			<div class="fl dis_none">
+				<div class="user_login fl" >
+					<em>您好，</em><a href="">139****5735</a><a href="">退出</a>
+				</div>
+				<ul  class="user_center fl" >
+					<li class="user_li"><a href="">账户中心</a>
+						<ul>
+							<li><a href="">充值</a></li>
+							<li><a href="">提现</a></li>
+							<li><a href="">我要理财</a></li>
+							<li><a href="">我要借款</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="msg fl"><a href=""><img src="images/Email.png" alt="消息中心" width="18">&nbsp;(5)</a></div>
+			</div>
+			<a href="">立即登录</a>
+			<a href="">免费注册</a>
+			<a href="">帮助中心</a>
+		</div>
+	</div>
+</div>
+<!-- 头部 -->
+<div class="bg-white">
+	<div class="head clearfix w1200">
+		<a class="fl logo dis_block" href="index.html">量硕宏程</a>
+		<!-- 导航 -->
+		<ul class="nav fr txt-center f18">
+			<li><a href="index.html" class="cur"><span class="f20 mr5">·</span>首页</a></li>
+			<li><a href="javascript:;">我要理财<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财一</a></li>
+						<li><a href="#">理财二</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="javascript:;">我要借款<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财afg</a></li>
+						<li><a href="#">理财sdr</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">新手指引</a></li>
+			<li><a href="javascript:;">关于我们<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财dr1</a></li>
+						<li><a href="#">理财1234576</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="border-bot-e6"></div>
+<!-- <%template src="_header.html"%> -->
+<!-- 中间 start -->
+<div class="w1200 clearfix">
+	<!-- 左侧导航 -->
+	<div class="w200 fl pt40">
+		<div class="bg-blue pos_rel box-user">
+			<div class="pos_abs img_portrait"><img src="images/none/66.jpg" class="dis_block" /></div>
+			<h4 class="normal white txt-center f20">Seven.Z</h4>
+		</div>
+		<div class="bg-white txt-center f18 p10"><i class="iconfont mr10 orange f16">&#xe61b;</i>我的账户</div>
+		<div class="nav-user bg-white mt10 pt5 pb5">
+			<div class="nav-ueser-first pt10 pb10">
+				<span class="dis_block f18 txt-center"><i class="iconfont mr10 orange f16">&#xe622;</i>资金管理</span>
+				<ul class="subnav-user pt10 f14">
+					<li><a href="#">资金明细</a></li>
+					<li><a href="#">充值</a></li>
+					<li><a href="#">提现</a></li>
+				</ul>
+			</div>
+			<div class="nav-ueser-first pt10 pb10">
+				<span class="dis_block f18 txt-center"><i class="iconfont mr10 orange f16">&#xe621;</i>理财管理</span>
+				<ul class="subnav-user pt10 f14">
+					<li><a href="#" class="cur">投资列表</a></li>
+					<li><a href="#">债券转让</a></li>
+				</ul>
+			</div>
+			<div class="nav-ueser-first pt10 pb10">
+				<span class="dis_block f18 txt-center"><i class="iconfont mr10 orange f16">&#xe620;</i>借款管理</span>
+                <ul class="subnav-user pt10 f14">
+					<li><a href="#">借款列表</a></li>
+					<li><a href="#">还款列表</a></li>
+				</ul>
+			</div>
+			<div class="nav-ueser-first pt10 pb10">
+				<span class="dis_block f18 txt-center"><i class="iconfont mr10 orange f16">&#xe61f;</i>账户管理</span>
+                <ul class="subnav-user pt10 f14">
+					<li><a href="#">安全中心</a></li>
+					<li><a href="#">我的红包</a></li>
+                    <li><a href="#">消息中心</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- <%template src="_left-nav.html"%> -->
+	<!-- 右侧内容 -->
+	<div class="w970 fr pt40">
+		<div class="bg-white tab_recharge p20 f14">
+			<ul class="tab_recharge_hd border-bot-e1 txt-center pl20 f16 clearfix">
+				<li class="cur fl mr30"><span>正在回款</span></li>
+				<li class="fl mr30"><span>正在投标</span></li>
+				<li class="fl mr30"><span>已结清(含已转让)</span></li>
+				<li class="fl mr30"><span>已流标</span></li>
+			</ul>
+			<div class="clear"></div>
+			<!-- 正在回款 -->
+			<div class="tab_recharge_bd" style="display: block;">
+				<div class="pl30 pt10 mt5 ml10">全部正在回款投资共<span class="orange pl5 pr5">3</span>笔</div>
+				<ul class="myRed clearfix txt-center pl30 mt20 ml10 mb30">
+					<li class="fl bg-f5 mr30">
+						<p>投资本金合计</p>
+						<p class="orange">￥1,003.00</p>
+					</li>
+					<li class="fl bg-f5 mr30">
+						<p>回收本金合计</p>
+						<p class="orange">￥0.00</p>
+					</li>
+					<li class="fl bg-f5 mr30">
+						<p>加权年化收益率</p>
+						<p class="orange">9.88%</p>
+					</li>
+				</ul>
+				<div class="back-section invest-list txt-center line-height-1 pr20">
+					<ul class="table clearfix bg-f5 no_border">
+						<li class="no">项目编号</li>
+						<li class="principal">投资本金<br/>(元)</li>
+						<li class="benxi">应收本息<br/>(元)</li>
+						<li class="apr">年利率</li>
+						<li class="num">已还期数<br/>/总期数</li>
+						<li class="status">还款状态</li>
+						<li class="date">起息日</li>
+						<li class="operate">操作</li>
+						<li class="repay-plan">还款计划</li>
+					</ul>
+					<ul class="table clearfix">
+						<li class="no"><a href="#" class="blue f12">XZX164B9K查看协议</a></li>
+						<li class="principal txt-right">2.00</li>
+						<li class="benxi txt-right">2.01</li>
+						<li class="apr">9.88%</li>
+						<li class="num">0/1</li>
+						<li class="status"><span class="green">正常还款中</span></li>
+						<li class="date">2016-05-27</li>
+						<li class="operate"><a href="javascript:;">转让</a></li>
+						<li class="repay-plan"><a href="javascript:;" class="blue">详细<span class="f10 ml5">▼</span></a></li>
+					</ul>
+					<div class="repayPlan ml30 pl10 f12 mt10 mb10 dis_no">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_collapse hk-datails">
+						  <tr class="bg-blue-lighter white">
+						    <td rowspan="2" class="no-right">期数</td>
+						    <td rowspan="2" class="no-left">计划还款日</td>
+						    <td colspan="5">月收还款(元)</td>
+						    <td rowspan="2" class="no-right">还款状态</td>
+						    <td rowspan="2" class="no-left">实际还款日</td>
+						  </tr>
+						  <tr class="bg-blue-lighter white">
+						    <td class="no-right" width="10%">本息合计</td>
+						    <td class="no-left no-right" width="10%">本金</td>
+						    <td class="no-left no-right" width="10%">利息</td>
+						    <td class="no-left no-right" width="10%">加息</td>
+						    <td class="no-left" width="10%">违约金</td>
+						  </tr>
+						  <tr>
+						    <td class="no-right">1</td>
+						    <td class="no-left">2016-06-26</td>
+						    <td class="no-right">2.01</td>
+						    <td class="no-left no-right">2.00</td>
+						    <td class="no-left no-right">0.02</td>
+						    <td class="no-left no-right">0.00</td>
+						    <td class="no-left">--</td>
+						    <td class="orange no-right">待还款</td>
+						    <td class="no-left">&nbsp;</td>
+						  </tr>
+						  <tr>
+						    <td rowspan="2">补</td>
+						    <td>2016-06-26</td>
+						    <td class="no-left no-right">本金：0.00</td>
+						    <td class="no-left no-right">待最后一次补贴</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						    <td class="no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						  </tr>
+						  <tr>
+						    <td>2016-06-26</td>
+						    <td class="no-left no-right">本金：0.00</td>
+						    <td class="no-left no-right">待最后一次补贴</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						    <td class="no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						  </tr>
+						  <tr>
+						    <td colspan="9">&nbsp;</td>
+						  </tr>
+						</table>
+					</div>
+					<ul class="table clearfix">
+						<li class="no"><a href="#" class="blue f12">XZX164B9K查看协议</a></li>
+						<li class="principal txt-right">2.00</li>
+						<li class="benxi txt-right">2.01</li>
+						<li class="apr">9.88%</li>
+						<li class="num">0/1</li>
+						<li class="status"><span class="green">正常还款中</span></li>
+						<li class="date">2016-05-27</li>
+						<li class="operate"><a href="javascript:;">转让</a></li>
+						<li class="repay-plan"><a href="javascript:;" class="blue">详细<span class="f10 ml5">▼</span></a></li>
+					</ul>
+					<div class="repayPlan ml30 pl10 f12 mt10 mb10 dis_no">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_collapse hk-datails">
+						  <tr class="bg-blue-lighter white">
+						    <td rowspan="2" class="no-right">期数</td>
+						    <td rowspan="2" class="no-left">计划还款日</td>
+						    <td colspan="5">月收还款(元)</td>
+						    <td rowspan="2" class="no-right">还款状态</td>
+						    <td rowspan="2" class="no-left">实际还款日</td>
+						  </tr>
+						  <tr class="bg-blue-lighter white">
+						    <td class="no-right" width="10%">本息合计</td>
+						    <td class="no-left no-right" width="10%">本金</td>
+						    <td class="no-left no-right" width="10%">利息</td>
+						    <td class="no-left no-right" width="10%">加息</td>
+						    <td class="no-left" width="10%">违约金</td>
+						  </tr>
+						  <tr>
+						    <td class="no-right">1</td>
+						    <td class="no-left">2016-06-26</td>
+						    <td class="no-right">2.01</td>
+						    <td class="no-left no-right">2.00</td>
+						    <td class="no-left no-right">0.02</td>
+						    <td class="no-left no-right">0.00</td>
+						    <td class="no-left">--</td>
+						    <td class="orange no-right">待还款</td>
+						    <td class="no-left">&nbsp;</td>
+						  </tr>
+						  <tr>
+						    <td rowspan="2">补</td>
+						    <td>2016-06-26</td>
+						    <td class="no-left no-right">本金：0.00</td>
+						    <td class="no-left no-right">待最后一次补贴</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						    <td class="no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						  </tr>
+						  <tr>
+						    <td>2016-06-26</td>
+						    <td class="no-left no-right">本金：0.00</td>
+						    <td class="no-left no-right">待最后一次补贴</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						    <td class="no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						  </tr>
+						  <tr>
+						    <td colspan="9">&nbsp;</td>
+						  </tr>
+						</table>
+					</div>
+					<ul class="table clearfix">
+						<li class="no"><a href="#" class="blue f12">XZX164B9K查看协议</a></li>
+						<li class="principal txt-right">2.00</li>
+						<li class="benxi txt-right">2.01</li>
+						<li class="apr">9.88%</li>
+						<li class="num">0/1</li>
+						<li class="status"><span class="green">正常还款中</span></li>
+						<li class="date">2016-05-27</li>
+						<li class="operate"><a href="javascript:;">转让</a></li>
+						<li class="repay-plan"><a href="javascript:;" class="blue">详细<span class="f10 ml5">▼</span></a></li>
+					</ul>
+					<div class="repayPlan ml30 pl10 f12 mt10 mb10 dis_no">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_collapse hk-datails">
+						  <tr class="bg-blue-lighter white">
+						    <td rowspan="2" class="no-right">期数</td>
+						    <td rowspan="2" class="no-left">计划还款日</td>
+						    <td colspan="5">月收还款(元)</td>
+						    <td rowspan="2" class="no-right">还款状态</td>
+						    <td rowspan="2" class="no-left">实际还款日</td>
+						  </tr>
+						  <tr class="bg-blue-lighter white">
+						    <td class="no-right" width="10%">本息合计</td>
+						    <td class="no-left no-right" width="10%">本金</td>
+						    <td class="no-left no-right" width="10%">利息</td>
+						    <td class="no-left no-right" width="10%">加息</td>
+						    <td class="no-left" width="10%">违约金</td>
+						  </tr>
+						  <tr>
+						    <td class="no-right">1</td>
+						    <td class="no-left">2016-06-26</td>
+						    <td class="no-right">2.01</td>
+						    <td class="no-left no-right">2.00</td>
+						    <td class="no-left no-right">0.02</td>
+						    <td class="no-left no-right">0.00</td>
+						    <td class="no-left">--</td>
+						    <td class="orange no-right">待还款</td>
+						    <td class="no-left">&nbsp;</td>
+						  </tr>
+						  <tr>
+						    <td rowspan="2">补</td>
+						    <td>2016-06-26</td>
+						    <td class="no-left no-right">本金：0.00</td>
+						    <td class="no-left no-right">待最后一次补贴</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						    <td class="no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						  </tr>
+						  <tr>
+						    <td>2016-06-26</td>
+						    <td class="no-left no-right">本金：0.00</td>
+						    <td class="no-left no-right">待最后一次补贴</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						    <td class="no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						  </tr>
+						  <tr>
+						    <td colspan="9">&nbsp;</td>
+						  </tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- 正在投标 -->
+			<div class="tab_recharge_bd">
+				<div class="pl30 pt10 mt5 ml10">已在投标中共<span class="orange pl5 pr5">0</span>笔</div>
+				<ul class="myRed clearfix txt-center pl30 mt20 ml10 mb30">
+					<li class="fl bg-f5 mr30">
+						<p>投资本金合计</p>
+						<p class="orange">￥1,003.00</p>
+					</li>
+					<li class="fl bg-f5 mr30">
+						<p>应收本息合计</p>
+						<p class="orange">￥0.00</p>
+					</li>
+					<li class="fl bg-f5 mr30">
+						<p>加权年化收益率</p>
+						<p class="orange">9.88%</p>
+					</li>
+				</ul>
+				<div class="proposal invest-list txt-center line-height-1 pr20">
+					<ul class="table clearfix bg-f5 no_border">
+						<li class="no">项目编号</li>
+						<li class="principal">借款额度<br/>(元)</li>
+						<li class="apr">年利率</li>
+						<li class="term">期限</li>
+						<li class="back-style">还款方式</li>
+						<li class="tender-amount">投标金额</li>
+						<li class="ysbx">应收本息</li>
+						<li class="status">满标状态</li>
+						<li class="repay-plan">还款计划</li>
+					</ul>
+					<ul class="table clearfix">
+						<li class="no"><a href="#" class="blue f12">XZX164B9K查看协议</a></li>
+						<li class="principal txt-right">0.00</li>
+						<li class="apr">0.00%</li>
+						<li class="term">3个月</li>
+						<li class="back-style">还本付息</li>
+						<li class="tender-amount txt-right orange">0.00</li>
+						<li class="ysbx txt-right">0.00</li>
+						<li class="status"></li>
+						<li class="repay-plan"><a href="javascript:;" class="blue">详细<span class="f10 ml5">▼</span></a></li>
+					</ul>
+					<div class="repayPlan ml30 pl10 f12 mt10 mb10 dis_no">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_collapse hk-datails">
+						  <tr class="bg-blue-lighter white">
+						    <td rowspan="2" class="no-right">期数</td>
+						    <td rowspan="2" class="no-left">计划还款日</td>
+						    <td colspan="5">月收还款(元)</td>
+						    <td rowspan="2" class="no-right">还款状态</td>
+						    <td rowspan="2" class="no-left">实际还款日</td>
+						  </tr>
+						  <tr class="bg-blue-lighter white">
+						    <td class="no-right" width="10%">本息合计</td>
+						    <td class="no-left no-right" width="10%">本金</td>
+						    <td class="no-left no-right" width="10%">利息</td>
+						    <td class="no-left no-right" width="10%">加息</td>
+						    <td class="no-left" width="10%">违约金</td>
+						  </tr>
+						  <tr>
+						    <td class="no-right">1</td>
+						    <td class="no-left">2016-06-26</td>
+						    <td class="no-right">2.01</td>
+						    <td class="no-left no-right">2.00</td>
+						    <td class="no-left no-right">0.02</td>
+						    <td class="no-left no-right">0.00</td>
+						    <td class="no-left">--</td>
+						    <td class="orange no-right">待还款</td>
+						    <td class="no-left">&nbsp;</td>
+						  </tr>
+						  <tr>
+						    <td rowspan="2">补</td>
+						    <td>2016-06-26</td>
+						    <td class="no-left no-right">本金：0.00</td>
+						    <td class="no-left no-right">待最后一次补贴</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						    <td class="no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						  </tr>
+						  <tr>
+						    <td>2016-06-26</td>
+						    <td class="no-left no-right">本金：0.00</td>
+						    <td class="no-left no-right">待最后一次补贴</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						    <td class="no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						  </tr>
+						  <tr>
+						    <td colspan="9">&nbsp;</td>
+						  </tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- 已结清(含已转让) -->
+			<div class="tab_recharge_bd">
+				<div class="pl30 pt10 mt5 ml10">已结清投标共<span class="orange pl5 pr5">0</span>笔</div>
+				<ul class="myRed clearfix txt-center pl30 mt20 ml10 mb30">
+					<li class="fl bg-f5 mr30">
+						<p>投资本金合计</p>
+						<p class="orange">￥1,003.00</p>
+					</li>
+					<li class="fl bg-f5 mr30">
+						<p>回收本息合计</p>
+						<p class="orange">￥0.00</p>
+					</li>
+					<li class="fl bg-f5 mr30">
+						<p>加权年化收益率</p>
+						<p class="orange">9.88%</p>
+					</li>
+				</ul>
+				<div class="invest-cleared invest-list txt-center line-height-1 pr20">
+					<ul class="table clearfix bg-f5 no_border">
+						<li class="no">项目编号</li>
+						<li class="value-date">起息日</li>
+						<li class="apr">年利率</li>
+						<li class="term">期限</li>
+						<li class="back-style">还款方式</li>
+						<li class="hsbx">回收本息</li>
+						<li class="repay-plan">还款计划</li>
+					</ul>
+					<ul class="table clearfix">
+						<li class="no"><a href="#" class="blue f12">XZX164B9K查看协议</a></li>
+						<li class="value-date">2016-05-31</li>
+						<li class="apr">0.00%</li>
+						<li class="term">3个月</li>
+						<li class="back-style">还本付息</li>
+						<li class="hsbx txt-right">0.00</li>
+						<li class="repay-plan"><a href="javascript:;" class="blue">详细<span class="f10 ml5">▼</span></a></li>
+					</ul>
+					<div class="repayPlan ml30 pl10 f12 mt10 mb10 dis_no">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table_collapse hk-datails">
+						  <tr class="bg-blue-lighter white">
+						    <td rowspan="2" class="no-right">期数</td>
+						    <td rowspan="2" class="no-left">计划还款日</td>
+						    <td colspan="5">月收还款(元)</td>
+						    <td rowspan="2" class="no-right">还款状态</td>
+						    <td rowspan="2" class="no-left">实际还款日</td>
+						  </tr>
+						  <tr class="bg-blue-lighter white">
+						    <td class="no-right" width="10%">本息合计</td>
+						    <td class="no-left no-right" width="10%">本金</td>
+						    <td class="no-left no-right" width="10%">利息</td>
+						    <td class="no-left no-right" width="10%">加息</td>
+						    <td class="no-left" width="10%">违约金</td>
+						  </tr>
+						  <tr>
+						    <td class="no-right">1</td>
+						    <td class="no-left">2016-06-26</td>
+						    <td class="no-right">2.01</td>
+						    <td class="no-left no-right">2.00</td>
+						    <td class="no-left no-right">0.02</td>
+						    <td class="no-left no-right">0.00</td>
+						    <td class="no-left">--</td>
+						    <td class="orange no-right">待还款</td>
+						    <td class="no-left">&nbsp;</td>
+						  </tr>
+						  <tr>
+						    <td rowspan="2">补</td>
+						    <td>2016-06-26</td>
+						    <td class="no-left no-right">本金：0.00</td>
+						    <td class="no-left no-right">待最后一次补贴</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						    <td class="no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						  </tr>
+						  <tr>
+						    <td>2016-06-26</td>
+						    <td class="no-left no-right">本金：0.00</td>
+						    <td class="no-left no-right">待最后一次补贴</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						    <td class="no-right">&nbsp;</td>
+						    <td class="no-left">&nbsp;</td>
+						  </tr>
+						  <tr>
+						    <td colspan="9">&nbsp;</td>
+						  </tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- 已流标 -->
+			<div class="tab_recharge_bd">
+				<div class="pl30 pt10 mt5 ml10 pb20">最近30天已流标投标共<span class="orange pl5 pr5">0</span>笔</div>
+				<div class="invest-died invest-list txt-center line-height-1 pr20">
+					<ul class="table clearfix bg-f5 no_border">
+						<li class="no">项目编号</li>
+						<li class="invest-time">投资时间</li>
+						<li class="item-amount">项目金额</li>
+						<li class="apr">年利率</li>
+						<li class="term">期限</li>
+						<li class="back-style">还款方式</li>
+						<li class="invest-amount">投资金额</li>
+						<li class="bids-date">流标日期</li>
+					</ul>
+					<ul class="table clearfix">
+						<li class="no"><a href="#" class="blue f12">XZX164B9K查看协议</a></li>
+						<li class="invest-time">2016-05-31</li>
+						<li class="item-amount txt-right">0.00</li>
+						<li class="apr">0.00%</li>
+						<li class="term">3个月</li>
+						<li class="back-style">还本付息</li>
+						<li class="invest-amount txt-right">0.00</li>
+						<li class="bids-date">2016-06-28</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 中间 end -->
+<!-- 页脚 -->
+<!-- <%template src="_footer.html"%> -->
+<div class="bg-33 mt20 pt30">
+	<div class="w1200 clearfix pb30">
+		<div class="fast-way-bot fl f14">
+			<a href="#">关于我们</a><a href="#">帮助中心</a><a href="#">招贤纳士</a><a href="#">联系我们</a><a href="#">隐私策略</a><a href="#">免责条款</a><a href="#">政策法规</a><a href="#">网站地图</a>
+		</div>
+		<div class="line fl mt10"></div>
+		<div class="service-tel txt-center gray-lighter fl">
+			<div class="tel f36 line-height-1">
+				<p>400-000-0000</p>
+				<p>010-888-0000</p>
+			</div>
+			<p class="f20 mt5">客服电话（8:30-21:00）</p>
+			<div class="f30"><a href="#"><i class="iconfont">&#xe605;</i></a><a href="#"><i class="iconfont">&#xe606;</i></a><a href="#"><i class="iconfont">&#xe607;</i></a></div>
+		</div>
+		<div class="line fl mt10"></div>
+		<div class="codes fl txt-center">
+			<h3 class="gray-lighter f22 normal line-height-1 mb10">手机客户端</h3>
+			<ul class="clearfix white f14">
+				<li>
+					<img src="images/none/codes_app.jpg" alt="APP下载" />
+					<p>APP下载</p>
+				</li>
+				<li>
+					<img src="images/none/codes_weixin.jpg" alt="关注微信" />
+					<p>关注微信</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="line-gray-light"></div>
+	<div class="w1200 txt-center f16 gray-lighter links">
+		友情链接：<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>
+	</div>
+</div>
+<div class="bg-29">
+	<div class="w1200 txt-center honor">
+		<div class="pt20 pb20"><img src="images/none/link-1.png" alt="诚信网站" /><img src="images/none/link-2.png" alt="诚信网站" /><img src="images/none/link-3.png" alt="诚信网站" /></div>
+		<p class="gray-99 pb10">© 2015 量硕宏程投资管理有限公司 京ICP备14056037号 京公网安备11010502025440</p>
+	</div>
+</div>
+<!-- 转让弹出框 -->
+<div id="dialog-transfer" class="bg-white pos_abs dialog_tips w780">
+	<i id="close" class="pos_abs close iconfont cursor_poit f16 gray-90">&#xe623;</i>
+	<h4 class="normal f18 h40 pl20 border-bot-e1 pt5 pb5">债权转让</h4>
+	<div class="p20"> 
+		<div class="p10 border bg-f5 f14 pt15 pb15">
+			<p>1、债权转让金额不得大于所剩本息金额。</p>
+			<p>2、债权转让时间限定为最近一期还款日之前，如若无人承接，将自动撤销转让。</p>
+		</div>
+		<ul class="credit-transfer pt10">
+			<li><span>项目名称：</span><em>借款金额3,000</em></li>
+			<li><span>下个还款日：</span><em>2016-06-20</em></li>
+			<li><span>待还/总期数：</span><em>10/12</em></li>
+			<li><span>剩余本金：</span><em>￥76.38</em></li>
+			<li><span>剩余利息：</span><em>￥13.88</em></li>
+			<li><span>最大转让金额：</span><em class="orange">￥90.26</em></li>
+			<li><span>转让金额：</span><i class="borderBox gray"><input type="text" class="jine" value="90" />元</i></li>
+			<li><span>支付密码：</span><input type="password" class="keywords" value="123456" /></li>
+		</ul>
+	</div>
+	<div class="txt-center mb30">
+		<a href="#" class="white button btn_blue h30 mr10 w100">确认投资</a><a href="#" class="white button bg-c3 h30 w100">取消</a>
+	</div>
+</div>
+</body>
+</html>

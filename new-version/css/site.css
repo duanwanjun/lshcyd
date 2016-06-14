@@ -1,0 +1,86 @@
+﻿/*
+    name：yangxiusong
+    datetime：2015/9/7
+    copyRight：p2p1.0
+    version： 量硕宏程投资管理（北京）有限公司）
+*/
+
+@media screen and (min-width: 1100px) and (max-width:1920px) {/*当屏幕大于或等于1100px时,设置页面宽度为1100px*/
+
+.banner_div{height:0px;width:1100px;margin: 0 auto; margin-bottom:10px;}
+.baodao {width:1100px;margin:auto;}
+}
+@media screen and (min-width:960px) and (max-width:1099px) {/*当屏幕大于960小于1099时,设置页面宽度为99%*/  
+.banner_div{height:0px;width:100%;margin:auto;margin-bottom:10px;}
+.baodao {width:100%;margin:auto;}
+.baodao p{margin-left:5px;}
+.tjxm p{margin-left:5px;}
+}
+@media screen and (max-width:958px) {/*当屏幕小于或等于958px时,设置页面宽度为99%,用于平板电脑*/  
+.banner_div{height:0px;width:100%;margin:auto;margin-bottom:10px;}
+.baodao {width:100%;margin:auto;}
+.baodao p{margin-left:5px;}
+.tjxm p{margin-left:5px;}
+}
+@media screen and (max-width:800px) {/*当屏幕小于或等于800px时,设置页面宽度为99%,用于平板电脑mini*/  
+.banner_div{height:0px;width:100%;margin:auto;margin-bottom:10px;}
+.baodao {width:100%;margin:auto;}
+.baodao p{margin-left:5px;}
+.tjxm p{margin-left:5px;}
+}
+/*banner start*/
+.cb{clear: both;}
+#container_banner{ width:100%; height:300px;}
+#contentcon{ margin-top:10px; background:#FFF}
+.bcontainer {Z-INDEX: 0; POSITION: absolute; WIDTH: 100%; HEIGHT:300px; OVERFLOW: hidden; LEFT: 0px; margin:0 0; padding:0 0}
+.homebanner {WIDTH: 100%; HEIGHT: 300px; OVERFLOW: visible}
+.bannerSlider {POSITION: absolute; WIDTH: 100%; MARGIN-LEFT: -959.5px; LEFT: 50%;}
+.bannerSlider img{ width:1920px; height:300px;}
+.bannerSlider .overlay {Z-INDEX: 10; POSITION: absolute; DISPLAY: block; TOP: 0px; LEFT: 0px}
+.bannerSlider A {POSITION: relative; WIDTH: 100%; DISPLAY: block; HEIGHT: 300px; CURSOR:pointer;}
+.bannerSlider A.topLayer {Z-INDEX: 10}
+.bcontainer .hd{ height:20px; overflow:hidden; position:absolute; width:55%; margin:0 auto;right:0px; bottom:20px; z-index:1; }
+.bcontainer .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.bcontainer .hd ul li{margin-left: 0px; background:url(../img/d1.png) no-repeat 0px -13px; float:left; margin-right:3px;  width:20px; height:20px; cursor:pointer; }
+.bcontainer .hd ul li.on{ background:url(../img/d1.png) no-repeat 0px 8px; }
+/*banner end*/
+
+
+/**********about********/
+.banner_aboutus {width:100%;margin:0 auto;}
+.banner_aboutus img{max-width:100%; height:auto;}
+.about_main {margin:0 auto;margin-top:20px; margin-bottom:40px;}
+.left_nav {float:left; width:220px; min-height:700px; border:1px solid #eee; font-size: 16px;}
+.left_nav ul li{ width:220px; height:53px;line-height:53px;text-align:center;border-bottom:1px solid #eee;}
+.left_nav a {color:#666; display:block;}
+.left_nav ul li:first-child{background:#2483CB;color:#fff;}
+.left_nav ul li:first-child a{color:#fff;}
+.left_nav_bg{background:#2483CB;color:#fff;}
+
+.right_content {width:960px;float:right; border:1px solid #eee;}
+.right_content .sq{ min-height:200px; margin-bottom:10px;}
+.gsjj{line-height: 35px;}
+.hzhb ul {margin-left:10px;}
+.hzhb ul li{margin:10px;}
+
+.dsj ul,.mtbd ul {margin-top:20px;}
+.dsj ul li{margin-top:10px;font-size:14px;color:#666;width:100%;clear:both;}
+.dsj ul li i,.lzgg ul li i{margin-right:10px;font-size:18px;}
+.mtbd{padding: 15px 0; }
+.mtbd dl{border-bottom:1px dashed #eee; clear: both; height: 130px; margin: 0 25px 0 25px; padding-top: 15px;}
+.mtbd dl img{border: 1px solid #ddd;}
+.mtbd dl a{color: #ff6803;}
+.mtbd dt{float: left;  margin-right: 15px;}
+.mtbd dd{line-height: 25px;font-size: 14px;}
+.mtbd dd.new_title{font-size: 16px; margin-bottom: 5px;}
+.mtbd dd.new_title span{float: right;}
+.r_article{padding: 30px 25px;}
+.r_article h1{font-size: 18px; text-align: center;}
+.r_article .info{margin: 20px 0; text-align: center; font-size: 14px;}
+.r_article .summary{padding: 20px 25px; border: 1px solid #ddd; font-size: 14px; margin: 0 25px; line-height: 30px;}
+.r_article .summary span{font-weight: bolder; }
+.r_article .a_content{padding: 0 25px; line-height: 30px; font-size: 16px; margin: 20px 0;}
+.r_article .a_page{font-size: 14px; margin-top: 80px;}
+.r_article .a_page div{margin: 10px 25px; }
+.r_article .a_page a{color: #ff6803;}
+/**********about*end*******/

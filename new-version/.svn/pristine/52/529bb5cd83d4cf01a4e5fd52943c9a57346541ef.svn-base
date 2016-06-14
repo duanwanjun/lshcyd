@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>项目详情</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/main_style.css">
+	<!--[if IE]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<!-- 仪表盘 -->
+	<script src="js/raphael-2.1.4.min.js"></script>
+	<script src="js/justgage.js"></script>
+	<!-- 分页 -->
+	<script type="text/javascript" src="js/kkpager.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			nav(); //主导航
+			fnTab('.tab-project',true);  //选项卡
+
+			$('.tenderAmount .less').bind('click', function(){
+				fnLess($(this), '.money', '.less-disable', 500, 100);
+			});
+
+			$('.tenderAmount .plus').bind('click', function(){
+				fnPlus($(this), '.money', '.less', '.less-disable', 500, 100);
+			});
+
+			$('.tenderAmount .money').each(function(){
+				var _this=$(this);
+				var nValue=parseInt(_this.val());
+				if(nValue<=500){
+					_this.parentsUntil('numBox').parent().find('.less').addClass('dis_none');
+					_this.parentsUntil('numBox').parent().find('.less-disable').removeClass('dis_none');
+				}else{
+					_this.parentsUntil('numBox').parent().find('.less').removeClass('dis_none');
+					_this.parentsUntil('numBox').parent().find('.less-disable').addClass('dis_none');
+				}
+			});
+
+
+		});
+	</script>
+</head>
+<body class="bg-f9">
+<!-- 顶部 -->
+<div class="top">
+	<div class="w1200 clearfix">
+		<div class="fl"><span><i class="iconfont f14 mr5">&#xe600;</i>服务热线：400-000-0000</span><span class="ml20"><i class="iconfont f14 mr5">&#xe601;</i>服务时间：9:00-19:00</span><span class="ml20"><i class="iconfont f20 mr5 vertical_middle">&#xe602;</i><i class="vertical_middle">手机客户端</i></span></div>
+		<div class="fast-way fr">
+		<!--<a href="#">新手指引</a>|<a href="#">最新活动</a>|<a href="#"><i class="iconfont f20 mr5 vertical_middle">&#xe602;</i><span class="vertical_middle">下载客户端</span></a>|<a href="#" class="orange">登录</a>|<a href="#">免费注册</a>-->
+			<div class="fl dis_none">
+				<div class="user_login fl" >
+					<em>您好，</em><a href="">139****5735</a><a href="">退出</a>	
+				</div>
+				<ul  class="user_center fl" >
+					<li class="user_li"><a href="">账户中心</a>
+						<ul>
+							<li><a href="">充值</a></li>
+							<li><a href="">提现</a></li>
+							<li><a href="">我要理财</a></li>
+							<li><a href="">我要借款</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="msg fl"><a href=""><img src="images/Email.png" alt="消息中心" width="18">&nbsp;(5)</a></div>
+			</div>
+			<a href="">立即登录</a>
+			<a href="">免费注册</a>
+			<a href="">帮助中心</a>
+		</div>
+	</div>
+</div>
+<!-- 头部 -->
+<div class="bg-white">
+	<div class="head clearfix w1200">
+		<a class="fl logo dis_block" href="index.html">量硕宏程</a>
+		<!-- 导航 -->
+		<ul class="nav fr txt-center f18">
+			<!-- <li><a href="index.html" class="cur"><span class="f20 mr5">·</span>首页</a></li> -->
+			<li><a href="javascript:;">我要理财<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财一</a></li>
+						<li><a href="#">理财二</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="javascript:;">我要借款<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财afg</a></li>
+						<li><a href="#">理财sdr</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">公益捐款</a></li>
+			<li><a href="javascript:;">关于我们<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财dr1</a></li>
+						<li><a href="#">理财1234576</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="border-bot-e6"></div>
+<!-- <%template src="_header.html"%> -->
+<!-- 中间 start -->
+<div class="w1200 bread pt10 pb5 f16"><a href="#">首页</a><span class="ml5 mr5">&gt;</span><a href="#">债权转让</a><span class="ml5 mr5">&gt;</span>天猫进货，扩大经营</div>
+<!-- 天猫进货 扩大经营 -->
+<div class="border w1198 bg-white box-expand">
+	<div class="ml30 mr30 pt10 pb10 title clearfix">
+		<h3 class="normal f20 fl"><span class="white f10 vertical_middle mr5">标</span>天猫进货 扩大经营</h3>
+		<div class="fr f14">协议书范文</div>
+	</div>
+	<div class="ml30 mr30 mb10 border-top-e1 clearfix pt20 pb20 pr20">
+		<div class="table fl f14 gray-64">
+			<ul>
+				<li><span class="f30 gray">￥9,000,000</span><br /><span class="f16">标的总价格(元)</span></li>
+				<li><span class="f30 orange">12%</span><br /><span class="f16">年化利率</span></li>
+				<li><span class="f30 gray">6</span><br /><span class="f16">还款期限(月)</span></li>
+			</ul>
+			<ul>
+				<li>还款方式：等额本息</li>
+				<li>每月还款：￥9999.00</li>
+				<li></li>
+			</ul>
+			<ul>
+				<li>提前还款费率：1.00%</li>
+				<li>剩余时间：5天</li>
+				<li></li>
+			</ul>
+		</div>
+		<ul class="tenderAmount f16 fr">
+			<li class="clearfix mb15">
+				<div class="fl">
+					<p>可投标金额：登陆后可见</p>
+					<p class="orange f14">剩余金额：￥100000</p>
+				</div>
+				<a href="#" class="fr dis-block blue">充值</a>
+			</li>
+			<li class="f14 edit bg-white mb15 clearfix">
+				<a href="#" class="gray-90 txt-center less">-</a><span class="gray-e1 txt-center less-disable">-</span><span class="numBox"><em class="pl10"><input type="text" class="gray-b4 money f18" value="500元" /></em></span><a href="#" class="gray-90 txt-center plus">+</a>
+			</li>
+			<li class="mb15">预计收益：<span class="f18 orange">10</span>元</li>
+			<li class="txt-center mb10"><input type="button" value="立即投标" class="button white btn_blue f16" style="width:250px" /></li>
+		</ul>
+	</div>
+</div>
+<!-- tab-项目介绍&投资列表&还款计划 -->
+<div class="border w1198 bg-white tab-project mt20">
+	<ul class="tab-project_hd f18 pl10 pr10">
+		<li class="cur">项目介绍<span></span></li>
+		<li>投资列表</li>
+		<li>还款计划</li>
+	</ul>
+	<!--项目介绍-->
+	<div class="tab-project_bd f14 ml30 mr30" style="display: block;">
+		<!--用户信息-->
+		<h4 class="normal title pl10 f18 mt36 mb20">用户信息</h4>
+		<div class="clearfix info-user pt10 border-bot-e0 pb10">
+			<ul class="fl">
+				<li>昵称：<span class="orange">世界那么大</span></li>
+				<li>年龄：<span class="orange">34岁</span></li>
+				<li>学历：<span class="orange">本科</span></li>
+				<li>学校：<span class="orange">--</span></li>
+				<li>婚姻：<span class="orange">已婚</span></li>
+			</ul>
+			<ul class="fl">
+				<li>公司行业：<span class="orange">其他</span></li>
+				<li>公司规模：<span class="orange">300人以上</span></li>
+				<li>岗位职位：<span class="orange">工程师</span></li>
+			</ul>
+			<ul class="fl">
+				<li>工作城市：<span class="orange">四川</span></li>
+				<li>工作时间：<span class="orange">1-3年（含）</span></li>
+			</ul>
+			<ul class="fl">
+				<li>收入范围：<span class="orange">2000-5000元</span></li>
+				<li>房产：<span class="orange">有</span></li>
+				<li>房贷：<span class="orange">无</span></li>
+				<li>车产：<span class="orange">有</span></li>
+				<li>车贷：<span class="orange">有</span></li>
+			</ul>
+		</div>
+		<!--信用档案-->
+		<h4 class="normal title pl10 f18 mt36 mb20">信用档案</h4>
+		<div class="clearfix info-user pt10 border-bot-e0 pb10">
+			<ul class="fl">
+				<li>成功借款：<span class="orange">5次</span></li>
+				<li>共计接入：<span class="orange">￥1,210,000.00</span></li>
+			</ul>
+			<ul class="fl">
+				<li>待还金额：<span class="orange">￥104,4201.00</span></li>
+				<li>还清借款：<span class="orange">4次</span></li>
+			</ul>
+			<ul class="fl">
+				<li>逾期次数：<span class="orange">0次</span></li>
+				<li>严重逾期次数：<span class="orange">0次</span></li>
+			</ul>
+		</div>
+		<!--审核认证-->
+		<h4 class="normal title pl10 f18 mt36 mb20">审核认证</h4>
+		<div class="clearfix info-user list_check pt10 border-bot-e0 pb10">
+			<ul class="fl">
+				<li>身份证<span class="f12 gray-90 ml5">(本人身份证正反面，本人手持身份证合照)</span><i class="iconfont green f20 vertical_middle ml10">&#xe60a;</i></li>
+				<li>结婚证<i class="iconfont green f20 vertical_middle ml10">&#xe60a;</i></li>
+				<li>亲友身份证<i class="iconfont green f20 vertical_middle ml10">&#xe60a;</i></li>
+				<li>购房证明<i class="iconfont green f20 vertical_middle ml10">&#xe60a;</i></li>
+			</ul>
+			<ul class="fl">
+				<li>机动车驾驶证<i class="iconfont green f20 vertical_middle ml10">&#xe60a;</i></li>
+				<li>企业/个体户证明<i class="iconfont green f20 vertical_middle ml10">&#xe60a;</i></li>
+				<li>淘宝网店支付宝账单<i class="iconfont green f20 vertical_middle ml10">&#xe60a;</i></li>
+				<li>支付宝交易明细压缩包<i class="iconfont green f20 vertical_middle ml10">&#xe60a;</i></li>
+		</div>
+		<!--借款描述-->
+		<h4 class="normal title pl10 f18 mt36 mb10">借款描述</h4>
+		<div class="pt10 border-bot-e0 pb20 mb30 pl15">
+			本项目为核心商圈融资产品，融资人已经通过了量众理财认证的优质客户。本项目为核心商圈融资产品，融资人已经通过了量众理财认证的优质客户。本项目为核心商圈融资产品，融资人已经通过了量众理财认证的优质客户。本项目为核心商圈融资产品，融资人已经通过了量众理财认证的优质客户。本项目为核心商圈融资产品，融资人已经通过了量众理财认证的优质客户。本项目为核心商圈融资产品，融资人已经通过了量众理财认证的优质客户。本项目为核心商圈融资产品，融资人已经通过了量众理财认证的优质客户。本项目为核心商圈融资产品，融资人已经通过了量众理财认证的优质客户。
+		</div>
+	</div>
+	<!--投资列表-->
+	<div class="tab-project_bd p30">
+		<div class="table txt-center invest table_collapse f16">
+			<ul class="tHead f14">
+				<li>期数</li>
+				<li>应还本息</li>
+				<li>到期时间</li>
+				<li>状态</li>
+			</ul>
+			<ul>
+				<li class="f12">1/12</li>
+				<li>￥536.36</li>
+				<li>2016-10-1</li>
+				<li>待还</li>
+			</ul>
+			<ul>
+				<li class="f12">1/12</li>
+				<li>￥536.36</li>
+				<li>2016-10-1</li>
+				<li>待还</li>
+			</ul>
+			<ul>
+				<li class="f12">1/12</li>
+				<li>￥536.36</li>
+				<li>2016-10-1</li>
+				<li>待还</li>
+			</ul>
+			<ul>
+				<li class="f12">1/12</li>
+				<li>￥536.36</li>
+				<li>2016-10-1</li>
+				<li>待还</li>
+			</ul>
+		</div>
+	</div>
+	<!--还款计划-->
+	<div class="tab-project_bd p30">
+		<div class="table txt-center invest table_collapse f16">
+			<ul class="tHead f14">
+				<li>期数</li>
+				<li>应还本息</li>
+				<li>到期时间</li>
+				<li>状态</li>
+			</ul>
+			<ul>
+				<li class="f12">1/12</li>
+				<li>￥536.36</li>
+				<li>2016-10-1</li>
+				<li>待还</li>
+			</ul>
+			<ul>
+				<li class="f12">1/12</li>
+				<li>￥536.36</li>
+				<li>2016-10-1</li>
+				<li>待还</li>
+			</ul>
+			<ul>
+				<li class="f12">1/12</li>
+				<li>￥536.36</li>
+				<li>2016-10-1</li>
+				<li>待还</li>
+			</ul>
+			<ul>
+				<li class="f12">1/12</li>
+				<li>￥536.36</li>
+				<li>2016-10-1</li>
+				<li>待还</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- 中间 end -->
+<!-- 页脚 -->
+<!-- <%template src="_footer.html"%> -->
+<div class="bg-33 mt20 pt30">
+	<div class="w1200 clearfix pb30">
+		<div class="fast-way-bot fl f14">
+			<a href="#">关于我们</a><a href="#">帮助中心</a><a href="#">招贤纳士</a><a href="#">联系我们</a><a href="#">隐私策略</a><a href="#">免责条款</a><a href="#">政策法规</a><a href="#">网站地图</a>
+		</div>
+		<div class="line fl mt10"></div>
+		<div class="service-tel txt-center gray-lighter fl">
+			<div class="tel f36 line-height-1">
+				<p>400-000-0000</p>
+				<p>010-888-0000</p>
+			</div>
+			<p class="f20 mt5">客服电话（8:30-21:00）</p>
+			<div class="f30"><a href="#"><i class="iconfont">&#xe605;</i></a><a href="#"><i class="iconfont">&#xe606;</i></a><a href="#"><i class="iconfont">&#xe607;</i></a></div>
+		</div>
+		<div class="line fl mt10"></div>
+		<div class="codes fl txt-center">
+			<h3 class="gray-lighter f22 normal line-height-1 mb10">手机客户端</h3>
+			<ul class="clearfix white f14">
+				<li>
+					<img src="images/none/codes_app.jpg" alt="APP下载" />
+					<p>APP下载</p>
+				</li>
+				<li>
+					<img src="images/none/codes_weixin.jpg" alt="关注微信" />
+					<p>关注微信</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="line-gray-light"></div>
+	<div class="w1200 txt-center f16 gray-lighter links">
+		友情链接：<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>
+	</div>
+</div>
+<div class="bg-29">
+	<div class="w1200 txt-center honor">
+		<div class="pt20 pb20"><img src="images/none/link-1.png" alt="诚信网站" /><img src="images/none/link-2.png" alt="诚信网站" /><img src="images/none/link-3.png" alt="诚信网站" /></div>
+		<p class="gray-99 pb10">© 2015 量硕宏程投资管理有限公司 京ICP备14056037号 京公网安备11010502025440</p>
+	</div>
+</div>
+</body>
+</html>

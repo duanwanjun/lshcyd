@@ -1,0 +1,502 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0051)http://61.145.159.156:8421/user/capital/charge.html -->
+<HTML><HEAD><META content="IE=8.0000" http-equiv="X-UA-Compatible">
+<TITLE>我的迪蒙网贷_充值管理</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<META http-equiv=X-UA-Compatible content=IE=EmulateIE8>
+<META http-equiv=Pragma content=no-cache>
+<META http-equiv=Cache-Control content=no-cache>
+<META http-equiv=Expires content=0><LINK href="我的迪蒙网贷_充值管理_files/common.css" 
+rel=stylesheet type=text/css><LINK href="我的迪蒙网贷_充值管理_files/user.css" 
+rel=stylesheet type=text/css>
+<META name=GENERATOR content="MSHTML 11.00.10240.16847"></HEAD>
+<BODY>
+<DIV id=fffad2fe-f900-4cf0-ad84-9f1376b78f51 
+style="OVERFLOW: hidden; HEIGHT: 768px; WIDTH: 100%; BACKGROUND: #fff; POSITION: fixed; Z-INDEX: 9999; DISPLAY: block">
+<DIV 
+style="FONT-SIZE: 18px; COLOR: #c30; PADDING-TOP: 18%; PADDING-LEFT: 40%; LINE-HEIGHT: 30px">警告: 
+如果看到该页面,可能是因为: 
+<DIV style="LIST-STYLE-TYPE: decimal; LIST-STYLE-POSITION: outside">
+<DIV><SPAN>1. 您的浏览器没有启用JavaScript功能;</SPAN></DIV>
+<DIV><SPAN>2. 迪蒙网贷官网地址为 <B><A 
+href="http://61.145.159.156:8421/">http://61.145.159.156:8421/</A></B>.</SPAN></DIV></DIV></DIV></DIV>
+<SCRIPT type=text/javascript>try{document.getElementById('fffad2fe-f900-4cf0-ad84-9f1376b78f51').style.display='none';}catch(e){}</SCRIPT>
+
+<SCRIPT src="/user/js/jquery/jquery-1.8.3.min.js" type=text/javascript></SCRIPT>
+
+<SCRIPT src="/user/js/common.js" type=text/javascript></SCRIPT>
+
+<SCRIPT src="/user/js/user.js" type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+{
+    try {
+        var a = window.opener||window.parent;
+        while(a.parent!=a){
+            a = a.parent;
+        }
+        if(a.location.host!='61.145.159.156:8421'){
+            a.location.href='http://61.145.159.156:8421';
+        }
+    }catch(e){
+
+    }
+}
+</SCRIPT>
+
+<SCRIPT src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" 
+type=text/javascript charset=utf-8 
+data-redirecturi="http://61.145.159.156:8421/index.html" data-appid="101173448"> </SCRIPT>
+
+<SCRIPT src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" 
+type=text/javascript charset=utf-8 data-callback="true"></SCRIPT>
+
+<SCRIPT type=text/javascript>
+
+function pageSubmit(_obj){
+	if(setCurrentPage(_obj)){
+		toAjaxPage();
+	}
+}
+
+//输入分页，点确定查询时，设置当前页
+function setCurrentPage(_obj){
+	var currentPage1 = $(_obj).prev().val();
+	var re =  /^[1-9]+[0-9]*]*$/;
+	if(!re.test(currentPage1)){
+		return false;
+	}
+	currentPage = currentPage1;
+	if(currentPage>$(_obj).prev().attr("maxSize")*1){
+		currentPage = $(_obj).prev().attr("maxSize")*1;
+	}
+	return true;
+}
+
+function DMQQLogout(){
+	  //1 QQ退出
+	  QC.Login.signOut();
+	  //2 本地退出
+	  location.href = "/user/logout.htm";
+	}
+
+</SCRIPT>
+<!--顶部条-->
+<DIV class=top_bar>
+<DIV class="w1002 clearfix">
+<DIV class="tel fl"><I class=icon></I><SPAN class=va_m>400 - 678 - 
+5518</SPAN></DIV><A class="service fl ml20" 
+href="http://61.145.159.156:8421/xszy/zxkf.html"><I class=icon></I><SPAN 
+class=va_m>在线客服</SPAN></A> 
+<DIV class="focus fl ml20"><SPAN class=fl>关注我们：</SPAN> <A class="icon wb" 
+href="http://61.145.159.156:8421/"></A>
+<DIV class="icon wx" 
+onclick="window.location.href='http://61.145.159.156:8421'">
+<DIV class=code><I class=arrow></I>
+<DIV class=border><IMG src="我的迪蒙网贷_充值管理_files/weixin.png"><BR>扫一扫关注微信 
+</DIV></DIV></DIV></DIV>
+<DIV class="nav fr">
+<UL><!--未登录--><!--已登录-->
+  <LI class=hello>您好，</LI>
+  <LI class=user><A title=zengju class=name 
+  href="http://61.145.159.156:8421/user/">zengju</A> 
+  <DIV class=child>
+  <DIV class=arrow></DIV><A 
+  href="http://61.145.159.156:8421/user/capital/charge.html">充值</A> <A 
+  href="http://61.145.159.156:8421/user/capital/withdraw.html">提现</A> <A 
+  href="http://61.145.159.156:8421/user/capital/tradingRecord.html">资金管理</A> <A 
+  href="http://61.145.159.156:8421/user/financing/wdzq/hszdzq.html">理财管理</A> <A 
+  href="http://61.145.159.156:8421/user/credit/repaying.html">借款管理</A> <A 
+  onclick=DMQQLogout(); href="javascript:void(0);">安全退出</A> </DIV></LI>
+  <LI class=line></LI>
+  <LI class=letter><A href="http://61.145.159.156:8421/mall/carList.htm"><I 
+  class=top_car_ico></I>购物车<SPAN class=number>0</SPAN></A></LI>
+  <LI class=line></LI>
+  <LI class=letter><A href="http://61.145.159.156:8421/user/letter/">站内信<SPAN 
+  class="number letter">0</SPAN></A></LI>
+  <LI class=line></LI>
+  <LI><A href="http://61.145.159.156:8421/gywm/lxwm.html">联系我们</A></LI>
+  <LI class=line></LI>
+  <LI><A href="http://61.145.159.156:8421/bzzx/czytx.html">帮助中心</A></LI>
+  <LI class=line></LI>
+  <LI class=app 
+  onclick="window.location.href='http://61.145.159.156:8421/app/downloadApp.htm'"><SPAN>手机客户端</SPAN> 
+
+  <DIV class=code><I class=arrow></I>
+  <DIV class=border><IMG src="我的迪蒙网贷_充值管理_files/weixin.png"><BR>下载客户端APP 
+  </DIV></DIV></LI></UL></DIV></DIV></DIV><!--顶部条--><!--头部-->
+<DIV class="header w1002 clearfix">
+<DIV class=logo><A href="http://61.145.159.156:8421/"><IMG title=迪蒙网贷 
+src="我的迪蒙网贷_充值管理_files/55.png"></A></DIV>
+<DIV class=main_nav>
+<UL class=clearfix>
+  <LI class=item>
+  <DIV class=nav><A href="http://61.145.159.156:8421/">首页</A></DIV></LI>
+  <LI class=item>
+  <DIV class=nav><A href="http://61.145.159.156:8421/financing/">我要投资</A></DIV>
+  <UL class=subnav>
+    <DIV class=arrow></DIV>
+    <LI><A href="http://61.145.159.156:8421/financing/sbtz/">投资项目</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/financing/sbtz/zqzrlb.html">债权转让</A></LI></UL></LI>
+  <LI class=item>
+  <DIV class=nav><A href="http://61.145.159.156:8421/credit/">我要借款</A></DIV>
+  <UL class=subnav>
+    <DIV class=arrow></DIV>
+    <LI><A href="http://61.145.159.156:8421/credit/xjd/">信用贷</A></LI>
+    <LI><A href="http://61.145.159.156:8421/credit/dkyx.html">个人借款意向</A></LI>
+    <LI><A 
+  href="http://61.145.159.156:8421/credit/qydkyx.html">企业借款意向</A></LI></UL></LI>
+  <LI class=item>
+  <DIV class=nav><A 
+  href="http://61.145.159.156:8421/mall/mallIndex.htm">积分商城</A></DIV></LI>
+  <LI class=item>
+  <DIV class=nav><A 
+  href="http://61.145.159.156:8421/gywm/gsjj.html">关于我们</A></DIV></LI>
+  <LI class=item>
+  <DIV class=nav><A 
+  href="http://61.145.159.156:8421/financing/gyb/gyJz.html">公益捐赠</A></DIV></LI>
+  <LI class=item>
+  <DIV class=nav><A 
+href="http://61.145.159.156:8421/user/">我的账户</A></DIV></LI></UL></DIV></DIV><!--头部-->
+<DIV class="main_bg clearfix">
+<DIV class="user_wrap w1002 clearfix">
+<DIV class=w200>
+<DIV class=side_info>
+<DIV class=portrait><A href="http://61.145.159.156:8421/user/index.html"><IMG 
+width=10 height=100 src="我的迪蒙网贷_充值管理_files/181.jpg"> </A></DIV>
+<DIV title=zengju class=title>zengju</DIV></DIV>
+<DIV class=sidemenu>
+<DIV class=my_account><A href="http://61.145.159.156:8421/user/index.html"><I 
+class=icon></I>我的账户</A></DIV>
+<UL class=menu>
+  <LI class=group><SPAN class="item up"><I class=icon01></I>资金管理</SPAN> 
+  <UL class=child style="DISPLAY: block">
+    <LI><A 
+    href="http://61.145.159.156:8421/user/capital/tradingRecord.html">交易记录</A></LI>
+    <LI><A class=cur 
+    href="http://61.145.159.156:8421/user/capital/charge.html">充值</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/capital/withdraw.html">提现</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/capital/orderServlet.html">订单查询</A></LI></UL></LI>
+  <LI class=group><SPAN class="item "><I class=icon02></I>理财管理</SPAN> 
+  <UL class=child>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/financing/wdzq/hszdzq.html">我的债权</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/financing/donation/donationList.html">我的公益标</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/financing/zqzr/zqzrz.html">债权转让</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/financing/financingStatistics.html">理财统计</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/financing/zdtb/index.html">自动投资工具</A></LI></UL></LI>
+  <LI class=group><SPAN class="item "><I class=icon03></I>借款管理</SPAN> 
+  <UL class=child>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/credit/repaying.html">我的借款</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/credit/apply.html">借款申请查询</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/credit/newCreditStatistics.html">借款统计</A></LI></UL></LI>
+  <LI class=group><SPAN class="item "><I class=icon04></I>账户管理</SPAN> 
+  <UL class=child>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/account/userBases.html?userBasesFlag=1">个人基础信息</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/account/bankcardlist.html">银行卡信息</A></LI></UL></LI>
+  <LI class=group><SPAN class="item "><I class=icon08></I>我的商城</SPAN> 
+  <UL class=child>
+    <LI><A 
+href="http://61.145.159.156:8421/user/mall/myScore.html">我的积分</A></LI>
+    <LI><A href="http://61.145.159.156:8421/user/mall/myOrder.htm">我的订单</A></LI>
+    <LI><A href="http://61.145.159.156:8421/user/mall/harvestAddress.htm"><EM 
+    class=line></EM>收货地址管理</A></LI></UL></LI>
+  <LI class=group><SPAN class="item "><I class=icon07></I>我的奖励</SPAN> 
+  <UL class=child>
+    <LI><A href="http://61.145.159.156:8421/user/reward/wdhb.html">我的红包</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/reward/wdjxq.html">我的加息券</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/spread/wdtyj.html">我的体验金</A></LI></UL></LI>
+  <LI class=group><SPAN class="item "><I class=icon06></I>邀请好友</SPAN> 
+  <UL class=child>
+    <LI><A 
+  href="http://61.145.159.156:8421/user/spread/wytg.html">推荐好友</A></LI></UL></LI>
+  <LI class=group><SPAN class="item "><I class=icon05></I>消息管理</SPAN> 
+  <UL class=child>
+    <LI><A 
+  href="http://61.145.159.156:8421/user/letter/index.html">站内消息</A></LI></UL></LI>
+  <LI class=group><SPAN class="item "><I class=icon09></I>我要吐槽</SPAN> 
+  <UL class=child>
+    <LI><A 
+  href="http://61.145.159.156:8421/user/tsjy/wdtsjy.html">我要吐槽</A></LI></UL></LI></UL></DIV></DIV>
+<SCRIPT type=text/javascript>
+    $(function(){
+        $(".portrait img").bind("mouseover",function(){
+            $(".bdimgshare-content").hide();
+            $(".bdimgshare-bg").hide();
+        });
+    });
+    </SCRIPT>
+
+<DIV class=r_main>
+<DIV class=user_mod>
+<DIV class="user_tab clearfix">
+<UL>
+  <LI id=one1 onclick="setTab('one',1,2)">在线充值<I></I></LI>
+  <LI id=one2 onclick="setTab('one',2,2)">线下充值<I></I></LI></UL></DIV>
+<DIV class=p25 id=con_one_1>
+<FORM onsubmit="return onSubmit();" 
+action=http://61.145.159.156:8421/pay/charge.htm method=post 
+target=_blank><INPUT name=2c894a14-9399-41cb-9a23-c340819b4565 type=hidden 
+value=a45427e5-c690-43e1-9607-c4cd70a856d1><INPUT name=accountName type=hidden 
+value=zengju> <INPUT name=remark type=hidden value=ceshi> 
+<DIV class="lh30 clearfix">
+<H2 class="fl gray3 f16">选择充值方式</H2><A class="fr f14 red" 
+href="http://61.145.159.156:8421/user/capital/unpay.html">查询未完成充值记录&gt;&gt; 
+</A></DIV>
+<DIV class=topup_way>
+<UL class="cz_li mb30 clearfix">
+  <LI><LABEL><INPUT name=paymentInstitution class=mr10 id=radio1 type=radio 
+  CHECKED value=ALLINPAY> <IMG width=148 height=38 class="border mr20" 
+  onclick=setCheckBox(1); src="我的迪蒙网贷_充值管理_files/logo_tl.png"> </LABEL></LI>
+  <LI><LABEL><INPUT name=paymentInstitution class=mr10 id=radio2 type=radio 
+  value=SHUANGQIAN> <IMG width=148 height=38 class="border mr20" 
+  onclick=setCheckBox(2); src="我的迪蒙网贷_充值管理_files/logo_sq.png"> </LABEL></LI>
+  <LI><LABEL><INPUT name=paymentInstitution class=mr10 id=radio3 type=radio 
+  value=BAOFU> <IMG width=148 height=38 class="border mr20" 
+  onclick=setCheckBox(3); src="我的迪蒙网贷_充值管理_files/logo_bf.png"> </LABEL></LI>
+  <LI><LABEL><INPUT name=paymentInstitution class=mr10 id=radio5 type=radio 
+  value=LIANLIANGATE> <IMG width=148 height=38 class="border mr20" 
+  onclick=setCheckBox(5); src="我的迪蒙网贷_充值管理_files/logo_llzf.png"> </LABEL></LI>
+  <LI><LABEL><INPUT name=paymentInstitution class=mr10 id=radio7 type=radio 
+  value=CHINABANK> <IMG width=148 height=38 class="border mr20" 
+  onclick=setCheckBox(7); src="我的迪蒙网贷_充值管理_files/logo_wyzx.png"> </LABEL></LI>
+  <LI><LABEL><INPUT name=paymentInstitution class=mr10 id=radio8 type=radio 
+  value=KJTPAY> <IMG width=148 height=38 class="border mr20" 
+  onclick=setCheckBox(8); src="我的迪蒙网贷_充值管理_files/logo_kjt.png"> </LABEL></LI>
+  <LI><LABEL><INPUT name=paymentInstitution class=mr10 id=radio9 type=radio 
+  value=HEEPAY> <IMG width=148 height=38 class="border mr20" 
+  onclick=setCheckBox(9); src="我的迪蒙网贷_充值管理_files/logo_hfb.png"> </LABEL></LI>
+  <LI><LABEL><INPUT name=paymentInstitution class=mr10 id=radio10 type=radio 
+  value=SINAPAY> <IMG width=148 height=38 class="border mr20" 
+  onclick=setCheckBox(10); src="我的迪蒙网贷_充值管理_files/logo_xlzf.png"> </LABEL></LI>
+  <LI><LABEL><INPUT name=paymentInstitution class=mr10 id=radio11 type=radio 
+  value=GFBPAY> <IMG width=148 height=38 class="border mr20" 
+  onclick=setCheckBox(11); src="我的迪蒙网贷_充值管理_files/logo_gfb.png"> </LABEL></LI>
+  <LI><LABEL><INPUT name=paymentInstitution class=mr10 id=radio12 type=radio 
+  value=YIFUPAY> <IMG width=148 height=38 class="border mr20" 
+  onclick=setCheckBox(12); src="我的迪蒙网贷_充值管理_files/logo_yb.png"> </LABEL></LI>
+  <DIV class=clear></DIV></UL></DIV>
+<DIV class="gray3 f16 mt30">填写充值金额</DIV>
+<DIV class="user_mod_gray mt10 pt30 pb30">
+<DIV class="form_info topup_form">
+<UL class=cell>
+  <LI>
+  <DIV class=til>可用金额：</DIV>
+  <DIV class=info><SPAN class="gray3 f18">307,350.93</SPAN>元 </DIV>
+  <DIV class=clear></DIV></LI>
+  <LI>
+  <DIV class=til><SPAN class=red>*</SPAN>充值金额： </DIV>
+  <DIV class=info><INPUT name=amount 
+  class="text yhgl_ser fl mr5 required min-size-1 isNaN" id=amount 
+  onkeyup="value=value.replace(/\D/g,'')" type=text autocomplete="off"> <SPAN 
+  class=fl>元</SPAN> <SPAN class=hover_tips 
+  style="MARGIN-TOP: 6px; MARGIN-LEFT: 5px">
+  <DIV class=hover_tips_con>
+  <DIV class=arrow></DIV>
+  <DIV class=border>充值金额不能低于10 元，不能高于20万元 </DIV></DIV></SPAN>
+  <DIV class=clear></DIV>
+  <P class=red errortip></P>
+  <P class=red id=chargeTips></P></DIV>
+  <DIV class=clear></DIV></LI>
+  <LI>
+  <DIV class=til>充值手续费：</DIV>
+  <DIV class=info><SPAN class=fl id=poundage>0.00</SPAN> <SPAN class=fl>元</SPAN> 
+  <SPAN class=hover_tips style="MARGIN-TOP: 6px; MARGIN-LEFT: 5px">
+  <DIV class=hover_tips_con>
+  <DIV class=arrow></DIV>
+  <DIV class=border>充值费用按充值金额的0.4%由第三方平台收取，上限100 元，超出部分由迪蒙网贷 支付 
+  </DIV></DIV></SPAN>
+  <DIV class=clear></DIV></DIV>
+  <DIV class=clear></DIV></LI>
+  <LI>
+  <DIV class=til>实际到账金额：</DIV>
+  <DIV class=info><SPAN class="f24 red" id=paySum>0.00</SPAN>元 </DIV>
+  <DIV class=clear></DIV></LI></UL>
+<DIV class=tc><INPUT class="btn01 mb15 mt15" style="CURSOR: pointer" type=submit value=充值></DIV></DIV></DIV>
+<DIV class="mt20 lh24">
+<P class=highlight>温馨提示：</P><SPAN>充值低手续费。。123</SPAN></DIV>
+<DIV class="topup_problem mt50"><I 
+class=problem_icon></I>付款遇到问题了？先看看是不是由于下面的原因。</DIV>
+<DIV class="topup_problem_con mt20">
+<UL>
+  <LI>
+  <P class="gray3 mb5">要求开通网上银行？</P>
+  <P>— 建议选择银联在线支付付款，如果是信用卡还可选择快捷支付，再选择对应银行支付。</P></LI>
+  <LI>
+  <P class="gray3 mb5">所需支付金额超过了银行支付限额？</P>
+  <P>— 建议先分若干次充值到本平台余额，或登录网上银行提高上限额度，即可轻松支付。</P></LI>
+  <LI>
+  <P class="gray3 mb5">收不到银行的短信验证码？</P>
+  <P>— 建议重新获取短信验证码，如果还是收不到短信，直接打各银行的客服电话获取短信验证码。</P></LI>
+  <LI>
+  <P class="gray3 mb5">网银页面显示错误或者空白？</P>
+  <P>— 建议更换到IE浏览器进行支付操作，或使用银联在线支付或支付宝付款。</P></LI>
+  <LI>
+  <P class="gray3 mb5">网上银行扣款后，值单仍显示"未付款"怎么办？</P>
+  <P>— 
+  可能是由于银行的数据没有即时传输，请您不要担心，稍后刷新页面查看。如较长时间仍显示未付款，可先向银行或支付平台获取支付凭证（扣款订单号/第三方交易号），请联系客服(400 
+  - 678 - 5518)为您解决。</P></LI></UL></DIV></FORM></DIV>
+<DIV class=p25 id=con_one_2 style="DISPLAY: none"><INPUT 
+name=2c894a14-9399-41cb-9a23-c340819b4565 type=hidden 
+value=e5a26c04-9688-44c8-ac49-556bc91f1c61><INPUT name=accountName type=hidden 
+value=zengju> 
+<DIV class="lh30 clearfix">
+<H2 class="fl gray3 f16">选择充值方式</H2><A class="fr f14 red" 
+href="http://61.145.159.156:8421/user/capital/unpay.html?type=unpayXxcz">查询未完成充值记录&gt;&gt; 
+</A></DIV>
+<DIV class="topup_offline_way mt20"><INPUT name=payline class=mr10 type=radio 
+CHECKED value=""><IMG src="我的迪蒙网贷_充值管理_files/offline.png"></DIV>
+<DIV class="gray3 f16 mt30">填写充值金额</DIV>
+<DIV class="user_mod_gray mt10 pt30 pb30">
+<DIV class=form_info>
+<UL class=cell>
+  <LI>
+  <DIV class=til><SPAN class=red>*</SPAN> 充值金额(元)：</DIV>
+  <DIV class=info><INPUT name=amount 
+  class="text yhgl_ser fl mr5 required min-size-1 isNaN" id=amountLine 
+  onkeyup="value=value.replace(/\D/g,'')" type=text> 
+  <P errortip></P></DIV></LI>
+  <LI>
+  <DIV class=til><SPAN class=red>*</SPAN> 备注：</DIV>
+  <DIV class=info><TEXTAREA name=remarks class="textarea_style required max-length-50" id=remarks rows=4 cols=70></TEXTAREA> 
+
+  <P tip>最大可输入50个字</P>
+  <P errortip></P></DIV></LI></UL>
+<DIV class=tc><INPUT class="btn01 mb15 mt15 sumbitForme" style="CURSOR: pointer" onclick=onSubmitLine(); type=button value=申请线下充值 fromname="form1"></DIV></DIV></DIV>
+<DIV class="mt20 lh24"><SPAN 
+class=highlight>温馨提示：</SPAN><BR><SPAN>充值低手续费。。123</SPAN></DIV><!--  </form> --></DIV></DIV></DIV>
+<DIV class=clear></DIV></DIV></DIV>
+<DIV id=dialogRz style="DISPLAY: none">
+<DIV class=popup_bg></DIV>
+<DIV class="dialog ">
+<DIV class=title><A class=out onclick=closeDivRz() 
+href="javascript:void(0);"></A>认证提示</DIV>
+<DIV class=content>
+<DIV class=tip_information>
+<DIV class=doubt></DIV>
+<DIV class=tips><SPAN class="f20 gray3" id=rzcon_error></SPAN></DIV></DIV>
+<DIV class="tc mt20"><A class=btn01 onclick=closeDivRz() 
+href="http://61.145.159.156:8421/user/account/userBases.html" 
+target=_blank>去认证</A> </DIV></DIV></DIV></DIV>
+<DIV id=dialog style="DISPLAY: none">
+<DIV class=popup_bg></DIV>
+<DIV class=dialog>
+<DIV class=title><A class=out onclick=closeDiv() 
+href="javascript:void(0);"></A>提示</DIV>
+<DIV class=content>
+<DIV class=tip_information>
+<DIV class=doubt id=errorico></DIV>
+<DIV class=tips><SPAN class="f20 gray3" id=con_error></SPAN></DIV></DIV>
+<DIV class="tc mt20"><A class=btn01 id=doalogClick onclick=closeDiv() 
+href="javascript:void(0);">确定</A></DIV></DIV></DIV></DIV>
+<DIV id=dialogHmd style="DISPLAY: none">
+<DIV class=popup_bg></DIV>
+<DIV class=dialog>
+<DIV class=title><A class=out onclick=closeDivHmd() 
+href="javascript:void(0);"></A>提示</DIV>
+<DIV class=content>
+<DIV class=tip_information>
+<DIV class=doubt></DIV>
+<DIV class=tips><SPAN class="f20 gray33">您的账号已被拉入黑名单，不能进行安全认证。如有疑问，请联系客服！</SPAN> 
+</DIV></DIV>
+<DIV class="tc mt20"><A class=btn01 onclick=closeDivHmd() 
+href="javascript:void(0);">确定</A></DIV></DIV></DIV></DIV>
+<DIV id=problem style="DISPLAY: none">
+<DIV class=popup_bg></DIV>
+<DIV class=dialog>
+<DIV class=content><A class=out href="javascript:void(0);"></A>
+<DIV class=tip_information>
+<DIV class=doubt></DIV>
+<DIV class=tips><SPAN class="f20 gray33">请您在新打开的页上完成付款。</SPAN> 
+<P>付款完成前请不要关闭此窗口。<BR>完成付款后请根据您的情况点击下面的按钮：</P></DIV></DIV>
+<DIV class="tc mt10"><A class=btn04 
+href="http://61.145.159.156:8421/user/capital/tradingRecord.html">已完成付款</A> <A 
+class=btn04 id=reloadChargeUser 
+href="http://61.145.159.156:8421/user/capital/charge.html#001">付款遇到问题</A> 
+</DIV></DIV></DIV></DIV>
+<SCRIPT type=text/javascript>
+    var p = 0.004;
+    var pMax = 100;
+    var min = 10;
+    var max =
+    200000
+    var auth = false;
+    var loginUrl = "/user/login.html";
+    var chargeUrl = "/user/capital/charge.html";
+    var chargeSubmitUrl = "http://61.145.159.156:8421/pay/charge4Line.htm";
+    var tabIndex = null
+            auth = true;
+    
+    var authText = "";
+
+    function setCheckBox(index) {
+        $("#radio" + index).click();
+    }
+
+    function closeDiv() {
+        if (!$("#errorico").hasClass("doubt")) {
+            $("#errorico").removeClass();
+            $("#errorico").addClass("doubt");
+        }
+        $("#dialog").hide();
+    }
+    function closeDivRz() {
+        $("#dialogRz").hide();
+    }
+    function showDialogInfoMsg() {
+        $("#dialog").hide();
+        $("#dialogHmd").show();
+    }
+
+    function closeDivHmd() {
+        $("#dialogHmd").hide();
+    }
+    $(function () {
+
+        setTab('one', tabIndex == null ? 1 : tabIndex, 2);
+    });
+</SCRIPT>
+
+<DIV class=footer>
+<DIV class="w1002 clearfix">
+<DIV class="footer_logo mt20" 
+onclick="window.location.href='http://61.145.159.156:8421'"><IMG 
+src="我的迪蒙网贷_充值管理_files/footer_logo.png"></DIV>
+<DIV class=footer_info>
+<P>联系我们<SPAN class="f26 ml10 bold">400 - 678 - 5518</SPAN></P>
+<P class=f12>全国服务热线（服务时间：9:00 - 
+18:00）<BR>服务邮箱：kefu@dimeng.net<BR>广东省深圳市罗湖区振业大厦28楼</P></DIV>
+<UL class=footer_nav>
+  <LI><A href="http://61.145.159.156:8421/gywm/gsjj.html">关于我们</A></LI>
+  <LI><A href="http://61.145.159.156:8421/gywm/bxdb.html">安全保障</A></LI>
+  <LI><A href="http://61.145.159.156:8421/bzzx/xszy.html">新手指引</A></LI>
+  <LI><A href="http://61.145.159.156:8421/zxdt/mtbd.html">媒体报道</A></LI>
+  <LI><A href="http://61.145.159.156:8421/gywm/zxns.html">招贤纳士</A></LI>
+  <LI><A 
+href="http://61.145.159.156:8421/bzzx/czytx.html">帮助中心</A></LI></UL></DIV>
+<DIV class="w1002 copyright">
+<P>轻松贷款 投资无忧© 2014 61.145.159.156:8421 All Rights Reserved | 
+备案号：粤ICP备13082949号</P>
+<DIV class=icon><A 
+href="http://61.145.159.156:8421/user/capital/charge.html#"><IMG 
+src="我的迪蒙网贷_充值管理_files/footer_44.jpg"></A> <A 
+href="http://61.145.159.156:8421/user/capital/charge.html#"><IMG 
+src="我的迪蒙网贷_充值管理_files/footer_46.jpg"></A></DIV></DIV></DIV>
+<SCRIPT src="/user/js/charge.js" type=text/javascript></SCRIPT>
+
+<SCRIPT src="/user/js/validation.js" type=text/javascript></SCRIPT>
+</BODY></HTML>

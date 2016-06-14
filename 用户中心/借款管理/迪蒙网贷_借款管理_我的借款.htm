@@ -1,0 +1,664 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0052)http://61.145.159.156:8421/user/credit/repaying.html -->
+<HTML><HEAD><META content="IE=8.0000" http-equiv="X-UA-Compatible">
+<TITLE>迪蒙网贷_借款管理_我的借款</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<META http-equiv=X-UA-Compatible content=IE=EmulateIE8>
+<META http-equiv=Pragma content=no-cache>
+<META http-equiv=Cache-Control content=no-cache>
+<META http-equiv=Expires content=0><LINK href="迪蒙网贷_借款管理_我的借款_files/common.css" 
+rel=stylesheet type=text/css><LINK href="迪蒙网贷_借款管理_我的借款_files/user.css" 
+rel=stylesheet type=text/css>
+<META name=GENERATOR content="MSHTML 11.00.10240.16847"></HEAD>
+<BODY>
+<DIV id=431edf41-31fa-4044-8fb9-e148d0b0a4f1 
+style="OVERFLOW: hidden; HEIGHT: 768px; WIDTH: 100%; BACKGROUND: #fff; POSITION: fixed; Z-INDEX: 9999; DISPLAY: block">
+<DIV 
+style="FONT-SIZE: 18px; COLOR: #c30; PADDING-TOP: 18%; PADDING-LEFT: 40%; LINE-HEIGHT: 30px">警告: 
+如果看到该页面,可能是因为: 
+<DIV style="LIST-STYLE-TYPE: decimal; LIST-STYLE-POSITION: outside">
+<DIV><SPAN>1. 您的浏览器没有启用JavaScript功能;</SPAN></DIV>
+<DIV><SPAN>2. 迪蒙网贷官网地址为 <B><A 
+href="http://61.145.159.156:8421/">http://61.145.159.156:8421/</A></B>.</SPAN></DIV></DIV></DIV></DIV>
+<SCRIPT type=text/javascript>try{document.getElementById('431edf41-31fa-4044-8fb9-e148d0b0a4f1').style.display='none';}catch(e){}</SCRIPT>
+
+<SCRIPT src="/user/js/jquery/jquery-1.8.3.min.js" type=text/javascript></SCRIPT>
+
+<SCRIPT src="/user/js/common.js" type=text/javascript></SCRIPT>
+
+<SCRIPT src="/user/js/user.js" type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+{
+    try {
+        var a = window.opener||window.parent;
+        while(a.parent!=a){
+            a = a.parent;
+        }
+        if(a.location.host!='61.145.159.156:8421'){
+            a.location.href='http://61.145.159.156:8421';
+        }
+    }catch(e){
+
+    }
+}
+</SCRIPT>
+
+<SCRIPT src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" 
+type=text/javascript charset=utf-8 
+data-redirecturi="http://61.145.159.156:8421/index.html" data-appid="101173448"> </SCRIPT>
+
+<SCRIPT src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" 
+type=text/javascript charset=utf-8 data-callback="true"></SCRIPT>
+
+<SCRIPT type=text/javascript>
+
+function pageSubmit(_obj){
+	if(setCurrentPage(_obj)){
+		toAjaxPage();
+	}
+}
+
+//输入分页，点确定查询时，设置当前页
+function setCurrentPage(_obj){
+	var currentPage1 = $(_obj).prev().val();
+	var re =  /^[1-9]+[0-9]*]*$/;
+	if(!re.test(currentPage1)){
+		return false;
+	}
+	currentPage = currentPage1;
+	if(currentPage>$(_obj).prev().attr("maxSize")*1){
+		currentPage = $(_obj).prev().attr("maxSize")*1;
+	}
+	return true;
+}
+
+function DMQQLogout(){
+	  //1 QQ退出
+	  QC.Login.signOut();
+	  //2 本地退出
+	  location.href = "/user/logout.htm";
+	}
+
+</SCRIPT>
+<!--顶部条-->
+<DIV class=top_bar>
+<DIV class="w1002 clearfix">
+<DIV class="tel fl"><I class=icon></I><SPAN class=va_m>400 - 678 - 
+5518</SPAN></DIV><A class="service fl ml20" 
+href="http://61.145.159.156:8421/xszy/zxkf.html"><I class=icon></I><SPAN 
+class=va_m>在线客服</SPAN></A> 
+<DIV class="focus fl ml20"><SPAN class=fl>关注我们：</SPAN> <A class="icon wb" 
+href="http://61.145.159.156:8421/"></A>
+<DIV class="icon wx" 
+onclick="window.location.href='http://61.145.159.156:8421'">
+<DIV class=code><I class=arrow></I>
+<DIV class=border><IMG src="迪蒙网贷_借款管理_我的借款_files/weixin.png"><BR>扫一扫关注微信 
+</DIV></DIV></DIV></DIV>
+<DIV class="nav fr">
+<UL><!--未登录--><!--已登录-->
+  <LI class=hello>您好，</LI>
+  <LI class=user><A title=duanwanjun class=name 
+  href="http://61.145.159.156:8421/user/">duanwa...</A> 
+  <DIV class=child>
+  <DIV class=arrow></DIV><A 
+  href="http://61.145.159.156:8421/user/capital/charge.html">充值</A> <A 
+  href="http://61.145.159.156:8421/user/capital/withdraw.html">提现</A> <A 
+  href="http://61.145.159.156:8421/user/capital/tradingRecord.html">资金管理</A> <A 
+  href="http://61.145.159.156:8421/user/financing/wdzq/hszdzq.html">理财管理</A> <A 
+  href="http://61.145.159.156:8421/user/credit/repaying.html">借款管理</A> <A 
+  onclick=DMQQLogout(); href="javascript:void(0);">安全退出</A> </DIV></LI>
+  <LI class=line></LI>
+  <LI class=letter><A href="http://61.145.159.156:8421/mall/carList.htm"><I 
+  class=top_car_ico></I>购物车<SPAN class=number>0</SPAN></A></LI>
+  <LI class=line></LI>
+  <LI class=letter><A href="http://61.145.159.156:8421/user/letter/">站内信<SPAN 
+  class="number letter">1</SPAN></A></LI>
+  <LI class=line></LI>
+  <LI><A href="http://61.145.159.156:8421/gywm/lxwm.html">联系我们</A></LI>
+  <LI class=line></LI>
+  <LI><A href="http://61.145.159.156:8421/bzzx/czytx.html">帮助中心</A></LI>
+  <LI class=line></LI>
+  <LI class=app 
+  onclick="window.location.href='http://61.145.159.156:8421/app/downloadApp.htm'"><SPAN>手机客户端</SPAN> 
+
+  <DIV class=code><I class=arrow></I>
+  <DIV class=border><IMG src="迪蒙网贷_借款管理_我的借款_files/weixin.png"><BR>下载客户端APP 
+  </DIV></DIV></LI></UL></DIV></DIV></DIV><!--顶部条--><!--头部-->
+<DIV class="header w1002 clearfix">
+<DIV class=logo><A href="http://61.145.159.156:8421/"><IMG title=迪蒙网贷 
+src="迪蒙网贷_借款管理_我的借款_files/logo.jpg"></A></DIV>
+<DIV class=main_nav>
+<UL class=clearfix>
+  <LI class=item>
+  <DIV class=nav><A href="http://61.145.159.156:8421/">首页</A></DIV></LI>
+  <LI class=item>
+  <DIV class=nav><A href="http://61.145.159.156:8421/financing/">我要投资</A></DIV>
+  <UL class=subnav>
+    <DIV class=arrow></DIV>
+    <LI><A href="http://61.145.159.156:8421/financing/sbtz/">投资项目</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/financing/sbtz/index.html?btype=3">债权转让</A></LI></UL></LI>
+  <LI class=item>
+  <DIV class=nav><A href="http://61.145.159.156:8421/credit/">我要借款</A></DIV>
+  <UL class=subnav>
+    <DIV class=arrow></DIV>
+    <LI><A href="http://61.145.159.156:8421/credit/xjd/">信用贷</A></LI>
+    <LI><A href="http://61.145.159.156:8421/credit/dkyx.html">个人借款意向</A></LI>
+    <LI><A 
+  href="http://61.145.159.156:8421/credit/qydkyx.html">企业借款意向</A></LI></UL></LI>
+  <LI class=item>
+  <DIV class=nav><A 
+  href="http://61.145.159.156:8421/mall/mallIndex.htm">积分商城</A></DIV></LI>
+  <LI class=item>
+  <DIV class=nav><A 
+  href="http://61.145.159.156:8421/gywm/gsjj.html">关于我们</A></DIV></LI>
+  <LI class=item>
+  <DIV class=nav><A 
+  href="http://61.145.159.156:8421/financing/gyb/gyJz.html">公益捐赠</A></DIV></LI>
+  <LI class=item>
+  <DIV class=nav><A 
+href="http://61.145.159.156:8421/user/">我的账户</A></DIV></LI></UL></DIV></DIV><!--头部-->
+<DIV class=clear></DIV>
+<DIV class="main_bg clearfix">
+<DIV class="user_wrap w1002 clearfix">
+<DIV class=w200>
+<DIV class=side_info>
+<DIV class=portrait><A href="http://61.145.159.156:8421/user/index.html"><IMG 
+src="迪蒙网贷_借款管理_我的借款_files/portrait.jpg"> </A></DIV>
+<DIV title=duanwanjun class=title>duanwanjun</DIV></DIV>
+<DIV class=sidemenu>
+<DIV class=my_account><A href="http://61.145.159.156:8421/user/index.html"><I 
+class=icon></I>我的账户</A></DIV>
+<UL class=menu>
+  <LI class=group><SPAN class="item "><I class=icon01></I>资金管理</SPAN> 
+  <UL class=child>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/capital/tradingRecord.html">交易记录</A></LI>
+    <LI><A 
+href="http://61.145.159.156:8421/user/capital/charge.html">充值</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/capital/withdraw.html">提现</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/capital/orderServlet.html">订单查询</A></LI></UL></LI>
+  <LI class=group><SPAN class="item "><I class=icon02></I>理财管理</SPAN> 
+  <UL class=child>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/financing/wdzq/hszdzq.html">我的债权</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/financing/donation/donationList.html">我的公益标</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/financing/zqzr/zqzrz.html">债权转让</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/financing/financingStatistics.html">理财统计</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/financing/zdtb/index.html">自动投资工具</A></LI></UL></LI>
+  <LI class=group><SPAN class="item up"><I class=icon03></I>借款管理</SPAN> 
+  <UL class=child style="DISPLAY: block">
+    <LI><A class=cur 
+    href="http://61.145.159.156:8421/user/credit/repaying.html">我的借款</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/credit/apply.html">借款申请查询</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/credit/newCreditStatistics.html">借款统计</A></LI></UL></LI>
+  <LI class=group><SPAN class="item "><I class=icon04></I>账户管理</SPAN> 
+  <UL class=child>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/account/userBases.html?userBasesFlag=1">个人基础信息</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/account/bankcardlist.html">银行卡信息</A></LI></UL></LI>
+  <LI class=group><SPAN class="item "><I class=icon08></I>我的商城</SPAN> 
+  <UL class=child>
+    <LI><A 
+href="http://61.145.159.156:8421/user/mall/myScore.html">我的积分</A></LI>
+    <LI><A href="http://61.145.159.156:8421/user/mall/myOrder.htm">我的订单</A></LI>
+    <LI><A href="http://61.145.159.156:8421/user/mall/harvestAddress.htm"><EM 
+    class=line></EM>收货地址管理</A></LI></UL></LI>
+  <LI class=group><SPAN class="item "><I class=icon07></I>我的奖励</SPAN> 
+  <UL class=child>
+    <LI><A href="http://61.145.159.156:8421/user/reward/wdhb.html">我的红包</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/reward/wdjxq.html">我的加息券</A></LI>
+    <LI><A 
+    href="http://61.145.159.156:8421/user/spread/wdtyj.html">我的体验金</A></LI></UL></LI>
+  <LI class=group><SPAN class="item "><I class=icon06></I>邀请好友</SPAN> 
+  <UL class=child>
+    <LI><A 
+  href="http://61.145.159.156:8421/user/spread/wytg.html">推荐好友</A></LI></UL></LI>
+  <LI class=group><SPAN class="item "><I class=icon05></I>消息管理</SPAN> 
+  <UL class=child>
+    <LI><A 
+  href="http://61.145.159.156:8421/user/letter/index.html">站内消息</A></LI></UL></LI>
+  <LI class=group><SPAN class="item "><I class=icon09></I>我要吐槽</SPAN> 
+  <UL class=child>
+    <LI><A 
+  href="http://61.145.159.156:8421/user/tsjy/wdtsjy.html">我要吐槽</A></LI></UL></LI></UL></DIV></DIV>
+<SCRIPT type=text/javascript>
+    $(function(){
+        $(".portrait img").bind("mouseover",function(){
+            $(".bdimgshare-content").hide();
+            $(".bdimgshare-bg").hide();
+        });
+    });
+    </SCRIPT>
+
+<DIV class=r_main>
+<DIV class="charity_total clearfix">
+<DIV class="total fl" id=repayCountMoneyId>借款总金额(元)<BR><SPAN 
+class="orange f22">0.00</SPAN> </DIV>
+<DIV class=line></DIV>
+<DIV class=list>
+<UL id=repayUlId>
+  <LI>逾期金额(元)<BR>0.00 </LI>
+  <LI>待还金额(元)<BR>0.00 </LI>
+  <LI>近30天应还金额(元)<BR>0.00 </LI></UL></DIV></DIV>
+<DIV class="user_mod border_t15">
+<DIV class="user_tab clearfix" id=divAppendId>
+<UL>
+  <LI class=hover id=hkzdLiId onclick=repay();>还款中的借款<I></I></LI>
+  <LI id=yhqdjkLiId onclick="yhqdjk();return false">已还清的借款<I></I></LI></UL></DIV>
+<DIV class="user_table pt5" id=yhqdjqDivId style="DISPLAY: none">
+<TABLE width="100%" id=yhqdjqTableId border=0 cellSpacing=0 cellPadding=0>
+  <THEAD>
+  <TR class=til>
+    <TD align=center>序号</TD>
+    <TD align=center>借款标题</TD>
+    <TD align=center>借款金额(元)</TD>
+    <TD align=center>年利率(%)</TD>
+    <TD align=center>期限</TD>
+    <TD align=center>还款总额(元)</TD>
+    <TD align=center>还清日期</TD></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD align=center colSpan=7>没有记录</TD></TR></TBODY></TABLE></DIV>
+<DIV class=page id=pageContent></DIV>
+<DIV class=clear></DIV></DIV></DIV>
+<DIV class=clear></DIV></DIV></DIV>
+<DIV class=popup_bg style="DISPLAY: none"></DIV>
+<DIV id=hiddenDivListId></DIV><INPUT id=ajaxUrl type=hidden 
+value=/user/credit/repaying.htm> <INPUT id=ajaxPayOffUrl type=hidden 
+value=/user/credit/payOff.htm> 
+<DIV class=footer>
+<DIV class="w1002 clearfix">
+<DIV class="footer_logo mt20" 
+onclick="window.location.href='http://61.145.159.156:8421'"><IMG 
+src="迪蒙网贷_借款管理_我的借款_files/footer_logo.png"></DIV>
+<DIV class=footer_info>
+<P>联系我们<SPAN class="f26 ml10 bold">400 - 678 - 5518</SPAN></P>
+<P class=f12>全国服务热线（服务时间：9:00 - 
+18:00）<BR>服务邮箱：services@dimeng.net<BR>广东省深圳市罗湖区振业大厦28楼</P></DIV>
+<UL class=footer_nav>
+  <LI><A href="http://61.145.159.156:8421/gywm/gsjj.html">关于我们</A></LI>
+  <LI><A href="http://61.145.159.156:8421/gywm/bxdb.html">安全保障</A></LI>
+  <LI><A href="http://61.145.159.156:8421/bzzx/xszy.html">新手入门</A></LI>
+  <LI><A href="http://61.145.159.156:8421/zxdt/mtbd.html">媒体报道</A></LI>
+  <LI><A href="http://61.145.159.156:8421/gywm/zxns.html">招贤纳士</A></LI>
+  <LI><A 
+href="http://61.145.159.156:8421/bzzx/czytx.html">帮助中心</A></LI></UL></DIV>
+<DIV class="w1002 copyright">
+<P>轻松贷款 投资无忧© 2014 61.145.159.156:8421 All Rights Reserved | 
+备案号：粤ICP备13082949号</P>
+<DIV class=icon><A 
+href="http://61.145.159.156:8421/user/credit/repaying.html#"><IMG 
+src="迪蒙网贷_借款管理_我的借款_files/footer_44.jpg"></A> <A 
+href="http://61.145.159.156:8421/user/credit/repaying.html#"><IMG 
+src="迪蒙网贷_借款管理_我的借款_files/footer_46.jpg"></A></DIV></DIV></DIV>
+<SCRIPT type=text/javascript>
+    function showPayment(id) {
+        $("#r" + id).show();
+        $(".popup_bg").show();
+    }
+    function showForwardPayment(id) {
+        $("#t" + id).show();
+        $(".popup_bg").show();
+    }
+    function closeDiv(id) {
+        $("#" + id).hide();
+        $(".popup_bg").hide();
+    }
+    function confirmRepay(id) {
+        $("#confirmBtn_" + id).hide();
+        $("#confirmLoading_" + id).show();
+    }
+
+    function tq_confirmRepay(id) {
+        $("#tq_confirmBtn_" + id).hide();
+        $("#tq_confirmLoading_" + id).show();
+    }
+    $(".close").click(function () {
+        $("#errorDiv").hide();
+        $("#warringDiv").hide();
+        $(".popup_bg").hide();
+    });
+
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+    var currentPage = 1;
+    var pageSize = 5;
+    var pageCount = 1;
+
+    $(function () {
+        repay();
+    });
+
+    /**
+     *我的借款
+     */
+    function repay() {
+        $("#yhqdjqDivId").hide();
+        $("#yhqdjkLiId").removeClass();
+        $("#hkzdLiId").attr("class", "hover");
+
+
+        var ajaxUrl = $("#ajaxUrl").val();
+        var dataParam = {"currentPage": currentPage, "pageSize": pageSize};
+        //先清除原有的数据
+        for (var i = 0; i < pageSize; i++) {
+            var divId = "#divId" + i;
+            $(divId).remove();
+        }
+
+        $.ajax({
+            type: "post",
+            dataType: "json",
+            url: ajaxUrl,
+            data: dataParam,
+            async: false,
+            success: function (returnData) {
+            	if(returnData.loginTimeOut){
+            		window.location.href="/user/login.html";
+            		return;
+            	}
+                //借款总金额
+                var txt = "借款总金额(元)<br /><span class='orange f22'>" + fmoney(returnData.loanCount.countMoney, 2) + "</span>";
+                $("#repayCountMoneyId").html(txt);
+                //ul添加li
+                var ulLiTxt = "<li>逾期金额(元)<br/>" + fmoney(returnData.loanCount.overdueMoney, 2) + "</li>" +
+                        "<li>待还金额(元)<br/>" + fmoney(returnData.loanCount.repayMoney, 2) + "</li>" +
+                        "<li>近30天应还金额(元)<br/>" + fmoney(returnData.loanCount.newRepayMoney, 2) + "</li>";
+                $("#repayUlId").html("");
+                $("#repayUlId").html(ulLiTxt);
+                if (null == returnData || null == returnData.wdjkList || returnData.wdjkList.length == 0) {
+                    var noRecordUrl = "<div name='nodatadiv' id='noRecordDivId' align='center'>暂无数据</div>";
+                    if ($("div[name='nodatadiv']").length == 0) {
+                        $("#divAppendId").after(noRecordUrl);
+                    }
+                    $("#pageContent").html("");
+                    return;
+                }
+                //分页信息
+                $("#pageContent").html(returnData.pageStr);
+                pageCount = returnData.pageCount;
+                //分页点击事件
+                $("a.page-link").click(function () {
+                    pageParam(this, 1);
+                });
+                
+                //填充表格数据
+                if (returnData.wdjkList.length > 0) {
+                    var rAssests = returnData.wdjkList;
+                    $(".borrowing_list").remove();
+                    var jkdiv = "<div class='borrowing_list pt5'><ul>";
+                    $.each(rAssests, function (n, value) {
+                        var recordUrl = "";
+                        var divId = "divId" + n;
+                        recordUrl += "<li id='" + divId + "' class='item'>";
+
+                        var zdhk = "";
+                        
+                        
+                        
+                        var tqhkUrl = "<span class='btn04 btn_gray'>提前还款</span>";//提前还款
+                        if (!returnData.isYuqi && value.F20 != "YDF") {//if(repayLoan.F28.F19.name() == T6231_F19.F.name() && T6230_F20.YDF.name() != repayLoan.F20.name())
+                            tqhkUrl = "<a href='javascript:void(0)' onclick=\"showForwardPayment('" + value.F01 + "')\" class='btn04'>提前还款</a>";
+                        }
+                        //查看合同
+                        var htUrl = "/user/financing/agreement/index.htm?id=" + value.F01;
+                        var loanDetailUrl = "/user/credit/loanDetail.html?id=" + value.F01;
+
+                        recordUrl += "<div class='clearfix'>";
+                        recordUrl += "<div class='fl'>";
+                        recordUrl += "<a class='gray3 f18' title='" + value.F03 + "' href='" + "http://61.145.159.156:8421/financing/sbtz/bdxq/" + value.F01 + ".html" + "'>" + value.F03 + "</a>";
+                        recordUrl += "<a target='_blank' href='" + htUrl + "' class='highlight ml10'>查看合同</a>";
+                        recordUrl += "<a href='" + loanDetailUrl + "' class='highlight ml10'>还款详情</a>";
+                        recordUrl += "</div>";
+                        recordUrl += "<div class='fr'>";
+                        recordUrl += zdhk;
+                        recordUrl += tqhkUrl;
+                        recordUrl += "<a href='javascript:void(0)' onclick=\"showPayment('" + value.F01 + "')\" class='ml10 btn04'>还款</a>";
+                        recordUrl += "</div></div>";
+
+                        recordUrl += "<ul class='info'>";
+                        recordUrl += "<li>借款金额(元)：" + fmoney((value.F05 - value.F07), 2) + "</li>";
+                        recordUrl += "<li>年利率：" + fmoney(value.F06 * 100, 2) + "%</li>";
+                        var startTime = 0;
+                        var endTime = 0;
+                        var xghkr = "";//下个还款日
+                        if (null != returnData.t6231List && returnData.t6231List.length > 0) {
+                            var timeResultList = returnData.t6231List;
+                            $.each(timeResultList, function (m, value1) {
+                            	if(value1 != null){
+	                                if (value1.F01 == value.F01) {
+	                                    startTime = value1.F03;
+	                                    endTime = value1.F02;
+	                                    xghkr = getTime(value1.F06);
+	                                }
+	                            }
+                            });
+                        }
+
+                        recordUrl += "<li>剩余期数(期)：" + value.leftNum + "/" + value.totalNum + "期</li>";
+                        recordUrl += "<li>下个还款日：" + xghkr + "</li>";
+                        recordUrl += "<li>还款金额(元)：" + fmoney(value.dqyhje, 2) + "</li>";
+                        recordUrl += "<li>状态：" + getChineseName(value.F20) + "</li>";
+                        recordUrl += "</ul></li>";
+
+                        jkdiv += recordUrl;
+                        var repayLoan = value;
+                        if (repayLoan != null) {
+                            var repayInfo = repayLoan.repayInfo;
+                            var forwardRepayInfo = repayLoan.forwardRepayInfo;
+                            if (null != repayInfo) {
+                                //还款div
+                                var htmlUrl = "";
+                                htmlUrl += "<div class='dialog refund_dialog' style='display: none' id='r" + repayInfo.loanID + "'>";
+                                htmlUrl += "<div class='title'><a href='javascript:void(0);' class='out'></a>还款</div>";
+                                htmlUrl += "<div class='content'><div class='border_b f16 pb15 mb15'>";
+                                htmlUrl += "<span class='gray3'>当期还款总需(元)：</span><span class='red'>" + fmoney(repayInfo.loanTotalMoney, 2) + "</span>" +
+                                        "<span class='gray3 ml20'>账户余额：</span> <span class='red'>" + fmoney(repayInfo.accountAmount, 2) + "</span></div>";
+                                htmlUrl += "<form action='/user/credit/payment.htm' method='post'>";
+                                htmlUrl += "<input type='hidden' name='id' value='" + repayInfo.loanID + "' /><input type='hidden' name='number' value='" + repayInfo.number + "' />";
+                                htmlUrl += "<div class='border_b pb15 mb15 lh24'><table width='100%' border='0' cellspacing='0' ><tr><td>当期应还本息</td><td>逾期金额</td></tr>";
+                                htmlUrl += "<tr><td><i class='red'>" + fmoney(repayInfo.loanMustMoney, 2) + "</i></td><td><i class='red'>" + fmoney(repayInfo.loanArrMoney, 2) + "</i></td></tr></table>";
+                                htmlUrl += "</div><div class='clear'></div>";
+                                htmlUrl += "<div id='confirmBtn_" + repayInfo.loanID + "' class='tc mt20'>";
+                                htmlUrl += "<input type='submit' class='btn01' value='确认' onclick='confirmRepay(" + repayInfo.loanID + ")'/>" +
+                                        "<input type='button' onclick=\"closeDiv('r" + repayLoan.F01 + "')\" class='btn01 btn_gray ml20' value='取 消' />";
+                                htmlUrl += "</div><div id='confirmLoading_" + repayInfo.loanID + "' style='color:red; display: none; text-align:center;'>正在处理，请稍候...</div>";
+                                htmlUrl += "</form></div></div>";
+                                $("#hiddenDivListId").after(htmlUrl);
+                            }
+
+                            //提前还款div
+                            if (null != forwardRepayInfo) {
+                                var htmlRepayInfoUrl = "";
+                                htmlRepayInfoUrl += "<div class='dialog refund_dialog' style='display:none;' id='t" + repayInfo.loanID + "'>";
+                                htmlRepayInfoUrl += "<div class='title'><a href='javascript:void(0);' class='out'></a>提前还款</div><div class='content'><div class='border_b f16 pb15 mb15'>";
+                                htmlRepayInfoUrl += "<span class='gray3'>提前还款总需(元)：</span><span class='red'>" + fmoney(forwardRepayInfo.loanTotalMoney, 2) + "</span>";
+                                htmlRepayInfoUrl += "<span class='gray3 ml20'>可用金额(元)：</span><span class='red'>" + fmoney(repayInfo.accountAmount, 2) + "</span></div>";
+                                htmlRepayInfoUrl += "<form action='/user/credit/prepayment.htm' method='post'>";
+                                htmlRepayInfoUrl += "<input type='hidden' name='id' value='" + forwardRepayInfo.loanID + "' /><input type='hidden' name='number' value='" + forwardRepayInfo.number + "' />";
+                                htmlRepayInfoUrl += "<div class='border_b pb15 mb15 lh24'><table width='100%' border='0' cellspacing='0' >";
+                                htmlRepayInfoUrl += "<tr><td>当期应还本息(元)</td><td>剩余本金(元)</td><td>违约金(元)</td><td>提前还款手续费(元)</td></tr>";
+                                htmlRepayInfoUrl += "<tr><td>" + fmoney(forwardRepayInfo.loanMustMoney, 2) + "</td>";
+                                htmlRepayInfoUrl += "<td>" + fmoney(forwardRepayInfo.sybj, 2) + "</td>";
+                                htmlRepayInfoUrl += "<td>" + fmoney(forwardRepayInfo.loanPenalAmount, 2) + "</td>";
+                                htmlRepayInfoUrl += "<td>" + fmoney(forwardRepayInfo.loanManageAmount, 2) + "</td></tr>";
+                                htmlRepayInfoUrl += "</table></div><div class='clear'></div>";
+                                $("#hiddenDivListId").after(htmlRepayInfoUrl);
+                                if ((repayInfo.accountAmount - forwardRepayInfo.loanTotalMoney) < 0) {
+                                    htmlRepayInfoUrl += "<div class='tc mt20'> <p class='f20'>您的账户的可用金额不足，请<a href='http://61.145.159.156:8421/user/capital/charge.html' class='blue'>充值</a></p></div>";
+                                } else {
+                                    var forwardSum = forwardRepayInfo.loanPenalAmount + forwardRepayInfo.loanManageAmount;
+                                    htmlRepayInfoUrl += "<div class='gray3 f16'>";
+                                    htmlRepayInfoUrl += "提前还款可为您节约 <span class='red'>" + fmoney(forwardRepayInfo.sylx - forwardSum, 2) + "</span>&nbsp;元&nbsp;" +
+                                            "<span class='hover_tips'> <div class='hover_tips_con'><div class='arrow'></div><div class='border'>节约金额=剩余利息-总手续费(违约金+提前还款手续费)</div> </div>";
+                                    htmlRepayInfoUrl += "</span></div>";
+                                    htmlRepayInfoUrl += "<div id='tq_confirmBtn_" + repayInfo.loanID + "' class='tc mt20'>"
+                                    htmlRepayInfoUrl += "<input type='submit' class='btn01' value='确认' onclick='tq_confirmRepay(" + repayInfo.loanID + ")'/>" +
+                                            "<input type='button' onclick=\"closeDiv('t" + repayLoan.F01 + "')\" class='btn01 btn_gray ml20' value='取 消' /></div>";
+                                }
+                                htmlRepayInfoUrl += "<div class='clear'></div><div id='tq_confirmLoading_" + repayInfo.loanID + "' style='color:red; display: none; text-align:center;'>正在处理，请稍候...</div></form></div></div>";
+                                $("#hiddenDivListId").after(htmlRepayInfoUrl);
+                            }
+                            
+                        }
+                    });
+                    setOutClick();
+                    jkdiv += "</ul></div>";
+                    $("#divAppendId").after(jkdiv);
+                }
+            },
+            error: function (XMLHttpRequest, textStatus) {
+                alert(textStatus);
+            }
+        });
+    }
+
+    /**
+     *已还清的借款
+     * @date 2015-05-13
+     * @author luoyi
+     */
+    function yhqdjk() {
+        $("#yhqdjqDivId").show();
+        $("#noRecordDivId").remove();
+
+        $("#hkzdLiId").removeClass();
+        $("#yhqdjkLiId").attr("class", "hover");
+        //先清除原有的数据
+        for (var i = 0; i < pageSize; i++) {
+            var divId = "#divId" + i;
+            $(divId).remove();
+        }
+        $("#pageContent").html("");
+        $("#yhqdjqTableId tbody tr").empty();
+
+        var ajaxUrl = $("#ajaxPayOffUrl").val();
+        var dataParam = {"currentPage": currentPage, "pageSize": pageSize};
+
+        $.ajax({
+            type: "post",
+            dataType: "json",
+            url: ajaxUrl,
+            data: dataParam,
+            success: function (returnData) {
+            	if(returnData.loginTimeOut){
+            		window.location.href="/user/login.html";
+            		return;
+            	}
+            	
+                if (null == returnData || null == returnData.yjqList || returnData.yjqList.length == 0) {
+                    $("#yhqdjqTableId tbody").html("");
+                    $("#yhqdjqTableId tbody").append("<tr class='nodatatr'><td colspan='7' align='center'>暂无数据</td></tr>");
+                    $("#pageContent").html("");
+                    return;
+                }
+
+                //借款总金额
+                var txt = "借款总金额(元)<br /><span class='orange f22'>" + fmoney(returnData.loanCount.countMoney, 2) + "</span>";
+                $("#repayCountMoneyId").html(txt);
+                //ul添加li
+                var ulLiTxt = "<li>逾期金额(元)<br/>" + fmoney(returnData.loanCount.overdueMoney, 2) + "</li>" +
+                        "<li>待还金额(元)<br/>" + fmoney(returnData.loanCount.repayMoney, 2) + "</li>" +
+                        "<li>近30天应还金额(元)<br/>" + fmoney(returnData.loanCount.newRepayMoney, 2) + "</li>";
+                $("#repayUlId").html("");
+                $("#repayUlId").html(ulLiTxt);
+                //分页信息
+                $("#pageContent").html(returnData.pageStr);
+                pageCount = returnData.pageCount;
+                //分页点击事件
+                $("a.page-link").click(function () {
+                    pageParam(this, 2);
+                });
+
+                if (returnData.yjqList.length > 0) {
+                    $("#yhqdjqTableId tbody").empty();
+                    var rAssests = returnData.yjqList;
+                    $.each(rAssests, function (n, value) {
+                        var trHtmlStr = "";
+                        var hrefUrl = "http://61.145.159.156:8421/financing/sbtz/bdxq/" + value.F01 + ".html";
+                        trHtmlStr += "<tr><td align='center'>" + (n+1) + "</td><td align='center'><a href='" + hrefUrl + "'>" + value.F03 + "</a></td>";
+                        trHtmlStr += "<td align='center'>" + fmoney(value.F26, 2) + "</td>";
+                        trHtmlStr += "<td align='center'>" + fmoney(value.F06 * 100, 2) + "%</td>";
+                        var timeStr = "";
+                        var t6231_F13 = "";
+                        $.each(returnData.t6231List, function (n, value1) {
+                            if (value1.F01 == value.F01) {
+                                t6231_F13 = getTime(value1.F13);
+                            }
+                        })
+                        if (value.F28.F21 == "F") {//T6231_F21.F
+                            timeStr = value.F09 + "个月";
+                        } else if (t6231_F13.length > 0) {
+                            timeStr = value.F28.F22 + "天";
+                        }
+                        trHtmlStr += "<td align='center'>" + timeStr + "</td>";
+                        trHtmlStr += "<td align='center'>" + fmoney(value.hkTotle, 2) + "</td>";
+                        trHtmlStr += "<td align='center'>" + t6231_F13 + "</td></tr>";
+                        $("#yhqdjqTableId").append(trHtmlStr);
+                    });
+                }
+            },
+            error: function (XMLHttpRequest, textStatus) {
+                var trHTML = "<tr><td colspan='7' align='center'>数据错误</td></tr>";
+                $("#yhqdjqTableId tbody").append(trHTML);
+                alert(textStatus);
+            }
+        });
+    }
+
+    $(function () {
+        /*tips提示*/
+        $(".hover_tips").mouseover(function () {
+            $(this).children().show();
+        });
+        $(".hover_tips").mouseout(function () {
+            $(this).children().hide();
+        });
+        setOutClick();
+    });
+    
+    function setOutClick(){
+    	$("a.out").click(function () {
+            $("div.dialog").hide();
+            $("div.popup_bg").hide();
+        });
+    }
+    
+    function toAjaxPage(){
+    	if ($("#hkzdLiId").hasClass("hover")) {
+    		//先清除原有的数据
+    		for(var i=0;i<pageSize;i++){
+    			var divId = "#divId"+i;
+    			$(divId).remove();
+    		}
+    		repay();
+    	}else if ($("#yhqdjkLiId").hasClass("hover")) {
+    		//先清除原有的数据
+    		for(var i=0;i<pageSize;i++){
+    			var divId = "#divId"+i;
+    			$(divId).remove();
+    		}
+    		yhqdjk();
+    	}
+    }
+</SCRIPT>
+
+<SCRIPT src="/user/js/repaying.js" type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="/user/js/zankai.js"></SCRIPT>
+
+<SCRIPT language=javascript src="/user/js/ajaxDateUtil.js"></SCRIPT>
+</BODY></HTML>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+	<title>用户中心</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/main_style.css">
+	<!--[if IE]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			subNav('.nav-ueser-first span' ,'.subnav-user' ,'.nav-ueser-first');//侧导航
+		});
+	</script>
+</head>
+<body>
+	<div class="w200 fl pt40">
+		<div class="bg-blue pos_rel box-user">
+			<div class="pos_abs img_portrait"><img src="images/none/66.jpg" class="dis_block" /></div>
+			<h4 class="normal white txt-center f20">Seven.Z</h4>
+		</div>
+		<div class="bg-white txt-center f18 p10"><i class="iconfont mr10 orange f16">&#xe61b;</i>我的账户</div>
+		<div class="nav-user bg-white mt10 pt5 pb5">
+			<div class="nav-ueser-first pt10 pb10">
+				<span class="dis_block f18 txt-center"><i class="iconfont mr10 orange f16">&#xe622;</i>资金管理</span>
+				<ul class="subnav-user pt10 f14">
+					<li><a href="#" class="cur">资金明细</a></li>
+					<li><a href="#">充值</a></li>
+					<li><a href="#">提现</a></li>
+				</ul>
+			</div>
+			<div class="nav-ueser-first pt10 pb10">
+				<span class="dis_block f18 txt-center"><i class="iconfont mr10 orange f16">&#xe621;</i>理财管理</span>
+				<ul class="subnav-user pt10 f14">
+					<li><a href="#">投资列表</a></li>
+					<li><a href="#">债券转让</a></li>
+				</ul>
+			</div>
+			<div class="nav-ueser-first pt10 pb10">
+				<span class="dis_block f18 txt-center"><i class="iconfont mr10 orange f16">&#xe620;</i>借款管理</span>
+                <ul class="subnav-user pt10 f14">
+					<li><a href="#">借款列表</a></li>
+					<li><a href="#">还款列表</a></li>
+				</ul>
+			</div>
+			<div class="nav-ueser-first pt10 pb10">
+				<span class="dis_block f18 txt-center"><i class="iconfont mr10 orange f16">&#xe61f;</i>账户管理</span>
+                <ul class="subnav-user pt10 f14">
+					<li><a href="#">安全中心</a></li>
+					<li><a href="#">我的红包</a></li>
+                    <li><a href="#">消息中心</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

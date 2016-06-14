@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+	<title>账户管理-我的红包</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/main_style.css">
+	<!--[if IE]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<!-- 分页 -->
+	<script type="text/javascript" src="js/kkpager.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			nav(); //主导航
+			subNav('.nav-ueser-first span' ,'.subnav-user' ,'.nav-ueser-first');//侧导航
+			selectedOption('.search-filter span');
+
+			//分页
+			var totalPage = 20;
+			var totalRecords = 390;
+			var pageNo = getParameter('pno');
+			if(!pageNo){
+				pageNo = 1;
+			}
+			//生成分页
+			//有些参数是可选的，比如lang，若不传有默认值
+			kkpager.generPageHtml({
+				pno : pageNo,
+				//总页码
+				total : totalPage,
+				//总数据条数
+				totalRecords : totalRecords,
+				//链接前部
+				hrefFormer : 'investment_sanMark',
+				//链接尾部
+				hrefLatter : '.html',
+				getLink : function(n){
+					return this.hrefFormer + this.hrefLatter + "?pno="+n;
+				}
+			});
+			
+		});
+	</script>
+</head>
+<body class="bg-f9">
+<!-- 顶部 -->
+<div class="top">
+	<div class="w1200 clearfix">
+		<div class="fl"><span><i class="iconfont f14 mr5">&#xe600;</i>服务热线：400-000-0000</span><span class="ml20"><i class="iconfont f14 mr5">&#xe601;</i>服务时间：9:00-19:00</span><span class="ml20"><i class="iconfont f20 mr5 vertical_middle">&#xe602;</i><i class="vertical_middle">手机客户端</i></span></div>
+		<div class="fast-way fr">
+		<!--<a href="#">新手指引</a>|<a href="#">最新活动</a>|<a href="#"><i class="iconfont f20 mr5 vertical_middle">&#xe602;</i><span class="vertical_middle">下载客户端</span></a>|<a href="#" class="orange">登录</a>|<a href="#">免费注册</a>-->
+			<div class="fl dis_none">
+				<div class="user_login fl" >
+					<em>您好，</em><a href="">139****5735</a><a href="">退出</a>	
+				</div>
+				<ul  class="user_center fl" >
+					<li class="user_li"><a href="">账户中心</a>
+						<ul>
+							<li><a href="">充值</a></li>
+							<li><a href="">提现</a></li>
+							<li><a href="">我要理财</a></li>
+							<li><a href="">我要借款</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="msg fl"><a href=""><img src="images/Email.png" alt="消息中心" width="18">&nbsp;(5)</a></div>
+			</div>
+			<a href="">立即登录</a>
+			<a href="">免费注册</a>
+			<a href="">帮助中心</a>
+		</div>
+	</div>
+</div>
+<!-- 头部 -->
+<div class="bg-white">
+	<div class="head clearfix w1200">
+		<a class="fl logo dis_block" href="index.html">量硕宏程</a>
+		<!-- 导航 -->
+		<ul class="nav fr txt-center f18">
+			<li><a href="index.html" class="cur"><span class="f20 mr5">·</span>首页</a></li>
+			<li><a href="javascript:;">我要理财<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财一</a></li>
+						<li><a href="#">理财二</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="javascript:;">我要借款<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财afg</a></li>
+						<li><a href="#">理财sdr</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">新手指引</a></li>
+			<li><a href="javascript:;">关于我们<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财dr1</a></li>
+						<li><a href="#">理财1234576</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="border-bot-e6"></div>
+<!-- <%template src="_header.html"%> -->
+<!-- 中间 start -->
+<div class="w1200 clearfix">
+	<!-- 左侧导航 -->
+	<div class="w200 fl pt40">
+		<div class="bg-blue pos_rel box-user">
+			<div class="pos_abs img_portrait"><img src="images/none/66.jpg" class="dis_block" /></div>
+			<h4 class="normal white txt-center f20">Seven.Z</h4>
+		</div>
+		<div class="bg-white txt-center f18 p10"><i class="iconfont mr10 orange f16">&#xe61b;</i>我的账户</div>
+		<div class="nav-user bg-white mt10 pt5 pb5">
+			<div class="nav-ueser-first pt10 pb10">
+				<span class="dis_block f18 txt-center"><i class="iconfont mr10 orange f16">&#xe622;</i>资金管理</span>
+				<ul class="subnav-user pt10 f14">
+					<li><a href="#">资金明细</a></li>
+					<li><a href="#">充值</a></li>
+					<li><a href="#">提现</a></li>
+				</ul>
+			</div>
+			<div class="nav-ueser-first pt10 pb10">
+				<span class="dis_block f18 txt-center"><i class="iconfont mr10 orange f16">&#xe621;</i>理财管理</span>
+				<ul class="subnav-user pt10 f14">
+					<li><a href="#">投资列表</a></li>
+					<li><a href="#">债券转让</a></li>
+				</ul>
+			</div>
+			<div class="nav-ueser-first pt10 pb10">
+				<span class="dis_block f18 txt-center"><i class="iconfont mr10 orange f16">&#xe620;</i>借款管理</span>
+                <ul class="subnav-user pt10 f14">
+					<li><a href="#">借款列表</a></li>
+					<li><a href="#">还款列表</a></li>
+				</ul>
+			</div>
+			<div class="nav-ueser-first pt10 pb10">
+				<span class="dis_block f18 txt-center"><i class="iconfont mr10 orange f16">&#xe61f;</i>账户管理</span>
+                <ul class="subnav-user pt10 f14">
+					<li><a href="#">安全中心</a></li>
+					<li><a href="#" class="cur">我的红包</a></li>
+                    <li><a href="#">消息中心</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- <%template src="_left-nav.html"%> -->
+	<!-- 右侧内容 -->
+	<div class="w970 fr pt40">
+		<div class="bg-white p20 f14"> 
+			<div class="border-bot-e1 pb10">
+				<h4 class="normal f16 pl10 repayment-title ml20">我的红包</h4>
+			</div>
+			<ul class="myRed clearfix txt-center p30 ml10">
+				<li class="fl bg-f5 mr20">	
+					<p>推荐用户数</p>
+					<p class="orange">60个</p>
+				</li>
+				<li class="fl bg-f5 mr20">	
+					<p>有效用户数</p>
+					<p class="orange">1个</p>
+				</li>
+				<li class="fl bg-f5 mr20">	
+					<p>已收红包</p>
+					<p class="orange">￥1,386,559</p>
+				</li>
+				<li class="fl bg-f5 mr20">	
+					<p>代收红包</p>
+					<p class="orange">￥361,98</p>
+				</li>
+			</ul>
+			<div class="ml10 pl30"> 
+				<input type="text" class="mr20 share-input pl10" /><input type="button" class="white bg-orange button f16" value="分享拿红包" /> 
+				<p><span>您的推荐级别：推荐大使</span><a href="#" class="orange ml30">推荐说明</a><a href="#" class="orange ml20">申请成为推荐大使</a></p>
+			</div>
+			<div class="myRed-lists txt-center mt30">
+				<ul class="clearfix bg-f5 f14">
+					<li class="fl no">序号</li>
+					<li class="fl recom_users">推荐用户</li>
+					<li class="fl regist_date">注册日期</li>
+					<li class="fl accumulation txt-right">累积红包（元）</li>
+					<li class="fl expect txt-right">预期红包（元）</li>
+					<li class="fl datails">明细</li>
+				</ul>
+				<ul class="border-bot-e1 clearfix">
+					<li class="fl no">1</li>
+					<li class="fl recom_users">***3556(*方圆)</li>
+					<li class="fl regist_date">2016-05-30</li>
+					<li class="fl accumulation txt-right">12,2586.00</li>
+					<li class="fl expect txt-right">1089.00</li>
+					<li class="fl datails"><a href="#" class="btn-small white btn_blue">查看</a></li>
+				</ul>
+				<ul class="border-bot-e1 clearfix">
+					<li class="fl no">2</li>
+					<li class="fl recom_users">***3556(*方圆)</li>
+					<li class="fl regist_date">2016-05-30</li>
+					<li class="fl accumulation txt-right">0.00</li>
+					<li class="fl expect txt-right">0.00</li>
+					<li class="fl datails"><a href="#" class="btn-small white btn_blue">查看</a></li>
+				</ul>
+				<ul class="border-bot-e1 clearfix">
+					<li class="fl no">3</li>
+					<li class="fl recom_users">***3556(*方圆)</li>
+					<li class="fl regist_date">2016-05-30</li>
+					<li class="fl accumulation txt-right">0.00</li>
+					<li class="fl expect txt-right">0.00</li>
+					<li class="fl datails"><a href="#" class="btn-small white btn_blue">查看</a></li>
+				</ul>
+			</div>
+			<!-- 分页 -->
+			<div id="kkpager" class="pages txt-center f16 pt20 pb20 mt20 mb20"></div>
+		</div>
+	</div>
+</div>
+<!-- 中间 end -->
+<!-- 页脚 -->
+<!-- <%template src="_footer.html"%> -->
+<div class="bg-33 mt20 pt30">
+	<div class="w1200 clearfix pb30">
+		<div class="fast-way-bot fl f14">
+			<a href="#">关于我们</a><a href="#">帮助中心</a><a href="#">招贤纳士</a><a href="#">联系我们</a><a href="#">隐私策略</a><a href="#">免责条款</a><a href="#">政策法规</a><a href="#">网站地图</a>
+		</div>
+		<div class="line fl mt10"></div>
+		<div class="service-tel txt-center gray-lighter fl">
+			<div class="tel f36 line-height-1">
+				<p>400-000-0000</p>
+				<p>010-888-0000</p>
+			</div>
+			<p class="f20 mt5">客服电话（8:30-21:00）</p>
+			<div class="f30"><a href="#"><i class="iconfont">&#xe605;</i></a><a href="#"><i class="iconfont">&#xe606;</i></a><a href="#"><i class="iconfont">&#xe607;</i></a></div>
+		</div>
+		<div class="line fl mt10"></div>
+		<div class="codes fl txt-center">
+			<h3 class="gray-lighter f22 normal line-height-1 mb10">手机客户端</h3>
+			<ul class="clearfix white f14">
+				<li>
+					<img src="images/none/codes_app.jpg" alt="APP下载" />
+					<p>APP下载</p>
+				</li>
+				<li>
+					<img src="images/none/codes_weixin.jpg" alt="关注微信" />
+					<p>关注微信</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="line-gray-light"></div>
+	<div class="w1200 txt-center f16 gray-lighter links">
+		友情链接：<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>
+	</div>
+</div>
+<div class="bg-29">
+	<div class="w1200 txt-center honor">
+		<div class="pt20 pb20"><img src="images/none/link-1.png" alt="诚信网站" /><img src="images/none/link-2.png" alt="诚信网站" /><img src="images/none/link-3.png" alt="诚信网站" /></div>
+		<p class="gray-99 pb10">© 2015 量硕宏程投资管理有限公司 京ICP备14056037号 京公网安备11010502025440</p>
+	</div>
+</div>
+</body>
+</html>

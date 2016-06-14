@@ -1,0 +1,21 @@
+/*
+添加人：wy
+时间：2016-04-20
+版本：1.0
+版权：量硕宏程投资管理（北京）有限公司
+*/
+
+body,form,div,span,ul,ol,li,p,pre,dl,dt,dd,h1,h2,h3,h4,h5,h6,em,a,fieldset,legend,address,label,textarea,select,input,figure,table,th,td,b,i{margin:0;padding:0;}
+fieldset,img{border:0;}
+ul,li,ol{list-style:none outside none;}
+
+a{text-decoration:none; color: #333;}
+a:hover{ text-decoration:none; color: #329dfd;}
+a:focus,input,button,select,textarea{outline:none;}
+
+h1,h2,h3,h4,h5,h6{ font-size:100%; font-variant: normal;}
+input,select,img{ vertical-align:middle;}
+legend{ display:none;}
+textarea{resize:none;}
+em,i{font-style:normal;}
+table{border-collapse:separate;border-spacing:0;}
