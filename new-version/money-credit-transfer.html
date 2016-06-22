@@ -15,7 +15,7 @@
 		$(function(){
 			nav(); //主导航
 			subNav('.nav-ueser-first span' ,'.subnav-user' ,'.nav-ueser-first');//侧导航
-			selectedOption('.search-filter span');
+			selOptions('.search-filter span');
 		});
 	</script>
 </head>
@@ -28,7 +28,7 @@
 		<!--<a href="#">新手指引</a>|<a href="#">最新活动</a>|<a href="#"><i class="iconfont f20 mr5 vertical_middle">&#xe602;</i><span class="vertical_middle">下载客户端</span></a>|<a href="#" class="orange">登录</a>|<a href="#">免费注册</a>-->
 			<div class="fl dis_none">
 				<div class="user_login fl" >
-					<em>您好，</em><a href="">139****5735</a><a href="">退出</a>	
+					<em>您好，</em><a href="">139****5735</a><a href="">退出</a>
 				</div>
 				<ul  class="user_center fl" >
 					<li class="user_li"><a href="">账户中心</a>
@@ -133,61 +133,44 @@
 	<!-- <%template src="_left-nav.html"%> -->
 	<!-- 右侧内容 -->
 	<div class="w970 fr pt40">
-		<div class="bg-white p20 f14"> 
+		<div class="bg-white p20 f14">
 			<div class="border-bot-e1 pb10">
 				<h4 class="normal f16 pl10 repayment-title ml20">债权转让记录</h4>
 			</div>
-			<div class="search-filter ml30 pl10 mt30 mb30"> 
+			<div class="search-filter ml30 pl10 mt30 mb30">
 				<em class="mr10">筛选：</em>
 				<span class="selected"><i>全部</i><em class="bg-red white">0</em></span>
 				<span><i>转让中</i><em class="bg-green white">0</em></span>
 				<span><i>已转让</i><em class="bg-blue white">0</em></span>
-				<span><i>已取消</i><em class="bg-orange white">0</em></span> 
+				<span><i>已取消</i><em class="bg-orange white">0</em></span>
 			</div>
-			<div class="table history-lists credit-record txt-center line-height-1"> 
+			<div class="table history-lists credit-record txt-center table-fixed">
 				<ul class="tHead clearfix bg-f5 f14">
-					<li class="no">债权编号</li>
-					<li class="applay-date">申请日期</li>
-					<li class="apr">年利率</li>
-					<li class="pay-style">转让本金(元)</li>
-					<li class="price">调价(元)</li>
-					<li class="end-invest">结息(元)</li>
-					<li class="transfer-fee">转让费(元)</li>
-					<li class="total">合计(元)</li>
+					<li class="time">转让时间-到期时间</li>
+					<li class="pro-title">项目</li>
+					<li class="num">待还/总期数</li>
+					<li class="principal">待收本金(元)</li>
+					<li class="interest">代收利息(元)</li>
+					<li class="ask_price">转让价格(元)</li>
 					<li class="status">转让状态</li>
 				</ul>
 				<ul class="clearfix">
-					<li class="no"><a href="#" class="blue f12">XZX164B9K查看协议</a></li>
-					<li class="applay-date">2016-05-31</li>
-					<li class="apr">0.00%</li>
-					<li class="pay-style txt-right">0.00</li>
-					<li class="price txt-right">0.00</li>
-					<li class="end-invest txt-right">0.00</li>
-					<li class="transfer-fee txt-right">0.00</li>
-					<li class="total txt-right">0.00</li>
+					<li class="time">2016-05-20-20165-10-22</li>
+					<li class="pro-title txt-left"><a href="#" class="blue txt-nowrap" title="项目名称项目名称项目名称项目名称项目名称项目名称项目名称">项目名称项目名称项目名称项目名称项目名称项目名称项目名称</a></li>
+					<li class="num">1/10</li>
+					<li class="principal txt-right">0.00</li>
+					<li class="interest txt-right">0.00</li>
+					<li class="ask_price txt-right">0.00</li>
 					<li class="status"><span class="green">转让中</span></li>
 				</ul>
 				<ul class="clearfix">
-					<li class="no"><a href="#" class="blue f12">XZX164B9K查看协议</a></li>
-					<li class="applay-date">2016-05-31</li>
-					<li class="apr">0.00%</li>
-					<li class="pay-style txt-right">0.00</li>
-					<li class="price txt-right">0.00</li>
-					<li class="end-invest txt-right">0.00</li>
-					<li class="transfer-fee txt-right">0.00</li>
-					<li class="total txt-right">0.00</li>
-					<li class="status"><span class="blue">已转让</span></li>
-				</ul>
-				<ul class="clearfix">
-					<li class="no"><a href="#" class="blue f12">XZX164B9K查看协议</a></li>
-					<li class="applay-date">2016-05-31</li>
-					<li class="apr">0.00%</li>
-					<li class="pay-style txt-right">0.00</li>
-					<li class="price txt-right">0.00</li>
-					<li class="end-invest txt-right">0.00</li>
-					<li class="transfer-fee txt-right">0.00</li>
-					<li class="total txt-right">0.00</li>
-					<li class="status"><span class="orange">已取消</span></li>
+					<li class="time">2016-05-20-20165-10-22</li>
+					<li class="pro-title txt-left"><a href="#" class="blue txt-nowrap" title="项目名称">项目名称</a></li>
+					<li class="num">1/10</li>
+					<li class="principal txt-right">0.00</li>
+					<li class="interest txt-right">0.00</li>
+					<li class="ask_price txt-right">0.00</li>
+					<li class="status"><span class="green">转让中</span></li>
 				</ul>
 			</div>
 		</div>

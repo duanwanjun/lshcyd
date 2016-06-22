@@ -22,10 +22,22 @@
 
 			dashBoard('.lists_sanMark li', '.schedule');  //“散标列表”仪表盘
 
-			$('.filter li span').click(function(){
+			/*$('.filter li span').click(function(){
 				$(this).siblings('span').removeClass('cur');
 				$(this).addClass('cur');
-			});	
+			});	*/
+
+			$('.filter li').each(function(){
+				var _this=$(this);
+				_this.find('span:eq(0)').bind('click', function() {
+					$(this).addClass('cur');
+					$(this).siblings('span').removeClass();
+				});
+				_this.find('span:gt(0)').bind('click', function() {
+					$(this).addClass('lighter');
+					$(this).siblings('span').removeClass();
+				});
+			});
 
 			//分页
 			var totalPage = 20;
@@ -50,7 +62,7 @@
 					return this.hrefFormer + this.hrefLatter + "?pno="+n;
 				}
 			});
-			
+
 
 		});
 	</script>
@@ -64,7 +76,7 @@
 		<!--<a href="#">新手指引</a>|<a href="#">最新活动</a>|<a href="#"><i class="iconfont f20 mr5 vertical_middle">&#xe602;</i><span class="vertical_middle">下载客户端</span></a>|<a href="#" class="orange">登录</a>|<a href="#">免费注册</a>-->
 			<div class="fl dis_none">
 				<div class="user_login fl" >
-					<em>您好，</em><a href="">139****5735</a><a href="">退出</a>	
+					<em>您好，</em><a href="">139****5735</a><a href="">退出</a>
 				</div>
 				<ul  class="user_center fl" >
 					<li class="user_li"><a href="">账户中心</a>
@@ -130,17 +142,17 @@
 <div class="filter w1200 border-top-cc bg-white">
 	<h3 class="normal f18 orange pt5 pb5 pl20">筛选条件</h3>
 	<ul class="pt20 pl20 pr20 f14">
-		<li><b class="pr20">年化利率：</b><span class="cur">不限</span><span>0-9%</span><span>10-15%</span><span class="lighter">15%以上</span></li>
-		<li><b class="pr20">借款期限：</b><span class="cur">不限</span><span>3个月以内</span><span class="lighter">3-6个月</span><span>6-12个月</span><span>12-18个月</span><span>18个月以上</span></li>
-		<li><b class="pr20">还款方式：</b><span class="cur">不限</span><span>一次性本息全还</span><span class="lighter">按月还款等额本息</span></li>
-		<li><b class="pr20">信用等级：</b><span class="cur">不限</span><span class="lighter">A级</span><span>B级</span><span>C级</span><span>D级</span></li>
+		<li><b class="pr20">年化利率：</b><span class="cur">不限</span><span>0-9%</span><span>10-15%</span><span>15%以上</span></li>
+		<li><b class="pr20">借款期限：</b><span class="cur">不限</span><span>3个月以内</span><span>3-6个月</span><span>6-12个月</span><span>12-18个月</span><span>18个月以上</span></li>
+		<li><b class="pr20">还款方式：</b><span class="cur">不限</span><span>一次性本息全还</span><span>按月还款等额本息</span></li>
+		<li><b class="pr20">信用等级：</b><span class="cur">不限</span><span>A级</span><span>B级</span><span>C级</span><span>D级</span></li>
 	</ul>
 </div>
 <!-- 散标列表 -->
 <div class="lists_sanMark w1200 mt10">
 	<h3 class="clearfix normal"><span class="f22 blue">散标列表</span><span class="f16 fr gray-90">散标交易金额：<i class="f20 orange">1.67</i>亿元<i class="f10 ml5 mr5 gray-e1">|</i>累计赚取收益：<i class="f20 orange">4.88</i>亿元</span></h3>
 	<div class="pl20 pr20 border f16 txt-center border-top-none">
-		<div class="table"> 
+		<div class="table">
 			<ul class="tHead gray-90">
 				<li>借款标题</li>
 				<li>借款金额</li>
@@ -148,7 +160,7 @@
 				<li>借款期限</li>
 				<li>还款方式</li>
 				<li>借款进度</li>
-				<li>操作</li> 
+				<li>操作</li>
 			</ul>
 			<ul>
 				<li>企易贷001期<span class="fr gray-cc">|</span></li>
@@ -157,7 +169,7 @@
 				<li>1个月<span class="fr gray-cc">|</span></li>
 				<li>按月付息，到期还本</li>
 				<li><i class="schedule">58</i><div class="dash-board"></div></li>
-				<li><a href="#" class="button btn_red white f18">立即投资</a></li> 
+				<li><a href="#" class="button btn_red white f18">立即投资</a></li>
 			</ul>
 			<ul>
 				<li>企易贷001期<span class="fr gray-cc">|</span></li>
@@ -166,7 +178,7 @@
 				<li>1个月<span class="fr gray-cc">|</span></li>
 				<li>按月付息，到期还本</li>
 				<li><i class="schedule">38</i><div class="dash-board"></div></li>
-				<li><a href="#" class="button btn_red white f18">立即投资</a></li> 
+				<li><a href="#" class="button btn_red white f18">立即投资</a></li>
 			</ul>
 			<ul>
 				<li>企易贷001期<span class="fr gray-cc">|</span></li>
@@ -175,7 +187,7 @@
 				<li>1个月<span class="fr gray-cc">|</span></li>
 				<li>按月付息，到期还本</li>
 				<li><i class="schedule">88</i><div class="dash-board"></div></li>
-				<li><a href="#" class="button btn_red white f18">立即投资</a></li> 
+				<li><a href="#" class="button btn_red white f18">立即投资</a></li>
 			</ul>
 			<ul>
 				<li>企易贷001期<span class="fr gray-cc">|</span></li>
@@ -184,7 +196,7 @@
 				<li>1个月<span class="fr gray-cc">|</span></li>
 				<li>按月付息，到期还本</li>
 				<li><i class="schedule">10</i><div class="dash-board"></div></li>
-				<li><a href="#" class="button btn_red white f18">立即投资</a></li> 
+				<li><a href="#" class="button btn_red white f18">立即投资</a></li>
 			</ul>
 			<ul>
 				<li>企易贷001期<span class="fr gray-cc">|</span></li>
@@ -193,7 +205,7 @@
 				<li>1个月<span class="fr gray-cc">|</span></li>
 				<li>按月付息，到期还本</li>
 				<li><i class="schedule">75</i><div class="dash-board"></div></li>
-				<li><a href="#" class="button btn_red white f18">立即投资</a></li> 
+				<li><a href="#" class="button btn_red white f18">立即投资</a></li>
 			</ul>
 		</div>
 		<!-- 分页 -->

@@ -343,6 +343,14 @@ function selectedOption(obj){
 	});
 }
 
+function selOptions(obj){
+	$(obj).bind('click',function(){
+		$(this).siblings('span').removeClass();
+
+		$(this).addClass('selected-'+$(this).index());
+	});
+}
+
 //全部提现
 function allWithdraw(obj ,balance, withdraw){
 	$(obj).parent().parent().next().find(withdraw).val($(obj).parent().find(balance).html());

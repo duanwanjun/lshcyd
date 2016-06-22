@@ -113,7 +113,8 @@ input.button{ outline:none; border:none; }
 
 .full-img{ width:100%; }
 
-.f10{ font-size: 10px; }
+.f8{ font-size: 8px; }
+.f10{ font-size: 10px; /*-webkit-text-size-adjust: none;*/ }
 .f12{ font-size: 12px; }
 .f14{ font-size: 14px; }
 .f16{ font-size: 16px; }
@@ -162,6 +163,7 @@ input.button{ outline:none; border:none; }
 .mt10{ margin-top: 10px; }
 .ml10{ margin-left: 10px; }
 .mr10{ margin-right: 10px; }
+.mb14{ margin-bottom:14px; }
 .mb15{ margin-bottom:15px; }
 .mt20{ margin-top: 20px; }
 .ml20{ margin-left: 20px; }
@@ -198,6 +200,7 @@ input.button{ outline:none; border:none; }
 .pb15{ padding-bottom: 15px; }
 .pt15{ padding-top: 15px; }
 .pl15{ padding-left:15px; }
+.pr15{ padding-right:15px; }
 .p20{ padding:20px; }
 .pt20{ padding-top: 20px; }
 .pb20{ padding-bottom:20px; }
@@ -250,7 +253,5 @@ input.button{ outline:none; border:none; }
 
 .radio ,.check-Box{/* height:15px; vertical-align:bottom; margin-bottom:3px; margin-top:-1px;*/ vertical-align:middle; margin-top:-2px; margin-bottom:1px;}
 .checkBox{vertical-align:middle; margin-bottom:1px;}
-
-
 
 

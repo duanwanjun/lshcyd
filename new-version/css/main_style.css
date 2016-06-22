@@ -22,19 +22,20 @@
 
 
 
-
+.banner{ z-index:1; }
 /* 注册与登录 选项卡 */
-.register_log{ width: 260px; height: 300px; left: 50%; top: 50%; margin-top: -160px; margin-left: 320px; border-radius: 5px;}
-.register_log_hd{ padding: 0 6px; height: 32px; line-height: 32px; }
-.register_log_hd li{ float: left; width: 100px; border-bottom: 1px solid #fff; margin: 0 12px; cursor: pointer; }
+.register_log{ width: 260px; height: 280px; left: 50%; top: 50%; margin-top: -150px; margin-left: 320px; border-radius: 5px;}
+.register_log_hd{ padding: 0 6px; padding-top:10px; }
+.register_log_hd li{ float: left; width: 100px; border-bottom: 1px solid #fff; margin: 0 12px 6px 12px; cursor: pointer; height: 32px; line-height: 32px;}
 .register_log_hd li.cur{ border-bottom-color: #fa6239; color: #fa6239;  }
 .register_log_hd li a{color: #2483cb; }
 .register_log .text{ border: 1px solid #e1e1e1; border-radius: 3px; width: 238px; height: 28px; line-height:28px; padding: 5px 10px; color: #ababab;}
 .register_log .codes-input{ width: 98px; }
-.register_log .codes{ border: 1px solid #e1e1e1; display: inline-block; border-radius: 3px; width: 124px;}
+.register_log .codes{  display: inline-block; /* border-radius: 3px; border: 1px solid #e1e1e1; */ width: 124px;}
+.register_log .codes img{border-radius: 3px; border: 1px solid #e1e1e1; }
 /* 已经登录 */
-.already_log{ background:url(../images/bg_black-1.png) repeat; width:252px; height:210px; top:50%; left:50%; margin-top:-125px; margin-left:306px; z-index:99; }
-.already_log h4{ border-bottom:1px solid #fff; }
+.already_log{ background:url(../images/bg_black-1.png) repeat; width:250px; height:220px; top:50%; left:50%; margin-top:-130px; margin-left:320px; z-index:99; }
+.already_log h4{ border-bottom:1px solid #fff;}
 
 
 /* 服务项目 */
@@ -145,7 +146,7 @@
 /* 项目详情-投标金额 */
 .box-expand .content{}
 .box-expand .table{ width:60%; }
-.box-expand .table li{ padding-bottom:30px; }
+.box-expand .table li{ padding-bottom:30px; *width:33.3%; }
 .box-expand .tenderAmount{ border:1px solid #eee; background:#eff4fa; width:30%; padding:10px 30px; }
 .box-expand .tenderAmount .edit{border:1px solid #efefef; line-height:38px;}
 .box-expand .tenderAmount .edit a, .box-expand .tenderAmount .edit span{ display:block; float:left; }
@@ -156,19 +157,19 @@
 
 /* 项目详情选项卡 */
 .tab-project_hd{ border-bottom:1px solid #e1e1e1; }
-.tab-project_hd li{ display:inline-block; padding:15px 20px; margin-bottom:-1px; line-height:30px; position:relative; cursor:pointer;}
+.tab-project_hd li{ display:inline-block; *display:block; *float:left; padding:15px 20px; margin-bottom:-1px; line-height:30px; position:relative; cursor:pointer;}
 .tab-project_hd li.cur{ color:#329dff; }
 .tab-project_hd li.cur span{ position:absolute; bottom:0px; left:50%; margin-left:-14px; display:block; width:25px; height:9px; overflow:hidden; background:url(../images/icon_up_row.jpg) no-repeat 0 0; }
 .tab-project_bd{}
 .tab-project_bd .title ,.repayment-title{ border-left:5px solid #329dff; line-height:24px; }
-.tab-project_bd .info-user ul{ width:25%; }
+.tab-project_bd .info-user ul{ width:25%; *width:24%;}
 .tab-project_bd .info-user li{ padding:0px 0 10px 15px; line-height:30px;}
 .tab-project_bd .list_check ul{ width:50%; }
 .tab-project_bd .invest{ }
-.tab-project_bd .invest .tHead{background:#eef4f9; }
-.tab-project_bd .invest li{ line-height:26px; padding:7px 0; border:1px solid #e1e1e1; border-left-color:#fff; width:25%; }
+.tab-project_bd .invest li{ line-height:26px; padding:7px 0; border:1px solid #e1e1e1; border-left-color:#fff; width:25%; *width:24%;}
 .tab-project_bd .invest ul li:last-child{ border-right-color:#fff; }
-.tab-project_bd .invest .tHead li{border-left-color:#e1e1e1;}
+.tab-project_bd .invest .tHead{ }
+.tab-project_bd .invest .tHead li{border-left-color:#e1e1e1; background:#eef4f9;}
 .tab-project_bd .invest .tHead li:last-child{ border-right-color:#e1e1e1;}
 /*--------确认投资---------*/
 .confir_invest{width: 580px; height: 400px; border-radius: 2px; background: #fff; }
@@ -241,7 +242,7 @@
 .nav-ueser-first span{ cursor:pointer; }
 .subnav-user{}
 .subnav-user li a{ display:block; height:30px; line-height:30px; padding:10px 0 10px 80px;}
-.subnav-user li a.cur {  background:#ff8b3e url(../images/icon_arrow_left.png) no-repeat right center; color:#fff; }
+.subnav-user li a.cur, .subnav-user li a:hover {  background:#ff8b3e url(../images/icon_arrow_left.png) no-repeat right center; color:#fff; }
 
 
 
@@ -262,11 +263,12 @@
 .safe-grade .grade .higher{ width:80%; }
 
 .statistics{}
-.statistics li{ width:24%; line-height:40px; }
+.statistics li{line-height:40px; padding-right:30px; }
 .statistics li i{ display:inline-block; width:40px; height:40px; border-radius:50%; color:#fff; }
 
 .account_details{}
 .account_details .title{ border-left:6px solid #ff6803; height:24px; line-height:24px; }
+.account_details .title a .iconfont{-webkit-transform-origin-x: 0; -webkit-transform: scale(0.667); display:inline-block; }
 
 .table_ul{ line-height:40px; }
 .table_ul ul li:first-child { width:92px; text-align:left; padding-left:28px; }
@@ -343,7 +345,11 @@
 .tab_recharge_bd .pay-right li{ border-left:1px solid #e1e1e1; width:100px; line-height:36px;  }
 .search-filter span ,.search-filter span i ,.search-filter span em{display:inline-block;}
 .search-filter span{ width:90px; text-align:center; cursor:pointer; margin:0 10px;}
-.search-filter span.selected ,.search-filter span.selected em{ background:#ff5d5c; color:#fff; border-radius:3px; }
+.search-filter span.selected ,.search-filter span.selected-1 ,.search-filter span.selected-2 ,.search-filter span.selected-3, .search-filter span.selected-4{ color:#fff; border-radius:3px; }
+.search-filter span.selected ,.search-filter span.selected-1{background:#ff5d5c;}
+.search-filter span.selected-2{ background:#98d359; }
+.search-filter span.selected-3{ background:#329dff; }
+.search-filter span.selected-4{ background:#ff6803; }
 .search-filter span i{ width:70%; }
 .search-filter span em{ width:30%; border-radius:3px; }
 
@@ -406,15 +412,20 @@
 .account_info ul li ul li i{color: #f00; margin: 0; float: none;}
 .account_info ul li ul li .sub_btn{width: 80px; height: 32px; text-align: center;background: #329dff;border: none;font-size: 18px; color: #fff; margin-left: 150px;}
 
+
 /* 借款列表 */
 .loan-lists{}
-.loan-lists li {width:10%;}
-.loan-lists li ,.history-lists li{ padding:10px 0; border-bottom:1px solid #e1e1e1;  }
-.loan-lists .tHead li ,.history-lists .tHead li ,.list-news .no-bot li ,.list-news .no_border li{ border-bottom:none; }
-.loan-lists .no ,.history-lists .no{ padding-left:40px; width:10%;}
-.loan-lists .loan-amount ,.loan-lists .repay-money ,.history-lists .loan-amount{padding-left:10px; padding-right:10px; width:10%;}
-.loan-lists .view ,.loan-lists .operate{ width:7%; }
-.history-lists .no{ padding-right:40px;}
+.loan-lists li {width:15%; *line-height:18px;}
+.loan-lists li ,.history-lists li{ padding:10px 0; *padding:19px 0; border-bottom:1px solid #e1e1e1;  }
+.loan-lists .tHead li ,.history-lists .tHead li ,.list-news .no-bot li ,.list-news .no_border li ,.repay-lists .tHead li{ border-bottom:none; }
+.loan-lists .tHead li ,.history-lists .tHead li {*padding:10px 0;}
+.loan-lists .no { padding-left:40px; *padding:10px 0 10px 0px; width:25%; *width:24%;}
+
+/*.loan-lists .loan-amount ,.loan-lists .repay-money {padding-left:10px; padding-right:10px; width:10%;}
+.loan-lists .view ,.loan-lists .operate{ width:7%; }*/
+.history-lists li{ width:14%; *line-height:18px; *width:13%;}
+.history-lists .no{  padding:10px 20px; *padding:10px 0; width:20%; *width:22%;}
+.history-lists .loan-amount{padding-left:10px; padding-right:10px; width:10%;}
 .history-lists .view ,.history-lists .operate{ width:10%; }
 .repay_btn{width:60px; height:25px; background:#ff6803; border:none; color:#fff; cursor:pointer;}
 /* 我的红包 */
@@ -423,7 +434,7 @@
 .share-input{ border:1px solid #e1e1e1; width:68%; height:32px ;line-height:32px; }
 .myRed-lists li{ width:16%; line-height:30px; padding:10px 0;}
 .myRed-lists .no{width:12%;}
-.myRed-lists .datails{width:10%; padding-left:8%;}
+.myRed-lists .datails{width:10%; padding-left:8%; *padding-left:0; *text-indent: 7%;}
 .myRed-lists .accumulation , .myRed-lists .expect{ width:19%; }
 
 /* 理财管理-投资列表 */
@@ -446,12 +457,12 @@
 .invest-cleared .table li.no{ width:16%; }
 /* 理财管理-投资列表-已流标 */
 .invest-died{}
-.invest-died li{ width:13%; } 
+.invest-died li{ width:13%; }
 /* 理财管理-债权转让记录 */
 .credit-record{}
 .credit-record li{ width:11%; }
-.credit-record li.no{ width:12%; *padding-left:0; *padding-right:0; *width:14%;}
-.credit-record li.apr{ *width:9%; }
+.credit-record li.time{ width:24%; padding-left:0; padding-right:0;}
+.credit-record li.pro-title{ width:21%; }
 
 /* 账户管理-消息中心 */
 .list-news{}
@@ -505,7 +516,7 @@
 .banner-box .bd li{width:100% !important; height:350px;}
 .banner-btn{width:100%; position:absolute; top:0; left:0; height:100%; }
 .banner-btn a{display:block; width:49px; height:104px; position:absolute; top:50%; margin-top:-52px; filter:alpha(opacity=40);-moz-opacity:0.4;-khtml-opacity:0.4;opacity:0.4;}
-.banner-btn a.prev{left:20px;background:url(../images/foot.png) no-repeat 0 0;} 
+.banner-btn a.prev{left:20px;background:url(../images/foot.png) no-repeat 0 0;}
 .banner-btn a.next{right:20px;background:url(../images/foot.png) no-repeat -49px 0;}
 .banner-box .hd {position:absolute;bottom:20px; left:50%;}
 .banner-box .hd ul li{width:12px;height:12px;border-radius :50%;text-indent:-9999px;margin-right:10px;background:#ccc;float:left;cursor:pointer;}
@@ -513,19 +524,21 @@
 
 
 /* 还款列表-new 2016-06-14 */
-.tit-botArrow{ height:37px; } 
+.tit-botArrow{ height:37px; }
 .tit-botArrow h4{background:url(../images/icon_arrow_down.png) no-repeat bottom center; padding-bottom:5px;}
 .tit-botArrow span{ display:block; width:110px; border-bottom:1px solid #339dff; height:36px; line-height:36px; }
 .total-repay li{ float:left; width:20%; }
 .records-repay li{ width:10%; padding:10px 0; border-bottom:1px solid #ccc;  }
 .records-repay .check{ width:12%; padding-left:2%; }
-.records-repay .check input{ vertical-align:baseline; border:1px solid #ccc;}
-.records-repay .date-repay ,.records-repay .yihuan, .records-repay .daihuan, .records-repay .dh-benxi{ width:12%; }
+.records-repay .check input{ vertical-align:baseline; }
+.records-repay .date-repay ,.records-repay .yihuan, .records-repay .daihuan, .records-repay .dh-benxi{ width:12%; *width:11%;}
 .table-repay td{ border:1px solid #e1e1e1; padding:5px 0;}
 .table-repay .tHead td{ padding:10px 0; }
 
-/*  */
-
-
-
-
+/* 还款列表&已还清借款 */
+.repay-lists{}
+.repay-lists li{ width:10%; padding:10px 0; border-bottom:1px solid #e1e1e1; *line-height:18px; *padding:20px 0;}
+.repay-lists .tHead li{ *padding:10px 0; }
+.repay-lists .title{ width:15%; padding:10px; *padding:10px 0;}
+.repay-lists .operate{ *padding:14px 0; }
+.repay-lists .loan-amount ,.repay-lists .date ,.repay-lists .month-repay ,.repay-lists .penalty,.repay-lists .yihuan{ width:11%; }
