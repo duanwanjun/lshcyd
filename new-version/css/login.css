@@ -159,7 +159,7 @@ a:hover{text-decoration:none;}
 .login_form .input i.phone_ico{ background-position:8px -220px;}
 .login_form .input i.email_ico{ background-position:8px -182px;}
 .login_form .input i.invite_ico{ background-position:8px -260px;}
-.code_img img{ border:1px solid #ddd; }
+.code_img img{ border:1px solid #ddd; margin:0 5px 0 10px;}
 .code_img a{color:#ff6803; }
 .login_form .text{width:285px; height:18px; line-height:18px; border:0px; vertical-align:top; padding:8px 0; background:#fff; +margin-top:-1px;}
 .login_form .select{width:332px; height:36px; line-height:36px; border:1px solid #ddd; vertical-align:top; background:#fff;}
@@ -195,11 +195,11 @@ a:hover{text-decoration:none;}
 .red_bg .login_mod{box-shadow:0 0 5px #f5f5f5;}
 .login_footer a{ margin:0 10px;}
 .login_bg{ width:100%; padding:60px 0; background: url("../images/login_bg.jpg") no-repeat 0 center;}
-.login_bg .login_mod{box-shadow:0 0 5px #f5f5f5; width:420px; padding:20px 30px; float:right;}
+.login_bg .login_mod{box-shadow:0 0 5px #f5f5f5; width:440px; padding:20px 30px; float:right;}
 .login_bg .login_form .til{width:17%;}
 .login_bg .login_form .con{width:83%;}
 .login_form #btnSendCode{width: 100px; height: 35px; margin-left: 10px; background: #ff6803; color: #fff;}
-.login_form .invite_user{border: 1px solid #ccc; display: block;width: 80px; height: 34px; text-align: center;}
+.login_form .invite_user{border: 1px solid #ccc; display: block;width: 80px; height: 34px; text-align: center; margin-left:10px;}
 /*提示*/
 .tip_info{max-width:900px; text-align:center; margin:0 auto;}
 .tip_info .doubt,.tip_info .error,.tip_info .successful{background:url("../images/user_popup.png") no-repeat; width:50px; height:50px; display:inline-block;vertical-align:middle;}

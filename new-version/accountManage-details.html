@@ -192,30 +192,16 @@
 				<script type="text/javascript">
 				$(function(){
 					$("#j_set_IDNO").click(function(){
-						if($(this).hasClass("v")){
-						$(this).removeClass("v");
-						$(this).html("修改");
-						$("#box_j_set_IDNO").slideUp();
-					}
-					else{
-						$(this).addClass("v");
-						$(this).html("取消修改");
-						// if($.trim($("#setting-email-box").html())==""){
-						// 	var ajaxurl = '{url x="index" r="uc_account#email"}';
-						// 	$.ajax({
-						// 		url:ajaxurl,
-						// 		data:"&step=1",
-						// 		type:"post",
-						// 		dataType:"text",
-						// 		success:function(ajaxobj){
-						// 			$("#setting-email-box").html(ajaxobj);
-						// 			$("#setting-email-box").slideDown();
-						// 		}
-						// 	});
-						// }
-						else
-							$("#box_j_set_IDNO").slideDown();
-					}
+						$("#box_j_set_IDNO").slideToggle();
+					});
+					$("#j_set_psw").click(function(){
+						$("#box_j_set_psw").slideToggle();
+					});
+					$("#j_set_email").click(function(){
+						$("#box_j_set_email").slideToggle();
+					});
+					$("#j_set_cd").click(function(){
+						$("#box_j_set_cd").slideToggle();
 					});
 				});
 				</script>
@@ -224,7 +210,7 @@
 						<ul>
 							<li><strong>绑定手机</strong><span>139****5737</span></li>
 							<li><strong>实名认证</strong><span class="red">未设置</span><i><a href="javascript:void(0);" id="j_set_IDNO">设置</a></i>
-								<div class="account_realname" id="box_j_set_IDNO">
+								<div class="account_realname" id="box_j_set_IDNO"  style="display:none;">
 									<ul>
 										<li><label for="realname"><i>*</i>真实姓名：</label><input type="text" name="realname"></li>
 										<li><label for="idcard"><i>*</i>身份证号：</label><input type="text" name="idcard"></li>
@@ -232,9 +218,9 @@
 									</ul>
 								</div>
 							</li>
-							<li><strong>登录密码</strong><span>******</span><i>修改</i></li>
-							<li><strong>交易密码</strong><span class="red">未设置</span><i>设置</i>
-							<div class="account_realname">
+							<!--<li><strong>登录密码</strong><span>******</span><i>修改</i></li>-->
+							<li><strong>交易密码</strong><span class="red">未设置</span><i><a href="javascript:void(0);" id="j_set_psw">设置</a></i>
+							<div class="account_realname"  id="box_j_set_psw" style="display:none;">
 									<ul>
 										<li><label for="realname"><i>*</i>交易密码：</label><input type="text" name="realname"></li>
 										<li><label for="idcard"><i>*</i>再次确认：</label><input type="text" name="idcard"></li>
@@ -242,16 +228,16 @@
 									</ul>
 								</div>
 							</li>
-							<li><strong>绑定邮箱</strong><span class="red">未设置</span><i>设置</i>
-								<div class="account_realname">
+							<li><strong>绑定邮箱</strong><span class="red">未设置</span><i><a href="javascript:void(0);" id="j_set_email">设置</a></i>
+								<div class="account_realname" id="box_j_set_email" style="display:none;">
 									<ul>
 										<li><label for="realname"><i>*</i>请输入邮箱号：</label><input type="text" name="realname"></li>
-										<li><input type="submit" class="sub_btn" value="发送确认邮件"></li>
+										<li><input type="submit" class="sub_btn sub_btn-1" value="发送确认邮件"></li>
 									</ul>
 								</div>
 							</li>
-							<li><strong>绑定银行卡</strong><span class="red">未设置</span><i>设置</i>
-								<div class="account_realname">
+							<li><strong>绑定银行卡</strong><span class="red">未设置</span><i><a href="javascript:void(0);" id="j_set_cd">设置</a></i>
+								<div class="account_realname"  id="box_j_set_cd" style="display:none;">
 									<ul>
 										<li><label for="realname"><i>*</i>姓名：</label>*万军</li>
 										<li><label for="realname"><i>*</i>身份证号：</label>420324*******1014</li>
@@ -270,7 +256,7 @@
 											<option value="">海淀区</option>
 											</select>
 										</li>
-										<li><label for="realname"><i>*</i>支行名称：</label><input type="text" name="realname"></li>
+										<li><label for="realname"><i>*</i>支行名称：</label><input type="text" name="realname" class="mr10"></li>
 										<li><label for="realname"><i>*</i>银行卡号：</label><input type="text" name="realname"></li>
 										<li><label for="realname"><i>*</i>确认银行卡号：</label><input type="text" name="realname"></li>
 										<li><input type="submit" class="sub_btn" value="保存"></li>

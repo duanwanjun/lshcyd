@@ -150,7 +150,7 @@
 .box-expand .tenderAmount{ border:1px solid #eee; background:#eff4fa; width:30%; padding:10px 30px; }
 .box-expand .tenderAmount .edit{border:1px solid #efefef; line-height:38px;}
 .box-expand .tenderAmount .edit a, .box-expand .tenderAmount .edit span{ display:block; float:left; }
-.box-expand .tenderAmount .edit a ,.box-expand .tenderAmount .edit .less-disable{ width:10%; }
+.box-expand .tenderAmount .edit a ,.box-expand .tenderAmount .edit .less-disable{ width:10%; font-size:26px; font-family:'宋体', 'SimSun';}
 .box-expand .tenderAmount .edit span.numBox{ width:80%;  }
 .box-expand .tenderAmount .edit span.numBox .money{ border:none; outline:none; display:block; width:100%; height:38px; line-height:38px; vertical-align:baseline; overflow:hidden; }
 .box-expand .tenderAmount .edit em{ display:block; height:38px; overflow:hidden; border-color:#efefef; border-style:solid; border-width:0 1px 0 1px;}
@@ -176,9 +176,9 @@
 .confir_detail{padding:0 15px 15px 15px;}
 .confit_title{height: 50px; line-height: 50px; font-size: 18px;  border-bottom: 1px solid #e1e1e1;}
 .confir_project{height: 90px;}
-.confir_project ul li{float: left; text-align: center;width: 180px; font-size: 18px; margin: 10px 0; padding: 0px 10px; border-right: 1px solid #e1e1e1;}
+.confir_project ul li{float: left; text-align: center;width: 180px; font-size: 18px; margin: 10px 0; padding: 0px 10px; border-right: 1px solid #e1e1e1; line-height:20px; margin-top:25px;}
 .confir_project ul li.li_last{border: none;}
-.confir_project ul li span{font-size: 14px;color: #a2a2a2;}
+.confir_project ul li span{font-size: 14px;color: #a2a2a2; margin-bottom:5px;}
 .confir_amount {padding-left: 80px; font-size: 18px; margin: 5px 0;}
 .confir_amount strong{ padding-right: 15px; font-weight: normal;color:#a2a2a2; font-size: 14px; }
 .confir_amount span{color: #ff6604;}
@@ -186,9 +186,10 @@
 .confir_protocol input{margin-right: 10px;}
 .confir_protocol .confir_code{height: 34px; margin-left: 10px; width: 140px; background: url("../images/ps_ico.jpg") no-repeat; padding-left:45px; border: 1px solid #e1e1e1; }
 .confir_protocol a{color: #ff6604;}
-.confir_confir{height: 50px; line-height: 50px; margin-top: 40px; border-top: 1px solid #e1e1e1; color:#ff6604; }
-.confir_confir .cancel_btn{margin-left: 230px;font-weight: bolder; font-size:14px; cursor: pointer; margin-top: 10px; background: #c3c3c3; color: #fff; width: 90px; height: 30px; text-align: center; border: none; border-radius: 2px;}
-.confir_confir .confir_btn{margin-left: 20px; font-weight: bolder;font-size:14px;  cursor: pointer;margin-top: 10px;background: #329dff; color: #fff;  width: 90px; height: 30px; text-align: center; border: none; border-radius: 2px;}
+.confir_confir{height: 50px; line-height: 50px; margin-top: 40px; border-top: 1px solid #e1e1e1; color:#ff6604; padding-top:6px; }
+.confir_confir .cancel_btn{margin-left: 200px;font-weight: bolder; font-size:14px; cursor: pointer; /*margin-top: 10px;*/ background: #c3c3c3; color: #fff; width: 90px; height: 30px; text-align: center; border: none; border-radius: 2px;}
+.confir_confir .confir_btn{margin-left: 20px; font-weight: bolder;font-size:14px;  cursor: pointer;/*margin-top: 10px;*/background: #329dff; color: #fff;  width: 90px; height: 30px; text-align: center; border: none; border-radius: 2px;}
+.confir_confir span{ font-size:16px;}
 .confir_invest #close{ float: right; margin-top: 15px; margin-right: 20px;}
 /* 借款优势 */
 .advantage_loan{}
@@ -291,10 +292,10 @@
 
 /* 资金明细 */
 .funds-total{}
-.funds-total .balance{ width:15%; }
+.funds-total .balance{ width:20%; }
 .funds-total .line{ width:8%; height:50px; border-left:1px solid #e1e1e1; font-size:0px; }
 .funds-total .recharged ,.funds-total .funds-btn{ width:18%; }
-.funds-total .putted{ width:30%; }
+.funds-total .putted{ width:20%; }
 
 .funds-datails{}
 .funds-datails li{ line-height:24px; padding:8px 0; }
@@ -411,7 +412,8 @@
 .account_info ul li ul li input{height: 25px; line-height: 25px; width: 200px;}
 .account_info ul li ul li i{color: #f00; margin: 0; float: none;}
 .account_info ul li ul li .sub_btn{width: 80px; height: 32px; text-align: center;background: #329dff;border: none;font-size: 18px; color: #fff; margin-left: 150px;}
-
+.account_info ul li ul li .sub_btn-1{ width:140px; margin-left:120px;}
+.account_info ul li ul li .btn-code{ background: #ff6803; color: #fff; padding: 3px 10px; cursor:pointer;}
 
 /* 借款列表 */
 .loan-lists{}
