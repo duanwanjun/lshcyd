@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>散标投资</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/main_style.css">
+	<!--[if IE]>
+		<script src="js/html5.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script>
+	<!-- 仪表盘 -->
+	<script src="js/raphael-2.1.4.min.js"></script>
+	<script src="js/justgage.js"></script>
+	<!-- 分页 -->
+	<script type="text/javascript" src="js/kkpager.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			nav(); //主导航
+
+			dashBoard('.lists_sanMark li', '.schedule');  //“散标列表”仪表盘
+
+			/*$('.filter li span').click(function(){
+				$(this).siblings('span').removeClass('cur');
+				$(this).addClass('cur');
+			});	*/
+
+			$('.filter li').each(function(){
+				var _this=$(this);
+				_this.find('span:eq(0)').bind('click', function() {
+					$(this).addClass('cur');
+					$(this).siblings('span').removeClass();
+				});
+				_this.find('span:gt(0)').bind('click', function() {
+					$(this).addClass('lighter');
+					$(this).siblings('span').removeClass();
+				});
+			});
+
+			//分页
+			var totalPage = 20;
+			var totalRecords = 390;
+			var pageNo = getParameter('pno');
+			if(!pageNo){
+				pageNo = 1;
+			}
+			//生成分页
+			//有些参数是可选的，比如lang，若不传有默认值
+			kkpager.generPageHtml({
+				pno : pageNo,
+				//总页码
+				total : totalPage,
+				//总数据条数
+				totalRecords : totalRecords,
+				//链接前部
+				hrefFormer : 'investment_sanMark',
+				//链接尾部
+				hrefLatter : '.html',
+				getLink : function(n){
+					return this.hrefFormer + this.hrefLatter + "?pno="+n;
+				}
+			});
+
+
+		});
+	</script>
+</head>
+<body class="bg-f9">
+<!-- 顶部 -->
+<div class="top">
+	<div class="w1200 clearfix">
+		<div class="fl"><span><i class="iconfont f14 mr5">&#xe600;</i>服务热线：400-000-0000</span><span class="ml20"><i class="iconfont f14 mr5">&#xe601;</i>服务时间：9:00-19:00</span><span class="ml20"><i class="iconfont f20 mr5 vertical_middle">&#xe602;</i><i class="vertical_middle">手机客户端</i></span></div>
+		<div class="fast-way fr">
+		<!--<a href="#">新手指引</a>|<a href="#">最新活动</a>|<a href="#"><i class="iconfont f20 mr5 vertical_middle">&#xe602;</i><span class="vertical_middle">下载客户端</span></a>|<a href="#" class="orange">登录</a>|<a href="#">免费注册</a>-->
+			<div class="fl dis_none">
+				<div class="user_login fl" >
+					<em>您好，</em><a href="">139****5735</a><a href="">退出</a>
+				</div>
+				<ul  class="user_center fl" >
+					<li class="user_li"><a href="">账户中心</a>
+						<ul>
+							<li><a href="">充值</a></li>
+							<li><a href="">提现</a></li>
+							<li><a href="">我要理财</a></li>
+							<li><a href="">我要借款</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="msg fl"><a href=""><img src="images/Email.png" alt="消息中心" width="18">&nbsp;(5)</a></div>
+			</div>
+			<a href="">立即登录</a>
+			<a href="">免费注册</a>
+			<a href="">帮助中心</a>
+		</div>
+	</div>
+</div>
+<!-- 头部 -->
+<div class="bg-white">
+	<div class="head clearfix w1200">
+		<a class="fl logo dis_block" href="index.html">量硕宏程</a>
+		<!-- 导航 -->
+		<ul class="nav fr txt-center f18">
+			<!-- <li><a href="index.html" class="cur"><span class="f20 mr5">·</span>首页</a></li> -->
+			<li><a href="javascript:;">我要理财<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财一</a></li>
+						<li><a href="#">理财二</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="javascript:;">我要借款<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财afg</a></li>
+						<li><a href="#">理财sdr</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">公益捐款</a></li>
+			<li><a href="javascript:;">关于我们<i class="iconfont f12 ml5">&#xe603;</i></a>
+				<div class="sub_nav f14">
+					<span></span>
+					<ul class="pt10 pb10">
+						<li><a href="#">理财dr1</a></li>
+						<li><a href="#">理财1234576</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="border-bot-e6"></div>
+<!-- <%template src="_header.html"%> -->
+<!-- 中间 start -->
+<div class="w1200 bread pt10 pb5 f16"><a href="#">首页</a><span class="ml5 mr5">&gt;</span><a href="#">债权转让</a></div>
+<!-- 筛选条件 -->
+<div class="filter w1200 border-top-cc bg-white">
+	<h3 class="normal f18 orange pt5 pb5 pl20">筛选条件</h3>
+	<ul class="pt20 pl20 pr20 f14">
+		<li><b class="pr20">年化利率：</b><span class="cur">不限</span><span>0-9%</span><span>10-15%</span><span>15%以上</span></li>
+		<li><b class="pr20">借款期限：</b><span class="cur">不限</span><span>3个月以内</span><span>3-6个月</span><span>6-12个月</span><span>12-18个月</span><span>18个月以上</span></li>
+		<li><b class="pr20">还款方式：</b><span class="cur">不限</span><span>一次性本息全还</span><span>按月还款等额本息</span></li>
+		<li><b class="pr20">信用等级：</b><span class="cur">不限</span><span>A级</span><span>B级</span><span>C级</span><span>D级</span></li>
+	</ul>
+</div>
+<!-- 散标列表 -->
+<div class="lists_sanMark w1200 mt10">
+	<h3 class="clearfix normal"><span class="f22 blue">散标列表</span><span class="f16 fr gray-90">散标交易金额：<i class="f20 orange">1.67</i>亿元<i class="f10 ml5 mr5 gray-e1">|</i>累计赚取收益：<i class="f20 orange">4.88</i>亿元</span></h3>
+	<div class="pl20 pr20 border f16 txt-center border-top-none">
+		<div class="table">
+			<ul class="tHead gray-90">
+				<li>借款标题</li>
+				<li>借款金额</li>
+				<li>年利率</li>
+				<li>借款期限</li>
+				<li>还款方式</li>
+				<li>借款进度</li>
+				<li>操作</li>
+			</ul>
+			<ul>
+				<li>企易贷001期<span class="fr gray-cc">|</span></li>
+				<li>50,000,00元<span class="fr gray-cc">|</span></li>
+				<li><span class="f22 orange">11.00%</span><span class="fr gray-cc">|</span></li>
+				<li>1个月<span class="fr gray-cc">|</span></li>
+				<li>按月付息，到期还本</li>
+				<li><i class="schedule">58</i><div class="dash-board"></div></li>
+				<li><a href="#" class="button btn_red white f18">立即投资</a></li>
+			</ul>
+			<ul>
+				<li>企易贷001期<span class="fr gray-cc">|</span></li>
+				<li>50,000,00元<span class="fr gray-cc">|</span></li>
+				<li><span class="f22 orange">11.00%</span><span class="fr gray-cc">|</span></li>
+				<li>1个月<span class="fr gray-cc">|</span></li>
+				<li>按月付息，到期还本</li>
+				<li><i class="schedule">38</i><div class="dash-board"></div></li>
+				<li><a href="#" class="button btn_red white f18">立即投资</a></li>
+			</ul>
+			<ul>
+				<li>企易贷001期<span class="fr gray-cc">|</span></li>
+				<li>50,000,00元<span class="fr gray-cc">|</span></li>
+				<li><span class="f22 orange">11.00%</span><span class="fr gray-cc">|</span></li>
+				<li>1个月<span class="fr gray-cc">|</span></li>
+				<li>按月付息，到期还本</li>
+				<li><i class="schedule">88</i><div class="dash-board"></div></li>
+				<li><a href="#" class="button btn_red white f18">立即投资</a></li>
+			</ul>
+			<ul>
+				<li>企易贷001期<span class="fr gray-cc">|</span></li>
+				<li>50,000,00元<span class="fr gray-cc">|</span></li>
+				<li><span class="f22 orange">11.00%</span><span class="fr gray-cc">|</span></li>
+				<li>1个月<span class="fr gray-cc">|</span></li>
+				<li>按月付息，到期还本</li>
+				<li><i class="schedule">10</i><div class="dash-board"></div></li>
+				<li><a href="#" class="button btn_red white f18">立即投资</a></li>
+			</ul>
+			<ul>
+				<li>企易贷001期<span class="fr gray-cc">|</span></li>
+				<li>50,000,00元<span class="fr gray-cc">|</span></li>
+				<li><span class="f22 orange">11.00%</span><span class="fr gray-cc">|</span></li>
+				<li>1个月<span class="fr gray-cc">|</span></li>
+				<li>按月付息，到期还本</li>
+				<li><i class="schedule">75</i><div class="dash-board"></div></li>
+				<li><a href="#" class="button btn_red white f18">立即投资</a></li>
+			</ul>
+		</div>
+		<!-- 分页 -->
+		<div id="kkpager" class="pages txt-center f16 pt20 pb20 mt20 mb20"></div>
+	</div>
+</div>
+<!-- 中间 end -->
+<!-- 页脚 -->
+<!-- <%template src="_footer.html"%> -->
+<div class="bg-33 mt20 pt30">
+	<div class="w1200 clearfix pb30">
+		<div class="fast-way-bot fl f14">
+			<a href="#">关于我们</a><a href="#">帮助中心</a><a href="#">招贤纳士</a><a href="#">联系我们</a><a href="#">隐私策略</a><a href="#">免责条款</a><a href="#">政策法规</a><a href="#">网站地图</a>
+		</div>
+		<div class="line fl mt10"></div>
+		<div class="service-tel txt-center gray-lighter fl">
+			<div class="tel f36 line-height-1">
+				<p>400-000-0000</p>
+				<p>010-888-0000</p>
+			</div>
+			<p class="f20 mt5">客服电话（8:30-21:00）</p>
+			<div class="f30"><a href="#"><i class="iconfont">&#xe605;</i></a><a href="#"><i class="iconfont">&#xe606;</i></a><a href="#"><i class="iconfont">&#xe607;</i></a></div>
+		</div>
+		<div class="line fl mt10"></div>
+		<div class="codes fl txt-center">
+			<h3 class="gray-lighter f22 normal line-height-1 mb10">手机客户端</h3>
+			<ul class="clearfix white f14">
+				<li>
+					<img src="images/none/codes_app.jpg" alt="APP下载" />
+					<p>APP下载</p>
+				</li>
+				<li>
+					<img src="images/none/codes_weixin.jpg" alt="关注微信" />
+					<p>关注微信</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="line-gray-light"></div>
+	<div class="w1200 txt-center f16 gray-lighter links">
+		友情链接：<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>|<a href="#">网贷天眼</a>
+	</div>
+</div>
+<div class="bg-29">
+	<div class="w1200 txt-center honor">
+		<div class="pt20 pb20"><img src="images/none/link-1.png" alt="诚信网站" /><img src="images/none/link-2.png" alt="诚信网站" /><img src="images/none/link-3.png" alt="诚信网站" /></div>
+		<p class="gray-99 pb10">© 2015 量硕宏程投资管理有限公司 京ICP备14056037号 京公网安备11010502025440</p>
+	</div>
+</div>
+</body>
+</html>
