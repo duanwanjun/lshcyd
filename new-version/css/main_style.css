@@ -403,12 +403,13 @@
 .account_top ul li.cur{color: #329dff;}
 .account_info{padding:40px 0  50px 0;}
 .account_info ul li{margin-top: 10px; line-height: 50px;font-size: 14px; border-bottom: 1px solid #e1e1e1;}
-.account_info ul li strong{padding: 0 30px;}
-.account_info ul li span{padding: 0  80px; width: 150px; display: inline-block;}
+.account_info ul li strong{padding: 0 30px; display:inline-block;width:150px;}
+.account_info ul li span{padding: 0  80px; /* width: 150px; */ display: inline-block;}
 .account_info ul li span.red{color: #f00;}
 .account_info ul li i{float: right; margin-right: 20px;}
 .account_info ul li ul{padding:20px 0  40px 200px;}
 .account_info ul li ul li{border: none; line-height: 40px;}
+.account_info ul li ul li label{display:inline-block; width:150px; text-align:right;}
 .account_info ul li ul li input{height: 25px; line-height: 25px; width: 200px;}
 .account_info ul li ul li i{color: #f00; margin: 0; float: none;}
 .account_info ul li ul li .sub_btn{width: 80px; height: 32px; text-align: center;background: #329dff;border: none;font-size: 18px; color: #fff; margin-left: 150px;}
@@ -544,3 +545,31 @@
 .repay-lists .title{ width:15%; padding:10px; *padding:10px 0;}
 .repay-lists .operate{ *padding:14px 0; }
 .repay-lists .loan-amount ,.repay-lists .date ,.repay-lists .month-repay ,.repay-lists .penalty,.repay-lists .yihuan{ width:11%; }
+
+
+/* 2016-06-24 安全中心-基本信息&我的资料 */
+.safe-info{}
+.safe-info .btn-edit{ top:34px; right:40px; }
+.safe-info li{ float:left; margin-top:24px;}
+.safe-info .title{ width:20%; text-align:right; color:#646464;}
+.safe-info .title span{ padding-right:15%; }
+.safe-info .info, .safe-info .edit{ width:80%; }
+.safe-info .info ,.safe-info .title{ line-height:36px; }
+.safe-info .edit{ display:none; }
+.safe-info .simulate-select dd{ width:100%; }
+.safe-info .provin_select{ width:200px; height:34px; line-height:34px; border-radius:3px; }
+
+/* 省市区三级联动*/
+.sjld{ line-height:34px;  }
+.sjld .address{ width:230px; height:34px; line-height:34px; border:1px solid #e0e0e0; text-indent:10px; border-radius:3px;}
+.m_zlxg{ width:112px; padding-right: 28px; cursor:pointer; float:left; margin:0 10px 0 0; display:inline; border:1px solid #e0e0e0; border-radius:3px; position:relative; background:url("../images/bot_imgs.png") no-repeat right center;}
+.sjld .cur{background:url("../images/bot_imgs_cur.png") no-repeat right center; border-color:#329dff;}
+.m_zlxg p{ padding-left:10px; overflow:hidden; font-size:16px; text-overflow:ellipsis; white-space:nowrap;}
+.m_zlxg2{ position:absolute; top:35px; border:1px solid #e0e0e0; background:#fff; z-index:100; width:100%; * width:100% !important; margin-left:-1px; display:none; max-height:224px;-height:224px; overflow-x:hidden; overflow-y:auto;white-space:nowrap;}
+.m_zlxg2 li{line-height:28px;white-space:nowrap; padding-left:10px; float:none; margin-top:0;}
+.m_zlxg2 li:hover{ background-color:#f3478c; color:#fff;}
+
+
+.my-profile .tHeader li{ font-weight:bold; color:#333333;}
+.my-profile li{ width:14%;  padding: 10px 0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-break:keep-all;}
+.my-profile li.remark{ width:16%; }
