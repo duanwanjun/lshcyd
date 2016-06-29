@@ -1,7 +1,0 @@
-机构编号：4993600001
-机构账号：liangshuo01
-
-生产地址：
-https://rz.ect888.com:9090/servlet/json
-生产公钥：
-MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCYfAQ1OK2nCgJhXuafKaP5Pdotp7YgmAQkOne/5NqchH0sH9BusY1YLKqQk1T2PghgpTRASnuWoDb+wjRLcm0RTDWa7/DmFPkp/c+eGKAZq8Eq/Tib8fvGdTIrBh20MiKlAPpbkZmrhKBzGg+V/SAbB/9R+eZKH52LenDlN1QSEwIDAQAB
